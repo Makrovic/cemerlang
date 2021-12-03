@@ -25,7 +25,7 @@ html{
 
 #booking {
 	font-family: 'Montserrat', sans-serif;
-	background-image: url("../assets/1.jpg");
+	background-image: url("../assets/bg-pkbm.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -275,14 +275,17 @@ html{
     background-color: #00ffe0;
 }
 /* About */
-.section-about{
+.home-program{
 	background-color: #3f51b5;
 	padding: 50px;
 }
-.section-about h1,p{
-	color: #3f51b5;
+.home-program h1,li{
+	color: #fff;
 }
-.section-about div{
+.home-program li{
+	font-size: 20px;
+}
+.home-program div{
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
@@ -378,16 +381,16 @@ html{
 #navheader{
 	background-color: #fff;
 }
-.navbar-collapse li a{
-	color: #fff;
-}
-.navbar-collapse li a:hover,
-.navbar-collapse li a:focus{
-	color: #00ffe0;
-}
 .section-contact{
 	padding: 40px;
 	background-color: #020218;
+}
+.dropdown-menu{
+	margin-top: 10px !important;
+	border: none !important;
+}
+.dropdown-menu a{
+	padding: 16px;
 }
 .section-contact label{
 	color: #fff;

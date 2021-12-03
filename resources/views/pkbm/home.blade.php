@@ -1,8 +1,6 @@
 @extends('layout/base-home')
 @section('content')
-<script>
 
-</script>
 <div id="booking" class="section">
   <div class="section-center">
     <div class="container">
@@ -18,13 +16,16 @@
   </div>
 </div>
 {{-- About --}}
-<section class="section-about">
+<section class="home-program">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-up">
-        <h1>AGORA HOTEL</h1>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-        <button type="button" class="btn btn-primary btn-sm">Visit more</button>
+        <h1>Program PKBM : </h1>
+        <li>Pendidikan kesetaraan paket b</li>
+        <li>Pendidikan kesetaraan paket c</li>
+        <li>Program kuliah kerja</li>
+        <li>Program Keterampilan/kursus/pelatihan</li>
+        <li>Program Pemberdayaan Perempuan</li>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6"data-aos="fade-up">
         <img src="../assets/4-1.jpg" alt="">
@@ -35,35 +36,16 @@
 {{-- /About --}}
 {{-- Room's --}}
 <section class="section-rooms">
-  <h1 class="text-center">Room's</h1>
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-5 col-lg-4" data-aos="fade-up">
-        <img src="../assets/room/1.jpg" alt="..." class="img-thumbnail">
-        <div class="row">
-          <div id="room-caption" class="col-sm-12 center-block text-center">
-            <span>Amarillys</span><hr>
-            <span>300$ / PER NIGHT</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-5 col-lg-4" data-aos="fade-up">
-        <img src="../assets/room/2.jpg" alt="..." class="img-thumbnail">
-        <div class="row">
-          <div id="room-caption" class="col-sm-12 center-block text-center">
-            <span>Dandelion</span><hr>
-            <span>450$ / PER NIGHT</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-5 col-lg-4" data-aos="fade-up">
-        <img src="../assets/room/3.jpg" alt="..." class="img-thumbnail">
-        <div class="row">
-          <div id="room-caption" class="col-sm-12 center-block text-center">
-            <span>Camelia</span><hr>
-            <span>450$ / PER NIGHT</span>
-          </div>
-        </div>
+    <div class="row justify-content-center">
+			<div class="col-sm-12 col-md-6 col-lg-6"data-aos="fade-up">
+				<canvas id="myChart" width="300px" height="300px"></canvas>
+			</div>
+      <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-up">
+        <h1>Proses Pembelajaran : </h1>
+					<p>PKMB  Cermerlang memberikan pendidikan kesetaraan paket b dan  c, 
+						juga program keterampilan dan kursus yang mampu mengasah 
+						skill, mental, karakter, dan attitude sehingga membentuk lulusan siap kerja.</p>
       </div>
     </div>
   </div>
@@ -140,5 +122,41 @@
     </div>
   </div>
 </section>
+
+<script>
+	var data = [{
+    data: [80, 90, 90, 85],
+    backgroundColor: [
+        "#3f51b5",
+        "#9c9c00",
+        "#17246e",
+        "#e0e000"
+    ],
+    borderColor: "#fff"
+}];
+
+var options = {
+    plugins: {
+        datalabels: {
+            formatter: (value, ctx) => {
+                let percentage = value+"%";
+                return percentage;
+            },
+            color: '#fff',
+        }
+    }
+};
+
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+		plugins: [ChartDataLabels],
+    type: 'pie',
+    data: {
+			labels: ["Praktikum", "Education", "Learning", "Motivation"],
+        datasets: data
+    },
+    options: options
+});
+	</script>
 <!-- END OF TESTIMONIALS -->
 @stop
