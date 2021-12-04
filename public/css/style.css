@@ -1,3 +1,8 @@
+:root{
+    --primary: #157be0;
+    --secondary: #ffff40;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -25,74 +30,37 @@ html {
     transform: translateY(-50%);
 }
 
-#booking {
+#banner {
     font-family: 'Montserrat', sans-serif;
     background-image: url("../assets/bg-pkbm.jpg");
     background-size: cover;
     background-position: center;
 }
 
-#booking::before {
+#banner::before {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
-    background: rgba(63, 81, 181, 0.5);
+    background: linear-gradient(to top, #157be0ba,#00000096);
 }
 
-.booking-cta {
+.banner-title {
     margin-top: 45px;
 }
 
-.booking-cta h1 {
+.banner-title h1 {
     font-size: 52px;
     text-transform: uppercase;
     color: #fff;
     font-weight: 900;
 }
 
-.booking-cta p {
+.banner-title p {
     font-size: 22px;
     color: #fff;
-}
-
-.booking-form {
-    background: #fff;
-    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.3);
-    max-width: 642px;
-    width: 100%;
-    margin: auto;
-    padding: 40px 30px;
-}
-
-.booking-form .form-group {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.booking-form .form-control {
-    background-color: #fff;
-    height: 55px;
-    padding: 0px;
-    padding-top: 15px;
-    color: #181818;
-    font-size: 16px;
-    font-weight: 700;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: none;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    border-radius: 0px;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-}
-
-#form-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }
 
 .contact-info {
@@ -122,18 +90,72 @@ html {
     transform: translateY(-50%);
 }
 
-/* Testimonial */
-.carousel {
-    margin: 50px auto;
-    padding: 0 70px;
+.img-box {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border: 3px solid var(--primary);
+    border-radius: 50%;
 }
 
-.carousel .item {
-    color: #999;
-    font-size: 14px;
-    text-align: center;
-    overflow: hidden;
-    min-height: 290px;
+.img-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.home-program {
+    background-color: var(--primary);
+    padding: 50px;
+}
+
+.home-program h1,
+li {
+    color: #fff;
+}
+
+.home-program ul{
+    margin: 16px;
+    list-style: none;
+}
+
+.home-program li {
+    color: #fff;
+    font-size: 20px;
+    margin: 12px;
+}
+
+.home-program i{
+    color: #fff;
+}
+
+.home-program div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.home-proses {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.home-proses div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.home-testimoni {
+    min-height: 540px;
+    padding: 50px;
+}
+
+.carousel-inner{
+    width: 80% !important;
+    margin: auto;
 }
 
 .carousel .item .img-box {
@@ -152,92 +174,15 @@ html {
     border-radius: 50%;
 }
 
-.img-box {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 5px;
-    border: 3px solid #3f51b5;
-    border-radius: 50%;
-}
-
-.img-box img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    border-radius: 50%;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%);
-}
-
-.carousel-caption {
-    margin: auto;
-    background: none !important;
-    color: black;
-}
-
-.carousel-caption p {
-    background: none !important;
-    color: black;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin: 10px;
-    text-indent: 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background-color: #020218;
-    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.carousel-indicators .active {
-    width: 8px;
-    height: 8px;
-    margin: 10px;
-    background-color: #00ffe0;
-}
-
-/* About */
-.home-program {
-    background-color: #3f51b5;
-    padding: 50px;
-}
-
-.home-program h1,
-li {
+.carousel-testi{
     color: #fff;
-}
-
-.home-program li {
-    font-size: 20px;
-}
-
-.home-program div {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-/* Rooms */
-.section-rooms {
-    background-color: whitesmoke;
-    padding: 50px;
-
+    margin-top: 20px;
 }
 
 #room-caption {
     margin: 10px;
 }
 
-/* Location */
 .section-location {
     background-color: whitesmoke;
     padding: 50px;
@@ -250,7 +195,7 @@ span {
 
 /* Footer */
 .footer {
-    background: #020218;
+    background: #020518;
 }
 
 .footer_content {
@@ -321,7 +266,10 @@ span {
 
 /* Navbar */
 #navheader {
-    background-color: #fff;
+    z-index: 99;
+    background: #020518;
+    position:fixed;
+    color: #fff;
 }
 
 .section-contact {
@@ -365,6 +313,15 @@ span {
     font-size: 30px;
 }
 
+.navbar li::after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+.navbar li:hover:after { transform: scaleX(1); }
+
 .fa-chevron-down {
     font-size: 50px;
     color: rgb(255, 255, 255);
@@ -401,10 +358,6 @@ span {
     background-color: lavender;
 }
 
-.carousel-item {
-    margin-bottom: 30%;
-}
-
 .photos h1 {
     font-size: 80px;
     font-weight: 500;
@@ -412,9 +365,9 @@ span {
     margin-bottom: 50px;
 }
 
-.jumbo {
-    background-image: url(../assets/img/parallax.jpg);
-    height: 5px;
+.parallax {
+    background-image: linear-gradient(to top, #000000ba, #157be0bb), url(../assets/bg-pkbm.jpg);
+    height: 100%;
     text-align: center;
     background-attachment: fixed;
     background-position: center;
@@ -422,16 +375,7 @@ span {
     background-size: cover;
 }
 
-.jumbo .display-4 {
-    color: #fff;
-    margin-top: 200px;
-    font-weight: 500;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
-    font-size: 80px;
-    margin-bottom: 30px;
-}
-
-.jumbo h1 {
+.parallax h1 {
     color: #fff;
 }
 

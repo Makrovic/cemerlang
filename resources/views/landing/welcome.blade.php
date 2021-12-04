@@ -6,7 +6,7 @@
         <img src="assets/sty.png" alt="" srcset="" width="200px" data-aos="fade-up">
         <h1 class="display-4" data-aos="fade-up">Bintang Cemerlang Indonesia</h1>
         <h3 class="h3" data-aos="fade-up">Yayasan usaha non profit dan usaha profit</h3>
-        <a class="mt-auto" href="#welcome-pkbm"><span class="fas fa-chevron-down light" data-aos="fade-up"></span></a>
+        <a class="mt-5" href="#welcome-pkbm"><span class="fas fa-chevron-down light" data-aos="fade-up"></span></a>
     </div>
 </div>
 {{-- endjumbotron --}}
@@ -84,14 +84,22 @@
         </div>
         <div class="row justify-content-center" data-aos="fade-up">
             <div class="col-lg-6">
-                <li>Berkarakter dan menjunjung tinggi nilai agama</li>
-                <li>Optimis menata masa depan</li>
-                <li>Melakukan yang terbaik dan bermanfaat</li>
-                <li>Komitmen melaksanakan amanah</li>
-                <li>Berkinerja tinggi</li>
-                <li>Bersyukur</li>
-                <li>Sejahtera</li>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Berkarakter dan menjunjung tinggi nilai agama</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Optimis menata masa depan</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Melakukan yang terbaik dan bermanfaat</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Komitmen melaksanakan amanah</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Berkinerja tinggi</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Bersyukur</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Sejahtera</li>
+                </ul>
             </div>
+        </div>
+        <div class="row justify-content-center mt-3" data-aos="fade-up">
+            <blockquote class="blockquote text-center">
+                <p class="fst-italic">“Apapun yang dibayangkan, diinginkan dengan sungguh-sungguh,
+                    dipercaya dengan sepenuh hati, dan bertindak penuh antusias, tidak mungkin tidak terwujud.”</p>
+            </blockquote>
         </div>
     </div>
 </section>

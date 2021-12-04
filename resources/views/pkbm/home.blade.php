@@ -2,12 +2,12 @@
 @section('content')
 
 {{-- banner --}}
-<div id="booking" class="section">
+<div id="banner" class="section">
     <div class="section-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-5" data-aos="fade-up">
-                    <div class="booking-cta">
+                    <div class="banner-title">
                         <h1>PKBM Cemerlang</h1>
                         <p>Pusat Pemberdayaan Masyarakat terakreditasi A terbaik di Indonesia.</p>
                     </div>
@@ -22,13 +22,15 @@
 <section class="home-program">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-up">
+            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up">
                 <h1>Program PKBM : </h1>
-                <li>Pendidikan kesetaraan paket b</li>
-                <li>Pendidikan kesetaraan paket c</li>
-                <li>Program kuliah kerja</li>
-                <li>Program Keterampilan/kursus/pelatihan</li>
-                <li>Program Pemberdayaan Perempuan</li>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Pendidikan kesetaraan paket b</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Pendidikan kesetaraan paket c</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Program kuliah kerja</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Program Keterampilan/kursus/pelatihan</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Program Pemberdayaan Perempuan</li>
+                </ul>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-up">
                 <img src="../assets/4-1.jpg" alt="">
@@ -37,13 +39,13 @@
     </div>
 </section>
 
-<section class="section-rooms">
+<section class="home-proses">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-up">
                 <canvas id="myChart" width="300px" height="300px"></canvas>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-up">
+            <div class="col-sm-12 col-md-6 col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-up">
                 <h1>Proses Pembelajaran : </h1>
                 <p>PKMB Cermerlang memberikan pendidikan kesetaraan paket b dan c,
                     juga program keterampilan dan kursus yang mampu mengasah
@@ -53,45 +55,50 @@
     </div>
 </section>
 
-<section class="testimonial-section">
+<section class="home-testimoni parallax">
     <div class="container">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
+        <div class="row text-center" data-aos="fade-up">
+            <h1>Testimoni</h1>
+        </div>
+        <div class="row mt-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-aos="fade-up" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="item carousel-item active">
                     <div class="img-box">
-                        <img src="../assets/testimoni/1.png" class="d-block w-100" alt="...">
+                        <img src="../assets/testimoni/testi-mardiati.jpeg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>service was amazing.They also provide local tour and chartered couch service.Breakfast just
-                            okay but judging the room with this price still consider value for money.Definitely will
-                            come and stay again"</h5>
-                        <p>Huda FR. - Local Tourist</p>
-                    </div>
-                </div>
-                <div class="item carousel-item">
-                    <div class="img-box">
-                        <img src="../assets/testimoni/2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>"good location, it's very near to supermarket (across street), near shopping mall (around
-                            5-10 mins walk). The room is comfortable with good wifi. Breakfast also great, got lots of
-                            variety of food, local & international."</h5>
-                        <p>Faisal Makrovic - Domestic Tourist</p>
+                    <div class="carousel-testi d-none d-md-block">
+                        <h5>Tidak menyangka mengikuti pembelajaran di PKBM CEMERLANG begitu menyenangkan. 
+                            Tutor sangat peduli pada kami, adanya layanan konseling , dharma wisata, 
+                            dan di luar jam akademik kesetaraan kami dibimbing keterampilan untuk bekal kerja 
+                            atau berwirausaha.PKBM CEMERLANG benar-benar mengerti apa yang kami butuhkan.</h5>
+                        <p>Mardiati - Lulusan Paket B PKBM CEMERLANG</p>
                     </div>
                 </div>
                 <div class="item carousel-item">
                     <div class="img-box">
-                        <img src="../assets/testimoni/4.png" class="d-block w-100" alt="...">
+                        <img src="../assets/testimoni/testi-adin.jpeg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Great hotel for either business or casual stay. Staffs are very friendly and
-                            knowledgeable.Excellent hotel for both foreign and domestic tourists</h5>
-                        <p>Ivan Daniel - Local Tourist</p>
+                    <div class="carousel-testi d-none d-md-block">
+                        <h5>Akibat salah pergaulan saya terjebak pada lingkungan yang tidak baik, saya DO dari 
+                            sekolah formal, dan melanjutkan di Paket C (setara SMA) . Saya mengucapkan terima kasih 
+                            pada PKBM CEMERLANG. Benar–benar memiliki rasa tanggung jawab dalam pembinaan 
+                            peserta didiknya. Saya ditempatkan kerja di PT Tirta Investama (AQUA). 
+                            Saya merekomendasikan kepada teman dan saudara, untuk belajar di PKBM CEMERLANG. 
+                            Selain mendapatkan ijazah, saya dan rekan-rekan tidak menganggur lagi.</h5>
+                        <p>Adin - Lulusan Paket C PKBM CEMERLANG</p>
+                    </div>
+                </div>
+                <div class="item carousel-item">
+                    <div class="img-box">
+                        <img src="../assets/testimoni/testi-afifah.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-testi d-none d-md-block">
+                        <h5>Setelah mengikuti keterampilan di PKBM CEMERLANG saya dibina untuk berwirausaha. 
+                            Alhamdulilah usaha sukses, saya membuka 2 toko pusat oleh-oleh 
+                            di Jl. Raya Kertek - Wonosobo. 
+                            Terimakasih PKBM CEMERLANG</h5>
+                        <p>Afifah - Lulusan Keterampilan PKBM CEMERLANG</p>
                     </div>
                 </div>
             </div>
@@ -105,44 +112,6 @@
             </a>
         </div>
     </div>
-</section>
-
-<section class="section-location">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-5 col-lg-6" data-aos="fade-up">
-                <div class="mapouter">
-                    <div class="gmap_canvas">
-                        <iframe width="100%" height="100%" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=universitas%20amikom%20yogyakarta&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                        </iframe>
-                    </div>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 400px;
-                            width: 400px;
-                        }
-
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 400px;
-                            width: 400px;
-                        }
-
-                    </style>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-5 col-lg-6" data-aos="fade-up">
-                <p><span class="d-block">Address:</span> <span> Jl. Ring Road Utara, Ngringin, Condongcatur, Kec. Depok,
-                        Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</span></p>
-                <p><span class="d-block">Phone:</span> <span> (+62) 274 884201</span></p>
-                <p><span class="d-block">Email:</span> <span> info@amikom.ac.id</span></p>
-            </div>
-        </div>
     </div>
 </section>
 {{-- endsection --}}
