@@ -27,14 +27,14 @@
 
 <section class="welcome-pkbm" id="welcome-pkbm">
     <div class="container">
-        <div class="row">
+        <div class="row d-flex flex-row-reverse">
+            <div class="col-lg-6" data-aos="fade-up">
+                <img src="assets/img/gambar.jpg" width="700px" height="300px" class="img-fluid" alt="">
+            </div>
             <div class="col-lg-6" data-aos="fade-up">
                 <h1>PKBM Cemerlang</h1>
                 <p>Pusat pemberdayaan masyarakat terakreditas A terbaik di Indonesia.</p>
                 <a href="pkbm" class="btn btn-welcome">lebih lanjut</a>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up">
-                <img src="assets/img/gambar.jpg" width="700px" height="300px" class="img-fluid" alt="">
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
 
 <section class="welcome-pt">
     <div class="container">
-        <div class="row">
+        <div class="row d-flex flex-row">
             <div class="col-lg-6" data-aos="fade-up">
                 <img src="assets/img/gambar.jpg" width="700px" height="300px" class="img-fluid" alt="">
             </div>
@@ -61,12 +61,12 @@
         <div class="row justify-content-center text-center" data-aos="fade-up">
             <h1>Sambutan</h1>
         </div>
-        <div class="img-box row" data-aos="fade-up">
+        <div class="img-box" data-aos="fade-up">
             <img src="assets/img/gambar.jpg" class="d-block w-200" alt="...">
         </div>
         <div class="row">
             <blockquote class="blockquote text-center" data-aos="fade-up">
-                <p class="mb-0 fst-italic">“Hidup indah bermakna ketika mampu
+                <p class="fst-italic">“Hidup indah bermakna ketika mampu
                     berbuat yang terbaik dan bermanfaat
                     untuk diri, keluarga, dan masyarakat.
                     Keseimbangan dan bekal hidup

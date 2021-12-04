@@ -10,6 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     {{-- custom css --}}
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/landing.css') }}" rel="stylesheet" type="text/css">
     {{-- Data AOS --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     {{-- Font Awesome --}}

@@ -1,4 +1,4 @@
-@extends('layout/base-home')
+@extends('layout/base')
 @section('content')
 
 {{-- banner --}}
