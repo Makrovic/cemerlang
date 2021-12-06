@@ -29,6 +29,7 @@
 </head>
 
 <body>
+    <a href="#" onclick="topFunction()" id="btn-top" class="d-flex align-items-center justify-content-center invisible"><i class="fas fa-chevron-up"></i></a>
     @if($site === 'pkbm')
         {{-- header pkbm --}}
         @include('layout.header-pkbm')

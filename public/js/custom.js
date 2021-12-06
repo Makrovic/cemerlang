@@ -27,13 +27,25 @@ window.onscroll = function () {
     scrollFunction()
 };
 
+btntop = document.getElementById("btn-top");
+navheader = document.getElementById("navheader");
+
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navheader").classList.add('navheader-scrolled')
+        btntop.classList.add('visible')
+        btntop.classList.remove('invisible')
+        navheader.classList.add('navheader-scrolled')
     } else {
-        document.getElementById("navheader").classList.remove('navheader-scrolled')
+        btntop.classList.add('invisible')
+        btntop.classList.remove('visible')
+        navheader.classList.remove('navheader-scrolled')
     }
 }
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
 window.addEventListener('load', () => {
     AOS.init({
