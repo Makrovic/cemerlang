@@ -23,12 +23,14 @@ function floatedLabel(input) {
     }
 }
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+    scrollFunction()
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("navheader").classList.add('navheader-scrolled')
-    }else{
+    } else {
         document.getElementById("navheader").classList.remove('navheader-scrolled')
     }
 }

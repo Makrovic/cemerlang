@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary: #157ae0;
     --secondary: #fdec00;
     --secondary-dark: #dbc417;
@@ -12,20 +12,20 @@ html {
 /* navbar */
 #navheader {
     z-index: 99;
-    position:fixed;
+    position: fixed;
     color: #fff;
     transition: all 0.5s;
 }
 
-.navheader-color{
+.navheader-color {
     background-color: #060b11;
 }
 
-.navheader-transparent{
+.navheader-transparent {
     background: none;
 }
 
-.navheader-scrolled{
+.navheader-scrolled {
     background-color: #060b11cb;
 }
 
@@ -43,15 +43,16 @@ html {
     z-index: 1;
 }
 
-.navbar li::after{
-    display:block;
+.navbar li::after {
+    display: block;
     content: '';
-    border-bottom: solid 3px var(--secondary);  
-    transform: scaleX(0);  
+    border-bottom: solid 3px var(--secondary);
+    transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
-.navbar li:hover:after { 
-    transform: scaleX(1); 
+
+.navbar li:hover:after {
+    transform: scaleX(1);
 }
 
 .dropdown-menu {
@@ -82,21 +83,21 @@ html {
     padding-top: 16px;
 }
 
-.footer-content{
+.footer-content {
     padding: 16px;
 }
 
-.footer-link ul{
+.footer-link ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer-link ul li i{
+.footer-link ul li i {
     color: var(--secondary);
 }
 
-.footer-link ul li a{
+.footer-link ul li a {
     text-decoration: none;
     color: #fff;
 }
@@ -106,7 +107,7 @@ html {
     padding: 8px;
 }
 
-.socialmedia i{
+.socialmedia i {
     color: #fff;
     font-size: 32px;
     margin: 4px;

@@ -61,7 +61,7 @@
                                     <a href="#content-cara">
                                         <i class="fas fa-coins m-2"></i>
                                         <span class="text-break">
-                                        Biaya Program Pendidikan Kesetaraan Paket B
+                                            Biaya Program Pendidikan Kesetaraan Paket B
                                         </span>
                                     </a>
                                 </h5>
@@ -74,7 +74,7 @@
                                         aria-expanded="true" aria-controls="content-biaya">
                                         <i class="fas fa-calendar m-2"></i>
                                         <span class="text-break">
-                                        Jadwal Kegiatan Pembelajaran Pendidikan Kesetaraan Paket B
+                                            Jadwal Kegiatan Pembelajaran Pendidikan Kesetaraan Paket B
                                         </span>
                                     </a>
                                 </h5>
@@ -92,7 +92,7 @@
                                         aria-expanded="true" aria-controls="content-biaya">
                                         <i class="fas fa-photo-video m-2"></i>
                                         <span class="text-break">
-                                        Dokumentasi
+                                            Dokumentasi
                                         </span>
                                     </a>
                                 </h5>

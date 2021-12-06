@@ -20,7 +20,7 @@
     {{-- endbanner --}}
     <section class="whitesec">
         <div class="container-fluid">
-            
+
         </div>
     </section>
     @stop

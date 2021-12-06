@@ -13,7 +13,7 @@
     right: 0;
     bottom: 0;
     top: 0;
-    background: linear-gradient(to top, #157be0ba,#00000096);
+    background: linear-gradient(to top, #157be0ba, #00000096);
 }
 
 .banner-title {
@@ -32,6 +32,7 @@
     font-size: 22px;
     color: #fff;
 }
+
 .section {
     position: relative;
     height: 32vh;
@@ -45,18 +46,19 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
 /* endbanner */
 
 /* section */
-section{
+section {
     padding: 16px;
 }
 
-section h1{
+section h1 {
     margin-bottom: 16px;
 }
 
-.whitesec{
+.whitesec {
     background-color: #fff;
     color: #444;
 }
@@ -72,39 +74,39 @@ section h1{
     background: var(--primary);
 }
 
-.whitesec.visimisi li{
+.whitesec.visimisi li {
     margin: 8px 0px;
 }
 
-.whitesec.visimisi li i{
+.whitesec.visimisi li i {
     color: var(--primary);
 }
 
-.whitesec.program .nav-item{
+.whitesec.program .nav-item {
     color: var(--primary);
 }
 
-.whitesec.program a{
+.whitesec.program a {
     text-decoration: none;
     color: #444;
     font-weight: normal;
 }
 
-.whitesec.program .row{
+.whitesec.program .row {
     padding: 24px;
 }
 
-.whitesec.program .card{
+.whitesec.program .card {
     border: none;
 }
 
-.whitesec.program .card-header{
+.whitesec.program .card-header {
     background-color: #fff;
     border-bottom: 2px solid var(--primary);
     padding: 20px;
 }
 
-.graysec{
+.graysec {
     background-color: var(--bg-gray);
     color: #444;
 }

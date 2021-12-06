@@ -46,9 +46,10 @@
     margin-top: 80px;
     cursor: pointer;
 }
+
 /* endbanner */
 
-section{
+section {
     padding: 10%;
 }
 
@@ -135,7 +136,7 @@ section{
     background: var(--secondary);
 }
 
-.culture ul{
+.culture ul {
     margin: 16px;
     list-style: none;
 }
@@ -145,7 +146,7 @@ section{
     margin: 12px;
 }
 
-.culture i{
+.culture i {
     color: var(--secondary);
     font-size: 16px;
 }
@@ -201,8 +202,9 @@ section{
     animation-delay: 0.8s;
     background: var(--secondary);
 }
+
 .btn-welcome:hover {
-  background: var(--secondary-dark);
-  color: #fff;
-  text-decoration: none;
+    background: var(--secondary-dark);
+    color: #fff;
+    text-decoration: none;
 }
