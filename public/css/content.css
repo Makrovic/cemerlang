@@ -1,0 +1,110 @@
+/* banner */
+#banner {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../assets/parallax-pkbm.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#banner::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(to top, #157be0ba,#00000096);
+}
+
+.banner-title {
+    margin-top: 45px;
+}
+
+.banner-title h1 {
+    font-size: 52px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+}
+
+.banner-title p {
+    font-size: 22px;
+    color: #fff;
+}
+.section {
+    position: relative;
+    height: 32vh;
+}
+
+.section .section-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* endbanner */
+
+/* section */
+section{
+    padding: 16px;
+}
+
+section h1{
+    margin-bottom: 16px;
+}
+
+.whitesec{
+    background-color: #fff;
+    color: #444;
+}
+
+.whitesec h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 64px;
+    height: 3px;
+    margin-top: 4px;
+    left: calc(50% - 32px);
+    background: var(--primary);
+}
+
+.whitesec.visimisi li{
+    margin: 8px 0px;
+}
+
+.whitesec.visimisi li i{
+    color: var(--primary);
+}
+
+.whitesec.program .nav-item{
+    color: var(--primary);
+}
+
+.whitesec.program a{
+    text-decoration: none;
+    color: #444;
+    font-weight: normal;
+}
+
+.whitesec.program .row{
+    padding: 24px;
+}
+
+.whitesec.program .card{
+    border: none;
+}
+
+.whitesec.program .card-header{
+    background-color: #fff;
+    border-bottom: 2px solid var(--primary);
+    padding: 20px;
+}
+
+.graysec{
+    background-color: var(--bg-gray);
+    color: #444;
+}

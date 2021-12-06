@@ -1,4 +1,7 @@
-@extends('layout/base')
+@extends('layout.base')
+@section('customcss')
+<link href="{{ asset('css/home.css') }}" rel="stylesheet" type="text/css">
+@stop
 @section('content')
 
 {{-- banner --}}
@@ -21,7 +24,10 @@
 {{-- section --}}
 <section class="home-program">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row d-flex flex-row-reverse justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-up">
+                <img src="../assets/4-1.jpg" alt="">
+            </div>
             <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up">
                 <h1>Program PKBM : </h1>
                 <ul class="fa-ul">
@@ -31,9 +37,6 @@
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Program Keterampilan/kursus/pelatihan</li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Program Pemberdayaan Perempuan</li>
                 </ul>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-up">
-                <img src="../assets/4-1.jpg" alt="">
             </div>
         </div>
     </div>

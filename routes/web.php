@@ -14,11 +14,32 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landing/welcome');
+    return view('landing.welcome');
 });
 Route::get('/pkbm', function () {
-    return view('pkbm/home', ['site' => 'pkbm']);
+    return view('pkbm.home', ['site' => 'pkbm']);
+});
+Route::get('/pkbm/visimisi', function () {
+    return view('pkbm.visimisi', ['site' => 'pkbm']);
+});
+Route::get('/pkbm/program', function () {
+    return view('pkbm.program', ['site' => 'pkbm']);
+});
+Route::get('/pkbm/legalitas', function () {
+    return view('pkbm.legalitas', ['site' => 'pkbm']);
+});
+Route::get('/pkbm/fasilitas', function () {
+    return view('pkbm.fasilitas', ['site' => 'pkbm']);
+});
+Route::get('/pkbm/tim', function () {
+    return view('pkbm.tim', ['site' => 'pkbm']);
+});
+Route::get('/pkbm/achievement', function () {
+    return view('pkbm.achievement', ['site' => 'pkbm']);
+});
+Route::get('/pkbm/testimoni', function () {
+    return view('pkbm.testimoni', ['site' => 'pkbm']);
 });
 Route::get('/bintang', function () {
-    return view('pt/home', ['site' => 'pt']);
+    return view('pt.home', ['site' => 'pt']);
 });

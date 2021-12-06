@@ -1,4 +1,4 @@
-@extends('layout/base-welcome')
+@extends('layout/base-landing')
 @section('content')
 {{-- jumbotron --}}
 <div class="jumbotron jumbotron-fluid">
@@ -11,7 +11,7 @@
 </div>
 {{-- endjumbotron --}}
 {{-- section --}}
-<section class="welcome-yayasan" id="welcome-pkbm">
+<section class="yayasan">
     <div class="container">
         <div class="row justify-content-center text-center" data-aos="fade-up">
             <p><em>BINTANG CEMERLANG INDONESIA</em> merupakan Yayasan yang bergerak dalam
@@ -25,7 +25,7 @@
     </div>
 </section>
 
-<section class="welcome-pkbm" id="welcome-pkbm">
+<section class="pkbm">
     <div class="container">
         <div class="row d-flex flex-row-reverse">
             <div class="col-lg-6" data-aos="fade-up">
@@ -40,7 +40,7 @@
     </div>
 </section>
 
-<section class="welcome-pt">
+<section class="pt">
     <div class="container">
         <div class="row d-flex flex-row">
             <div class="col-lg-6" data-aos="fade-up">
@@ -56,7 +56,7 @@
     </div>
 </section>
 
-<section class="welcome-sambutan">
+<section class="sambutan">
     <div class="container">
         <div class="row justify-content-center text-center" data-aos="fade-up">
             <h1>Sambutan</h1>
@@ -77,7 +77,7 @@
     </div>
 </section>
 
-<section class="welcome-culture">
+<section class="culture">
     <div class="container">
         <div class="row justify-content-center text-center" data-aos="fade-up">
             <h1>Culture</h1>
@@ -104,7 +104,7 @@
     </div>
 </section>
 
-<section class="welcome-mitra">
+<section class="mitra">
     <div class="container">
         <div class="row justify-content-center text-center" data-aos="fade-up">
             <h1>Mitra</h1>
