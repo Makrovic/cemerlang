@@ -4,14 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="author" content="Scotch">
+    <meta name="author" content="Makrovic">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         @if($site === 'pkbm')
             PKBM Cemerlang
         @else
             PT Bintang Cemerlang Jaya Sentosa
         @endif
-    </title>    
+    </title>
+    {{-- lightbox2 --}}
+    <link href="{{asset('css/lightbox.css')}}" rel="stylesheet" />
     {{-- custom css --}}
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
     @yield('customcss')
@@ -64,6 +67,7 @@
     <script src="{{ asset('plugin/js/bootstrap-datepicker.min.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{asset('js/lightbox.js')}}"></script>
     <script>
         AOS.init();
     </script>

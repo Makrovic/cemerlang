@@ -67,10 +67,10 @@ section h1 {
     content: "";
     position: absolute;
     display: block;
-    width: 64px;
+    width: 120px;
     height: 3px;
     margin-top: 4px;
-    left: calc(50% - 32px);
+    left: calc(50% - 60px);
     background: var(--primary);
 }
 
@@ -110,3 +110,41 @@ section h1 {
     background-color: var(--bg-gray);
     color: #444;
 }
+
+.list-group{
+    max-width: 500px;
+}
+
+.list-group a:hover{
+    background-color: #157ae02a;
+}
+
+.list-group a i{
+    color: var(--primary);
+}
+
+table.jadwal{
+    max-width: 900px;
+}
+
+.horizontal-scroll {
+    padding-top: 40px;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .content-scroll {
+    max-width: 30%;
+    min-width: 360px;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    flex-basis: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border:0;
+    text-align: center;
+  }

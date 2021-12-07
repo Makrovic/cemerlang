@@ -22,94 +22,41 @@
         <div class="container-fluid">
             <ul class="nav nav-tabs justify-content-center" data-aos="flip-down">
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#content1" role="button" aria-expanded="false"
-                        aria-controls="content1">Paket B (Setara SMP)</a>
+                    <a class="nav-link" href="{{ url('pkbm/program') }}">Paket B (Setara SMP)</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#content2" role="button" aria-expanded="false"
-                        aria-controls="content2">Paket C (Setar SMA)</a>
+                    <a class="nav-link" href="{{ url('pkbm/program/paketc') }}">Paket C (Setara
+                        SMA)</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Program Kuliah Kerja</a>
+                    <a class="nav-link" href="{{ url('pkbm/program/kuliahkerja') }}">Program
+                        Kuliah Kerja</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Program Keterampilan/Kursus/Pelatihan</a>
+                    <a class="nav-link" href="{{ url('pkbm/program/kursus') }}">Program
+                        Keterampilan/Kursus/Pelatihan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Program Pemberdayaan Perempuan</a>
+                    <a class="nav-link" href="{{ url('pkbm/program/perempuan') }}">Program
+                        Pemberdayaan Perempuan</a>
                 </li>
             </ul>
-            <div class="row justify-content-center align-items-center">
-                <div class="col col-md-5 collapse" id="content1">
-                    <h1 text-center>Pendidikan Kesetaraan Paket B (Setara SMP)</h1>
-                    <div id="accord-paketb" role="tablist" aria-multiselectable="true">
-                        <div class="card">
-                            <div class="card-header" role="tab" id="cara">
-                                <h5 class="mb-0">
-                                    <a href="#content-cara">
-                                        <i class="fas fa-tasks m-2"></i>
-                                        <span class="text-break">
-                                            Cara Mendaftar Pendidikan Kesetaraan Paket B
-                                        </span>
-                                    </a>
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="biaya">
-                                <h5 class="mb-0">
-                                    <a href="#content-cara">
-                                        <i class="fas fa-coins m-2"></i>
-                                        <span class="text-break">
-                                            Biaya Program Pendidikan Kesetaraan Paket B
-                                        </span>
-                                    </a>
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="jadwal">
-                                <h5 class="mb-0">
-                                    <a data-toggle="collapse" data-parent="#accord-paketb" href="#content-jadwal"
-                                        aria-expanded="true" aria-controls="content-biaya">
-                                        <i class="fas fa-calendar m-2"></i>
-                                        <span class="text-break">
-                                            Jadwal Kegiatan Pembelajaran Pendidikan Kesetaraan Paket B
-                                        </span>
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="content-jadwal" class="collapse in" role="tabpanel" aria-labelledby="jadwal">
-                                <div class="card-body">
-                                    jadwal
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="dokumentasi">
-                                <h5 class="mb-0">
-                                    <a data-toggle="collapse" data-parent="#accord-paketb" href="#content-dokumentasi"
-                                        aria-expanded="true" aria-controls="content-biaya">
-                                        <i class="fas fa-photo-video m-2"></i>
-                                        <span class="text-break">
-                                            Dokumentasi
-                                        </span>
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="content-dokumentasi" class="collapse in" role="tabpanel"
-                                aria-labelledby="dokumentasi">
-                                <div class="card-body">
-                                    foto
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse" id="content2">
-                    paket c
-                </div>
-            </div>
+            @switch($sec)
+                @case('paketc')
+                    @include('pkbm.program.paketc')
+                    @break
+                @case('kuliahkerja')
+                    @include('pkbm.program.kuliahkerja')
+                    @break
+                @case('kursus')
+                    @include('pkbm.program.kursus')
+                    @break
+                @case('pemberdayaanperempuan')
+                    @include('pkbm.program.pemberdayaanperempuan')
+                    @break
+                @default
+                @include('pkbm.program.paketb')
+            @endswitch
         </div>
     </section>
     @stop

@@ -1,0 +1,4 @@
+home - carousel testimoni (sm)
+home - transparent navbar (sm)
+landing - chevron down
+responsiveness

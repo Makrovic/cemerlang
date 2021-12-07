@@ -22,9 +22,23 @@ Route::get('/pkbm', function () {
 Route::get('/pkbm/visimisi', function () {
     return view('pkbm.visimisi', ['site' => 'pkbm']);
 });
+
 Route::get('/pkbm/program', function () {
-    return view('pkbm.program', ['site' => 'pkbm']);
+    return view('pkbm.program', ['site' => 'pkbm','sec' => 'paketb']);
 });
+Route::get('/pkbm/program/paketc', function () {
+    return view('pkbm.program', ['site' => 'pkbm','sec' => 'paketc']);
+});
+Route::get('/pkbm/program/kuliahkerja', function () {
+    return view('pkbm.program', ['site' => 'pkbm','sec' => 'kuliahkerja']);
+});
+Route::get('/pkbm/program/kursus', function () {
+    return view('pkbm.program', ['site' => 'pkbm','sec' => 'kursus']);
+});
+Route::get('/pkbm/program/perempuan', function () {
+    return view('pkbm.program', ['site' => 'pkbm','sec' => 'perempuan']);
+});
+
 Route::get('/pkbm/legalitas', function () {
     return view('pkbm.legalitas', ['site' => 'pkbm']);
 });
@@ -40,6 +54,7 @@ Route::get('/pkbm/achievement', function () {
 Route::get('/pkbm/testimoni', function () {
     return view('pkbm.testimoni', ['site' => 'pkbm']);
 });
+
 Route::get('/bintang', function () {
     return view('pt.home', ['site' => 'pt']);
 });
