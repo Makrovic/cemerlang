@@ -127,24 +127,24 @@
 
     <div class="horizontal-scroll">
         <div class="content-scroll">
-            <img class="flex-auto img-fluid" src="{{ asset('assets/carica.jpg') }}" alt="carica"
-                style="width:200px; height:200px;">
+            <a href="{{asset('images/pkbm/pktc1.jpg')}}" data-lightbox="image-1">
+            <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc1.jpg') }}"></a>
         </div>
         <div class="content-scroll">
-            <img class="flex-auto img-fluid" src="{{ asset('assets/carica.jpg') }}" alt="carica"
-                style="width:200px; height:200px;">
+            <a href="{{asset('images/pkbm/pktc2.jpg')}}" data-lightbox="image-1">
+            <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc2.jpg') }}"></a>
         </div>
         <div class="content-scroll">
-            <img class="flex-auto img-fluid" src="{{ asset('assets/carica.jpg') }}" alt="carica"
-                style="width:200px; height:200px;">
+            <a href="{{asset('images/pkbm/pktc3.jpg')}}" data-lightbox="image-1">
+            <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc3.jpg') }}"></a>
         </div>
         <div class="content-scroll">
-            <img class="flex-auto img-fluid" src="{{ asset('assets/carica.jpg') }}" alt="carica"
-                style="width:200px; height:200px;">
+            <a href="{{asset('images/pkbm/pktc4.jpg')}}" data-lightbox="image-1">
+            <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc4.jpg') }}"></a>
         </div>
         <div class="content-scroll">
-            <img class="flex-auto img-fluid" src="{{ asset('assets/carica.jpg') }}" alt="carica"
-                style="width:200px; height:200px;">
+            <a href="{{asset('images/pkbm/pktc5.jpg')}}" data-lightbox="image-1">
+            <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc5.jpg') }}"></a>
         </div>
     </div>
     </div>

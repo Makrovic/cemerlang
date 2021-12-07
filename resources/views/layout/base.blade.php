@@ -13,8 +13,10 @@
             PT Bintang Cemerlang Jaya Sentosa
         @endif
     </title>
+    {{-- swiper --}}
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     {{-- lightbox2 --}}
-    <link href="{{asset('css/lightbox.css')}}" rel="stylesheet" />
+    <link href="{{ asset('css/lightbox.css') }}" rel="stylesheet" />
     {{-- custom css --}}
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
     @yield('customcss')
@@ -32,7 +34,8 @@
 </head>
 
 <body>
-    <a href="#" onclick="topFunction()" id="btn-top" class="d-flex align-items-center justify-content-center invisible"><i class="fas fa-chevron-up"></i></a>
+    <a href="#" onclick="topFunction()" id="btn-top"
+        class="d-flex align-items-center justify-content-center invisible"><i class="fas fa-chevron-up"></i></a>
     @if($site === 'pkbm')
         {{-- header pkbm --}}
         @include('layout.header-pkbm')
@@ -67,9 +70,10 @@
     <script src="{{ asset('plugin/js/bootstrap-datepicker.min.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="{{asset('js/lightbox.js')}}"></script>
+    <script src="{{ asset('js/lightbox.js') }}"></script>
     <script>
         AOS.init();
+
     </script>
     {{-- endscript --}}
 </body>
