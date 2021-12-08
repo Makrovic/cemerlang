@@ -6,12 +6,12 @@
         <img src="assets/sty.png" alt="" srcset="" width="200px" data-aos="fade-up">
         <h1 class="display-4" data-aos="fade-up">Bintang Cemerlang Indonesia</h1>
         <h3 class="h3" data-aos="fade-up">Yayasan usaha non profit dan usaha profit</h3>
-        <a class="mt-5" href="#welcome-pkbm"><span class="fas fa-chevron-down light" data-aos="fade-up"></span></a>
+        <a class="mt-5" href="#yayasan"><span class="fas fa-chevron-down light" data-aos="fade-up"></span></a>
     </div>
 </div>
 {{-- endjumbotron --}}
 {{-- section --}}
-<section class="yayasan">
+<section class="yayasan" id="yayasan">
     <div class="container">
         <div class="row justify-content-center text-center" data-aos="fade-up">
             <p><em>BINTANG CEMERLANG INDONESIA</em> merupakan Yayasan yang bergerak dalam
@@ -34,7 +34,7 @@
             <div class="col-lg-6" data-aos="fade-up">
                 <h1>PKBM Cemerlang</h1>
                 <p>Pusat pemberdayaan masyarakat terakreditas A terbaik di Indonesia.</p>
-                <a href="pkbm" class="btn btn-welcome">lebih lanjut</a>
+                <a href="pkbm" class="btn btn-welcome ms-auto">lebih lanjut</a>
             </div>
         </div>
     </div>

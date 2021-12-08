@@ -68,9 +68,11 @@
     <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('plugin/js/bootstrap-datepicker.min.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="{{ asset('js/lightbox.js') }}"></script>
+    <script src="{{ asset('js/treant.js') }}"></script>
+    <script src="{{ asset('js/raphael.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
     <script>
         AOS.init();
 
