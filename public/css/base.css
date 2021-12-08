@@ -1,12 +1,28 @@
 :root {
     --primary: #157ae0;
-    --secondary: #fdec00;
-    --secondary-dark: #dbc417;
+    --accent: #fdec00;
+    --accent-dark: #dbc417;
     --bg-gray: #f5f5f5;
 }
 
 html {
     scroll-behavior: smooth;
+}
+body{
+    color: #444 !important;
+}
+
+.back-primary{
+    background-color: var(--primary);
+    color: #fff;
+}
+.back-gray{
+    background-color: #f5f5f5;
+    color: #444;
+}
+.back-darkgray{
+    background-color: #7e7e7e;
+    color: #fff;
 }
 
 /* navbar */
@@ -46,7 +62,7 @@ html {
 .navbar li::after {
     display: block;
     content: '';
-    border-bottom: solid 3px var(--secondary);
+    border-bottom: solid 3px var(--accent);
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
@@ -54,6 +70,7 @@ html {
 .navbar li:hover:after {
     transform: scaleX(1);
 }
+/* endnavbar */
 
 .dropdown-menu {
     margin-top: 10px !important;
@@ -64,19 +81,8 @@ html {
     padding: 16px;
 }
 
-.photos {
-    background-color: lavender;
-}
 
-.photos h1 {
-    font-size: 80px;
-    font-weight: 500;
-    margin-top: 10%;
-    margin-bottom: 50px;
-}
-
-
-/* Footer */
+/* footer */
 .footer {
     background: #060b11;
     color: #fff;
@@ -94,7 +100,7 @@ html {
 }
 
 .footer-link ul li i {
-    color: var(--secondary);
+    color: var(--accent);
 }
 
 .footer-link ul li a {
@@ -112,13 +118,14 @@ html {
     font-size: 32px;
     margin: 4px;
 }
+/* endfooter */
 
 #btn-top {
     position: fixed;
     right: 16px;
     bottom: 64px;
     z-index: 999;
-    background: var(--secondary-dark);
+    background: var(--accent-dark);
     width: 40px;
     height: 40px;
     border-radius: 50px;

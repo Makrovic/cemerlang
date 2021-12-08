@@ -133,7 +133,7 @@ section {
     height: 3px;
     margin-top: 4px;
     left: calc(50% - 32px);
-    background: var(--secondary);
+    background: var(--accent);
 }
 
 .culture ul {
@@ -147,7 +147,7 @@ section {
 }
 
 .culture i {
-    color: var(--secondary);
+    color: var(--accent);
     font-size: 16px;
 }
 
@@ -200,11 +200,11 @@ section {
     color: #444;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
-    background: var(--secondary);
+    background: var(--accent);
 }
 
 .btn-welcome:hover {
-    background: var(--secondary-dark);
+    background: var(--accent-dark);
     color: #fff;
     text-decoration: none;
 }

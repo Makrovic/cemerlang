@@ -32,3 +32,8 @@
         </div>
     </section>
     @stop
+    @section('customjs')
+    <script src="{{ asset('js/treant.js') }}"></script>
+    <script src="{{ asset('js/raphael.js') }}"></script>
+    <script src="{{ asset('js/strukturtim.js') }}"></script>
+    @stop

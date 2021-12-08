@@ -60,3 +60,6 @@
         </div>
     </section>
     @stop
+    @section('customjs')
+    <script src="{{ asset('js/lightbox.js') }}"></script>
+    @stop

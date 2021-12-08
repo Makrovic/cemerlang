@@ -18,7 +18,7 @@
     {{-- lightbox2 --}}
     <link href="{{ asset('css/lightbox.css') }}" rel="stylesheet" />
     {{-- custom css --}}
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/base.css') }}" rel="stylesheet" type="text/css">
     @yield('customcss')
     {{-- bootstrap css --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,9 +28,12 @@
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    {{-- swiper --}}
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     {{-- ChartJs --}}
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
 </head>
 
 <body>
@@ -69,14 +72,11 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('plugin/js/bootstrap-datepicker.min.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="{{ asset('js/lightbox.js') }}"></script>
-    <script src="{{ asset('js/treant.js') }}"></script>
-    <script src="{{ asset('js/raphael.js') }}"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
-    <script>
-        AOS.init();
-
-    </script>
+    <script src="{{ asset('js/scroll.js') }}"></script>
+    
+    @yield('customjs')
     {{-- endscript --}}
 </body>
 
