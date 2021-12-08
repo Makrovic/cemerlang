@@ -33,11 +33,11 @@
                         Kuliah Kerja</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('pkbm/program/kursus') }}">Program
-                        Keterampilan/Kursus/Pelatihan</a>
+                    <a class="nav-link" href="{{ url('pkbm/program/kursus') }}">Program Pelatihan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('pkbm/program/perempuan') }}">Program
+                    <a class="nav-link"
+                        href="{{ url('pkbm/program/pemberdayaanperempuan') }}">Program
                         Pemberdayaan Perempuan</a>
                 </li>
             </ul>
@@ -51,8 +51,8 @@
                 @case('kursus')
                     @include('pkbm.program.kursus')
                     @break
-                @case('pemberdayaanperempuan')
-                    @include('pkbm.program.pemberdayaanperempuan')
+                @case('perempuan')
+                    @include('pkbm.program.perempuan')
                     @break
                 @default
                 @include('pkbm.program.paketb')

@@ -35,7 +35,7 @@ Route::get('/pkbm/program/kuliahkerja', function () {
 Route::get('/pkbm/program/kursus', function () {
     return view('pkbm.program', ['site' => 'pkbm','sec' => 'kursus']);
 });
-Route::get('/pkbm/program/perempuan', function () {
+Route::get('/pkbm/program/pemberdayaanperempuan', function () {
     return view('pkbm.program', ['site' => 'pkbm','sec' => 'perempuan']);
 });
 

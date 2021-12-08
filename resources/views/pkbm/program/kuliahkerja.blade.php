@@ -1,1 +1,4 @@
-<a href="{{asset('assets/carica.jpg')}}" data-lightbox="image-1" data-title="My caption">Image #1</a>
+<h1 class="text-center">Program Kuliah Kerja</h1>
+<div class="container-md">
+    
+</div>
