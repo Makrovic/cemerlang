@@ -2,7 +2,7 @@
     <div class="footer-content">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-lg-4 col-md-6 footer-contact">
+                <div class="col-lg-4 col-md-6 footer-contact" data-aos="fade-up">
                     <h5>PKBM Cemerlang</h5>
                     <p>
                         Jl. Dieng km. 4<br>
@@ -13,7 +13,7 @@
                         <strong>Email : </strong>pkbmcemerlang@gmail.com<br>
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-6 footer-link">
+                <div class="col-lg-3 col-md-6 footer-link" data-aos="fade-up" data-aos-delay="300">
                     <h5>Link</h5>
                     <ul>
                         <li><i class="fas fa-chevron-right"></i> <a href="#">Utama</a></li>
@@ -24,7 +24,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-4 col-md-6 footer-link">
+                <div class="col-lg-4 col-md-6 footer-link" data-aos="fade-up" data-aos-delay="600">
                     <h5>Program PKBM</h5>
                     <ul>
                         <li><i class="fas fa-chevron-right"></i> Pendidikan Kesetaraan Paket B</li>

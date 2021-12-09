@@ -136,18 +136,14 @@ table.jadwal{
     overflow-x: auto;
     overflow-y: hidden;
   }
-  
-  .content-scroll {
-    max-width: 30%;
-    min-width: 360px;
-    padding: .75rem;
-    margin-bottom: 2rem;
-    flex-basis: 40%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    border:0;
-    text-align: center;
-  }
+
+  .fa-ul li {
+    margin: 12px;
+}
+
+.bullet {
+    color: var(--primary);
+}
 
   .chart { height: 600px; margin: 5px; width: 900px; }
   .Treant > .node {  }

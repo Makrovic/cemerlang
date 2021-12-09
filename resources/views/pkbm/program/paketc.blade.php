@@ -1,6 +1,6 @@
-<h1 class="text-center">Pendidikan Kesetaraan Paket C (Setara SMA)</h1>
+<h1 class="text-center" data-aos="fade-up">Pendidikan Kesetaraan Paket C (Setara SMA)</h1>
 <div class="container-md">
-    <div class="list-group mb-4">
+    <div class="list-group mb-4" data-aos="fade-up">
         <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
             <i class="fas fa-tasks m-2 align-self-center"></i>
             <div class="d-flex gap-2 w-100 justify-content-between">
@@ -23,7 +23,7 @@
         </a>
     </div>
 
-    <div class="justify-content-center align-items-center">
+    <div class="justify-content-center align-items-center" data-aos="fade-up">
     <h5>Jadwal Kegiatan Pembelajaran Pendiikan Kesetaraan Paket C</h5>
     <div class="my-3">
         <h6><b class="text-danger">Paket C</b> Kelas Reguler / Mandiri, Kelas Kolektif Desa Keseneng, Desa Dero Ngisor,
@@ -125,26 +125,28 @@
     </div>
     <h5>Dokumentasi</h5>
 
-    <div class="horizontal-scroll">
-        <div class="content-scroll">
-            <a href="{{asset('images/pkbm/pktc1.jpg')}}" data-lightbox="image-1">
-            <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc1.jpg') }}"></a>
-        </div>
-        <div class="content-scroll">
-            <a href="{{asset('images/pkbm/pktc2.jpg')}}" data-lightbox="image-1">
-            <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc2.jpg') }}"></a>
-        </div>
-        <div class="content-scroll">
-            <a href="{{asset('images/pkbm/pktc3.jpg')}}" data-lightbox="image-1">
-            <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc3.jpg') }}"></a>
-        </div>
-        <div class="content-scroll">
-            <a href="{{asset('images/pkbm/pktc4.jpg')}}" data-lightbox="image-1">
-            <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc4.jpg') }}"></a>
-        </div>
-        <div class="content-scroll">
-            <a href="{{asset('images/pkbm/pktc5.jpg')}}" data-lightbox="image-1">
-            <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc5.jpg') }}"></a>
+    <div class="horizontal-scroll swiper sw-dokumentasi">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="{{asset('images/pkbm/pktc1.jpg')}}" data-lightbox="image-1">
+                <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc1.jpg') }}"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="{{asset('images/pkbm/pktc2.jpg')}}" data-lightbox="image-1">
+                <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc2.jpg') }}"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="{{asset('images/pkbm/pktc3.jpg')}}" data-lightbox="image-1">
+                <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc3.jpg') }}"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="{{asset('images/pkbm/pktc4.jpg')}}" data-lightbox="image-1">
+                <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc4.jpg') }}"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="{{asset('images/pkbm/pktc5.jpg')}}" data-lightbox="image-1">
+                <img class="flex-auto img-fluid" src="{{ asset('images/pkbm/pktc5.jpg') }}"></a>
+            </div>
         </div>
     </div>
     </div>

@@ -50,88 +50,47 @@
         </div>
     </section>
     <section class="graysec">
-        <div class="row row-cols-3">
-            <div class="col p-2 align-items-center justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('assets/carica.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
+        <div class="container-fluid">
+            <div class="row row-cols-3">
+                <div class="col-6 col-sm-4 col-md-3">
+                    <figure class="figure">
+                        <a href="{{asset('images/carica.jpg')}}" data-lightbox="image-1">
+                        <img src="{{asset('images/carica.jpg')}}" class="figure-img img-fluid rounded"></a>
+                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                      </figure>
                 </div>
-            </div>
-            <div class="col p-2 align-items-center justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('assets/carica.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <figure class="figure">
+                        <a href="{{asset('images/carica.jpg')}}" data-lightbox="image-1">
+                        <img src="{{asset('images/carica.jpg')}}" class="figure-img img-fluid rounded"></a>
+                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                      </figure>
                 </div>
-            </div>
-            <div class="col p-2 align-items-center justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('assets/carica.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <figure class="figure">
+                        <a href="{{asset('images/carica.jpg')}}" data-lightbox="image-1">
+                        <img src="{{asset('images/carica.jpg')}}" class="figure-img img-fluid rounded"></a>
+                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                      </figure>
                 </div>
-            </div>
-            <div class="col p-2 align-items-center justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('assets/carica.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <figure class="figure">
+                        <a href="{{asset('images/carica.jpg')}}" data-lightbox="image-1">
+                        <img src="{{asset('images/carica.jpg')}}" class="figure-img img-fluid rounded"></a>
+                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                      </figure>
                 </div>
-            </div>
-            <div class="col p-2 align-items-center justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('assets/carica.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col p-2 align-items-center justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('assets/carica.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col p-2 align-items-center justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('assets/carica.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col p-2 align-items-center justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('assets/carica.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col p-2 align-items-center justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('assets/carica.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <figure class="figure">
+                        <a href="{{asset('images/carica.jpg')}}" data-lightbox="image-1">
+                        <img src="{{asset('images/carica.jpg')}}" class="figure-img img-fluid rounded"></a>
+                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                      </figure>
                 </div>
             </div>
         </div>
     </section>
+    @stop
+    @section('customjs')
+    <script src="{{ asset('js/lightbox.js') }}"></script>
     @stop

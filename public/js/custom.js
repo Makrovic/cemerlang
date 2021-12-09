@@ -10,10 +10,20 @@ window.addEventListener('load', () => {
 
 AOS.init();
 
-const swiper = new Swiper('.swiper', {
+const sw_testi = new Swiper('.sw-testi', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+    }
+  });
+
+  const sw_dokumentasi = new Swiper('.sw-dokumentasi', {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 30,
   
     pagination: {
       el: '.swiper-pagination',
