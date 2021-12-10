@@ -54,6 +54,9 @@ Route::get('/pkbm/achievement', function () {
 Route::get('/pkbm/testimoni', function () {
     return view('pkbm.testimoni', ['site' => 'pkbm']);
 });
+Route::get('/pkbm/infopendaftaran', function () {
+    return view('pkbm.infopendaftaran', ['site' => 'pkbm']);
+});
 
 Route::get('/bintang', function () {
     return view('pt.home', ['site' => 'pt']);

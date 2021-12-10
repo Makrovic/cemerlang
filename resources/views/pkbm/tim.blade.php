@@ -21,13 +21,13 @@
     {{-- endbanner --}}
     <section class="sec" data-aos="fade-up">
         <div class="container-fluid">
-            <h1 class="text-center">Struktur Tim Cemerlang</h1>
+            <h1 class="title text-center">Struktur Tim Cemerlang</h1>
             <div id="struktur-tim"> </div>
         </div>
     </section>
     <section class="sec back-gray" data-aos="fade-up">
         <div class="container-fluid">
-            <h1 class="text-center">Foto Tim</h1>
+            <h1 class="title text-center">Foto Tim</h1>
             <img src="{{asset('images/tim/tim.jpg')}}" class="img-fluid rounded mx-auto d-block w-75" alt="...">
         </div>
     </section>

@@ -1,9 +1,9 @@
 /* banner */
 #banner {
     font-family: 'Montserrat', sans-serif;
-    background-image: url("../assets/parallax-pkbm.jpg");
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 #banner::before {
@@ -14,6 +14,16 @@
     bottom: 0;
     top: 0;
     background: linear-gradient(to top, #157be0ba, #00000096);
+}
+
+.banner {
+    background-image: url("../assets/parallax-pkbm.jpg");
+    height: 32vh;
+}
+
+.pendaftaran-banner {
+    background-image: url("../images/kelas1.jpg");
+    height: 56vh;
 }
 
 .banner-title {
@@ -33,12 +43,7 @@
     color: #fff;
 }
 
-.banner {
-    position: relative;
-    height: 32vh;
-}
-
-.banner .banner-hero {
+.banner-hero {
     position: absolute;
     top: 50%;
     left: 0;
@@ -71,7 +76,7 @@
 }
 
 h1.title {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 h1.title::after {
@@ -171,4 +176,16 @@ table.jadwal {
     height: 100%;
     display: block;
     border-radius: 50%;
+}
+
+.card-b .card-header{
+    background: linear-gradient(to right, #1268be, #48a4ff);
+    color: #fff;
+    padding: 16px;
+}
+
+.card-c .card-header{
+    background: linear-gradient(to right, #dfab0e, #ffd556);
+    color: #fff;
+    padding: 16px;
 }
