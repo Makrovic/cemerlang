@@ -4,8 +4,8 @@
 @stop
     @section('content')
     {{-- banner --}}
-    <div id="banner" class="section">
-        <div class="section-center">
+    <div id="banner" class="banner">
+        <div class="banner-hero">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-5" data-aos="fade-up">
@@ -18,8 +18,8 @@
         </div>
     </div>
     {{-- endbanner --}}
-    <section class="whitesec">
-        <div class="container-fluid">
+    <section class="sec">
+        <div class="container-fluid" data-aos="fade-up">
             <h5>PKBM CEMERLANG didirikan pada 2 November 2009 dan berdiri beroperasional pada 1 Januari 2010 dengan
                 legalitas :</h5>
             <div class="row">
@@ -49,8 +49,8 @@
             </div>
         </div>
     </section>
-    <section class="graysec">
-        <div class="container-fluid">
+    <section class="sec back-gray">
+        <div class="container-fluid" data-aos="fade-up">
             <div class="row row-cols-3">
                 <div class="col-6 col-sm-4 col-md-3">
                     <figure class="figure">

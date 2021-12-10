@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row d-flex flex-row-reverse justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-left">
-                    <img class="img-fluid" src="{{asset('images/pkbm/pktb4.jpg')}}" alt="">
+                    <img class="img-fluid rounded" src="{{asset('images/pkbm/pktb4.jpg')}}" alt="">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center" data-aos="fade-up">
                     <h1>Program PKBM : </h1>
@@ -75,7 +75,7 @@
                             <p class="fst-italic">Akibat salah pergaulan saya terjebak pada lingkungan yang tidak baik, saya DO dari
                                 sekolah formal, dan melanjutkan di Paket C (setara SMA) . Saya mengucapkan terima
                                 kasih
-                                pada PKBM CEMERLANG. Benar–benar memiliki rasa tanggung jawab dalam pembinaan
+                                pada PKBM CEMERLANG. Benar benar memiliki rasa tanggung jawab dalam pembinaan
                                 peserta didiknya. Saya ditempatkan kerja di PT Tirta Investama (AQUA).
                                 Saya merekomendasikan kepada teman dan saudara, untuk belajar di PKBM CEMERLANG.
                                 Selain mendapatkan ijazah, saya dan rekan-rekan tidak menganggur lagi.</p>

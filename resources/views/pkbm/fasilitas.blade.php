@@ -4,8 +4,8 @@
 @stop
     @section('content')
     {{-- banner --}}
-    <div id="banner" class="section">
-        <div class="section-center">
+    <div id="banner" class="banner">
+        <div class="banner-hero">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-5" data-aos="fade-up">
@@ -18,8 +18,8 @@
         </div>
     </div>
     {{-- endbanner --}}
-    <section class="whitesec">
-        <div class="container-fluid">
+    <section class="sec">
+        <div class="container-fluid" data-aos="fade-up">
             <h5>Fasilitas :</h5>
             <div class="row">
                 <div class="col-md-8">
@@ -37,33 +37,33 @@
             </div>
         </div>
     </section>
-    <section class="graysec">
-        <div class="container-fluid">
+    <section class="sec back-gray">
+        <div class="container-fluid" data-aos="fade-up">
             <div class="horizontal-scroll swiper sw-dokumentasi">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="{{asset('images/fasilitas/fasilitas1.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid" src="{{ asset('images/fasilitas/fasilitas1.jpg') }}"></a>
+                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas1.jpg') }}"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="{{asset('images/fasilitas/fasilitas2.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid" src="{{ asset('images/fasilitas/fasilitas2.jpg') }}"></a>
+                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas2.jpg') }}"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="{{asset('images/fasilitas/fasilitas3.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid" src="{{ asset('images/fasilitas/fasilitas3.jpg') }}"></a>
+                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas3.jpg') }}"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="{{asset('images/fasilitas/fasilitas4.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid" src="{{ asset('images/fasilitas/fasilitas4.jpg') }}"></a>
+                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas4.jpg') }}"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="{{asset('images/fasilitas/fasilitas5.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid" src="{{ asset('images/fasilitas/fasilitas5.jpg') }}"></a>
+                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas5.jpg') }}"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="{{asset('images/fasilitas/fasilitas6.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid" src="{{ asset('images/fasilitas/fasilitas6.jpg') }}"></a>
+                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas6.jpg') }}"></a>
                     </div>
                 </div>
             </div>

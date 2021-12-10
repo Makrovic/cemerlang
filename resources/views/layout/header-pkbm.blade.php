@@ -30,11 +30,11 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('landing/about') }}">Info
+                        <a class="nav-link" href="{{ url('pkbm/infopendaftaran') }}">Info
                             Pendaftaran</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('landing/contact') }}">Observasi &
+                        <a class="nav-link" href="{{ url('pkbm/studibanding') }}">Observasi &
                             Studi Banding</a>
                     </li>
                 </ul>

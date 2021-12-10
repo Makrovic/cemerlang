@@ -4,8 +4,8 @@
 @stop
     @section('content')
     {{-- banner --}}
-    <div id="banner" class="section">
-        <div class="section-center">
+    <div id="banner" class="banner">
+        <div class="banner-hero">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-5" data-aos="fade-up">
@@ -18,8 +18,8 @@
         </div>
     </div>
     {{-- endbanner --}}
-    <section class="whitesec">
-        <div class="container-fluid">
+    <section class="sec">
+        <div class="container-fluid" data-aos="fade-up">
             <ol>
                 <li>Pengelola Terbaik dalam rangka Pengelolaan Pendidikan Kesetaraan Paket B Tingkat Nasional, tahun
                     2012</li>

@@ -1,5 +1,5 @@
-<h1 class="text-center">Program Keterampilan/Kursus/Pelatihan</h1>
-<div class="container-md">
+<h1 class="title text-center" data-aos="fade-up">Program Keterampilan/Kursus/Pelatihan</h1>
+<div class="container-md" data-aos="fade-up">
     <ol>
         <li>Stir Mobil - Mengemudi (SIM A & C)</li>
         <li>Bahasa Asing</li>

@@ -1,15 +1,15 @@
-<h1 class="text-center">Program Kuliah Kerja</h1>
-<div class="container">
+<h1 class="title text-center" data-aos="fade-up">Program Kuliah Kerja</h1>
+<div class="container" data-aos="fade-up">
     <h5>Universitas yang bekerjasama : </h5>
     <div class="row justify-content-center">
         <div class="col-md-4 py-2">
-            <img class="img-fluid" src="{{asset('images/pkbm/stikesserulingmas.jpg')}}">
+            <img class="img-fluid rounded" src="{{asset('images/pkbm/stikesserulingmas.jpg')}}">
         </div>
         <div class="col-md-4 py-2">
-            <img class="img-fluid" src="{{asset('images/pkbm/stiesemarang.jpg')}}">
+            <img class="img-fluid rounded" src="{{asset('images/pkbm/stiesemarang.jpg')}}">
         </div>
         <div class="col-md-4 py-2">
-            <img class="img-fluid" src="{{asset('images/pkbm/unw.jpg')}}">
+            <img class="img-fluid rounded" src="{{asset('images/pkbm/unw.jpg')}}">
         </div>
     </div>
     <p>
