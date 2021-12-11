@@ -20,6 +20,7 @@
     {{-- endbanner --}}
     <section class="sec">
         <div class="container-fluid" data-aos="fade-up">
+            <h5>Berikut :</h5>
             <ol>
                 <li>Pengelola Terbaik dalam rangka Pengelolaan Pendidikan Kesetaraan Paket B Tingkat Nasional, tahun
                     2012</li>
@@ -73,4 +74,21 @@
             </ol>
         </div>
     </section>
+    <section class="sec back-gray">
+        <div class="container-fluid" data-aos="fade-up">
+            <div class="horizontal-scroll swiper sw-dokumentasi">
+                <div class="swiper-wrapper">
+                    @for ($i = 1; $i <= 5; $i++)
+                    <div class="swiper-slide">
+                        <a href="{{asset('images/pkbm/ach'.$i.'.jpg')}}" data-lightbox="image-1">
+                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/ach'.$i.'.jpg') }}"></a>
+                    </div>
+                    @endfor
+                </div>
+            </div>
+        </div>
+    </section>
+    @stop
+    @section('customjs')
+    <script src="{{ asset('js/lightbox.js') }}"></script>
     @stop

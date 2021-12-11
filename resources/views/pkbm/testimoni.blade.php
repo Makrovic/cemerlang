@@ -20,8 +20,8 @@
     {{-- endbanner --}}
     <section class="sec">
         <div class="container">
-            <h1 class="title text-center">Testimoni</h1>
-                <div class="card border-dark mb-3">
+            <h1 class="title text-center" data-aos="fade-up">Testimoni</h1>
+                <div class="card border-dark mb-3" data-aos="fade-up">
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="col-auto">
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card border-dark mb-3">
+                <div class="card border-dark mb-3" data-aos="fade-up">
                     <div class="card-body">
                         <div class="row d-flex flex-row-reverse justify-content-center">
                             <div class="col-auto">
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card border-dark mb-3">
+                <div class="card border-dark mb-3" data-aos="fade-up">
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="col-auto">
@@ -89,8 +89,8 @@
                         </div>
                     </div>
                 </div>
-            <h1 class="title text-center">Success Story</h1>
-            <div class="row">
+            <h1 class="title text-center" data-aos="fade-up">Success Story</h1>
+            <div class="row" data-aos="fade-up">
                 <div class="col-lg-4 col-md-12">
                     <div class="card border-dark mb-3">
                         <div class="card-body">

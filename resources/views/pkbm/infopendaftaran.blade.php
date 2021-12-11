@@ -135,7 +135,7 @@
             </p>
         </div>
     </section>
-    <section class="sec">
+    <section class="sec back-gray">
         <div class="container">
             <h1 class="title text-center">Proses Pembelajaran Paket B & Paket C</h1>
             <h5>Bagaimana proses pembelajarannya?</h5>
@@ -146,7 +146,7 @@
         </p>
         </div>
     </section>
-    <section class="sec back-gray" id="pendaftaran-biaya">
+    <section class="sec" id="pendaftaran-biaya">
         <div class="container-fluid">
             <h1 class="title text-center" data-aos="fade-up">Biaya Program Pendidikan Kesetaraan</h1>
             <div class="row">
@@ -164,6 +164,7 @@
                                 <b>Rp.1.500.000,-</b>
                                 per tahun yang dapat dibayarkan secara bertahap atau diangsur setiap bulannya sejumlah
                                 <b>Rp. 125.000,-</b> per bulan.</p>
+                                <div class="table-responsive">
                             <table class="table table-bordered align-middle text-center">
                                 <thead class="table-primary align-middle">
                                     <tr>
@@ -183,6 +184,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
                             <h5 class="card-title">Biaya Pendidikan Kesetaraan Paket B Reguler/Mandiri : </h5>
                             <p>Biaya Pendidikan untuk paket B Kolekstif dari Desa / Kelurahan yaitu sebesar <b>Rp.
                                     3.000.000,-</b> per tahun, dimana Operasional Penyelenggaraannya dibantu oleh
@@ -280,6 +282,7 @@
                                 <b>Rp.1.800.000,-</b>
                                 per tahun yang dapat dibayarkan secara bertahap atau diangsur setiap bulannya sejumlah
                                 <b>Rp. 150.000,-</b> per bulan.</p>
+                                <div class="table-responsive">
                             <table class="table table-bordered align-middle text-center">
                                 <thead class="table-warning align-middle">
                                     <tr>
@@ -299,6 +302,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
                             <h5 class="card-title">Biaya Pendidikan Kesetaraan Paket C Reguler/Mandiri : </h5>
                             <p>Biaya Pendidikan untuk Paket C Kolekstif dari Desa / Kelurahan yaitu sebesar <b>Rp.
                                     3.600.000,-</b> per tahun, dimana Operasional Penyelenggaraannya dibantu oleh
@@ -310,6 +314,7 @@
                                 (ADD) sebesar <b>Rp. 1.000.000,-</b> per tahun.</p>
                             <p class="fw-bold text-danger">Peserta Didik Gratis, tidak membayar biaya apapun, karena
                                 telah dibayarkan dari Pemerintah Desa / Kelurahan.</p>
+                                <div class="table-responsive">
                             <table class="table table-bordered align-middle text-center">
                                 <thead class="table-warning align-middle">
                                     <tr>
@@ -347,6 +352,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
                             <p class="text-warning fw-bold">Apakah ada biaya lain selain biaya tersebut?</p>
                             <p>Jawaban : <b>Tidak Ada</b><br>
                                 <div class="row">

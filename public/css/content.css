@@ -85,7 +85,7 @@ h1.title::after {
     display: block;
     width: 120px;
     height: 3px;
-    margin-top: 4px;
+    margin-top: 8px;
     left: calc(50% - 60px);
     background: var(--primary);
 }

@@ -132,6 +132,7 @@ body{
     transition: all 0.4s;
     text-decoration: none;
     color: #fff;
+    display: block;
   }
 
 .invisible{
@@ -144,4 +145,10 @@ body{
   
   #btn-top:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  @media (min-width: 767.98px) {
+      #btn-top{
+          display: none;
+      }
   }
