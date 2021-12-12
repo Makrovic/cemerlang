@@ -75,11 +75,11 @@
     padding: 16px;
 }
 
-h1.title {
+.title {
     margin-bottom: 32px;
 }
 
-h1.title::after {
+.title::after {
     content: "";
     position: absolute;
     display: block;

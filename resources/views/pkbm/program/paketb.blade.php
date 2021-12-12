@@ -24,130 +24,119 @@
     </div>
 
     <div class="justify-content-center align-items-center" data-aos="fade-up">
-    <h5>Jadwal Kegiatan Pembelajaran Pendiikan Kesetaraan Paket B</h5>
-    <div class="my-3">
-        <h6><b class="text-danger">Paket B</b> Kelas Reguler / Mandiri, Kelas Kolektif Desa Keseneng, Desa Dero Ngisor,
-            dan Desa Sukorejo</h6>
-        <table class="table jadwal table-bordered table-sm border-dark">
-            <thead style="background-color: #99ffff">
-                <tr>
-                    <td>Hari</td>
-                    <td>Pukul</td>
-                    <td>Lokasi</td>
-                    <td>Materi</td>
-                    <td>Keterangan</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Senin</td>
-                    <td>13.00 - 16.00 WIB</td>
-                    <td>PKBM Cemerlang</td>
-                    <td>Akademik</td>
-                    <td>Offline (tatap muka)</td>
-                </tr>
-                <tr>
-                    <td>Selasa</td>
-                    <td>13.00 - 16.00 WIB</td>
-                    <td>PKBM Cemerlang</td>
-                    <td>SWBB, Penjasorkes, Keterampilan</td>
-                    <td>Offline (tatap muka)</td>
-                </tr>
-                <tr>
-                    <td>Jumat</td>
-                    <td>09.00 - 11.00 WIB</td>
-                    <td>Kediaman/Lokasi/Rumah masing-masing</td>
-                    <td>Akademik</td>
-                    <td>Online (setara daring)</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="my-3">
-        <h6><b class="text-danger">Paket B</b> Khusus Kelas Tahfidz Al-Quran</h6>
-        <table class="table jadwal table-bordered table-sm border-dark">
-            <thead style="background-color: #fffd99">
-                <tr>
-                    <td>Hari</td>
-                    <td>Pukul</td>
-                    <td>Lokasi</td>
-                    <td>Materi</td>
-                    <td>Keterangan</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jumat</td>
-                    <td>09.00 - 11.00 WIB</td>
-                    <td>Kediaman/Lokasi/Rumah masing-masing</td>
-                    <td>Akademik</td>
-                    <td>Online (setara daring)</td>
-                </tr>
-                <tr>
-                    <td>Sabtu</td>
-                    <td>13.00 - 16.00 WIB</td>
-                    <td>Rumah Tahfidz Ar-Rabwah Kejajar</td>
-                    <td>Akademik</td>
-                    <td>Offline (tatap muka)</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="my-3">
-        <h6><b class="text-danger">Paket B</b> Khusus Kelas Tahfidz Al-Quran</h6>
-        <table class="table jadwal table-bordered table-sm border-dark">
-            <thead style="background-color: #ffb199">
-                <tr>
-                    <td>Hari</td>
-                    <td>Pukul</td>
-                    <td>Lokasi</td>
-                    <td>Materi</td>
-                    <td>Keterangan</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jumat</td>
-                    <td>09.00 - 11.00 WIB</td>
-                    <td>Kediaman/Lokasi/Rumah masing-masing</td>
-                    <td>Akademik</td>
-                    <td>Online (setara daring)</td>
-                </tr>
-                <tr>
-                    <td>Sabtu</td>
-                    <td>13.00 - 16.00 WIB</td>
-                    <td>Aula Desa Krasak Kec. Selomerto</td>
-                    <td>Akademik</td>
-                    <td>Offline (tatap muka)</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <h5>Dokumentasi</h5>
-
-    <div class="horizontal-scroll swiper sw-dokumentasi" data-aos="fade-up">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="{{asset('images/pkbm/pktb1.jpg')}}" data-lightbox="image-1">
-                <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/pktb1.jpg') }}"></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="{{asset('images/pkbm/pktb2.jpg')}}" data-lightbox="image-1">
-                <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/pktb2.jpg') }}"></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="{{asset('images/pkbm/pktb3.jpg')}}" data-lightbox="image-1">
-                <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/pktb3.jpg') }}"></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="{{asset('images/pkbm/pktb4.jpg')}}" data-lightbox="image-1">
-                <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/pktb4.jpg') }}"></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="{{asset('images/pkbm/pktb5.jpg')}}" data-lightbox="image-1">
-                <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/pktb5.jpg') }}"></a>
+        <h5>Jadwal Kegiatan Pembelajaran Pendiikan Kesetaraan Paket B</h5>
+        <div class="my-3">
+            <h6><b class="text-danger">Paket B</b> Kelas Reguler / Mandiri, Kelas Kolektif Desa Keseneng, Desa Dero
+                Ngisor,
+                dan Desa Sukorejo</h6>
+            <table class="table jadwal table-bordered table-sm border-dark">
+                <thead style="background-color: #99ffff">
+                    <tr>
+                        <td>Hari</td>
+                        <td>Pukul</td>
+                        <td>Lokasi</td>
+                        <td>Materi</td>
+                        <td>Keterangan</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Senin</td>
+                        <td>13.00 - 16.00 WIB</td>
+                        <td>PKBM Cemerlang</td>
+                        <td>Akademik</td>
+                        <td>Offline (tatap muka)</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa</td>
+                        <td>13.00 - 16.00 WIB</td>
+                        <td>PKBM Cemerlang</td>
+                        <td>SWBB, Penjasorkes, Keterampilan</td>
+                        <td>Offline (tatap muka)</td>
+                    </tr>
+                    <tr>
+                        <td>Jumat</td>
+                        <td>09.00 - 11.00 WIB</td>
+                        <td>Kediaman/Lokasi/Rumah masing-masing</td>
+                        <td>Akademik</td>
+                        <td>Online (setara daring)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="my-3">
+            <h6><b class="text-danger">Paket B</b> Khusus Kelas Tahfidz Al-Quran</h6>
+            <table class="table jadwal table-bordered table-sm border-dark">
+                <thead style="background-color: #fffd99">
+                    <tr>
+                        <td>Hari</td>
+                        <td>Pukul</td>
+                        <td>Lokasi</td>
+                        <td>Materi</td>
+                        <td>Keterangan</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jumat</td>
+                        <td>09.00 - 11.00 WIB</td>
+                        <td>Kediaman/Lokasi/Rumah masing-masing</td>
+                        <td>Akademik</td>
+                        <td>Online (setara daring)</td>
+                    </tr>
+                    <tr>
+                        <td>Sabtu</td>
+                        <td>13.00 - 16.00 WIB</td>
+                        <td>Rumah Tahfidz Ar-Rabwah Kejajar</td>
+                        <td>Akademik</td>
+                        <td>Offline (tatap muka)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="my-3">
+            <h6><b class="text-danger">Paket B</b> Khusus Kelas Tahfidz Al-Quran</h6>
+            <table class="table jadwal table-bordered table-sm border-dark">
+                <thead style="background-color: #ffb199">
+                    <tr>
+                        <td>Hari</td>
+                        <td>Pukul</td>
+                        <td>Lokasi</td>
+                        <td>Materi</td>
+                        <td>Keterangan</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jumat</td>
+                        <td>09.00 - 11.00 WIB</td>
+                        <td>Kediaman/Lokasi/Rumah masing-masing</td>
+                        <td>Akademik</td>
+                        <td>Online (setara daring)</td>
+                    </tr>
+                    <tr>
+                        <td>Sabtu</td>
+                        <td>13.00 - 16.00 WIB</td>
+                        <td>Aula Desa Krasak Kec. Selomerto</td>
+                        <td>Akademik</td>
+                        <td>Offline (tatap muka)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h5>Dokumentasi</h5>
+        <div class="horizontal-scroll swiper sw-dokumentasi" data-aos="fade-up">
+            <div class="swiper-wrapper">
+                @for($i = 1; $i <= 5; $i++)
+                    <div class="swiper-slide">
+                        <a href="{{ asset('images/pkbm/pembelajaran/pktb'.$i.'.jpg') }}"
+                            data-lightbox="image-1">
+                            <img class="flex-auto img-fluid rounded"
+                                src="{{ asset('images/pkbm/pembelajaran/pktb'.$i.'.jpg') }}"></a>
+                    </div>
+                @endfor
             </div>
         </div>
-    </div>
     </div>
 </div>

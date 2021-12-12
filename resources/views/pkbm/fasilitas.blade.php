@@ -41,30 +41,12 @@
         <div class="container-fluid" data-aos="fade-up">
             <div class="horizontal-scroll swiper sw-dokumentasi">
                 <div class="swiper-wrapper">
+                    @for ($i = 1; $i <= 6; $i++)
                     <div class="swiper-slide">
-                        <a href="{{asset('images/fasilitas/fasilitas1.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas1.jpg') }}"></a>
+                        <a href="{{asset('images/pkbm/fasilitas/fasilitas'.$i.'.jpg')}}" data-lightbox="image-1">
+                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/fasilitas/fasilitas'.$i.'.jpg') }}"></a>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="{{asset('images/fasilitas/fasilitas2.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas2.jpg') }}"></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="{{asset('images/fasilitas/fasilitas3.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas3.jpg') }}"></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="{{asset('images/fasilitas/fasilitas4.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas4.jpg') }}"></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="{{asset('images/fasilitas/fasilitas5.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas5.jpg') }}"></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="{{asset('images/fasilitas/fasilitas6.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/fasilitas/fasilitas6.jpg') }}"></a>
-                    </div>
+                    @endfor
                 </div>
             </div>
         </div>

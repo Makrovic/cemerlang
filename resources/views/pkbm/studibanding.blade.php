@@ -20,7 +20,7 @@
     {{-- endbanner --}}
     <section class="sec">
         <div class="container-fluid">
-            <h1 class="title text-center">Observasi 1</h1>
+            <h3 class="title text-center">Observasi 1</h3>
             <div class="row">
                 @for ($i = 1; $i <= 3; $i++)
                 <div class="col-12 col-lg-4 col-sm-12">

@@ -13,7 +13,7 @@ ceo = {
         name: "Anna Wardiyati",
         title: "Founder - ceo",
     },
-    image: "../images/tim/bu_anna.jpg"
+    image: "../images/pkbm/tim/bu_anna.jpg"
 },
 
 leader_kelembagaan = {
@@ -23,7 +23,7 @@ leader_kelembagaan = {
         name: "Sovi Zakiyatul Fakhiroh",
         title: "Leader Tim Kelembagaan",
     },
-    image: "../images/tim/sovi.jpg"
+    image: "../images/pkbm/tim/sovi.jpg"
 },
 leader_kependidikan = {
     parent: ceo,
@@ -32,7 +32,7 @@ leader_kependidikan = {
         name: "Meythria Chairun Nissa",
         title: "Leader Tim Kependidikan",
     },
-    image: "../images/tim/tia.jpg"
+    image: "../images/pkbm/tim/tia.jpg"
 },
 leader_kewirausahaan = {
     parent: ceo,
@@ -41,7 +41,7 @@ leader_kewirausahaan = {
         name: "Marfungatun",
         title: "Leader Tim Kewirausahaan",
     },
-    image: "../images/tim/marfungatun.jpg"
+    image: "../images/pkbm/tim/marfungatun.jpg"
 },
 admin_akademik = {
     parent: leader_kelembagaan,
@@ -49,7 +49,7 @@ admin_akademik = {
         name: "Resi Mayasari",
         title: "Admin Akademik"
     },
-    image: "../images/tim/resi.jpg"
+    image: "../images/pkbm/tim/resi.jpg"
 },
 customer_service = {
     parent: leader_kelembagaan,
@@ -57,7 +57,7 @@ customer_service = {
         name: "Ayun Brilian Sharizki Futri",
         title: "Chief Innovation Officer",
     },
-    image: "../images/tim/ayun.jpg"
+    image: "../images/pkbm/tim/ayun.jpg"
 },
 tim_it = {
     parent: leader_kelembagaan,
@@ -65,7 +65,7 @@ tim_it = {
         name: "Setya Aji Baskara",
         title: "Tim IT & Creative"
     },
-    image: "../images/tim/aji.jpg"
+    image: "../images/pkbm/tim/aji.jpg"
 },
 wali_kelas1 = {
     parent: leader_kependidikan,
@@ -73,7 +73,7 @@ wali_kelas1 = {
         name: "Firman Mohamad Rizky",
         title: "Wali Kelas"
     },
-    image: "../images/tim/firman.jpg"
+    image: "../images/pkbm/tim/firman.jpg"
 },
 wali_kelas2 = {
     parent: leader_kependidikan,
@@ -81,7 +81,7 @@ wali_kelas2 = {
         name: "Wahyuning Tiyas",
         title: "Wali Kelas"
     },
-    image: "../images/tim/tiyas.jpg"
+    image: "../images/pkbm/tim/tiyas.jpg"
 },
 tim_produksi = {
     parent: leader_kewirausahaan,

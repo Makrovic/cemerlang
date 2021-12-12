@@ -80,8 +80,8 @@
                 <div class="swiper-wrapper">
                     @for ($i = 1; $i <= 5; $i++)
                     <div class="swiper-slide">
-                        <a href="{{asset('images/pkbm/ach'.$i.'.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/ach'.$i.'.jpg') }}"></a>
+                        <a href="{{asset('images/pkbm/achievement/ach'.$i.'.jpg')}}" data-lightbox="image-1">
+                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/achievement/ach'.$i.'.jpg') }}"></a>
                     </div>
                     @endfor
                 </div>
