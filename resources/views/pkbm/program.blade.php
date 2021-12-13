@@ -33,7 +33,7 @@
                         Kuliah Kerja</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('pkbm/program/kursus') }}">Program Pelatihan</a>
+                    <a class="nav-link" href="{{ url('pkbm/program/kursus') }}">Program Keterampilan</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"

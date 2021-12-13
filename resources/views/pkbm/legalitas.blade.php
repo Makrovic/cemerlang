@@ -52,15 +52,15 @@
     <section class="sec back-gray">
         <div class="container-fluid" data-aos="fade-up">
             <div class="row row-cols-3">
-                @for ($i = 1; $i <=  10; $i++)
-                <div class="col-6 col-sm-4 col-md-3">
+                @foreach ($legalitas as $legal)
+                <div class="col-6 col-sm-4 col-md-2">
                     <figure class="figure">
-                        <a href="{{asset('images/pkbm/legalitas/legalitas'.$i.'.jpg')}}" data-lightbox="image-1">
-                        <img src="{{asset('images/pkbm/legalitas/legalitas'.$i.'.jpg')}}" class="figure-img img-fluid rounded"></a>
-                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                        <a href="{{asset('images/pkbm/legalitas/'.$legal->foto.'.jpg')}}" data-lightbox="image-1">
+                        <img src="{{asset('images/pkbm/legalitas/'.$legal->foto.'.jpg')}}" class="figure-img img-fluid rounded" style="max-height: 155px"></a>
+                        <figcaption class="figure-caption">{{$legal->keterangan}}.</figcaption>
                       </figure>
                 </div>
-                @endfor
+                @endforeach
             </div>
         </div>
     </section>

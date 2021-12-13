@@ -20,15 +20,23 @@
     {{-- endbanner --}}
     <section class="sec">
         <div class="container-fluid">
-            <h3 class="title text-center">Observasi 1</h3>
+            @for ($i = 1; $i <= 6; $i++)
+            <h3 class="title text-center">Observasi</h3>
+            <div class="row">
+                @for ($j = 1; $j <= 3; $j++)
+                <div class="col-12 col-lg-4 col-sm-12">
+                        <a href="{{asset('images/pkbm/studibanding/observasi'.$i.'_'.$j.'.jpg')}}" data-lightbox="image-1">
+                        <img src="{{asset('images/pkbm/studibanding/observasi'.$i.'_'.$j.'.jpg')}}" class="figure-img img-fluid rounded"></a>
+                </div>
+                @endfor
+            </div>
+            @endfor
+            <h3 class="title text-center">Studibanding</h3>
             <div class="row">
                 @for ($i = 1; $i <= 3; $i++)
                 <div class="col-12 col-lg-4 col-sm-12">
-                    <figure class="figure">
-                        <a href="{{asset('images/carica.jpg')}}" data-lightbox="image-1">
-                        <img src="{{asset('images/carica.jpg')}}" class="figure-img img-fluid rounded"></a>
-                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                      </figure>
+                        <a href="{{asset('images/pkbm/studibanding/studibanding'.$i.'.jpg')}}" data-lightbox="image-1">
+                        <img src="{{asset('images/pkbm/studibanding/studibanding'.$i.'.jpg')}}" class="figure-img img-fluid rounded"></a>
                 </div>
                 @endfor
             </div>

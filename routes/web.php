@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PkbmController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,9 +40,7 @@ Route::get('/pkbm/program/pemberdayaanperempuan', function () {
     return view('pkbm.program', ['site' => 'pkbm','sec' => 'perempuan']);
 });
 
-Route::get('/pkbm/legalitas', function () {
-    return view('pkbm.legalitas', ['site' => 'pkbm']);
-});
+Route::get('/pkbm/legalitas', [PkbmController::class, 'legalitas'])->name('pkbm.legalitas');
 Route::get('/pkbm/fasilitas', function () {
     return view('pkbm.fasilitas', ['site' => 'pkbm']);
 });
@@ -51,9 +50,7 @@ Route::get('/pkbm/tim', function () {
 Route::get('/pkbm/achievement', function () {
     return view('pkbm.achievement', ['site' => 'pkbm']);
 });
-Route::get('/pkbm/testimoni', function () {
-    return view('pkbm.testimoni', ['site' => 'pkbm']);
-});
+Route::get('/pkbm/testimoni', [PkbmController::class, 'testimoni'])->name('pkbm.testimoni');
 Route::get('/pkbm/infopendaftaran', function () {
     return view('pkbm.infopendaftaran', ['site' => 'pkbm']);
 });

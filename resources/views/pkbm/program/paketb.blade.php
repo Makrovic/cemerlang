@@ -1,7 +1,7 @@
 <h1 class="title text-center" data-aos="fade-up">Pendidikan Kesetaraan Paket B (Setara SMP)</h1>
 <div class="container-md">
     <div class="list-group mb-4" data-aos="fade-up">
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <a href="{{url('pkbm/infopendaftaran#pendaftaran-cara')}}" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
             <i class="fas fa-tasks m-2 align-self-center"></i>
             <div class="d-flex gap-2 w-100 justify-content-between">
                 <div>
@@ -11,7 +11,7 @@
                 </div>
             </div>
         </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <a href="{{url('pkbm/infopendaftaran#pendaftaran-biaya')}}" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
             <i class="fas fa-coins m-2 align-self-center"></i>
             <div class="d-flex gap-2 w-100 justify-content-between">
                 <div>
