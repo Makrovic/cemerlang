@@ -1,0 +1,98 @@
+/* banner */
+#banner {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../assets/bg-pkbm.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#banner::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(to top, #157be0ba, #00000096);
+}
+
+.banner-title {
+    margin-top: 45px;
+}
+
+.banner-title h1 {
+    font-size: 52px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+}
+
+.banner-title p {
+    font-size: 22px;
+    color: #fff;
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+}
+
+.banner .banner-hero {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* endbanner */
+
+/* section */
+.sec{
+    padding: 50px;
+}
+
+.fa-ul li {
+    margin: 12px;
+}
+
+.bullet {
+    color: var(--accent);
+}
+
+canvas{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/* testi carousel */
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+.img-box {
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.parallax {
+    background-image: linear-gradient(to top, #000000ba, #157be0bb), url(../assets/bg-pkbm.jpg);
+    height: 100%;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
