@@ -1,6 +1,6 @@
 /* banner */
 .jumbotron {
-    background-image: url(../assets/bg-yayasan.jpg);
+    background-image: url(../images/banner-yayasan.jpg);
     background-size: cover;
     height: 108vh;
     min-height: 500px;

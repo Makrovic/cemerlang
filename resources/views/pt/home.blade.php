@@ -22,7 +22,7 @@
     {{-- endbanner --}}
 
     {{-- section --}}
-    <section class="sec back-primary">
+    <section class="sec back-primaryc">
         <div class="container">
             <div class="row d-flex flex-row-reverse justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-left">

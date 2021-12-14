@@ -17,12 +17,12 @@
 }
 
 .banner {
-    background-image: url("../assets/parallax-pkbm.jpg");
+    background-image: url("../images/pkbm/banner2.jpg");
     height: 32vh;
 }
 
 .pendaftaran-banner {
-    background-image: url("../images/pkbm/bg1.jpg");
+    background-image: url("../images/pkbm/banner3.jpg");
     height: 56vh;
 }
 

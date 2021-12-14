@@ -1,7 +1,7 @@
 /* banner */
 #banner {
     font-family: 'Montserrat', sans-serif;
-    background-image: url("../assets/bg-pkbm.jpg");
+    background-image: url("../images/pkbm/banner1.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -13,7 +13,7 @@
     right: 0;
     bottom: 0;
     top: 0;
-    background: linear-gradient(to top, #157be0ba, #00000096);
+    background: linear-gradient(to top, #59e015ba, #00000096);
 }
 
 .banner-title {
@@ -88,7 +88,7 @@ canvas{
 }
 
 .parallax {
-    background-image: linear-gradient(to top, #000000ba, #157be0bb), url(../assets/bg-pkbm.jpg);
+    background-image: linear-gradient(to top, #000000ba, #157be0bb), url(../images/pkbm/banner1.jpg);
     height: 100%;
     text-align: center;
     background-attachment: fixed;

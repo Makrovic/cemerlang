@@ -2,7 +2,7 @@
     <div id="navheader" class="container-fluid navheader-transparent">
         <nav class="navbar navbar-dark navbar-expand-lg">
             <a class="navbar-brand" href="{{ url('/pkbm') }}">
-                <img src="{{ asset('assets/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
+                <img src="{{ asset('images/pkbm/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

@@ -3,7 +3,7 @@
 {{-- jumbotron --}}
 <div class="jumbotron jumbotron-fluid">
     <div class="container d-flex flex-column align-items-center">
-        <img src="assets/sty.png" alt="" srcset="" width="200px" data-aos="fade-up">
+        <img src="{{asset('images/sty.png')}}" alt="" srcset="" width="200px" data-aos="fade-up">
         <h1 class="display-4" data-aos="fade-up">Bintang Cemerlang Indonesia</h1>
         <h3 class="h3" data-aos="fade-up">Yayasan usaha non profit dan usaha profit</h3>
         <a class="mt-5" href="#yayasan"><span class="fas fa-chevron-down light" data-aos="fade-up"></span></a>
@@ -29,7 +29,7 @@
     <div class="container">
         <div class="row d-flex flex-row-reverse">
             <div class="col-lg-6" data-aos="fade-up">
-                <img src="assets/img/gambar.jpg" width="700px" height="300px" class="img-fluid" alt="">
+            <img src="{{asset('images/pkbm/pembelajaran/pktb1.jpg')}}" width="700px" height="300px" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6" data-aos="fade-up">
                 <h1>PKBM Cemerlang</h1>
@@ -44,7 +44,7 @@
     <div class="container">
         <div class="row d-flex flex-row">
             <div class="col-lg-6" data-aos="fade-up">
-                <img src="assets/img/gambar.jpg" width="700px" height="300px" class="img-fluid" alt="">
+                <img src="{{asset('images/pkbm/pembelajaran/pktb1.jpg')}}" width="700px" height="300px" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6" data-aos="fade-up">
                 <h1>PT Bintang Cemerlang Jaya Sentosa</h1>
@@ -62,7 +62,7 @@
             <h1>Sambutan</h1>
         </div>
         <div class="img-box" data-aos="fade-up">
-            <img src="assets/img/gambar.jpg" class="d-block w-200" alt="...">
+            <img src="{{asset('images/pkbm/tim/bu_anna.jpg')}}" class="d-block w-200" alt="...">
         </div>
         <div class="row">
             <blockquote class="blockquote text-center" data-aos="fade-up">
@@ -110,7 +110,7 @@
             <h1>Mitra</h1>
         </div>
         <div class="row justify-content-center mt-3" data-aos="fade-up">
-            <img src="assets/mitra.jpg">
+            <img src="{{asset('images/mitra.png')}}">
         </div>
     </div>
 </section>

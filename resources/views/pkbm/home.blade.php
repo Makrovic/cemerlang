@@ -82,30 +82,6 @@
                             <p class="fw-bold">Adin - Lulusan Paket C PKBM CEMERLANG</p>
                         </div>
                       </div>
-                      <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="../assets/testimoni/testi-mardiati.jpeg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="text-center">
-                            <p class="fst-italic">Tidak menyangka mengikuti pembelajaran di PKBM CEMERLANG begitu menyenangkan.
-                                Tutor sangat peduli pada kami, adanya layanan konseling , dharma wisata,
-                                dan di luar jam akademik kesetaraan kami dibimbing keterampilan untuk bekal kerja
-                                atau berwirausaha.PKBM CEMERLANG benar-benar mengerti apa yang kami butuhkan.</p>
-                            <p class="fw-bold">Mardiati - Lulusan Paket B PKBM CEMERLANG</p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="../assets/testimoni/testi-afifah.jpeg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="text-center">
-                            <p class="fst-italic">Setelah mengikuti keterampilan di PKBM CEMERLANG saya dibina untuk berwirausaha.
-                                Alhamdulilah usaha sukses, saya membuka 2 toko pusat oleh-oleh
-                                di Jl. Raya Kertek - Wonosobo.
-                                Terimakasih PKBM CEMERLANG</p>
-                            <p class="fw-bold">Afifah - Lulusan Keterampilan PKBM CEMERLANG</p>
-                        </div>
-                      </div>
                     </div>
                     <div class="swiper-pagination"></div>
                   </div>
