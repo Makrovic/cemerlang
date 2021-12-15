@@ -17,8 +17,16 @@
                         <a class="nav-link" href="{{ url('/') }}">Unit Pendidikan<span
                                 class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('landing/rooms') }}">Bisnis</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Bisnis
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="{{ url('bintang/carica') }}">Carica Cemerlang</a></li>
+                            <li><a class="dropdown-item" href="{{ url('bintang/snack') }}">Bintang Cemerlang Snack</a></li>
+                            <li><a class="dropdown-item" href="{{ url('bintang/craft') }}">Claster Craft Cemerlang</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('landing/contact') }}">Belanja</a>

@@ -110,9 +110,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center"
                     data-aos="fade-up">
                     <h1>Carica Cemerlang</h1>
-                    <p>PKMB Cermerlang memberikan pendidikan kesetaraan paket b dan c,
-                        juga program keterampilan dan kursus yang mampu mengasah
-                        skill, mental, karakter, dan attitude sehingga membentuk lulusan siap kerja.</p>
+                    <p>Industri Minuman Buah Carica</p>
                 </div>
             </div>
         </div>
@@ -127,9 +125,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center"
                     data-aos="fade-up">
                     <h1>Bintang Cemerlang Snack</h1>
-                    <p>PKMB Cermerlang memberikan pendidikan kesetaraan paket b dan c,
-                        juga program keterampilan dan kursus yang mampu mengasah
-                        skill, mental, karakter, dan attitude sehingga membentuk lulusan siap kerja.</p>
+                    <p>Industri Makanan Berbahan Potensi Lokal</p>
                 </div>
             </div>
         </div>
@@ -144,11 +140,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center"
                     data-aos="fade-up">
                     <h1>Claster Craft Cemerlang</h1>
-                    <p>PKMB Cermerlang memberikan pendidikan kesetaraan paket b dan c,
-                        juga program keterampilan dan kursus yang mampu mengasah
-                        skill, mental, karakter, dan attitude sehingga membentuk lulusan siap kerja.</p>
+                    <p>Industri Aneka Kerajinan</p>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
 
