@@ -29,3 +29,21 @@ const sw_testi = new Swiper('.sw-testi', {
       el: '.swiper-pagination',
     }
   });
+
+  const sw_bannerpt = new Swiper('.sw-bannerpt', {
+    // Optional parameters
+    effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  autoplay: {
+    delay: 3000,
+  },
+    direction: 'horizontal',
+    loop: true,
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

@@ -1,7 +1,6 @@
 /* banner */
 #banner {
     font-family: 'Montserrat', sans-serif;
-    background-image: url("../images/pkbm/banner1.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -13,7 +12,7 @@
     right: 0;
     bottom: 0;
     top: 0;
-    background: linear-gradient(to top, #59e015ba, #00000096);
+    background: linear-gradient(to top, #000000ba, #00000096);
 }
 
 .banner-title {
@@ -45,7 +44,28 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+.swiper-slide .banner-title {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(-5%);
+    transition: 1s ease;
+}
+
+.swiper-slide-active .banner-title {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: 1s ease;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: #fff !important;
+}
 /* endbanner */
+
+[class*=" imghvr-"] figcaption, 
+[class^=imghvr-] figcaption{
+  background-color: #000000bf !important;
+}
 
 /* section */
 .sec{
