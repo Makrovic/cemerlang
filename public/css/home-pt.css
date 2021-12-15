@@ -12,7 +12,7 @@
     right: 0;
     bottom: 0;
     top: 0;
-    background: linear-gradient(to top, #000000ba, #00000096);
+    background: linear-gradient(to top, #58d11c67, #00000096);
 }
 
 .banner-title {
@@ -105,6 +105,13 @@ canvas{
     height: 100%;
     display: block;
     border-radius: 50%;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
 .parallax {
