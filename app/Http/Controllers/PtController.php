@@ -2,25 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Alumni;
 use App\Models\Legalitas;
-use App\Models\Testimoni;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
-class PkbmController extends Controller
+class PtController extends Controller
 {
-    public function testimoni(){
-        $testimonis = Testimoni::all();
-        $alumnis = Alumni::all();
-        $site = 'pkbm';
-        return \view('pkbm.testimoni', \compact('testimonis','alumnis','site'));
-    }
-    
-    public function legalitas(){
+    public function carica(){
         $site = 'pt';
+        $sec = 'visimisi';
         $legalitas = Legalitas::where('unit',$site)->get();
-        return \view('pkbm.legalitas', \compact('legalitas','site'));
+        return \view('pt.carica', \compact('legalitas','site','sec'));
     }
     /**
      * Display a listing of the resource.

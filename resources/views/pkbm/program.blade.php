@@ -18,29 +18,31 @@
         </div>
     </div>
     {{-- endbanner --}}
-    <section class="sec whitesec program">
+    <div class="container-fluid">
+        <ul class="nav nav-tabs justify-content-center" data-aos="flip-down">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('pkbm/program') }}">Paket B (Setara SMP)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('pkbm/program/paketc') }}">Paket C (Setara
+                    SMA)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('pkbm/program/kuliahkerja') }}">Program
+                    Kuliah Kerja</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('pkbm/program/kursus') }}">Program Keterampilan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="{{ url('pkbm/program/pemberdayaanperempuan') }}">Program
+                    Pemberdayaan Perempuan</a>
+            </li>
+        </ul>
+    </div>
+    <section class="sec">
         <div class="container-fluid">
-            <ul class="nav nav-tabs justify-content-center" data-aos="flip-down">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('pkbm/program') }}">Paket B (Setara SMP)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('pkbm/program/paketc') }}">Paket C (Setara
-                        SMA)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('pkbm/program/kuliahkerja') }}">Program
-                        Kuliah Kerja</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('pkbm/program/kursus') }}">Program Keterampilan</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"
-                        href="{{ url('pkbm/program/pemberdayaanperempuan') }}">Program
-                        Pemberdayaan Perempuan</a>
-                </li>
-            </ul>
             @switch($sec)
                 @case('paketc')
                     @include('pkbm.program.paketc')

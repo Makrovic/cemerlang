@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\PkbmController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PtController;
+use App\Http\Controllers\PkbmController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,6 +59,12 @@ Route::get('/pkbm/studibanding', function () {
     return view('pkbm.studibanding', ['site' => 'pkbm']);
 });
 
+
 Route::get('/bintang', function () {
     return view('pt.home', ['site' => 'pt']);
+});
+Route::get('/bintang/carica', [PtController::class, 'carica'])->name('bintang.carica');
+
+Route::get('/bintang/snack', function () {
+    return view('pt.snack', ['site' => 'pt']);
 });

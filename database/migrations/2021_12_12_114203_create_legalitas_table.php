@@ -17,6 +17,7 @@ class CreateLegalitasTable extends Migration
             $table->id();
             $table->string('foto');
             $table->string('keterangan');
+            $table->string('unit');
             $table->timestamps();
         });
     }

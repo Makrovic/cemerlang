@@ -58,3 +58,13 @@ const sw_galeri = new Swiper('.sw-galeri', {
       dynamicBullets: true,
     },
 });
+
+const sw_legalitas = new Swiper('.sw-legalitas', {
+    // Optional parameters
+    slidesPerView: 4,
+    spaceBetween: 20,
+
+    pagination: {
+        el: '.swiper-pagination',
+    }
+});
