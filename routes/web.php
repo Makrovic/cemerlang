@@ -64,6 +64,19 @@ Route::get('/bintang', function () {
     return view('pt.home', ['site' => 'pt']);
 });
 Route::get('/bintang/carica', [PtController::class, 'carica'])->name('bintang.carica');
+Route::get('/bintang/carica/legalitas', [PtController::class, 'legalitas'])->name('bintang.carica.legalitas');
+Route::get('/bintang/carica/fasilitas', function () {
+    return view('pt.carica', ['site' => 'pt','sec' => 'fasilitas']);
+});
+Route::get('/bintang/carica/tentangproduk', function () {
+    return view('pt.carica', ['site' => 'pt','sec' => 'tentangproduk']);
+});
+Route::get('/bintang/carica/ekspansi', function () {
+    return view('pt.carica', ['site' => 'pt','sec' => 'ekspansi']);
+});
+Route::get('/bintang/carica/pencapaian', function () {
+    return view('pt.carica', ['site' => 'pt','sec' => 'pencapaian']);
+});
 
 Route::get('/bintang/snack', function () {
     return view('pt.snack', ['site' => 'pt']);

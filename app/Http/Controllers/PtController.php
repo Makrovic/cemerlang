@@ -14,6 +14,12 @@ class PtController extends Controller
         $legalitas = Legalitas::where('unit',$site)->get();
         return \view('pt.carica', \compact('legalitas','site','sec'));
     }
+    public function legalitas(){
+        $site = 'pt';
+        $sec = 'legalitas';
+        $legalitas = Legalitas::where('unit',$site)->get();
+        return \view('pt.carica', \compact('legalitas','site','sec'));
+    }
     /**
      * Display a listing of the resource.
      *

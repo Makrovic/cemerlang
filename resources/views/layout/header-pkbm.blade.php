@@ -1,7 +1,7 @@
 <header>
     <div id="navheader" class="container-fluid navheader-transparent">
         <nav class="navbar navbar-dark navbar-expand-lg">
-            <a class="navbar-brand" href="{{ url('/pkbm') }}">
+            <a class="navbar-brand" href="{{ url('/') }}">
                 <img src="{{ asset('images/pkbm/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -12,7 +12,7 @@
             <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url('/') }}">Home</a>
+                        <a class="nav-link" href="{{ url('/pkbm') }}">Home</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="{{ url('/bintang') }}">Unit Usaha</a>

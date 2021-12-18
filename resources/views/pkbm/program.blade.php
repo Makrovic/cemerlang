@@ -32,36 +32,32 @@
                     Kuliah Kerja</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('pkbm/program/kursus') }}">Program Keterampilan</a>
+                <a class="nav-link" href="{{ url('pkbm/program/kursus') }}">Program
+                    Keterampilan</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"
-                    href="{{ url('pkbm/program/pemberdayaanperempuan') }}">Program
+                <a class="nav-link" href="{{ url('pkbm/program/pemberdayaanperempuan') }}">Program
                     Pemberdayaan Perempuan</a>
             </li>
         </ul>
     </div>
-    <section class="sec">
-        <div class="container-fluid">
-            @switch($sec)
-                @case('paketc')
-                    @include('pkbm.program.paketc')
-                    @break
-                @case('kuliahkerja')
-                    @include('pkbm.program.kuliahkerja')
-                    @break
-                @case('kursus')
-                    @include('pkbm.program.kursus')
-                    @break
-                @case('perempuan')
-                    @include('pkbm.program.perempuan')
-                    @break
-                @default
-                @include('pkbm.program.paketb')
-            @endswitch
-        </div>
-    </section>
+    @switch($sec)
+        @case('paketc')
+            @include('pkbm.program.paketc')
+            @break
+        @case('kuliahkerja')
+            @include('pkbm.program.kuliahkerja')
+            @break
+        @case('kursus')
+            @include('pkbm.program.kursus')
+            @break
+        @case('perempuan')
+            @include('pkbm.program.perempuan')
+            @break
+        @default
+        @include('pkbm.program.paketb')
+    @endswitch
     @stop
-    @section('customjs')
-    <script src="{{ asset('js/lightbox.js') }}"></script>
-    @stop
+        @section('customjs')
+        <script src="{{ asset('js/lightbox.js') }}"></script>
+        @stop

@@ -22,25 +22,25 @@
     <div class="container-fluid">
         <ul class="nav nav-tabs justify-content-center" data-aos="flip-down">
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('') }}">Visi & Misi</a>
+                <a class="nav-link" href="{{ url('bintang/carica') }}">Visi & Misi</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('') }}">Legalitas</a>
+                <a class="nav-link" href="{{ url('bintang/carica/legalitas') }}">Legalitas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('') }}">Tentang Produk</a>
+                <a class="nav-link" href="{{ url('bintang/carica/tentangproduk') }}">Tentang Produk</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('') }}">Fasilitas</a>
+                <a class="nav-link" href="{{ url('bintang/carica/fasilitas') }}">Fasilitas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('') }}">Ekspansi Pemasaran & jaringan Kemitraan</a>
+                <a class="nav-link" href="{{ url('bintang/carica/ekspansi') }}">Ekspansi Pemasaran & jaringan Kemitraan</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('') }}">Pencapaian</a>
+                <a class="nav-link" href="{{ url('bintang/carica/pencapaian') }}">Pencapaian</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('') }}">Gallery</a>
+                <a class="nav-link" href="{{ url('bintang/carica/galeri') }}">Gallery</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link"
@@ -48,20 +48,28 @@
             </li>
         </ul>
     </div>
-    <section class="sec">
-        <div class="container">
             @switch($sec)
+                @case('legalitas')
+                    @include('pt.carica.legalitas')
+                    @break
+                @case('tentangproduk')
+                    @include('pt.carica.tentangproduk')
+                    @break
                 @case('fasilitas')
                     @include('pt.carica.fasilitas')
                     @break
-                @case('legalitas')
-                    @include('pt.carica.legalitas')
+                @case('ekspansi')
+                    @include('pt.carica.ekspansi')
+                    @break
+                @case('pencapaian')
+                    @include('pt.carica.pencapaian')
+                    @break
+                @case('galeri')
+                    @include('pt.carica.galeri')
                     @break
                 @default
                 @include('pt.carica.visimisi')
             @endswitch
-        </div>
-    </section>
     @stop
     @section('customjs')
     <script src="{{ asset('js/lightbox.js') }}"></script>

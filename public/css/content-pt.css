@@ -60,7 +60,7 @@
 }
 
 .sec li i {
-    color: var(--primary);
+    color: var(--primaryc);
 }
 
 .fa-ul li {
@@ -68,7 +68,7 @@
 }
 
 .bullet {
-    color: var(--primary);
+    color: var(--primaryc);
 }
 
 .sec {
@@ -87,7 +87,22 @@
     height: 3px;
     margin-top: 8px;
     left: calc(50% - 60px);
-    background: var(--primary);
+    background: var(--primaryc);
+}
+
+.titlec {
+    margin-bottom: 32px;
+}
+
+.titlec::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 3px;
+    margin-top: 8px;
+    left: calc(50% - 60px);
+    background: var(--accent);
 }
 
 .nav-tabs a {
@@ -105,7 +120,7 @@
 }
 
 .list-group a i {
-    color: var(--primary);
+    color: var(--primaryc);
 }
 
 table.jadwal {
