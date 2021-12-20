@@ -22,16 +22,16 @@
                 </div>
             </div>
         </ol>
-        <div class="horizontal-scroll swiper sw-legalitas" data-aos="fade-up">
+        <div class="swiper sw-legalitas" data-aos="fade-up">
             <div class="swiper-wrapper">
                 @foreach($legalitas as $legal)
-                    <div class="swiper-slide">
+                    <div class="swiper-slide d-flex justify-content-center align-items-center">
                         <figure class="figure">
                             <a href="{{ asset('images/pt/legalitas/'.$legal->foto.'.jpg') }}"
                                 data-lightbox="image-1">
                                 <img src="{{ asset('images/pt/legalitas/'.$legal->foto.'.jpg') }}"
-                                    class="figure-img img-fluid rounded" style="max-height: 300px"></a>
-                            <figcaption class="figure-caption">{{ $legal->keterangan }}.</figcaption>
+                                    class="figure-img img-fluid rounded" style="max-height: 560px"></a>
+                            <figcaption class="figure-caption text-center">{{ $legal->keterangan }}.</figcaption>
                         </figure>
                     </div>
                 @endforeach

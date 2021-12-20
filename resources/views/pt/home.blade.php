@@ -102,7 +102,7 @@
 
     <section class="sec" id="home-carica">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row flex-row justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-left">
                     <img src="{{ asset('images/pt/carica/carica.jpg') }}" alt=""
                         class="img-fluid rounded my-4">
