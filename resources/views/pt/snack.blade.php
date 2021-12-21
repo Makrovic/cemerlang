@@ -19,8 +19,34 @@
     </div>
     {{-- endbanner --}}
     <section class="sec">
-        <div class="container">
-
+        <div class="container-fluid">
+            <div class="row g-3">
+                <div class="col-6">
+                    <div>
+                        <img class="img-fluid" src="{{asset('images/pt/snack/petos.jpg')}}">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <img class="img-fluid" src="{{asset('images/pt/snack/jamur.jpg')}}">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <img class="img-fluid" src="{{asset('images/pt/snack/kedele.jpg')}}">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <img class="img-fluid" src="{{asset('images/pt/snack/piscok.jpg')}}">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div>
+                        <img class="img-fluid" src="{{asset('images/pt/snack/opak.jpg')}}">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     @stop

@@ -29,10 +29,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('landing/contact') }}">Belanja</a>
+                        <a class="nav-link" href="{{ url('bintang/shop') }}">Belanja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('landing/contact') }}">Kontak</a>
+                        <a class="nav-link" href="{{ url('bintang/contact') }}">Kontak</a>
                     </li>
                 </ul>
             </div>

@@ -185,3 +185,24 @@ table.jadwal {
     color: #fff;
     margin: auto;
 }
+
+.card-challenge:hover{
+    background-color: #0000003d;
+    transition: all 0.5s;
+}
+
+.kapasitas-card{
+    border: 1px solid #dcdcdc;
+}
+.kapasitas-card:hover{
+    box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.166);
+    transition: all 0.5s;
+}
+
+.kapasitas-badge{
+    background-color: var(--primaryc);
+    color: #fff;
+    display: inline;
+    padding: 8px;
+    border-radius: 10px 10px 0px 0px;
+}

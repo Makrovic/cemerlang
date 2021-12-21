@@ -42,10 +42,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('bintang/carica/galeri') }}">Gallery</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link"
-                    href="{{ url('') }}"></a>
-            </li>
         </ul>
     </div>
             @switch($sec)

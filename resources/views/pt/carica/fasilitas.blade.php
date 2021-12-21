@@ -1,8 +1,8 @@
 <section class="sec">
     <div class="container">
         <h1 class="title text-center" data-aos="fade-up">Fasilitas</h1>
-        <h5>Lokasi Produksi</h5>
-        <div class="row">
+        <h5 data-aos="fade-up">Lokasi Produksi</h5>
+        <div class="row" data-aos="fade-up">
             <div class="col-12 col-sm-6 col-lg-4">
                 <figure class="figure">
                     <a href="{{asset('images/pkbm/fasilitas/fasilitas1.jpg')}}" data-lightbox="image-1">
@@ -25,8 +25,8 @@
                 </figure>
             </div>
         </div>
-        <h5>Outlet</h5>
-        <div class="row">
+        <h5 data-aos="fade-up">Outlet</h5>
+        <div class="row" data-aos="fade-up">
             <div class="col-12 col-sm-6 col-lg-4">
                 <figure class="figure">
                     <a href="{{asset('images/pt/fasilitas/outlet1.jpg')}}" data-lightbox="image-2">
