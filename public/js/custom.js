@@ -62,4 +62,7 @@ const sw_galeri = new Swiper('.sw-galeri', {
 const sw_legalitas = new Swiper('.sw-legalitas', {
     // Optional parameters
     slidesPerView: 1,
+    autoplay: {
+        delay: 3000,
+    },
 });

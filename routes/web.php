@@ -81,3 +81,7 @@ Route::get('/bintang/carica/pencapaian', function () {
 Route::get('/bintang/snack', function () {
     return view('pt.snack', ['site' => 'pt']);
 });
+
+Route::get('/bintang/contact', function () {
+    return view('pt.contact', ['site' => 'pt']);
+});
