@@ -3,7 +3,7 @@
         <h1 class="title text-center" data-aos="fade-up">Tentang Carica Cemerlang</h1>
         <div class="row my-5">
             <div class="col-4" data-aos="fade-up">
-                <img src="{{asset('images/pt/about/carica2.jpg')}}" class="img-fluid rounded">
+                <img src="{{asset('images/pt/carica/carica2.jpg')}}" class="img-fluid rounded">
             </div>
             <div class="col-8 d-flex flex-column justify-content-center" data-aos="fade-up">
                 <p><span class="h2">CARICA</span><br><i>(Vasconcellea cundinamarcensis)</i></p>
@@ -29,7 +29,7 @@
         <div class="row my-5" data-aos="fade-up">
             <div class="col card-challenge d-flex flex-column align-items-center border rounded border-2 m-3 p-3">
                 <div class="img-box">
-                    <img src="{{asset('images/pt/about/oc1.jpg')}}" class="d-block">
+                    <img src="{{asset('images/pt/carica/oc1.jpg')}}" class="d-block">
                 </div>
                 <p class="mt-3">Carica merupakan <b>buah 
                     etnik kaya manfaat</b> yang
@@ -39,7 +39,7 @@
             </div>
             <div class="col card-challenge d-flex flex-column align-items-center border rounded border-2 m-3 p-3">
                 <div class="img-box">
-                    <img src="{{asset('images/pt/about/oc2.jpg')}}" class="d-block">
+                    <img src="{{asset('images/pt/carica/oc2.jpg')}}" class="d-block">
                 </div>
                 <p class="mt-3">Karena serumpun pepaya,
                     Carica <b>bukan merupakan buah musiman. Ketersediaannya berlimpah,</b> bahkan sebelum
@@ -51,7 +51,7 @@
             </div>
             <div class="col card-challenge d-flex flex-column align-items-center border rounded border-2 m-3 p-3">
                 <div class="img-box">
-                    <img src="{{asset('images/pt/about/oc3.jpg')}}" class="d-block">
+                    <img src="{{asset('images/pt/carica/oc3.jpg')}}" class="d-block">
                 </div>
                 <p class="mt-3">95% perempuan menginginkan
                     tubuh ideal. Carica merupakan salah

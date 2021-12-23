@@ -22,7 +22,7 @@
                 </div>
             </div>
         </ol>
-        <div class="swiper sw-legalitas" data-aos="fade-up">
+        <div class="swiper sw-oneslide w-50" data-aos="fade-up">
             <div class="swiper-wrapper">
                 @foreach($legalitas as $legal)
                     <div class="swiper-slide d-flex justify-content-center align-items-center">

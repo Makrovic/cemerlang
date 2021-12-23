@@ -59,7 +59,7 @@ const sw_galeri = new Swiper('.sw-galeri', {
     },
 });
 
-const sw_legalitas = new Swiper('.sw-legalitas', {
+const sw_oneslide = new Swiper('.sw-oneslide', {
     // Optional parameters
     slidesPerView: 1,
     autoplay: {
