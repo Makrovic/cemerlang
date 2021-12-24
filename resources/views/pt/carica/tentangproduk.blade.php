@@ -24,7 +24,7 @@
 </section>
 <section class="sec back-primaryc">
     <div class="container">
-        <h1 class="titlec text-center" data-aos="fade-up">Our Challenge</h1>
+        <h1 class="title-accent text-center" data-aos="fade-up">Our Challenge</h1>
         <h5 class="text-center" data-aos="fade-up">Tantangan yang melatarbelakangi kami memproduksi minuman Buah CARICA CEMERLANG</h5>
         <div class="row my-5" data-aos="fade-up">
             <div class="col card-challenge d-flex flex-column align-items-center border rounded border-2 m-3 p-3">
@@ -96,23 +96,38 @@
         <h1 class="title text-center" data-aos="fade-up">Varian Produk</h1>
         <h5>Cup Mini</h5>
         <div class="row mb-5" data-aos="fade-up">
-            <div class="col">
-                <img src="{{asset('images/pt/carica/carica3.jpg')}}" class="img-fluid rounded">
+            <div class="col-4">
+                <div class="img-box-zoom">
+                    <img class="img-fluid" src="{{asset('images/pt/carica/carica3.jpg')}}">
+                    <h3 class="h2">Cup Mini 125gr Isi 3 Cup</h3>
+                </div>
             </div>
-            <div class="col">
-                <img src="{{asset('images/pt/carica/carica3.jpg')}}" class="img-fluid rounded">
+            <div class="col-4">
+                <div class="img-box-zoom">
+                    <img class="img-fluid" src="{{asset('images/pt/carica/carica3.jpg')}}">
+                    <h3 class="h2">Cup Mini 125gr Isi 6 Cup</h3>
+                </div>
             </div>
-            <div class="col">
-                <img src="{{asset('images/pt/carica/carica3.jpg')}}" class="img-fluid rounded">
+            <div class="col-4">
+                <div class="img-box-zoom">
+                    <img class="img-fluid" src="{{asset('images/pt/carica/carica3.jpg')}}">
+                    <h3 class="h2">Cup Mini 125gr Isi 12 Cup</h3>
+                </div>
             </div>
         </div>
         <h5>Cup Jumbo</h5>
         <div class="row mb-5" data-aos="fade-up">
-            <div class="col">
-                <img src="{{asset('images/pt/carica/carica3.jpg')}}" class="img-fluid rounded">
+            <div class="col-6">
+                <div class="img-box-zoom">
+                    <img class="img-fluid" src="{{asset('images/pt/carica/carica3.jpg')}}">
+                    <h3 class="h2">Cup Jumbo 250gr Isi 6 Cup</h3>
+                </div>
             </div>
-            <div class="col">
-                <img src="{{asset('images/pt/carica/carica3.jpg')}}" class="img-fluid rounded">
+            <div class="col-6">
+                <div class="img-box-zoom">
+                    <img class="img-fluid" src="{{asset('images/pt/carica/carica3.jpg')}}">
+                    <h3 class="h2">Cup Jumbo 250gr Isi 12 Cup</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -176,4 +191,7 @@
             </div>
         </div>
     </div>
+</section>
+<section class="sec parallax d-flex justify-content-center align-items-center" style="min-height: 200px">
+        <a href="" class="btn-belanja">Belanja Sekarang</a>
 </section>

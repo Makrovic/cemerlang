@@ -85,6 +85,10 @@ Route::get('/bintang/snack', function () {
     return view('pt.snack', ['site' => 'pt']);
 });
 
+Route::get('/bintang/craft', function () {
+    return view('pt.craft', ['site' => 'pt']);
+});
+
 Route::get('/bintang/contact', function () {
     return view('pt.contact', ['site' => 'pt']);
 });

@@ -4,7 +4,7 @@
 @stop
     @section('content')
     {{-- banner --}}
-    <div id="banner" class="pendaftaran-banner">
+    <div id="banner" class="banner2">
         <div class="banner-hero">
             <div class="container">
                 <div class="row justify-content-center align-items-center">

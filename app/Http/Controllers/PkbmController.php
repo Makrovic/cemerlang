@@ -18,7 +18,7 @@ class PkbmController extends Controller
     }
     
     public function legalitas(){
-        $site = 'pt';
+        $site = 'pkbm';
         $legalitas = Legalitas::where('unit',$site)->get();
         return \view('pkbm.legalitas', \compact('legalitas','site'));
     }

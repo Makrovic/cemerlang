@@ -21,7 +21,7 @@
     height: 32vh;
 }
 
-.pendaftaran-banner {
+.banner2 {
     background-image: url("../images/pt/banner4.jpg");
     height: 56vh;
 }
@@ -90,11 +90,11 @@
     background: var(--primaryc);
 }
 
-.titlec {
+.title-accent {
     margin-bottom: 32px;
 }
 
-.titlec::after {
+.title-accent::after {
     content: "";
     position: absolute;
     display: block;
@@ -109,38 +109,6 @@
     text-decoration: none;
     color: #444;
     font-weight: normal;
-}
-
-.list-group {
-    max-width: 500px;
-}
-
-.list-group a:hover {
-    background-color: #157ae02a;
-}
-
-.list-group a i {
-    color: var(--primaryc);
-}
-
-table.jadwal {
-    max-width: 900px;
-}
-
-.horizontal-scroll {
-    padding-top: 40px;
-    align-items: stretch;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-.chart {
-    height: 600px;
-    margin: 5px;
-    width: 900px;
 }
 
 .img-box {
@@ -169,18 +137,6 @@ table.jadwal {
     padding: 16px;
 }
 
-.icon-box{
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-color: var(--primaryc);
-    display: inline-flex;
-    margin-right: 8px;
-}
-.icon-box i{
-    color: #fff;
-    margin: auto;
-}
 
 .card-challenge:hover{
     background-color: #0000003d;
@@ -201,4 +157,85 @@ table.jadwal {
     display: inline;
     padding: 8px;
     border-radius: 10px 10px 0px 0px;
+}
+
+.img-box-zoom{
+    overflow: hidden;
+    position: relative;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.img-box-zoom img {
+    transition: transform 0.5s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(100%);
+  }
+
+  .img-box-zoom:hover img {
+    transform: scale(1.5);
+    filter: brightness(60%);
+  }
+
+  .img-box-zoom h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  .img-box-zoom:hover h3 {
+    transition: transform 0.5s, opacity 1s  ease-in-out;
+    opacity: 1;
+  }
+
+  .parallax {
+    background-image: linear-gradient(to top, #000000ba, #58aa2fbb), url(../images/pt/banner5.jpg);
+    height: 100%;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-belanja{
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--accent);
+    border: 2px var(--accent) solid;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 24px;
+}
+
+.btn-belanja:hover{
+    transition: 0.5s ease-in-out;
+    background-color: var(--accent);
+    color: #444;
+}
+
+.icon-box{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--primaryc);
+    display: inline-flex;
+    margin-right: 8px;
+}
+.icon-box i{
+    font-size: 32px;
+    color: #fff;
+    margin: auto;
+}
+
+.contact-box{
+    padding: 8px;
+}
+.contact-box:hover{
+    background-color: #f7f7f7;
+}
+.contact-box:hover .icon-box{
+    opacity: 1;
 }

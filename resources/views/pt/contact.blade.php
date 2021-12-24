@@ -20,18 +20,41 @@
     {{-- endbanner --}}
     <section class="sec">
         <div class="container">
-            <h1 class="title text-center">Kontak Kami</h1>
+            <h1 class="title text-center">Hubungi Kami</h1>
+            <div class="row mt-4">
+                <div class="col-4">
+                    <h2 class="fw-bolder">PT. BINTANG CEMERLANG JAYA SENTOSA</h2>
+                    <p>
+                        Jl. Dieng km. 4
+                        Sibunderan rt.5 rw.4 Krasak Mojotengah
+                        Wonosobo
+                        56351
+                    </p>
+                </div>
+                <div class="col-12">
+                    
+                </div>
+            </div>
             <div class="row flex-row-reverse">
                 <div class="col-sm-12 col-lg-5">
-                    <h2>PT Bintang Cemerlang Jaya Sentosa</h2>
-                    <p>
-                        Jl. Dieng km. 4<br>
-                        Sibunderan rt.5 rw.4 Krasak Mojotengah<br>
-                        Wonosobo<br>
-                        56351<br><br>
-                        <strong>Telp : </strong>(0286) 322634 | 081225220948<br>
-                        <strong>Email : </strong>bintangcemerlangindonesia@gmail.com<br>
-                    </p>
+                    <a href="wa.me/628122520948" target="_blank" class="text-decoration-none link-dark">
+                        <div class="contact-box rounded">
+                            <span class="icon-box align-middle"><i class="fab fa-whatsapp"></i></span>
+                            <span>+6281 22522 0948</span>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/pkbmcemerlangwonosobo" target="_blank" class="text-decoration-none link-dark">
+                        <div class="contact-box rounded">
+                            <div class="icon-box align-middle"><i class="fab fa-facebook"></i></div>
+                            <span>facebook.com/pkbmcemerlangwonosobo</span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/caricacemerlang" target="_blank" class="text-decoration-none link-dark">
+                        <div class="contact-box rounded">
+                            <div class="icon-box align-middle"><i class="fab fa-instagram"></i></div>
+                            <span>instagram.com/caricacemerlang</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-sm-12 col-lg-7">
                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
@@ -44,7 +67,8 @@
                             </div>
                             <div class="col-sm-12 col-lg-6">
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="email">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="email">
                                     <label for="email">Email</label>
                                 </div>
                             </div>
