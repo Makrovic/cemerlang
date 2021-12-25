@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-4 col-md-6 footer-contact" data-aos="fade-up">
-                    <h5>PKBM Cemerlang</h5>
+                    <img src="{{asset('images/pkbm/logo-nav.png')}}" alt="" class="img-fluid" style="max-width: 240px">
                     <p>
                         Jl. Dieng km. 4<br>
                         Sibunderan rt.5 rw.4 Krasak Mojotengah<br>
@@ -24,7 +24,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-4 col-md-6 footer-link" data-aos="fade-up" data-aos-delay="600">
+                <div class="col-lg-3 col-md-6 footer-link" data-aos="fade-up" data-aos-delay="600">
                     <h5>Program PKBM</h5>
                     <ul>
                         <li><i class="fas fa-chevron-right"></i> Pendidikan Kesetaraan Paket B</li>
@@ -33,6 +33,9 @@
                         <li><i class="fas fa-chevron-right"></i> Program Keterampilan/Kursus/Pelatihan</li>
                         <li><i class="fas fa-chevron-right"></i> Program Pemberdayaan Perempuan</li>
                     </ul>
+                </div>
+                <div class="col-lg-1a col-md-6 footer-link" data-aos="fade-up" data-aos-delay="600">
+                    <img src="{{asset('images/pkbm/akreditasia.png')}}" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
