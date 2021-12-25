@@ -7,7 +7,7 @@
     <meta name="author" content="Makrovic">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        @if($site === 'pkbm')
+        @if($unit === 'pkbm')
             PKBM Cemerlang
         @else
             PT Bintang Cemerlang Jaya Sentosa
@@ -39,7 +39,7 @@
 <body>
     <a href="#" onclick="topFunction()" id="btn-top"
         class="d-flex align-items-center justify-content-center invisible"><i class="fas fa-chevron-up"></i></a>
-    @if($site === 'pkbm')
+    @if($unit === 'pkbm')
         {{-- header pkbm --}}
         @include('layout.header-pkbm')
         {{-- endheader pkbm --}}
@@ -53,7 +53,7 @@
     {{-- endcontent --}}
 
     {{-- footer --}}
-    @if($site === 'pkbm')
+    @if($unit === 'pkbm')
         {{-- header pkbm --}}
         @include('layout.footer-pkbm')
         {{-- endheader pkbm --}}

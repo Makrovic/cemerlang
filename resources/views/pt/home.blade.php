@@ -88,7 +88,7 @@
                 </div>
                 <div class="col-12 col-sm-4">
                     <figure class="imghvr-zoom-in">
-                        <img src="{{ asset('images/pt/craft/craft.jpg') }}" alt=""
+                        <img src="{{ asset('images/pt/craft/craft1.jpg') }}" alt=""
                         class="img-fluid rounded">
                         <figcaption class="d-flex align-items-center justify-content-center">
                             <h2 class="align-middle">Claster Craft Cemerlang</h2>
@@ -134,7 +134,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-right">
-                    <img src="{{ asset('images/pt/craft/craft.jpg') }}" alt=""
+                    <img src="{{ asset('images/pt/craft/craft1.jpg') }}" alt=""
                         class="img-fluid rounded my-4">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center"

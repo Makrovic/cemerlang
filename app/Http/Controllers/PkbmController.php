@@ -13,14 +13,14 @@ class PkbmController extends Controller
     public function testimoni(){
         $testimonis = Testimoni::all();
         $alumnis = Alumni::all();
-        $site = 'pkbm';
-        return \view('pkbm.testimoni', \compact('testimonis','alumnis','site'));
+        $unit = 'pkbm';
+        return \view('pkbm.testimoni', \compact('testimonis','alumnis','unit'));
     }
     
     public function legalitas(){
-        $site = 'pkbm';
-        $legalitas = Legalitas::where('unit',$site)->get();
-        return \view('pkbm.legalitas', \compact('legalitas','site'));
+        $unit = 'pkbm';
+        $legalitas = Legalitas::where('unit',$unit)->get();
+        return \view('pkbm.legalitas', \compact('legalitas','unit'));
     }
     /**
      * Display a listing of the resource.

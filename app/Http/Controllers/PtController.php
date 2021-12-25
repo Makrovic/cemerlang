@@ -9,16 +9,16 @@ use Illuminate\Routing\Controller;
 class PtController extends Controller
 {
     public function carica(){
-        $site = 'pt';
+        $unit = 'pt';
         $sec = 'visimisi';
-        $legalitas = Legalitas::where('unit',$site)->get();
-        return \view('pt.carica', \compact('legalitas','site','sec'));
+        $legalitas = Legalitas::where('unit',$unit)->get();
+        return \view('pt.carica', \compact('legalitas','unit','sec'));
     }
     public function legalitas(){
-        $site = 'pt';
+        $unit = 'pt';
         $sec = 'legalitas';
-        $legalitas = Legalitas::where('unit',$site)->get();
-        return \view('pt.carica', \compact('legalitas','site','sec'));
+        $legalitas = Legalitas::where('unit',$unit)->get();
+        return \view('pt.carica', \compact('legalitas','unit','sec'));
     }
     /**
      * Display a listing of the resource.
