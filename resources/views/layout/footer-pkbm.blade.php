@@ -2,7 +2,7 @@
     <div class="footer-content">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-lg-4 col-md-6 footer-contact" data-aos="fade-up">
+                <div class="col-lg-4 col-md-12 footer-contact" data-aos="fade-up">
                     <img src="{{asset('images/pkbm/logo-nav.png')}}" alt="" class="img-fluid" style="max-width: 240px">
                     <p>
                         Jl. Dieng km. 4<br>
@@ -34,8 +34,8 @@
                         <li><i class="fas fa-chevron-right"></i> Program Pemberdayaan Perempuan</li>
                     </ul>
                 </div>
-                <div class="col-lg-1a col-md-6 footer-link" data-aos="fade-up" data-aos-delay="600">
-                    <img src="{{asset('images/pkbm/akreditasia.png')}}" alt="" class="img-fluid">
+                <div class="col-lg-2 col-md-12 footer-link" data-aos="fade-up" data-aos-delay="600">
+                    <img src="{{asset('images/pkbm/akreditasia.png')}}" alt="" class="img-fluid" style="max-width: 196px">
                 </div>
             </div>
         </div>
