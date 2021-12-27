@@ -18,9 +18,7 @@ use App\Http\Controllers\PkbmController;
 Route::get('/', function () {
     return view('landing.welcome');
 });
-Route::get('/pkbm', function () {
-    return view('pkbm.home', ['unit' => 'pkbm']);
-});
+Route::get('/pkbm', [PkbmController::class, 'home'])->name('pkbm.home');
 Route::get('/pkbm/visimisi', function () {
     return view('pkbm.visimisi', ['unit' => 'pkbm']);
 });

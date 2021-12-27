@@ -10,6 +10,11 @@ use Illuminate\Routing\Controller;
 
 class PkbmController extends Controller
 {
+    public function home(){
+        $testimonis = Testimoni::where('status','alumni')->get();
+        $unit = 'pkbm';
+        return \view('pkbm.home', \compact('testimonis','unit'));
+    }
     public function testimoni(){
         $testimonis = Testimoni::all();
         $alumnis = Alumni::all();

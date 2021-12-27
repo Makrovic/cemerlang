@@ -26,17 +26,23 @@
         <div class="container">
             <div class="row d-flex flex-row-reverse justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-left">
-                    <img class="img-fluid rounded" src="{{asset('images/pkbm/pktb4.jpg')}}" alt="">
+                    <img class="img-fluid rounded" src="{{ asset('images/pkbm/pktb4.jpg') }}"
+                        alt="">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center" data-aos="fade-up">
+                <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center"
+                    data-aos="fade-up">
                     <h1>Program PKBM : </h1>
                     <ul class="fa-ul list-unstyled my-2">
-                        <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Pendidikan kesetaraan paket b</li>
-                        <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Pendidikan kesetaraan paket c</li>
-                        <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program kuliah kerja</li>
-                        <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program Keterampilan/kursus/pelatihan
+                        <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Pendidikan kesetaraan paket b
                         </li>
-                        <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program Pemberdayaan Perempuan</li>
+                        <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Pendidikan kesetaraan paket c
+                        </li>
+                        <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program kuliah kerja</li>
+                        <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program
+                            Keterampilan/kursus/pelatihan
+                        </li>
+                        <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program Pemberdayaan Perempuan
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +55,8 @@
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-right">
                     <canvas id="myChart"></canvas>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center" data-aos="fade-up">
+                <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center"
+                    data-aos="fade-up">
                     <h1>Proses Pembelajaran : </h1>
                     <p>PKMB Cermerlang memberikan pendidikan kesetaraan paket b dan c,
                         juga program keterampilan dan kursus yang mampu mengasah
@@ -67,24 +74,20 @@
             <div class="row mt-5">
                 <div class="swiper sw-testi" data-aos="fade-up">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="../assets/testimoni/testi-adin.jpeg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="text-center">
-                            <p class="fst-italic">Akibat salah pergaulan saya terjebak pada lingkungan yang tidak baik, saya DO dari
-                                sekolah formal, dan melanjutkan di Paket C (setara SMA) . Saya mengucapkan terima
-                                kasih
-                                pada PKBM CEMERLANG. Benar benar memiliki rasa tanggung jawab dalam pembinaan
-                                peserta didiknya. Saya ditempatkan kerja di PT Tirta Investama (AQUA).
-                                Saya merekomendasikan kepada teman dan saudara, untuk belajar di PKBM CEMERLANG.
-                                Selain mendapatkan ijazah, saya dan rekan-rekan tidak menganggur lagi.</p>
-                            <p class="fw-bold">Adin - Lulusan Paket C PKBM CEMERLANG</p>
-                        </div>
-                      </div>
+                        @foreach($testimonis as $testi)
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <img src="{{asset('images/pkbm/testimoni/'.$testi->foto.'.jpg')}}" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="text-center">
+                                    <p class="fst-italic">{{$testi->testimoni}}</p>
+                                    <p class="fw-bold">{{$testi->nama}} - {{$testi->keterangan}}</p>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                     <div class="swiper-pagination"></div>
-                  </div>
+                </div>
             </div>
         </div>
     </section>
