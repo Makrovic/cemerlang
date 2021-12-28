@@ -34,6 +34,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('bintang/contact') }}">Kontak</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('bintang/cart') }}">Keranjang</a>
+                    </li>
                 </ul>
             </div>
         </nav>
