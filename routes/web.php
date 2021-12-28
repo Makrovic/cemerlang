@@ -90,6 +90,9 @@ Route::get('/bintang/craft', function () {
 Route::get('/bintang/shop', function () {
     return view('pt.shop', ['unit' => 'pt']);
 });
+Route::get('/bintang/shop/desc', function () {
+    return view('pt.shop.desc', ['unit' => 'pt']);
+});
 
 Route::get('/bintang/contact', function () {
     return view('pt.contact', ['unit' => 'pt']);
