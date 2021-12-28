@@ -38,19 +38,19 @@
             <div class="row flex-row-reverse">
                 <div class="col-sm-12 col-lg-5">
                     <a href="wa.me/628122520948" target="_blank" class="text-decoration-none link-dark">
-                        <div class="contact-box rounded">
+                        <div class="hover-box">
                             <span class="icon-box align-middle"><i class="fab fa-whatsapp"></i></span>
                             <span>+6281 22522 0948</span>
                         </div>
                     </a>
                     <a href="https://www.facebook.com/pkbmcemerlangwonosobo" target="_blank" class="text-decoration-none link-dark">
-                        <div class="contact-box rounded">
+                        <div class="hover-box">
                             <div class="icon-box align-middle"><i class="fab fa-facebook"></i></div>
                             <span>facebook.com/pkbmcemerlangwonosobo</span>
                         </div>
                     </a>
                     <a href="https://www.instagram.com/caricacemerlang" target="_blank" class="text-decoration-none link-dark">
-                        <div class="contact-box rounded">
+                        <div class="hover-box">
                             <div class="icon-box align-middle"><i class="fab fa-instagram"></i></div>
                             <span>instagram.com/caricacemerlang</span>
                         </div>
@@ -82,7 +82,7 @@
                                 required></textarea>
                         </div>
                         <div class="mt-3">
-                            <button class="btn btn-success" type="submit">Kirim</button></div>
+                            <button class="btn btn-carica" type="submit">Kirim</button></div>
                     </form>
                 </div>
             </div>

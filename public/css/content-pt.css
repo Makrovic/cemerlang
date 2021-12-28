@@ -105,10 +105,14 @@
     background: var(--accent);
 }
 
-.nav-tabs a {
+.nav-tabs .nav-item .nav-link{
+    padding: 16px;
     text-decoration: none;
     color: #444;
     font-weight: normal;
+}
+.nav-tabs .nav-item .nav-link:hover{
+    color: var(--primaryc);
 }
 
 .img-box {
@@ -125,33 +129,34 @@
     border-radius: 50%;
 }
 
-.card-b .card-header{
+.card-b .card-header {
     background: linear-gradient(to right, #1268be, #48a4ff);
     color: #fff;
     padding: 16px;
 }
 
-.card-c .card-header{
+.card-c .card-header {
     background: linear-gradient(to right, #dfab0e, #ffd556);
     color: #fff;
     padding: 16px;
 }
 
 
-.card-challenge:hover{
+.card-challenge:hover {
     background-color: #0000003d;
     transition: all 0.5s;
 }
 
-.kapasitas-card{
+.kapasitas-card {
     border: 1px solid #dcdcdc;
 }
-.kapasitas-card:hover{
+
+.kapasitas-card:hover {
     box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.166);
     transition: all 0.5s;
 }
 
-.kapasitas-badge{
+.kapasitas-badge {
     background-color: var(--primaryc);
     color: #fff;
     display: inline;
@@ -159,38 +164,39 @@
     border-radius: 10px 10px 0px 0px;
 }
 
-.img-box-zoom{
+.img-box-zoom {
     overflow: hidden;
     position: relative;
-  text-align: center;
-  color: white;
-  cursor: pointer;
+    text-align: center;
+    color: white;
+    cursor: pointer;
 }
+
 .img-box-zoom img {
     transition: transform 0.5s, filter 1.5s ease-in-out;
     transform-origin: center center;
     filter: brightness(100%);
-  }
+}
 
-  .img-box-zoom:hover img {
+.img-box-zoom:hover img {
     transform: scale(1.5);
     filter: brightness(60%);
-  }
+}
 
-  .img-box-zoom h3{
+.img-box-zoom h3 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-  }
+}
 
-  .img-box-zoom:hover h3 {
-    transition: transform 0.5s, opacity 1s  ease-in-out;
+.img-box-zoom:hover h3 {
+    transition: transform 0.5s, opacity 1s ease-in-out;
     opacity: 1;
-  }
+}
 
-  .parallax {
+.parallax {
     background-image: linear-gradient(to top, #000000ba, #58aa2fbb), url(../images/pt/banner5.jpg);
     height: 100%;
     text-align: center;
@@ -200,7 +206,7 @@
     background-size: cover;
 }
 
-.btn-belanja{
+.btn-belanja {
     background-color: transparent;
     text-decoration: none;
     color: var(--accent);
@@ -210,32 +216,56 @@
     font-size: 24px;
 }
 
-.btn-belanja:hover{
+.btn-belanja:hover {
     transition: 0.5s ease-in-out;
     background-color: var(--accent);
     color: #444;
 }
 
-.icon-box{
-    width: 52px;
-    height: 52px;
+.btn-carica{
+    padding: 12px !important;
+    color: #fff !important;
+    background-color: var(--primaryc) !important;
+    border-radius: 12px !important;
+    font-weight: bold !important;
+}
+.btn-carica:hover{
+    background-color: var(--accent-dark) !important;
+}
+
+.icon-box {
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
-    background-color: var(--primaryc);
+    background-color: #58aa2f23;
     display: inline-flex;
     margin-right: 8px;
 }
-.icon-box i{
+
+.icon-box i {
     font-size: 32px;
-    color: #fff;
+    color: var(--primaryc);
     margin: auto;
 }
 
-.contact-box{
+.hover-box {
     padding: 8px;
+    border-radius: 10px;
+    cursor: default;
 }
-.contact-box:hover{
+
+.hover-box:hover {
     background-color: #f7f7f7;
 }
-.contact-box:hover .icon-box{
-    opacity: 1;
+
+.hover-box:hover .icon-box {
+    background-color: #58aa2f;
+}
+
+.hover-box:hover .icon-box i {
+    color: #fff;
+}
+
+.card-product:hover{
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.075);
 }
