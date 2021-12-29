@@ -19,7 +19,7 @@ class CreateTestimonisTable extends Migration
             $table->string('status');
             $table->string('keterangan');
             $table->text('testimoni');
-            $table->string('foto');
+            $table->string('foto')->nullable();
             $table->timestamps();
         });
     }
