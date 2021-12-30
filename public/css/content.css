@@ -72,7 +72,7 @@
 }
 
 .sec {
-    padding: 16px;
+    padding: 24px;
 }
 
 .title {
@@ -128,7 +128,6 @@ table.jadwal {
     width: 900px;
 }
 
-.Treant>.node {}
 
 .Treant>p {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;

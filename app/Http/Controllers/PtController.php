@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Legalitas;
+use App\Models\Produk;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -19,6 +20,20 @@ class PtController extends Controller
         $sec = 'legalitas';
         $legalitas = Legalitas::where('unit',$unit)->get();
         return \view('pt.carica', \compact('legalitas','unit','sec'));
+    }
+    public function shop(){
+        $unit = 'pt';
+        $produks = Produk::all();
+        return \view('pt.shop', \compact('produks','unit'));
+    }
+    public function produkdesc($id){
+        $unit = 'pt';
+        $produks = Produk::where('id',$id)->get()->toArray();
+        $produk = $produks[0];
+        return \view('pt.shop.desc', \compact('produk','unit'));
+    }
+    public function addtocart(){
+        $unit = 'pt';
     }
     /**
      * Display a listing of the resource.

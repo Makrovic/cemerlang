@@ -87,11 +87,11 @@ Route::get('/bintang/craft', function () {
     return view('pt.craft', ['unit' => 'pt']);
 });
 
-Route::get('/bintang/shop', function () {
-    return view('pt.shop', ['unit' => 'pt']);
-});
-Route::get('/bintang/shop/desc', function () {
-    return view('pt.shop.desc', ['unit' => 'pt']);
+Route::get('/bintang/shop',  [PtController::class, 'shop'])->name('bintang.carica.shop');
+Route::get('/bintang/shop/{produk}',  [PtController::class, 'produkdesc'])->name('bintang.carica.shop.desc');
+
+Route::get('/bintang/shop/cart', function () {
+    return view('pt.shop.cart', ['unit' => 'pt']);
 });
 
 Route::get('/bintang/contact', function () {

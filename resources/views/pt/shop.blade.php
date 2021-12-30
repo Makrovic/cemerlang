@@ -21,56 +21,25 @@
     <section class="sec">
         <div class="container">
             <h1 class="title text-center">Belanja Langsung</h1>
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    
+            <div class="row g-5">
+                @foreach ($produks as $produk)
+                <div class="col-4 d-flex justify-content-center">
                     <div class="card text-center card-product">
-                        <a class="m-2" href="{{ url('bintang/shop/desc') }}">
+                        <a class="m-2" href="{{ URL::route('bintang.carica.shop.desc',$produk->id) }}">
                             <div class="img-box-zoom">
                                 <img src="{{ asset('images/pt/carica/carica1.jpg') }}"
                                     class="img-fluid rounded" alt="...">
                             </div>
                         </a>
                         <div class="card-body">
-                            <span class="text-muted">carica</span>
-                            <p>Carica Mini 125gr isi 3 cup</p>
-                            <h4 class="text-success">Rp. 69.420,-</h4>
+                            <span class="text-muted">{{$produk->kategori}}</span>
+                            <p>{{$produk->nama}}</p>
+                            <h4 class="text-success">Rp.{{$produk->harga}},-</h4>
                             <a href="#" class="btn btn-carica mt-4">Tambah ke keranjang</a>
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center">
-                    <div class="card text-center card-product">
-                        <a class="m-2" href="#">
-                            <div class="img-box-zoom">
-                                <img src="{{ asset('images/pt/carica/carica1.jpg') }}"
-                                    class="img-fluid rounded" alt="...">
-                            </div>
-                        </a>
-                        <div class="card-body">
-                            <span class="text-muted">carica</span>
-                            <p>Carica Mini 125gr isi 6 cup</p>
-                            <h4 class="text-success">Rp. 69.420,-</h4>
-                            <a href="#" class="btn btn-carica mt-4">Tambah ke keranjang</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex justify-content-center">
-                    <div class="card text-center card-product">
-                        <a class="m-2" href="#">
-                            <div class="img-box-zoom">
-                                <img src="{{ asset('images/pt/carica/carica1.jpg') }}"
-                                    class="img-fluid rounded" alt="...">
-                            </div>
-                        </a>
-                        <div class="card-body">
-                            <span class="text-muted">carica</span>
-                            <p>Carica Mini 125gr isi 12 cup</p>
-                            <h4 class="text-success">Rp. 69.420,-</h4>
-                            <a href="#" class="btn btn-carica mt-4">Tambah ke keranjang</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
