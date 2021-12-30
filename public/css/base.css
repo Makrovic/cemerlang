@@ -50,6 +50,11 @@ body{
 .navheader-transparent {
     background: none;
 }
+@media (max-width: 992px) { 
+    .navheader-transparent {
+        background-color: #060b11cb;
+    }
+ }
 
 .navheader-scrolled {
     background-color: #060b11cb;
