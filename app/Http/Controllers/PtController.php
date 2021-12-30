@@ -26,11 +26,16 @@ class PtController extends Controller
         $produks = Produk::all();
         return \view('pt.shop', \compact('produks','unit'));
     }
-    public function produkdesc($id){
+    public function produkdesc($kodeproduk){
         $unit = 'pt';
-        $produks = Produk::where('id',$id)->get()->toArray();
-        $produk = $produks[0];
-        return \view('pt.shop.desc', \compact('produk','unit'));
+        if ($kodeproduk != 'cart') {
+            $produks = Produk::where('kode_produk',$kodeproduk)->get()->toArray();
+            $produk = $produks[0];
+            return \view('pt.shop.desc', \compact('produk','unit'));
+        }else{
+            return \view('pt.shop.cart', \compact('unit'));
+        }
+        
     }
     public function addtocart(){
         $unit = 'pt';

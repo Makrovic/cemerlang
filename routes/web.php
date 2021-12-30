@@ -90,10 +90,6 @@ Route::get('/bintang/craft', function () {
 Route::get('/bintang/shop',  [PtController::class, 'shop'])->name('bintang.carica.shop');
 Route::get('/bintang/shop/{produk}',  [PtController::class, 'produkdesc'])->name('bintang.carica.shop.desc');
 
-Route::get('/bintang/shop/cart', function () {
-    return view('pt.shop.cart', ['unit' => 'pt']);
-});
-
 Route::get('/bintang/contact', function () {
     return view('pt.contact', ['unit' => 'pt']);
 });

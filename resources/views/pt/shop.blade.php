@@ -25,7 +25,7 @@
                 @foreach ($produks as $produk)
                 <div class="col-4 d-flex justify-content-center">
                     <div class="card text-center card-product">
-                        <a class="m-2" href="{{ URL::route('bintang.carica.shop.desc',$produk->id) }}">
+                        <a class="m-2" href="{{ URL::route('bintang.carica.shop.desc',$produk->kode_produk) }}">
                             <div class="img-box-zoom">
                                 <img src="{{ asset('images/pt/carica/carica1.jpg') }}"
                                     class="img-fluid rounded" alt="...">

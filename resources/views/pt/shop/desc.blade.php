@@ -35,7 +35,7 @@
                     <p>{!! nl2br(e($produk['deskripsi'])) !!}</p>
                     <div class="input-group">
                         <button class="btn btn-outline-success" type="button" id="button-addon1">-</button>
-                        <input type="text" class="form-control" value="1" style="max-width: 40px">
+                        <input type="text" class="form-control text-center" value="1" style="max-width: 60px">
                         <button class="btn btn-outline-success" type="button" id="button-addon1">+</button>
                     </div>
                     <a href="#" class="btn btn-carica mt-4">Tambah ke keranjang</a>
