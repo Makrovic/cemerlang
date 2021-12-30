@@ -125,24 +125,29 @@
     </section>
     <section class="sec back-gray">
         <div class="container">
-            <h1 class="title text-center">Jangka Waktu Pendidikan Paket B & Paket C</h1>
-            <h5>Berapa Lama Jangka Waktu Proses Pendidikan Paket B & C?</h5>
+            <h1 class="title text-center" data-aos="fade-up">Jangka Waktu Pendidikan Paket B & Paket C</h1>
+            <div data-aos="fade-up">
+                <h5>Berapa Lama Jangka Waktu Proses Pendidikan Paket B & C?</h5>
             <p>Jawaban : 3 Tahun</p>
             <h5>Apakah jangka waktu pendikan bisa dipercepat?</h5>
             <p>Jawaban : Bisa dipercepat khusus untuk pindahan / drop out (DO)
                 <li>melampirkan raport kelas 1 untuk masuk di kelas 2, jadi lama pendidikan selama 2 tahun</li>
                 <li>melampirkan raport kelas 1 dan 2 untuk masuk di kelas 3, jadi lama pendidikan selama 1 tahun</li>
             </p>
+            </div>
+            
         </div>
     </section>
     <section class="sec back-gray">
         <div class="container">
-            <h1 class="title text-center">Proses Pembelajaran Paket B & Paket C</h1>
-            <h5>Bagaimana proses pembelajarannya?</h5>
-            <p>Jawaban : <br>Proses pembelajaran dilaksanakan secara online (daring) dan offline (tatap muka langsung).
-            Dengan demikian peserta didik lebih leluasa bebas memilih sesuai kenyamanan masing-masing.
-            Sehingga untuk peserta didik yang berada di luar kota atau sibuk bekerja tidak perlu khawatir karena tetap dapat
-            mengikuti peroses pembelajaran secara online (daring).
+            <h1 class="title text-center" data-aos="fade-up">Proses Pembelajaran Paket B & Paket C</h1>
+            <div data-aos="fade-up">
+                <h5>Bagaimana proses pembelajarannya?</h5>
+                <p>Jawaban : <br>Proses pembelajaran dilaksanakan secara online (daring) dan offline (tatap muka langsung).
+                Dengan demikian peserta didik lebih leluasa bebas memilih sesuai kenyamanan masing-masing.
+                Sehingga untuk peserta didik yang berada di luar kota atau sibuk bekerja tidak perlu khawatir karena tetap dapat
+                mengikuti peroses pembelajaran secara online (daring).
+            </div>
         </p>
         </div>
     </section>
