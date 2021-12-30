@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Alumni;
 use App\Models\Legalitas;
+use App\Models\StudiBanding;
 use App\Models\Testimoni;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -21,11 +22,16 @@ class PkbmController extends Controller
         $unit = 'pkbm';
         return \view('pkbm.testimoni', \compact('testimonis','alumnis','unit'));
     }
-    
     public function legalitas(){
         $unit = 'pkbm';
         $legalitas = Legalitas::where('unit',$unit)->get();
         return \view('pkbm.legalitas', \compact('legalitas','unit'));
+    }
+    public function studibanding(){
+        $unit = 'pkbm';
+        $observasis = StudiBanding::where('keterangan','observasi')->get();
+        $studibandings = StudiBanding::where('keterangan','studibanding')->get();
+        return \view('pkbm.studibanding', \compact('observasis','studibandings','unit'));
     }
     /**
      * Display a listing of the resource.

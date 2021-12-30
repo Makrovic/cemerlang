@@ -53,9 +53,7 @@ Route::get('/pkbm/testimoni', [PkbmController::class, 'testimoni'])->name('pkbm.
 Route::get('/pkbm/infopendaftaran', function () {
     return view('pkbm.infopendaftaran', ['unit' => 'pkbm']);
 });
-Route::get('/pkbm/studibanding', function () {
-    return view('pkbm.studibanding', ['unit' => 'pkbm']);
-});
+Route::get('/pkbm/studibanding', [PkbmController::class, 'studibanding'])->name('pkbm.studibanding');
 
 
 Route::get('/bintang', function () {

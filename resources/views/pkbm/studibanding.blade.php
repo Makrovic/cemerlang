@@ -20,26 +20,30 @@
     {{-- endbanner --}}
     <section class="sec">
         <div class="container-fluid">
-            @for ($i = 1; $i <= 6; $i++)
-            <h3 class="title text-center">Observasi</h3>
-            <div class="row">
+            <h1 class="title text-center my-3">Observasi</h1>
+            @foreach ($observasis as $observasi)
+            <h3 class="text-center mt-4">{{$observasi->judul}}</h3>
+            <div class="row mb-4">
                 @for ($j = 1; $j <= 3; $j++)
                 <div class="col-12 col-lg-4 col-sm-12">
-                        <a href="{{asset('images/pkbm/studibanding/observasi'.$i.'_'.$j.'.jpg')}}" data-lightbox="image-1">
-                        <img src="{{asset('images/pkbm/studibanding/observasi'.$i.'_'.$j.'.jpg')}}" class="figure-img img-fluid rounded"></a>
+                        <a href="{{asset('images/pkbm/studibanding/'.$observasi->foto.'_'.$j.'.jpg')}}" data-lightbox="image-1">
+                        <img src="{{asset('images/pkbm/studibanding/'.$observasi->foto.'_'.$j.'.jpg')}}" class="figure-img img-fluid rounded"></a>
                 </div>
                 @endfor
             </div>
-            @endfor
-            <h3 class="title text-center">Studibanding</h3>
-            <div class="row">
-                @for ($i = 1; $i <= 3; $i++)
+            @endforeach
+            <h1 class="title text-center my-3">Studi Banding</h1>
+            @foreach ($studibandings as $studibanding)
+            <h3 class="text-center mt-4">{{$studibanding->judul}}</h3>
+            <div class="row mb-4">
+                @for ($j = 1; $j <= 3; $j++)
                 <div class="col-12 col-lg-4 col-sm-12">
-                        <a href="{{asset('images/pkbm/studibanding/studibanding'.$i.'.jpg')}}" data-lightbox="image-1">
-                        <img src="{{asset('images/pkbm/studibanding/studibanding'.$i.'.jpg')}}" class="figure-img img-fluid rounded"></a>
+                        <a href="{{asset('images/pkbm/studibanding/'.$studibanding->foto.'_'.$j.'.jpg')}}" data-lightbox="image-1">
+                        <img src="{{asset('images/pkbm/studibanding/'.$studibanding->foto.'_'.$j.'.jpg')}}" class="figure-img img-fluid rounded"></a>
                 </div>
                 @endfor
             </div>
+            @endforeach
         </div>
     </section>
     @stop
