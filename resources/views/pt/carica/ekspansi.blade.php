@@ -1,7 +1,7 @@
 <section class="sec">
     <div class="container">
         <h1 class="title text-center" data-aos="fade-up">Ekspansi Pemasaran & Jaringan Kemitraan</h1>
-        <h5>PT. Indomarco Prismatama Tbk.</h5>
+        <h5 data-aos="fade-up">PT. Indomarco Prismatama Tbk.</h5>
         <div class="row mb-4" data-aos="fade-up">
             <div class="col-4">
                 <figure class="figure">
@@ -31,7 +31,7 @@
                 </figure>
             </div>
         </div>
-        <h5>Superindo</h5>
+        <h5 data-aos="fade-up">Superindo</h5>
         <div class="row mb-4" data-aos="fade-up">
             @for ($i = 1; $i <= 3; $i++)
             <div class="col-4">
@@ -42,7 +42,7 @@
             </div>
             @endfor
         </div>
-        <h5>Carrefour</h5>
+        <h5 data-aos="fade-up">Carrefour</h5>
         <div class="row mb-4" data-aos="fade-up">
             @for ($i = 1; $i <= 2; $i++)
             <div class="col-6">

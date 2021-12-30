@@ -20,8 +20,8 @@
     {{-- endbanner --}}
     <section class="sec">
         <div class="container">
-            <h1 class="title text-center">Belanja Langsung</h1>
-            <div class="row g-5">
+            <h1 class="title text-center" data-aos="fade-up">Belanja Langsung</h1>
+            <div class="row g-5" data-aos="fade-up">
                 @foreach ($produks as $produk)
                 <div class="col-4 d-flex justify-content-center">
                     <div class="card text-center card-product">
@@ -47,20 +47,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="hover-box text-center">
+                    <div class="hover-box text-center" data-aos="zoom-in">
                         <div class="icon-box align-middle my-3"><i class="fas fa-thumbs-up"></i></div>
                         <h5>Rasa Otentik</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-delay="200">
                     <div class="hover-box text-center">
                         <div class="icon-box align-middle my-3"><i class="fas fa-seedling"></i></div>
                         <h5>Tanpa Pengawet</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-delay="400">
                     <div class="hover-box text-center">
                         <div class="icon-box align-middle my-3"><i class="fas fa-headset"></i></div>
                         <h5>Pelayanan Prima</h5>
@@ -72,8 +72,8 @@
     </section>
     <section class="sec">
         <div class="container">
-            <h1 class="title text-center">Belanja di Official Online Store</h1>
-            <div class="row my-4 p-5">
+            <h1 class="title text-center" data-aos="fade-up">Belanja di Official Online Store</h1>
+            <div class="row my-4 p-5" data-aos="fade-up">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="http://" target="_blank" rel="noopener noreferrer">
                         <img src="{{ asset('images/pt/marketplace/tokopedia.png') }}"
