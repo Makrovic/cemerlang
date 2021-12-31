@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PtController;
 use App\Http\Controllers\PkbmController;
@@ -14,80 +15,49 @@ use App\Http\Controllers\PkbmController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// landing page
+Route::view('/', 'landing.welcome');
 
-Route::get('/', function () {
-    return view('landing.welcome');
-});
+//pkbm
 Route::get('/pkbm', [PkbmController::class, 'home'])->name('pkbm.home');
-Route::get('/pkbm/visimisi', function () {
-    return view('pkbm.visimisi', ['unit' => 'pkbm']);
-});
-
-Route::get('/pkbm/program', function () {
-    return view('pkbm.program', ['unit' => 'pkbm','sec' => 'paketb']);
-});
-Route::get('/pkbm/program/paketc', function () {
-    return view('pkbm.program', ['unit' => 'pkbm','sec' => 'paketc']);
-});
-Route::get('/pkbm/program/kuliahkerja', function () {
-    return view('pkbm.program', ['unit' => 'pkbm','sec' => 'kuliahkerja']);
-});
-Route::get('/pkbm/program/kursus', function () {
-    return view('pkbm.program', ['unit' => 'pkbm','sec' => 'kursus']);
-});
-Route::get('/pkbm/program/pemberdayaanperempuan', function () {
-    return view('pkbm.program', ['unit' => 'pkbm','sec' => 'perempuan']);
-});
-
+Route::view('/pkbm/visimisi', 'pkbm.visimisi', ['unit' => 'pkbm'])->name('pkbm.visimisi');
 Route::get('/pkbm/legalitas', [PkbmController::class, 'legalitas'])->name('pkbm.legalitas');
-Route::get('/pkbm/fasilitas', function () {
-    return view('pkbm.fasilitas', ['unit' => 'pkbm']);
-});
-Route::get('/pkbm/tim', function () {
-    return view('pkbm.tim', ['unit' => 'pkbm']);
-});
-Route::get('/pkbm/achievement', function () {
-    return view('pkbm.achievement', ['unit' => 'pkbm']);
-});
+Route::view('/pkbm/fasilitas', 'pkbm.fasilitas', ['unit' => 'pkbm'])->name('pkbm.fasilitas');
+Route::view('/pkbm/tim', 'pkbm.tim', ['unit' => 'pkbm'])->name('pkbm.tim');
+Route::view('/pkbm/achievement', 'pkbm.achievement', ['unit' => 'pkbm'])->name('pkbm.achievement');
 Route::get('/pkbm/testimoni', [PkbmController::class, 'testimoni'])->name('pkbm.testimoni');
-Route::get('/pkbm/infopendaftaran', function () {
-    return view('pkbm.infopendaftaran', ['unit' => 'pkbm']);
-});
+Route::view('/pkbm/infopendaftaran', 'pkbm.infopendaftaran', ['unit' => 'pkbm'])->name('pkbm.fasilitas');
 Route::get('/pkbm/studibanding', [PkbmController::class, 'studibanding'])->name('pkbm.studibanding');
+//program pkbm
+Route::view('/pkbm/program', 'pkbm.program', ['unit' => 'pkbm','sec' => 'paketb']);
+Route::view('/pkbm/program/paketc', 'pkbm.program', ['unit' => 'pkbm','sec' => 'paketc']);
+Route::view('/pkbm/program/kuliahkerja', 'pkbm.program', ['unit' => 'pkbm','sec' => 'kuliahkerja']);
+Route::view('/pkbm/program/kursus', 'pkbm.program', ['unit' => 'pkbm','sec' => 'kursus']);
+Route::view('/pkbm/program/pemberdayaanperempuan', 'pkbm.program', ['unit' => 'pkbm','sec' => 'perempuan']);
 
-
-Route::get('/bintang', function () {
-    return view('pt.home', ['unit' => 'pt']);
-});
+//bintang cemerlang
+Route::view('/bintang', 'pt.home', ['unit' => 'pt']);
 Route::get('/bintang/carica', [PtController::class, 'carica'])->name('bintang.carica');
 Route::get('/bintang/carica/legalitas', [PtController::class, 'legalitas'])->name('bintang.carica.legalitas');
-Route::get('/bintang/carica/fasilitas', function () {
-    return view('pt.carica', ['unit' => 'pt','sec' => 'fasilitas']);
-});
-Route::get('/bintang/carica/tentangproduk', function () {
-    return view('pt.carica', ['unit' => 'pt','sec' => 'tentangproduk']);
-});
-Route::get('/bintang/carica/ekspansi', function () {
-    return view('pt.carica', ['unit' => 'pt','sec' => 'ekspansi']);
-});
-Route::get('/bintang/carica/pencapaian', function () {
-    return view('pt.carica', ['unit' => 'pt','sec' => 'pencapaian']);
-});
-Route::get('/bintang/carica/galeri', function () {
-    return view('pt.carica', ['unit' => 'pt','sec' => 'galeri']);
-});
+Route::view('/bintang/carica/fasilitas', 'pt.carica', ['unit' => 'pt','sec' => 'fasilitas']);
+Route::view('/bintang/carica/tentangproduk', 'pt.carica', ['unit' => 'pt','sec' => 'tentangproduk']);
+Route::view('/bintang/carica/ekspansi', 'pt.carica', ['unit' => 'pt','sec' => 'ekspansi']);
+Route::view('/bintang/carica/pencapaian', 'pt.carica', ['unit' => 'pt','sec' => 'pencapaian']);
+Route::view('/bintang/carica/galeri', 'pt.carica', ['unit' => 'pt','sec' => 'galeri']);
 
-Route::get('/bintang/snack', function () {
-    return view('pt.snack', ['unit' => 'pt']);
-});
+Route::view('/bintang/snack', 'pt.snack', ['unit' => 'pt']);
 
-Route::get('/bintang/craft', function () {
-    return view('pt.craft', ['unit' => 'pt']);
-});
+Route::view('/bintang/craft', 'pt.craft', ['unit' => 'pt']);
 
 Route::get('/bintang/shop',  [PtController::class, 'shop'])->name('bintang.carica.shop');
 Route::get('/bintang/shop/{produk}',  [PtController::class, 'produkdesc'])->name('bintang.carica.shop.desc');
 
-Route::get('/bintang/contact', function () {
-    return view('pt.contact', ['unit' => 'pt']);
+Route::view('/bintang/contact', 'pt.contact', ['unit' => 'pt']);
+
+
+Route::group(['auth', 'admins'], function () {  
+Route::view( '/super', 'admin.login')->name('super.login');
+Route::post('/super/postlogin', [AdminController::class, 'postLogin'])->name('super.postlogin');
+
+Route::get('/super/logout',  [PtController::class, 'shop'])->name('bintang.carica.shop');
 });
