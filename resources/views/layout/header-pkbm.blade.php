@@ -23,21 +23,21 @@
                             Tentang Kami
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{ url('pkbm/visimisi') }}">Visi Misi</a></li>
-                            <li><a class="dropdown-item" href="{{ url('pkbm/program') }}">Program</a></li>
-                            <li><a class="dropdown-item" href="{{ url('pkbm/legalitas') }}">Legalitas</a></li>
-                            <li><a class="dropdown-item" href="{{ url('pkbm/fasilitas') }}">Fasilitas</a></li>
-                            <li><a class="dropdown-item" href="{{ url('pkbm/tim') }}">Struktur Tim</a></li>
-                            <li><a class="dropdown-item" href="{{ url('pkbm/achievement') }}">Achievement</a></li>
-                            <li><a class="dropdown-item" href="{{ url('pkbm/testimoni') }}">Testimoni & Success Story</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('pkbm.visimisi') }}">Visi Misi</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('pkbm.program') }}">Program</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('pkbm.legalitas') }}">Legalitas</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('pkbm.fasilitas') }}">Fasilitas</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('pkbm.tim') }}">Struktur Tim</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('pkbm.achievement') }}">Achievement</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('pkbm.testimoni') }}">Testimoni & Success Story</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('pkbm/infopendaftaran') }}">Info
+                        <a class="nav-link" href="{{ URL::route('pkbm.infopendaftaran') }}">Info
                             Pendaftaran</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('pkbm/studibanding') }}">Observasi &
+                        <a class="nav-link" href="{{ URL::route('pkbm.studibanding') }}">Observasi &
                             Studi Banding</a>
                     </li>
                 </ul>

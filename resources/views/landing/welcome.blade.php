@@ -34,7 +34,7 @@
             <div class="col-lg-6" data-aos="fade-up">
                 <h1>PKBM Cemerlang</h1>
                 <p>Pusat pemberdayaan masyarakat terakreditas A terbaik di Indonesia.</p>
-                <a href="pkbm" class="btn btn-welcome ms-auto">lebih lanjut</a>
+                <a href="{{url('/pkbm')}}" class="btn btn-welcome ms-auto">lebih lanjut</a>
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
             <div class="col-lg-6" data-aos="fade-up">
                 <h1>PT Bintang Cemerlang Jaya Sentosa</h1>
                 <p>Pusat pemberdayaan masyarakat terakreditas A terbaik di Indonesia.</p>
-                <a href="/bintang" class="btn btn-welcome ms-auto">lebih lanjut</a>
+                <a href="{{url('/bintang')}}" class="btn btn-welcome ms-auto">lebih lanjut</a>
             </div>
 
         </div>

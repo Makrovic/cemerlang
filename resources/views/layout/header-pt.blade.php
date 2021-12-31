@@ -23,19 +23,19 @@
                             Bisnis
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{ url('bintang/carica') }}">Carica Cemerlang</a></li>
-                            <li><a class="dropdown-item" href="{{ url('bintang/snack') }}">Bintang Cemerlang Snack</a></li>
-                            <li><a class="dropdown-item" href="{{ url('bintang/craft') }}">Claster Craft Cemerlang</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('bintang.carica') }}">Carica Cemerlang</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('bintang.snack') }}">Bintang Cemerlang Snack</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('bintang.craft') }}">Claster Craft Cemerlang</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('bintang/shop') }}">Belanja</a>
+                        <a class="nav-link" href="{{ URL::route('bintang.shop') }}">Belanja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('bintang/contact') }}">Kontak</a>
+                        <a class="nav-link" href="{{ URL::route('bintang.contact') }}">Kontak</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('bintang/shop/cart') }}">Keranjang</a>
+                        <a class="nav-link" href="{{ URL::route('bintang.shop.cart') }}">Keranjang</a>
                     </li>
                 </ul>
             </div>
