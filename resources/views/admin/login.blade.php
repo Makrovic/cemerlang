@@ -4,18 +4,16 @@
 @stop
 @section('content')
 @if(session('success'))
-    <div class="alert alert-danger alert-dismissible" role="alert" style="z-index: 1">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
         {{ session('success') }}
-    </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
 @endif
 <div class="container">
     <img src="{{ asset('images/pkbm/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
     <div class="title mt-5">
         <h2>Log In</h2>
-            <form accept-charset="UTF-8" role="form" action="{{ URL::route('super.postlogin') }}" method="POST">
+            <form accept-charset="UTF-8" role="form" action="{{ URL::route('super.authenticate') }}" method="POST">
                 {{ csrf_field() }}
                 <fieldset>
                     <div class="form-floating mb-3">

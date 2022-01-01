@@ -16,7 +16,7 @@ use App\Http\Controllers\PkbmController;
 |
 */
 // landing page
-Route::view('/', 'landing.welcome');
+Route::view('/', 'landing.welcome')->name('landing');
 
 //pkbm
 Route::get('/pkbm', [PkbmController::class, 'home'])->name('pkbm.home');
@@ -37,6 +37,7 @@ Route::view('/pkbm/program/pemberdayaanperempuan', 'pkbm.program', ['unit' => 'p
 
 //bintang cemerlang
 Route::view('/bintang', 'pt.home', ['unit' => 'pt']);
+// carica
 Route::get('/bintang/carica', [PtController::class, 'carica'])->name('bintang.carica');
 Route::get('/bintang/carica/legalitas', [PtController::class, 'legalitas'])->name('bintang.carica.legalitas');
 Route::view('/bintang/carica/fasilitas', 'pt.carica', ['unit' => 'pt','sec' => 'fasilitas']);
@@ -44,20 +45,20 @@ Route::view('/bintang/carica/tentangproduk', 'pt.carica', ['unit' => 'pt','sec' 
 Route::view('/bintang/carica/ekspansi', 'pt.carica', ['unit' => 'pt','sec' => 'ekspansi']);
 Route::view('/bintang/carica/pencapaian', 'pt.carica', ['unit' => 'pt','sec' => 'pencapaian']);
 Route::view('/bintang/carica/galeri', 'pt.carica', ['unit' => 'pt','sec' => 'galeri']);
-
+// snack
 Route::view('/bintang/snack', 'pt.snack', ['unit' => 'pt']);
-
+// craft
 Route::view('/bintang/craft', 'pt.craft', ['unit' => 'pt']);
-
+// shop
 Route::get('/bintang/shop',  [PtController::class, 'shop'])->name('bintang.carica.shop');
 Route::get('/bintang/shop/{produk}',  [PtController::class, 'produkdesc'])->name('bintang.carica.shop.desc');
-
+// contact
 Route::view('/bintang/contact', 'pt.contact', ['unit' => 'pt']);
 
-
-Route::group(['auth', 'admins'], function () {  
+// admin
+Route::group(['auth', 'admin'], function () {  
 Route::view( '/super', 'admin.login')->name('super.login');
-Route::post('/super/postlogin', [AdminController::class, 'postLogin'])->name('super.postlogin');
+Route::post('/super', [AdminController::class, 'authenticate'])->name('super.authenticate');
 
 Route::get('/super/logout',  [PtController::class, 'shop'])->name('bintang.carica.shop');
 });
