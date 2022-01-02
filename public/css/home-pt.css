@@ -110,6 +110,42 @@ canvas {
     border-radius: 50%;
 }
 
+.img-box-zoom {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.img-box-zoom a{
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.img-box-zoom img {
+    transition: transform 0.5s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(100%);
+}
+
+.img-box-zoom:hover img {
+    transform: scale(1.5);
+    filter: brightness(60%);
+}
+
+.img-box-zoom h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.img-box-zoom:hover h3 {
+    transition: transform 0.5s, opacity 1s ease-in-out;
+    opacity: 1;
+}
+
 .swiper-slide img {
     display: block;
     width: 100%;

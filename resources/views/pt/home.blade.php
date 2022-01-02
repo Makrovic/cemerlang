@@ -1,7 +1,6 @@
 @extends('layout.base')
 @section('customcss')
 <link href="{{ asset('css/home-pt.css') }}" rel="stylesheet" type="text/css">
-<link href="{{ asset('css/imagehover.min.css') }}" rel="stylesheet" type="text/css">
 @stop
     @section('content')
 
@@ -67,34 +66,31 @@
             <h5>Unit bisnis kami : </h5>
             <div class="row justify-content-center my-4 text-center">
                 <div class="col-12 col-sm-4">
-                    <figure class="imghvr-zoom-in rounded">
-                        <img src="{{ asset('images/pt/carica/carica1.jpg') }}" alt=""
-                        class="img-fluid rounded">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2 class="align-middle">Carica Cemerlang</h2>
-                        </figcaption>
-                        <a href="#home-carica"></a>
-                      </figure>
+                    <div class="img-box-zoom rounded">
+                        <a href="#home-carica">
+                            <img class="img-fluid"
+                                src="{{ asset('images/pt/carica/carica1.jpg') }}">
+                            <h3 class="h2">Carica Cemerlang</h3>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-12 col-sm-4">
-                    <figure class="imghvr-zoom-in">
-                        <img src="{{ asset('images/pt/snack/snack.jpg') }}" alt=""
-                        class="img-fluid rounded">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2 class="align-middle">Bintang Cemerlang Snack</h2>
-                        </figcaption>
-                        <a href="#home-snack"></a>
-                      </figure>
+                    <div class="img-box-zoom rounded">
+                        <a href="#home-snack">
+                            <img class="img-fluid"
+                                src="{{ asset('images/pt/snack/snack.jpg') }}">
+                            <h3 class="h2">Bintang Cemerlang Snack</h3>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-12 col-sm-4">
-                    <figure class="imghvr-zoom-in">
-                        <img src="{{ asset('images/pt/craft/craft1.jpg') }}" alt=""
-                        class="img-fluid rounded">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2 class="align-middle">Claster Craft Cemerlang</h2>
-                        </figcaption>
-                        <a href="#home-craft"></a>
-                      </figure>
+                    <div class="img-box-zoom rounded">
+                        <a href="#home-craft">
+                            <img class="img-fluid"
+                                src="{{ asset('images/pt/craft/craft1.jpg') }}">
+                            <h3 class="h2">Claster Craft Cemerlang</h3>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,7 +138,7 @@
                     <h1>Claster Craft Cemerlang</h1>
                     <p>Industri Aneka Kerajinan</p>
                 </div>
-            </div> 
+            </div>
         </div>
     </section>
 
@@ -154,11 +150,13 @@
             <div class="row mt-5" data-aos="fade-up">
                 <div class="swiper sw-galeri">
                     <div class="swiper-wrapper">
-                        @for ($i = 1; $i <= 6; $i++)
-                        <div class="swiper-slide d-flex justify-content-center align-items-center">
-                            <a href="{{asset('images/pt/galeri/'.$i.'.jpg')}}" data-lightbox="image-1">
-                            <img class="flex-auto img-fluid rounded" src="{{ asset('images/pt/galeri/'.$i.'.jpg') }}"></a>
-                        </div>
+                        @for($i = 1; $i <= 6; $i++)
+                            <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                <a href="{{ asset('images/pt/galeri/'.$i.'.jpg') }}"
+                                    data-lightbox="image-1">
+                                    <img class="flex-auto img-fluid rounded"
+                                        src="{{ asset('images/pt/galeri/'.$i.'.jpg') }}"></a>
+                            </div>
                         @endfor
                     </div>
                     <div class="swiper-pagination"></div>
@@ -168,6 +166,6 @@
     </section>
     {{-- endsection --}}
     @stop
-    @section('customjs')
-    <script src="{{ asset('js/lightbox.js') }}"></script>
-    @stop
+        @section('customjs')
+        <script src="{{ asset('js/lightbox.js') }}"></script>
+        @stop

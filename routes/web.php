@@ -46,14 +46,14 @@ Route::view('/bintang/carica/ekspansi', 'pt.carica', ['unit' => 'pt','sec' => 'e
 Route::view('/bintang/carica/pencapaian', 'pt.carica', ['unit' => 'pt','sec' => 'pencapaian']);
 Route::view('/bintang/carica/galeri', 'pt.carica', ['unit' => 'pt','sec' => 'galeri']);
 // snack
-Route::view('/bintang/snack', 'pt.snack', ['unit' => 'pt']);
+Route::view('/bintang/snack', 'pt.snack', ['unit' => 'pt'])->name('bintang.snack');
 // craft
-Route::view('/bintang/craft', 'pt.craft', ['unit' => 'pt']);
+Route::view('/bintang/craft', 'pt.craft', ['unit' => 'pt'])->name('bintang.craft');
 // shop
-Route::get('/bintang/shop',  [PtController::class, 'shop'])->name('bintang.carica.shop');
-Route::get('/bintang/shop/{produk}',  [PtController::class, 'produkdesc'])->name('bintang.carica.shop.desc');
+Route::get('/bintang/shop',  [PtController::class, 'shop'])->name('bintang.shop');
+Route::get('/bintang/shop/{produk}',  [PtController::class, 'produkdesc'])->name('bintang.shop.desc');
 // contact
-Route::view('/bintang/contact', 'pt.contact', ['unit' => 'pt']);
+Route::view('/bintang/contact', 'pt.contact', ['unit' => 'pt'])->name('bintang.contact');
 
 // admin
 Route::view( '/super', 'admin.login')->name('super.login');

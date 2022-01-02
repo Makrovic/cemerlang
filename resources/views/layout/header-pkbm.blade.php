@@ -12,10 +12,10 @@
             <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url('/pkbm') }}">Home</a>
+                        <a class="nav-link" href="{{ url('pkbm') }}">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url('/bintang') }}">Unit Usaha</a>
+                        <a class="nav-link" href="{{ url('bintang') }}">Unit Usaha</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"

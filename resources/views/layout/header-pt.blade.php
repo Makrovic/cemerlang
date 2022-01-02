@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url('/bintang') }}">Home</a>
+                        <a class="nav-link" href="{{ url('bintang') }}">Home</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="{{ url('pkbm') }}">Unit Pendidikan<span
@@ -35,7 +35,7 @@
                         <a class="nav-link" href="{{ URL::route('bintang.contact') }}">Kontak</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ URL::route('bintang.shop.cart') }}">Keranjang</a>
+                        <a class="nav-link" href="{{ url('bintang/shop/cart') }}">Keranjang</a>
                     </li>
                 </ul>
             </div>
