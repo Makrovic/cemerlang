@@ -77,11 +77,12 @@
                         @foreach($testimonis as $testi)
                             <div class="swiper-slide">
                                 <div class="img-box">
-                                    <img src="{{asset('images/pkbm/testimoni/'.$testi->foto.'.jpg')}}" class="d-block w-100" alt="...">
+                                    <img src="{{ asset('images/pkbm/testimoni/'.$testi->foto.'.jpg') }}"
+                                        class="d-block w-100" alt="...">
                                 </div>
                                 <div class="text-center">
-                                    <p class="fst-italic">{{$testi->testimoni}}</p>
-                                    <p class="fw-bold">{{$testi->nama}} - {{$testi->keterangan}}</p>
+                                    <p class="fst-italic">{{ $testi->testimoni }}</p>
+                                    <p class="fw-bold">{{ $testi->nama }} - {{ $testi->keterangan }}</p>
                                 </div>
                             </div>
                         @endforeach

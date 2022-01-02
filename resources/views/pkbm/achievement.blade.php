@@ -58,7 +58,7 @@
                     Jawa Tengah oleh Gubernur Jawa Tengah dalam rangka HARDIKNAS tahun 2015 (Stadion Sriwedari
                     Surakarta, 2 Mei 2015)</li>
                 <li>Trade Export Produk Minuman Buah "CARICA CEMERLANG” di BSD, Serpong - Tangerang bersama Menteri
-                Perdagangan RI, tahun 2016</li>
+                    Perdagangan RI, tahun 2016</li>
                 <li>Penghargaan Hari Aksara Internasional di Palu - Sulawesi oleh Menteri Pendidikan dan Kebudayaan RI,
                     tahun 2016</li>
                 <li>Meraih 2 Penghargaan sekaligus yaitu Juara Bertahan OVOP Bintang 4 dan Anugerah GMP (Good
@@ -78,17 +78,19 @@
         <div class="container-fluid" data-aos="fade-up">
             <div class="horizontal-scroll swiper sw-dokumentasi">
                 <div class="swiper-wrapper">
-                    @for ($i = 1; $i <= 5; $i++)
-                    <div class="swiper-slide">
-                        <a href="{{asset('images/pkbm/achievement/ach'.$i.'.jpg')}}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/achievement/ach'.$i.'.jpg') }}"></a>
-                    </div>
+                    @for($i = 1; $i <= 5; $i++)
+                        <div class="swiper-slide">
+                            <a href="{{ asset('images/pkbm/achievement/ach'.$i.'.jpg') }}"
+                                data-lightbox="image-1">
+                                <img class="flex-auto img-fluid rounded"
+                                    src="{{ asset('images/pkbm/achievement/ach'.$i.'.jpg') }}"></a>
+                        </div>
                     @endfor
                 </div>
             </div>
         </div>
     </section>
     @stop
-    @section('customjs')
-    <script src="{{ asset('js/lightbox.js') }}"></script>
-    @stop
+        @section('customjs')
+        <script src="{{ asset('js/lightbox.js') }}"></script>
+        @stop

@@ -1,7 +1,8 @@
 @extends('layout.base')
 @section('customcss')
 <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
-<link href="{{ asset('css/treant.css') }}" rel="stylesheet" type="text/css">
+{{-- <link href="{{ asset('css/treant.css') }}" rel="stylesheet" type="text/css"> --}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/treant-js@1.0.1/Treant.css">
 @stop
     @section('content')
     {{-- banner --}}
@@ -33,7 +34,7 @@
     </section>
     @stop
     @section('customjs')
-    <script src="{{ asset('js/treant.js') }}"></script>
-    <script src="{{ asset('js/raphael.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/treantjs@1.0.0/Treant.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/raphael@2.3.0/raphael.min.js"></script>
     <script src="{{ asset('js/strukturtim.js') }}"></script>
     @stop

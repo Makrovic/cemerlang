@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -17,18 +18,20 @@
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-        {{-- poppins font --}}
+    {{-- poppins font --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <style>
-        body{
+        body {
             font-family: 'Poppins', sans-serif;
         }
+
     </style>
 </head>
+
 <body>
-    
+
     {{-- content --}}
     @yield('content')
     {{-- endcontent --}}
@@ -39,10 +42,15 @@
 
     {{-- script --}}
     <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('plugin/js/bootstrap-datepicker.min.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
+    {{-- bootstrap --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    {{-- aos --}}
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    {{-- swiper --}}
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
     @yield('customjs')
     {{-- endscript --}}
 </body>

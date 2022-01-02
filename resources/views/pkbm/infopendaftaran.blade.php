@@ -128,14 +128,15 @@
             <h1 class="title text-center" data-aos="fade-up">Jangka Waktu Pendidikan Paket B & Paket C</h1>
             <div data-aos="fade-up">
                 <h5>Berapa Lama Jangka Waktu Proses Pendidikan Paket B & C?</h5>
-            <p>Jawaban : 3 Tahun</p>
-            <h5>Apakah jangka waktu pendikan bisa dipercepat?</h5>
-            <p>Jawaban : Bisa dipercepat khusus untuk pindahan / drop out (DO)
-                <li>melampirkan raport kelas 1 untuk masuk di kelas 2, jadi lama pendidikan selama 2 tahun</li>
-                <li>melampirkan raport kelas 1 dan 2 untuk masuk di kelas 3, jadi lama pendidikan selama 1 tahun</li>
-            </p>
+                <p>Jawaban : 3 Tahun</p>
+                <h5>Apakah jangka waktu pendikan bisa dipercepat?</h5>
+                <p>Jawaban : Bisa dipercepat khusus untuk pindahan / drop out (DO)
+                    <li>melampirkan raport kelas 1 untuk masuk di kelas 2, jadi lama pendidikan selama 2 tahun</li>
+                    <li>melampirkan raport kelas 1 dan 2 untuk masuk di kelas 3, jadi lama pendidikan selama 1 tahun
+                    </li>
+                </p>
             </div>
-            
+
         </div>
     </section>
     <section class="sec back-gray">
@@ -143,12 +144,14 @@
             <h1 class="title text-center" data-aos="fade-up">Proses Pembelajaran Paket B & Paket C</h1>
             <div data-aos="fade-up">
                 <h5>Bagaimana proses pembelajarannya?</h5>
-                <p>Jawaban : <br>Proses pembelajaran dilaksanakan secara online (daring) dan offline (tatap muka langsung).
-                Dengan demikian peserta didik lebih leluasa bebas memilih sesuai kenyamanan masing-masing.
-                Sehingga untuk peserta didik yang berada di luar kota atau sibuk bekerja tidak perlu khawatir karena tetap dapat
-                mengikuti peroses pembelajaran secara online (daring).
+                <p>Jawaban : <br>Proses pembelajaran dilaksanakan secara online (daring) dan offline (tatap muka
+                    langsung).
+                    Dengan demikian peserta didik lebih leluasa bebas memilih sesuai kenyamanan masing-masing.
+                    Sehingga untuk peserta didik yang berada di luar kota atau sibuk bekerja tidak perlu khawatir karena
+                    tetap dapat
+                    mengikuti peroses pembelajaran secara online (daring).
             </div>
-        </p>
+            </p>
         </div>
     </section>
     <section class="sec" id="pendaftaran-biaya">
@@ -169,27 +172,28 @@
                                 <b>Rp.1.500.000,-</b>
                                 per tahun yang dapat dibayarkan secara bertahap atau diangsur setiap bulannya sejumlah
                                 <b>Rp. 125.000,-</b> per bulan.</p>
-                                <div class="table-responsive">
-                            <table class="table table-bordered align-middle text-center">
-                                <thead class="table-primary align-middle">
-                                    <tr>
-                                        <td>Total biaya operasional penyelenggaraan pendidikan kesetaraan Paket B per
-                                            peserta didik</td>
-                                        <td>Pendanaan dibantu pemerintah melalui BOP Paket</td>
-                                        <td>Swadaya Mandiri Peserta</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Rp.3.000.000,-/Tahun</td>
-                                        <td>Rp.1.500.000,-/Tahun</td>
-                                        <td>Rp.1.500.000,-/Tahun
-                                            <hr>(dapat diangsur Rp.125.000,- dibayarkan maksimal tanggal 20 setiap
-                                            bulannya</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered align-middle text-center">
+                                    <thead class="table-primary align-middle">
+                                        <tr>
+                                            <td>Total biaya operasional penyelenggaraan pendidikan kesetaraan Paket B
+                                                per
+                                                peserta didik</td>
+                                            <td>Pendanaan dibantu pemerintah melalui BOP Paket</td>
+                                            <td>Swadaya Mandiri Peserta</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Rp.3.000.000,-/Tahun</td>
+                                            <td>Rp.1.500.000,-/Tahun</td>
+                                            <td>Rp.1.500.000,-/Tahun
+                                                <hr>(dapat diangsur Rp.125.000,- dibayarkan maksimal tanggal 20 setiap
+                                                bulannya</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <h5 class="card-title">Biaya Pendidikan Kesetaraan Paket B Reguler/Mandiri : </h5>
                             <p>Biaya Pendidikan untuk paket B Kolekstif dari Desa / Kelurahan yaitu sebesar <b>Rp.
                                     3.000.000,-</b> per tahun, dimana Operasional Penyelenggaraannya dibantu oleh
@@ -241,19 +245,19 @@
                             <p class="text-primary fw-bold">Apakah ada biaya lain selain biaya tersebut?</p>
                             <p>Jawaban : <b>Tidak Ada</b><br>
                                 <div class="row">
-                                <div class="col-auto">Pendaftaran <br>
-                                Praktik Keterampilan <br>
-                                Tes Semester <br>
-                                Ujian Akhir Nasional <br>
-                                Ijazah</div> 
-                                <div class="col-auto">
-                                    <span class="badge bg-primary">GRATIS</span><br>
-                                    <span class="badge bg-primary">GRATIS</span><br>
-                                    <span class="badge bg-primary">GRATIS</span><br>
-                                    <span class="badge bg-primary">GRATIS</span><br>
-                                    <span class="badge bg-primary">GRATIS</span>
+                                    <div class="col-auto">Pendaftaran <br>
+                                        Praktik Keterampilan <br>
+                                        Tes Semester <br>
+                                        Ujian Akhir Nasional <br>
+                                        Ijazah</div>
+                                    <div class="col-auto">
+                                        <span class="badge bg-primary">GRATIS</span><br>
+                                        <span class="badge bg-primary">GRATIS</span><br>
+                                        <span class="badge bg-primary">GRATIS</span><br>
+                                        <span class="badge bg-primary">GRATIS</span><br>
+                                        <span class="badge bg-primary">GRATIS</span>
+                                    </div>
                                 </div>
-                            </div>
                             </p>
                             <p class="text-primary fw-bold">Fasilitas apa yang didapatkan dari Layanan Pendidikan
                                 Kesetaraan Paket B teesebut?</p>
@@ -287,27 +291,28 @@
                                 <b>Rp.1.800.000,-</b>
                                 per tahun yang dapat dibayarkan secara bertahap atau diangsur setiap bulannya sejumlah
                                 <b>Rp. 150.000,-</b> per bulan.</p>
-                                <div class="table-responsive">
-                            <table class="table table-bordered align-middle text-center">
-                                <thead class="table-warning align-middle">
-                                    <tr>
-                                        <td>Total biaya operasional penyelenggaraan pendidikan kesetaraan Paket C per
-                                            peserta didik</td>
-                                        <td>Pendanaan dibantu pemerintah melalui BOP Paket</td>
-                                        <td>Swadaya Mandiri Peserta</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Rp.3.600.000,-/Tahun</td>
-                                        <td>Rp.1.800.000,-/Tahun</td>
-                                        <td>Rp.1.800.000,-/Tahun
-                                            <hr>(dapat diangsur Rp.150.000,- dibayarkan maksimal tanggal 20 setiap
-                                            bulannya</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered align-middle text-center">
+                                    <thead class="table-warning align-middle">
+                                        <tr>
+                                            <td>Total biaya operasional penyelenggaraan pendidikan kesetaraan Paket C
+                                                per
+                                                peserta didik</td>
+                                            <td>Pendanaan dibantu pemerintah melalui BOP Paket</td>
+                                            <td>Swadaya Mandiri Peserta</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Rp.3.600.000,-/Tahun</td>
+                                            <td>Rp.1.800.000,-/Tahun</td>
+                                            <td>Rp.1.800.000,-/Tahun
+                                                <hr>(dapat diangsur Rp.150.000,- dibayarkan maksimal tanggal 20 setiap
+                                                bulannya</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <h5 class="card-title">Biaya Pendidikan Kesetaraan Paket C Reguler/Mandiri : </h5>
                             <p>Biaya Pendidikan untuk Paket C Kolekstif dari Desa / Kelurahan yaitu sebesar <b>Rp.
                                     3.600.000,-</b> per tahun, dimana Operasional Penyelenggaraannya dibantu oleh
@@ -319,61 +324,63 @@
                                 (ADD) sebesar <b>Rp. 1.000.000,-</b> per tahun.</p>
                             <p class="fw-bold text-danger">Peserta Didik Gratis, tidak membayar biaya apapun, karena
                                 telah dibayarkan dari Pemerintah Desa / Kelurahan.</p>
-                                <div class="table-responsive">
-                            <table class="table table-bordered align-middle text-center">
-                                <thead class="table-warning align-middle">
-                                    <tr>
-                                        <td>No</td>
-                                        <td>Rincian Biaya</td>
-                                        <td>Rp</td>
-                                        <td>Sumber Biaya</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Biaya Operasional Penyelenggaraan Pendidikan per peserta didik</td>
-                                        <td>1.800.000,-</td>
-                                        <td>BOP Paket C</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Pembangunan Prasaran Pendiidkan <br>(gedung/ruang pembelajaran)</td>
-                                        <td>800.000,-</td>
-                                        <td>Swadaya Mandiri Lembaga yang bersumber dari keuntungan unit usaha lembaga
-                                            <br>(carica cemerlang</td>
-                                    </tr>
-                                    <tr class="table-warning">
-                                        <td>3</td>
-                                        <td>Iuran Sarana Prasarana (ISP) Paket C untuk 1 tahun</td>
-                                        <td>1.000.000,-</td>
-                                        <td>Pemerintah desa melalui Alokasi Dana Desa (ADD)</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">Total Biaya Pendidikan Paket C untuk 1 tahun pembelajaran per
-                                            peserta didik
-                                        </td>
-                                        <td>3.600.000</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered align-middle text-center">
+                                    <thead class="table-warning align-middle">
+                                        <tr>
+                                            <td>No</td>
+                                            <td>Rincian Biaya</td>
+                                            <td>Rp</td>
+                                            <td>Sumber Biaya</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Biaya Operasional Penyelenggaraan Pendidikan per peserta didik</td>
+                                            <td>1.800.000,-</td>
+                                            <td>BOP Paket C</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Pembangunan Prasaran Pendiidkan <br>(gedung/ruang pembelajaran)</td>
+                                            <td>800.000,-</td>
+                                            <td>Swadaya Mandiri Lembaga yang bersumber dari keuntungan unit usaha
+                                                lembaga
+                                                <br>(carica cemerlang</td>
+                                        </tr>
+                                        <tr class="table-warning">
+                                            <td>3</td>
+                                            <td>Iuran Sarana Prasarana (ISP) Paket C untuk 1 tahun</td>
+                                            <td>1.000.000,-</td>
+                                            <td>Pemerintah desa melalui Alokasi Dana Desa (ADD)</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Total Biaya Pendidikan Paket C untuk 1 tahun pembelajaran
+                                                per
+                                                peserta didik
+                                            </td>
+                                            <td>3.600.000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <p class="text-warning fw-bold">Apakah ada biaya lain selain biaya tersebut?</p>
                             <p>Jawaban : <b>Tidak Ada</b><br>
                                 <div class="row">
-                                <div class="col-auto">Pendaftaran <br>
-                                Praktik Keterampilan <br>
-                                Tes Semester <br>
-                                Ujian Akhir Nasional <br>
-                                Ijazah</div> 
-                                <div class="col-auto">
-                                    <span class="badge bg-warning">GRATIS</span><br>
-                                    <span class="badge bg-warning">GRATIS</span><br>
-                                    <span class="badge bg-warning">GRATIS</span><br>
-                                    <span class="badge bg-warning">GRATIS</span><br>
-                                    <span class="badge bg-warning">GRATIS</span>
+                                    <div class="col-auto">Pendaftaran <br>
+                                        Praktik Keterampilan <br>
+                                        Tes Semester <br>
+                                        Ujian Akhir Nasional <br>
+                                        Ijazah</div>
+                                    <div class="col-auto">
+                                        <span class="badge bg-warning">GRATIS</span><br>
+                                        <span class="badge bg-warning">GRATIS</span><br>
+                                        <span class="badge bg-warning">GRATIS</span><br>
+                                        <span class="badge bg-warning">GRATIS</span><br>
+                                        <span class="badge bg-warning">GRATIS</span>
+                                    </div>
                                 </div>
-                            </div>
                             </p>
                             <p class="text-warning fw-bold">Fasilitas apa yang didapatkan dari Layanan Pendidikan
                                 Kesetaraan Paket C tersebut?</p>
