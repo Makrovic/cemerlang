@@ -26,10 +26,10 @@ Route::view('/pkbm/fasilitas', 'pkbm.fasilitas', ['unit' => 'pkbm'])->name('pkbm
 Route::view('/pkbm/tim', 'pkbm.tim', ['unit' => 'pkbm'])->name('pkbm.tim');
 Route::view('/pkbm/achievement', 'pkbm.achievement', ['unit' => 'pkbm'])->name('pkbm.achievement');
 Route::get('/pkbm/testimoni', [PkbmController::class, 'testimoni'])->name('pkbm.testimoni');
-Route::view('/pkbm/infopendaftaran', 'pkbm.infopendaftaran', ['unit' => 'pkbm'])->name('pkbm.fasilitas');
+Route::view('/pkbm/infopendaftaran', 'pkbm.infopendaftaran', ['unit' => 'pkbm'])->name('pkbm.infopendaftaran');
 Route::get('/pkbm/studibanding', [PkbmController::class, 'studibanding'])->name('pkbm.studibanding');
 //program pkbm
-Route::view('/pkbm/program', 'pkbm.program', ['unit' => 'pkbm','sec' => 'paketb']);
+Route::view('/pkbm/program', 'pkbm.program', ['unit' => 'pkbm','sec' => 'paketb'])->name('pkbm.program');
 Route::view('/pkbm/program/paketc', 'pkbm.program', ['unit' => 'pkbm','sec' => 'paketc']);
 Route::view('/pkbm/program/kuliahkerja', 'pkbm.program', ['unit' => 'pkbm','sec' => 'kuliahkerja']);
 Route::view('/pkbm/program/kursus', 'pkbm.program', ['unit' => 'pkbm','sec' => 'kursus']);
@@ -56,9 +56,7 @@ Route::get('/bintang/shop/{produk}',  [PtController::class, 'produkdesc'])->name
 Route::view('/bintang/contact', 'pt.contact', ['unit' => 'pt']);
 
 // admin
-Route::group(['auth', 'admin'], function () {  
 Route::view( '/super', 'admin.login')->name('super.login');
 Route::post('/super', [AdminController::class, 'authenticate'])->name('super.authenticate');
 
 Route::get('/super/logout',  [PtController::class, 'shop'])->name('bintang.carica.shop');
-});

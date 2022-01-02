@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
+
     public function authenticate(Request $request)
     {
         \request()->validate([
