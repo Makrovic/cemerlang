@@ -16,7 +16,7 @@
     {{-- swiper --}}
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     {{-- lightbox2 --}}
-    <link href="{{ asset('css/lightbox.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {{-- custom css --}}
     <link href="{{ asset('css/base.css') }}" rel="stylesheet" type="text/css">
     @yield('customcss')
