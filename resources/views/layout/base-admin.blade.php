@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
         integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    {{-- custom css --}}
-    <link href="{{ asset('css/base.css') }}" rel="stylesheet" type="text/css">
-    @yield('customcss')
     {{-- bootstrap css --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -29,16 +26,14 @@
     {{-- ChartJs --}}
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-    {{-- poppins font --}}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-
-    </style>
+    {{-- simple-datatables --}}
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+    <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  {{-- custom css --}}
+  <link href="{{ asset('css/nice-admin.css') }}" rel="stylesheet" type="text/css">
+  @yield('customcss')
 </head>
 
 <body>
@@ -57,10 +52,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     {{-- swiper --}}
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    {{-- simple-datatables --}}
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
     {{-- customjs --}}
-    <script src="{{ asset('js/custom.js') }}"></script>
-    {{-- scroll behavior --}}
-    <script src="{{ asset('js/scroll.js') }}"></script>
+    <script src="{{ asset('js/nice-admin.js') }}"></script>
 
     @yield('customjs')
     {{-- endscript --}}

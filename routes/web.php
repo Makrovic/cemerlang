@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PtController;
 use App\Http\Controllers\PkbmController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,7 +56,12 @@ Route::get('/bintang/shop/{produk}',  [PtController::class, 'produkdesc'])->name
 Route::view('/bintang/contact', 'pt.contact', ['unit' => 'pt'])->name('bintang.contact');
 
 // admin
-Route::view( '/super', 'admin.login')->name('super.login');
+
+Route::get( '/super', [AdminController::class, 'login'])->name('super.login');
 Route::post('/super', [AdminController::class, 'authenticate'])->name('super.authenticate');
 
-Route::get('/super/logout',  [PtController::class, 'shop'])->name('bintang.carica.shop');
+Route::middleware(['admin'])->group(function () {
+Route::view('/super/dashboard', 'admin.dashboard')->middleware('admin')->name('super.dashboard');
+Route::get('/super/logout',  [AdminController::class, 'logout'])->name('super.logout');
+Route::get('/cekcek',  [AdminController::class, 'checkAuth']);
+});
