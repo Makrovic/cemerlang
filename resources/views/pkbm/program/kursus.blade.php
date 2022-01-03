@@ -33,12 +33,12 @@
         <h5 data-aos="fade-up">Dokumentasi</h5>
         <div class="horizontal-scroll swiper sw-dokumentasi" data-aos="fade-up">
             <div class="swiper-wrapper">
-                @for($i = 1; $i <= 15; $i++)
+                @for ($i = 1; $i <= 15; $i++)
                     <div class="swiper-slide">
-                        <a href="{{ asset('images/pkbm/keterampilan/keterampilan'.$i.'.jpg') }}"
+                        <a href="{{ asset('images/pkbm/keterampilan/keterampilan' . $i . '.jpg') }}"
                             data-lightbox="image-1">
                             <img class="flex-auto img-fluid rounded"
-                                src="{{ asset('images/pkbm/keterampilan/keterampilan'.$i.'.jpg') }}"></a>
+                                src="{{ asset('images/pkbm/keterampilan/keterampilan' . $i . '.jpg') }}"></a>
                     </div>
                 @endfor
             </div>

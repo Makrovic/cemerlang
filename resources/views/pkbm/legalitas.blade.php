@@ -1,8 +1,8 @@
 @extends('layout.base')
 @section('customcss')
-<link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
 @stop
-    @section('content')
+@section('content')
     {{-- banner --}}
     <div id="banner" class="banner">
         <div class="banner-hero">
@@ -27,7 +27,8 @@
                     <ol>
                         <li>Akta Pendirian PKBM No. 2(02/11/2009) Notaris Sunarto SH. Mhum</li>
                         <li>Status Tanah - Gedung milik PKBM CEMERLANG Badan Pertanahan Nasional Kab. Wonosobo
-                            <br>SHM No. 209 (1444/C/BPN/2010) dan No. 210 (1445/C/BPN/2010) </li>
+                            <br>SHM No. 209 (1444/C/BPN/2010) dan No. 210 (1445/C/BPN/2010)
+                        </li>
                         <li>Ijin Operasional PKBM SK Dinas Pendidikan No. 421/022.b/2010</li>
                         <li>Perpanjangan Ijin Operasional PKBM SK Dinas Pendidikan No. 421/014.B/2014</li>
                         <li>SK Pemerintah Daerah No. 529/17/DS.K/IX/2010 tentang Keterangan Domisili PKBM menetap</li>
@@ -52,12 +53,11 @@
     <section class="sec back-gray">
         <div class="container-fluid" data-aos="fade-up">
             <div class="row row-cols-3">
-                @foreach($legalitas as $legal)
+                @foreach ($legalitas as $legal)
                     <div class="col-6 col-sm-4 col-md-2">
                         <figure class="figure">
-                            <a href="{{ asset('images/pkbm/legalitas/'.$legal->foto.'.jpg') }}"
-                                data-lightbox="image-1">
-                                <img src="{{ asset('images/pkbm/legalitas/'.$legal->foto.'.jpg') }}"
+                            <a href="{{ asset('images/pkbm/legalitas/' . $legal->foto . '.jpg') }}" data-lightbox="image-1">
+                                <img src="{{ asset('images/pkbm/legalitas/' . $legal->foto . '.jpg') }}"
                                     class="figure-img img-fluid rounded" style="max-height: 155px"></a>
                             <figcaption class="figure-caption">{{ $legal->keterangan }}.</figcaption>
                         </figure>
@@ -66,7 +66,7 @@
             </div>
         </div>
     </section>
-    @stop
-        @section('customjs')
-        <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
-        @stop
+@stop
+@section('customjs')
+    <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+@stop

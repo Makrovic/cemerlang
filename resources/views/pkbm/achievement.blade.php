@@ -1,8 +1,8 @@
 @extends('layout.base')
 @section('customcss')
-<link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
 @stop
-    @section('content')
+@section('content')
     {{-- banner --}}
     <div id="banner" class="banner">
         <div class="banner-hero">
@@ -78,19 +78,18 @@
         <div class="container-fluid" data-aos="fade-up">
             <div class="horizontal-scroll swiper sw-dokumentasi">
                 <div class="swiper-wrapper">
-                    @for($i = 1; $i <= 5; $i++)
+                    @for ($i = 1; $i <= 5; $i++)
                         <div class="swiper-slide">
-                            <a href="{{ asset('images/pkbm/achievement/ach'.$i.'.jpg') }}"
-                                data-lightbox="image-1">
+                            <a href="{{ asset('images/pkbm/achievement/ach' . $i . '.jpg') }}" data-lightbox="image-1">
                                 <img class="flex-auto img-fluid rounded"
-                                    src="{{ asset('images/pkbm/achievement/ach'.$i.'.jpg') }}"></a>
+                                    src="{{ asset('images/pkbm/achievement/ach' . $i . '.jpg') }}"></a>
                         </div>
                     @endfor
                 </div>
             </div>
         </div>
     </section>
-    @stop
-        @section('customjs')
-        <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
-        @stop
+@stop
+@section('customjs')
+    <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+@stop

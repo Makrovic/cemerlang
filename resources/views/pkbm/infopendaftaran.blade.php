@@ -1,8 +1,8 @@
 @extends('layout.base')
 @section('customcss')
-<link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
 @stop
-    @section('content')
+@section('content')
     {{-- banner --}}
     <div id="banner" class="banner2">
         <div class="banner-hero">
@@ -171,7 +171,8 @@
                                 Dengan demikian, peserta didik hanya membayar swadaya sisanya sebesar
                                 <b>Rp.1.500.000,-</b>
                                 per tahun yang dapat dibayarkan secara bertahap atau diangsur setiap bulannya sejumlah
-                                <b>Rp. 125.000,-</b> per bulan.</p>
+                                <b>Rp. 125.000,-</b> per bulan.
+                            </p>
                             <div class="table-responsive">
                                 <table class="table table-bordered align-middle text-center">
                                     <thead class="table-primary align-middle">
@@ -189,7 +190,8 @@
                                             <td>Rp.1.500.000,-/Tahun</td>
                                             <td>Rp.1.500.000,-/Tahun
                                                 <hr>(dapat diangsur Rp.125.000,- dibayarkan maksimal tanggal 20 setiap
-                                                bulannya</td>
+                                                bulannya
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -226,7 +228,8 @@
                                         <td>Pembangunan Prasaran Pendiidkan <br>(gedung/ruang pembelajaran)</td>
                                         <td>500.000,-</td>
                                         <td>Swadaya Mandiri Lembaga yang bersumber dari keuntungan unit usaha lembaga
-                                            <br>(carica cemerlang</td>
+                                            <br>(carica cemerlang
+                                        </td>
                                     </tr>
                                     <tr class="table-primary">
                                         <td>3</td>
@@ -244,20 +247,20 @@
                             </table>
                             <p class="text-primary fw-bold">Apakah ada biaya lain selain biaya tersebut?</p>
                             <p>Jawaban : <b>Tidak Ada</b><br>
-                                <div class="row">
-                                    <div class="col-auto">Pendaftaran <br>
-                                        Praktik Keterampilan <br>
-                                        Tes Semester <br>
-                                        Ujian Akhir Nasional <br>
-                                        Ijazah</div>
-                                    <div class="col-auto">
-                                        <span class="badge bg-primary">GRATIS</span><br>
-                                        <span class="badge bg-primary">GRATIS</span><br>
-                                        <span class="badge bg-primary">GRATIS</span><br>
-                                        <span class="badge bg-primary">GRATIS</span><br>
-                                        <span class="badge bg-primary">GRATIS</span>
-                                    </div>
+                            <div class="row">
+                                <div class="col-auto">Pendaftaran <br>
+                                    Praktik Keterampilan <br>
+                                    Tes Semester <br>
+                                    Ujian Akhir Nasional <br>
+                                    Ijazah</div>
+                                <div class="col-auto">
+                                    <span class="badge bg-primary">GRATIS</span><br>
+                                    <span class="badge bg-primary">GRATIS</span><br>
+                                    <span class="badge bg-primary">GRATIS</span><br>
+                                    <span class="badge bg-primary">GRATIS</span><br>
+                                    <span class="badge bg-primary">GRATIS</span>
                                 </div>
+                            </div>
                             </p>
                             <p class="text-primary fw-bold">Fasilitas apa yang didapatkan dari Layanan Pendidikan
                                 Kesetaraan Paket B teesebut?</p>
@@ -290,7 +293,8 @@
                                 Dengan demikian, peserta didik hanya membayar swadaya sisanya sebesar
                                 <b>Rp.1.800.000,-</b>
                                 per tahun yang dapat dibayarkan secara bertahap atau diangsur setiap bulannya sejumlah
-                                <b>Rp. 150.000,-</b> per bulan.</p>
+                                <b>Rp. 150.000,-</b> per bulan.
+                            </p>
                             <div class="table-responsive">
                                 <table class="table table-bordered align-middle text-center">
                                     <thead class="table-warning align-middle">
@@ -308,7 +312,8 @@
                                             <td>Rp.1.800.000,-/Tahun</td>
                                             <td>Rp.1.800.000,-/Tahun
                                                 <hr>(dapat diangsur Rp.150.000,- dibayarkan maksimal tanggal 20 setiap
-                                                bulannya</td>
+                                                bulannya
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -347,7 +352,8 @@
                                             <td>800.000,-</td>
                                             <td>Swadaya Mandiri Lembaga yang bersumber dari keuntungan unit usaha
                                                 lembaga
-                                                <br>(carica cemerlang</td>
+                                                <br>(carica cemerlang
+                                            </td>
                                         </tr>
                                         <tr class="table-warning">
                                             <td>3</td>
@@ -367,20 +373,20 @@
                             </div>
                             <p class="text-warning fw-bold">Apakah ada biaya lain selain biaya tersebut?</p>
                             <p>Jawaban : <b>Tidak Ada</b><br>
-                                <div class="row">
-                                    <div class="col-auto">Pendaftaran <br>
-                                        Praktik Keterampilan <br>
-                                        Tes Semester <br>
-                                        Ujian Akhir Nasional <br>
-                                        Ijazah</div>
-                                    <div class="col-auto">
-                                        <span class="badge bg-warning">GRATIS</span><br>
-                                        <span class="badge bg-warning">GRATIS</span><br>
-                                        <span class="badge bg-warning">GRATIS</span><br>
-                                        <span class="badge bg-warning">GRATIS</span><br>
-                                        <span class="badge bg-warning">GRATIS</span>
-                                    </div>
+                            <div class="row">
+                                <div class="col-auto">Pendaftaran <br>
+                                    Praktik Keterampilan <br>
+                                    Tes Semester <br>
+                                    Ujian Akhir Nasional <br>
+                                    Ijazah</div>
+                                <div class="col-auto">
+                                    <span class="badge bg-warning">GRATIS</span><br>
+                                    <span class="badge bg-warning">GRATIS</span><br>
+                                    <span class="badge bg-warning">GRATIS</span><br>
+                                    <span class="badge bg-warning">GRATIS</span><br>
+                                    <span class="badge bg-warning">GRATIS</span>
                                 </div>
+                            </div>
                             </p>
                             <p class="text-warning fw-bold">Fasilitas apa yang didapatkan dari Layanan Pendidikan
                                 Kesetaraan Paket C tersebut?</p>
@@ -405,4 +411,4 @@
             </div>
         </div>
     </section>
-    @stop
+@stop

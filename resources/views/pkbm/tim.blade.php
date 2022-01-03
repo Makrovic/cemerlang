@@ -1,10 +1,10 @@
 @extends('layout.base')
 @section('customcss')
-<link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
-{{-- <link href="{{ asset('css/treant.css') }}" rel="stylesheet" type="text/css"> --}}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/treant-js@1.0.1/Treant.css">
+    <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
+    {{-- <link href="{{ asset('css/treant.css') }}" rel="stylesheet" type="text/css"> --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/treant-js@1.0.1/Treant.css">
 @stop
-    @section('content')
+@section('content')
     {{-- banner --}}
     <div id="banner" class="banner">
         <div class="banner-hero">
@@ -29,12 +29,12 @@
     <section class="sec back-gray" data-aos="fade-up">
         <div class="container-fluid">
             <h1 class="title text-center">Foto Tim</h1>
-            <img src="{{asset('images/pkbm/tim/tim.jpg')}}" class="img-fluid rounded mx-auto d-block w-75" alt="...">
+            <img src="{{ asset('images/pkbm/tim/tim.jpg') }}" class="img-fluid rounded mx-auto d-block w-75" alt="...">
         </div>
     </section>
-    @stop
-    @section('customjs')
+@stop
+@section('customjs')
     <script src="https://cdn.jsdelivr.net/npm/treantjs@1.0.0/Treant.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/raphael@2.3.0/raphael.min.js"></script>
     <script src="{{ asset('js/strukturtim.js') }}"></script>
-    @stop
+@stop

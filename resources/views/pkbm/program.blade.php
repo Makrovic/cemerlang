@@ -1,8 +1,8 @@
 @extends('layout.base')
 @section('customcss')
-<link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
 @stop
-    @section('content')
+@section('content')
     {{-- banner --}}
     <div id="banner" class="banner">
         <div class="banner-hero">
@@ -44,20 +44,20 @@
     @switch($sec)
         @case('paketc')
             @include('pkbm.program.paketc')
-            @break
+        @break
         @case('kuliahkerja')
             @include('pkbm.program.kuliahkerja')
-            @break
+        @break
         @case('kursus')
             @include('pkbm.program.kursus')
-            @break
+        @break
         @case('perempuan')
             @include('pkbm.program.perempuan')
-            @break
+        @break
         @default
-        @include('pkbm.program.paketb')
+            @include('pkbm.program.paketb')
     @endswitch
-    @stop
-        @section('customjs')
-        <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
-        @stop
+@stop
+@section('customjs')
+    <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+@stop

@@ -1,8 +1,8 @@
 @extends('layout.base')
 @section('customcss')
-<link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
 @stop
-    @section('content')
+@section('content')
     {{-- banner --}}
     <div id="banner" class="banner">
         <div class="banner-hero">
@@ -44,4 +44,4 @@
             </div>
         </div>
     </section>
-    @stop
+@stop

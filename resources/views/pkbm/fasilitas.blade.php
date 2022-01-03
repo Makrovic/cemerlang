@@ -1,8 +1,8 @@
 @extends('layout.base')
 @section('customcss')
-<link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
 @stop
-    @section('content')
+@section('content')
     {{-- banner --}}
     <div id="banner" class="banner">
         <div class="banner-hero">
@@ -26,19 +26,25 @@
                     <ul class="fa-ul">
                         <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Sarana Prasarana
                             Representatif</li>
-                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Laboratorium Komputer
+                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Laboratorium
+                            Komputer
                         </li>
-                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Peralatan dan Bahan
+                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Peralatan dan
+                            Bahan
                             Keterampilan lengkap</li>
-                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Pendidik dan Tenaga
+                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Pendidik dan
+                            Tenaga
                             Kependidikan sesuai Kompetensi</li>
                         <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Peseta Didik
                             mendapatkan pendampingan Usaha</li>
-                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>atau penempatan Kerja
+                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>atau penempatan
+                            Kerja
                             pada DU/DI (Dunia Usaha / Dunia Industri)</li>
-                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Ijazah Nasional yang
+                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Ijazah Nasional
+                            yang
                             diterbitkan oleh Pemerintah atau Negara</li>
-                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Sertifikat Kompetensi
+                        <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Sertifikat
+                            Kompetensi
                             sesuai Bidang Keterampilan</li>
                     </ul>
                 </div>
@@ -49,19 +55,18 @@
         <div class="container-fluid" data-aos="fade-up">
             <div class="horizontal-scroll swiper sw-dokumentasi">
                 <div class="swiper-wrapper">
-                    @for($i = 1; $i <= 6; $i++)
+                    @for ($i = 1; $i <= 6; $i++)
                         <div class="swiper-slide">
-                            <a href="{{ asset('images/pkbm/fasilitas/fasilitas'.$i.'.jpg') }}"
-                                data-lightbox="image-1">
+                            <a href="{{ asset('images/pkbm/fasilitas/fasilitas' . $i . '.jpg') }}" data-lightbox="image-1">
                                 <img class="flex-auto img-fluid rounded"
-                                    src="{{ asset('images/pkbm/fasilitas/fasilitas'.$i.'.jpg') }}"></a>
+                                    src="{{ asset('images/pkbm/fasilitas/fasilitas' . $i . '.jpg') }}"></a>
                         </div>
                     @endfor
                 </div>
             </div>
         </div>
     </section>
-    @stop
-        @section('customjs')
-        <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
-        @stop
+@stop
+@section('customjs')
+    <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+@stop

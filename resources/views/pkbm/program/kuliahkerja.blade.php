@@ -4,12 +4,10 @@
         <h5 data-aos="fade-up">Universitas yang bekerjasama : </h5>
         <div class="row justify-content-center" data-aos="fade-up">
             <div class="col-md-4 py-2">
-                <img class="img-fluid rounded"
-                    src="{{ asset('images/pkbm/pkk/stikesserulingmas.jpg') }}">
+                <img class="img-fluid rounded" src="{{ asset('images/pkbm/pkk/stikesserulingmas.jpg') }}">
             </div>
             <div class="col-md-4 py-2">
-                <img class="img-fluid rounded"
-                    src="{{ asset('images/pkbm/pkk/stiesemarang.jpg') }}">
+                <img class="img-fluid rounded" src="{{ asset('images/pkbm/pkk/stiesemarang.jpg') }}">
             </div>
             <div class="col-md-4 py-2">
                 <img class="img-fluid rounded" src="{{ asset('images/pkbm/pkk/unw.jpg') }}">
@@ -28,12 +26,11 @@
         <h5 data-aos="fade-up">Dokumentasi</h5>
         <div class="horizontal-scroll swiper sw-dokumentasi" data-aos="fade-up">
             <div class="swiper-wrapper">
-                @for($i = 1; $i <= 5; $i++)
+                @for ($i = 1; $i <= 5; $i++)
                     <div class="swiper-slide">
-                        <a href="{{ asset('images/pkbm/pembelajaran/pktb'.$i.'.jpg') }}"
-                            data-lightbox="image-1">
+                        <a href="{{ asset('images/pkbm/pembelajaran/pktb' . $i . '.jpg') }}" data-lightbox="image-1">
                             <img class="flex-auto img-fluid rounded"
-                                src="{{ asset('images/pkbm/pembelajaran/pktb'.$i.'.jpg') }}"></a>
+                                src="{{ asset('images/pkbm/pembelajaran/pktb' . $i . '.jpg') }}"></a>
                     </div>
                 @endfor
             </div>
