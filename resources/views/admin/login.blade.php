@@ -2,48 +2,84 @@
 @section('customcss')
 
 @stop
-@section('content')
-@if(session('success'))
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        {{ session('success') }}
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-@endif
-<div class="container">
-    <img src="{{ asset('images/pkbm/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
-    <div class="title mt-5">
-        <h2>Log In</h2>
-            <form accept-charset="UTF-8" role="form" action="{{ URL::route('super.authenticate') }}" method="POST">
-                {{ csrf_field() }}
-                <fieldset>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="uname" name="uname" placeholder="username">
-                        <label for="uname">Username</label>
-                        @if($errors->has('uname'))
-                            <span class="error" style="color: red">
-                                {{ $errors->first('uname') }}
-                            </span>
-                        @endif
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="pwd" name="pwd" placeholder="password">
-                        <label for="pwd">Password</label>
-                        @if($errors->has('pwd'))
-                            <span class="error" style="color: red">
-                                {{ $errors->first('pwd') }}
-                            </span>
-                        @endif
-                    </div>
-                    <input class="btn btn-success mt-4" type="submit" value="Log In" name="login">
-                </fieldset>
-            </form>
-            <br>
-            <br>
-            <br>
-            <div>&copy;Copyright <strong>Cemerlang</strong>. All rights reserved</div>
-    </div>
-</div>
-@stop
-@section('customjs')
+    @section('content')
+    @if(session('success'))
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+    <main>
+        <div class="container">
 
-@stop
+            <section
+                class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div
+                            class="col-lg-5 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center">
+                            <div class="card mb-3">
+
+                                <div class="card-body">
+
+                                    <div class="pt-4 pb-2">
+                                        <h5 class="card-title text-center pb-0 fs-4">Login Admin Panel</h5>
+                                        <p class="text-center small">Masukkan username dan password</p>
+                                    </div>
+
+                                    <form accept-charset="UTF-8" role="form"
+                                        action="{{ URL::route('super.authenticate') }}"
+                                        method="POST">
+                                        {{ csrf_field() }}
+                                        <fieldset>
+                                            <div class="col-12">
+                                                <label for="username" class="form-label">Username</label>
+                                                <div class="input-group has-validation">
+                                                    <input type="text" name="username"
+                                                        class="form-control @error('username') is-invalid @enderror"
+                                                        id="username" required
+                                                        value="{{ old('username') }}">
+                                                    @error('username')
+                                                        <div class="invalid-feedback">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="password" class="form-label">Password</label>
+                                                <input type="password" name="password"
+                                                    class="form-control @error('password') is-invalid @enderror"
+                                                    id="password" required>
+                                                @error('password')
+                                                    <div class="invalid-feedback">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary w-100 mt-4" type="submit">Login</button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div class="credits">
+                                <!-- All the links in the footer should remain intact. -->
+                                <!-- You can delete the links only if you purchased the pro version. -->
+                                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+                                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main><!-- End #main -->
+    @stop
+        @section('customjs')
+
+        @stop

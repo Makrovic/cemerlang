@@ -17,9 +17,10 @@ class Admin
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::user()->permission == 'admin') {
+        if (Auth::guard('admin')->check()) {
             return $next($request);
+        } else {
+            return redirect()->route('super.login')->with(['success' => 'Oops! You do not have access']);
         }
-        // return redirect()->route('some.route');
     }
 }
