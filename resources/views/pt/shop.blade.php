@@ -25,7 +25,7 @@
                 @foreach ($produks as $produk)
                 <div class="col-4 d-flex justify-content-center">
                     <div class="card text-center card-product">
-                        <a class="m-2" href="{{ URL::route('bintang.shop.desc',$produk->kode_produk) }}">
+                        <a class="m-2" href="{{ URL::route('bintang.shop.product.desc',$produk->kode_produk) }}">
                             <div class="img-box-zoom">
                                 <img src="{{ asset('images/pt/carica/carica1.jpg') }}"
                                     class="img-fluid rounded" alt="...">
@@ -35,7 +35,7 @@
                             <span class="text-muted">{{$produk->kategori}}</span>
                             <p>{{$produk->nama}}</p>
                             <h4 class="text-success">Rp.{{$produk->harga}},-</h4>
-                            <a href="#" class="btn btn-carica mt-4">Tambah ke keranjang</a>
+                            <a href="{{ URL::route('bintang.shop.cart.add',$produk->kode_produk) }}" class="btn btn-carica mt-4">Tambah ke keranjang</a>
                         </div>
                     </div>
                 </div>

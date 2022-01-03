@@ -28,11 +28,11 @@
                         class="img-fluid rounded-3">
                 </div>
                 <div class="col-lg-8">
-                    <span class="h1">{{ $produk['nama'] }}</span><br>
-                    <span class="text-muted">{{ $produk['kategori'] }}</span>
-                    <h4 class="text-success my-4">Rp. {{ number_format($produk['harga']) }},-
+                    <span class="h1">{{ $produk->nama }}</span><br>
+                    <span class="text-muted">{{ $produk->deskripsi }}</span>
+                    <h4 class="text-success my-4">Rp. {{ number_format($produk->harga) }},-
                     </h4>
-                    <p>{!! nl2br(e($produk['deskripsi'])) !!}</p>
+                    <p>{!! nl2br(e($produk->deskripsi)) !!}</p>
                     <div class="input-group">
                         <button class="btn btn-outline-success" type="button" id="button-addon1">-</button>
                         <input type="text" class="form-control text-center" value="1" style="max-width: 60px">

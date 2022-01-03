@@ -51,7 +51,13 @@ Route::view('/bintang/snack', 'pt.snack', ['unit' => 'pt'])->name('bintang.snack
 Route::view('/bintang/craft', 'pt.craft', ['unit' => 'pt'])->name('bintang.craft');
 // shop
 Route::get('/bintang/shop',  [PtController::class, 'shop'])->name('bintang.shop');
-Route::get('/bintang/shop/{produk}',  [PtController::class, 'produkdesc'])->name('bintang.shop.desc');
+Route::get('/bintang/shop/product/{produk}',  [PtController::class, 'produkDesc'])->name('bintang.shop.product.desc');
+Route::get('/bintang/shop/cart',  [PtController::class, 'showCart'])->name('bintang.shop.cart');
+Route::get('/bintang/shop/addtocart/{produk}',  [PtController::class, 'addToCart'])->name('bintang.shop.cart.add');
+
+Route::get('/bintang/clearcart',  [PtController::class, 'clearCart'])->name('bintang.fakecart');
+
+
 // contact
 Route::view('/bintang/contact', 'pt.contact', ['unit' => 'pt'])->name('bintang.contact');
 

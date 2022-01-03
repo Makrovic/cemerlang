@@ -32,19 +32,21 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($carts as $cart)
                     <tr>
                         <td>x</td>
                         <td><img src="{{ asset('images/pt/carica/carica1.jpg') }}" alt=""
                             class="img-fluid rounded-3" style="max-width: 80px"></td>
-                        <td>Cup Mini 125gr isi 3 cup</td>
-                        <td>20000</td>
+                        <td>{{$cart['nama']}}</td>
+                        <td>{{$cart['harga']}}</td>
                         <td><div class="input-group">
                             <button class="btn btn-outline-success" type="button" id="button-addon1">-</button>
-                            <input type="text" class="form-control text-center" value="1" style="max-width: 60px">
+                            <input type="text" class="form-control text-center" value="{{$cart['jumlah']}}" style="max-width: 60px">
                             <button class="btn btn-outline-success" type="button" id="button-addon1">+</button>
                         </div></td>
-                        <td>20000</td>
+                        <td>{{$cart['subtotal']}}</td>
                     </tr>
+                    @endforeach
                 </tbody>
                 <tfoot>
                     <tr>
