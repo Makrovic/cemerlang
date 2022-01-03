@@ -1,12 +1,12 @@
 /* banner */
 #banner {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-size: cover;
     background-position: center;
 }
 
 #banner::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;
@@ -66,7 +66,7 @@
 /* endbanner */
 
 [class*=" imghvr-"] figcaption,
-[class^=imghvr-] figcaption {
+[class^="imghvr-"] figcaption {
     background-color: #000000bf !important;
 }
 
@@ -117,7 +117,7 @@ canvas {
     color: #fff;
     cursor: pointer;
 }
-.img-box-zoom a{
+.img-box-zoom a {
     text-decoration: none;
     color: #fff !important;
 }
@@ -154,7 +154,8 @@ canvas {
 }
 
 .parallax {
-    background-image: linear-gradient(to top, #000000ba, #157be0bb), url(../images/pkbm/banner1.jpg);
+    background-image: linear-gradient(to top, #000000ba, #157be0bb),
+        url(../images/pkbm/banner1.jpg);
     height: 100%;
     text-align: center;
     background-attachment: fixed;

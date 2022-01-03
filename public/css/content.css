@@ -1,13 +1,13 @@
 /* banner */
 #banner {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
 #banner::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;
@@ -128,9 +128,9 @@ table.jadwal {
     width: 900px;
 }
 
-
-.Treant>p {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+.Treant > p {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+        Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: bold;
     font-size: 12px;
 }
@@ -177,13 +177,13 @@ table.jadwal {
     border-radius: 50%;
 }
 
-.card-b .card-header{
+.card-b .card-header {
     background: linear-gradient(to right, #1268be, #48a4ff);
     color: #fff;
     padding: 16px;
 }
 
-.card-c .card-header{
+.card-c .card-header {
     background: linear-gradient(to right, #dfab0e, #ffd556);
     color: #fff;
     padding: 16px;

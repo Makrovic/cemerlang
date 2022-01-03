@@ -1,13 +1,13 @@
 /* banner */
 #banner {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
 #banner::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;
@@ -105,13 +105,13 @@
     background: var(--accent);
 }
 
-.nav-tabs .nav-item .nav-link{
+.nav-tabs .nav-item .nav-link {
     padding: 16px;
     text-decoration: none;
     color: #444;
     font-weight: normal;
 }
-.nav-tabs .nav-item .nav-link:hover{
+.nav-tabs .nav-item .nav-link:hover {
     color: var(--primaryc);
 }
 
@@ -140,7 +140,6 @@
     color: #fff;
     padding: 16px;
 }
-
 
 .card-challenge:hover {
     background-color: #0000003d;
@@ -197,7 +196,8 @@
 }
 
 .parallax {
-    background-image: linear-gradient(to top, #000000ba, #58aa2fbb), url(../images/pt/banner5.jpg);
+    background-image: linear-gradient(to top, #000000ba, #58aa2fbb),
+        url(../images/pt/banner5.jpg);
     height: 100%;
     text-align: center;
     background-attachment: fixed;
@@ -222,14 +222,14 @@
     color: #444;
 }
 
-.btn-carica{
+.btn-carica {
     padding: 12px !important;
     color: #fff !important;
     background-color: var(--primaryc) !important;
     border-radius: 12px !important;
     font-weight: bold !important;
 }
-.btn-carica:hover{
+.btn-carica:hover {
     background-color: var(--accent-dark) !important;
 }
 
@@ -266,6 +266,6 @@
     color: #fff;
 }
 
-.card-product:hover{
-    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.075);
+.card-product:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
 }
