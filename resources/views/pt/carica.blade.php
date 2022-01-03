@@ -1,8 +1,8 @@
 @extends('layout.base')
 @section('customcss')
-<link href="{{ asset('css/content-pt.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/content-pt.css') }}" rel="stylesheet" type="text/css">
 @stop
-    @section('content')
+@section('content')
     {{-- banner --}}
     <div id="banner" class="banner2">
         <div class="banner-hero">
@@ -34,7 +34,8 @@
                 <a class="nav-link" href="{{ url('bintang/carica/fasilitas') }}">Fasilitas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('bintang/carica/ekspansi') }}">Ekspansi Pemasaran & jaringan Kemitraan</a>
+                <a class="nav-link" href="{{ url('bintang/carica/ekspansi') }}">Ekspansi Pemasaran & jaringan
+                    Kemitraan</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('bintang/carica/pencapaian') }}">Pencapaian</a>
@@ -44,32 +45,32 @@
             </li>
         </ul>
     </div>
-            @switch($sec)
-                @case('legalitas')
-                    @include('pt.carica.legalitas')
-                    @break
-                @case('tentangproduk')
-                    @include('pt.carica.tentangproduk')
-                    @break
-                @case('fasilitas')
-                    @include('pt.carica.fasilitas')
-                    @break
-                @case('ekspansi')
-                    @include('pt.carica.ekspansi')
-                    @break
-                @case('pencapaian')
-                    @include('pt.carica.pencapaian')
-                    @break
-                @case('galeri')
-                    @include('pt.carica.galeri')
-                    @break
-                @default
-                @include('pt.carica.visimisi')
-            @endswitch
-    @stop
-    @section('customjs')
+    @switch($sec)
+        @case('legalitas')
+            @include('pt.carica.legalitas')
+        @break
+        @case('tentangproduk')
+            @include('pt.carica.tentangproduk')
+        @break
+        @case('fasilitas')
+            @include('pt.carica.fasilitas')
+        @break
+        @case('ekspansi')
+            @include('pt.carica.ekspansi')
+        @break
+        @case('pencapaian')
+            @include('pt.carica.pencapaian')
+        @break
+        @case('galeri')
+            @include('pt.carica.galeri')
+        @break
+        @default
+            @include('pt.carica.visimisi')
+    @endswitch
+@stop
+@section('customjs')
     <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
-        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
-        crossorigin="anonymous"></script>
-    @stop
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous">
+    </script>
+@stop

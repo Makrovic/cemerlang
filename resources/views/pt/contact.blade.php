@@ -1,8 +1,8 @@
 @extends('layout.base')
 @section('customcss')
-<link href="{{ asset('css/content-pt.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/content-pt.css') }}" rel="stylesheet" type="text/css">
 @stop
-    @section('content')
+@section('content')
     {{-- banner --}}
     <div id="banner" class="banner" style="background-image: url('../images/pt/banner5.jpg')">
         <div class="banner-hero">
@@ -32,7 +32,7 @@
                     </p>
                 </div>
                 <div class="col-12">
-                    
+
                 </div>
             </div>
             <div class="row flex-row-reverse">
@@ -43,13 +43,15 @@
                             <span>+6281 22522 0948</span>
                         </div>
                     </a>
-                    <a href="https://www.facebook.com/pkbmcemerlangwonosobo" target="_blank" class="text-decoration-none link-dark">
+                    <a href="https://www.facebook.com/pkbmcemerlangwonosobo" target="_blank"
+                        class="text-decoration-none link-dark">
                         <div class="hover-box">
                             <div class="icon-box align-middle"><i class="fab fa-facebook"></i></div>
                             <span>facebook.com/pkbmcemerlangwonosobo</span>
                         </div>
                     </a>
-                    <a href="https://www.instagram.com/caricacemerlang" target="_blank" class="text-decoration-none link-dark">
+                    <a href="https://www.instagram.com/caricacemerlang" target="_blank"
+                        class="text-decoration-none link-dark">
                         <div class="hover-box">
                             <div class="icon-box align-middle"><i class="fab fa-instagram"></i></div>
                             <span>instagram.com/caricacemerlang</span>
@@ -67,8 +69,7 @@
                             </div>
                             <div class="col-sm-12 col-lg-6">
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="email">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="email">
                                     <label for="email">Email</label>
                                 </div>
                             </div>
@@ -82,7 +83,8 @@
                                 required></textarea>
                         </div>
                         <div class="mt-3">
-                            <button class="btn btn-carica" type="submit">Kirim</button></div>
+                            <button class="btn btn-carica" type="submit">Kirim</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -97,7 +99,7 @@
             </div>
         </div>
     </section>
-    @stop
-        @section('customjs')
-        <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
-        @stop
+@stop
+@section('customjs')
+    <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+@stop

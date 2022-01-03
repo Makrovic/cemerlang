@@ -5,52 +5,50 @@
         <div class="row mb-4" data-aos="fade-up">
             <div class="col-4">
                 <figure class="figure">
-                    <a href="{{ asset('images/pt/ekspansi/indomarco1.jpg') }}"
-                        data-lightbox="image-1">
+                    <a href="{{ asset('images/pt/ekspansi/indomarco1.jpg') }}" data-lightbox="image-1">
                         <img src="{{ asset('images/pt/ekspansi/indomarco1.jpg') }}"
                             class="figure-img img-fluid rounded"></a>
-                    <figcaption class="figure-caption text-center">Penandatanganan MoU PKBM Cemerlang dengan PT Indomarco</figcaption>
+                    <figcaption class="figure-caption text-center">Penandatanganan MoU PKBM Cemerlang dengan PT Indomarco
+                    </figcaption>
                 </figure>
             </div>
             <div class="col-4">
                 <figure class="figure">
-                    <a href="{{ asset('images/pt/ekspansi/indomarco2.jpg') }}"
-                        data-lightbox="image-1">
+                    <a href="{{ asset('images/pt/ekspansi/indomarco2.jpg') }}" data-lightbox="image-1">
                         <img src="{{ asset('images/pt/ekspansi/indomarco2.jpg') }}"
                             class="figure-img img-fluid rounded"></a>
-                    <figcaption class="figure-caption text-center">Pengiriman Carica Cemerlang ke Gudang Perisable Produk Lokal PT Indomarco Sentul - Bogor</figcaption>
+                    <figcaption class="figure-caption text-center">Pengiriman Carica Cemerlang ke Gudang Perisable
+                        Produk Lokal PT Indomarco Sentul - Bogor</figcaption>
                 </figure>
             </div>
             <div class="col-4">
                 <figure class="figure">
-                    <a href="{{ asset('images/pt/ekspansi/indomarco3.jpg') }}"
-                        data-lightbox="image-1">
+                    <a href="{{ asset('images/pt/ekspansi/indomarco3.jpg') }}" data-lightbox="image-1">
                         <img src="{{ asset('images/pt/ekspansi/indomarco3.jpg') }}"
                             class="figure-img img-fluid rounded"></a>
-                    <figcaption class="figure-caption text-center">Pengiriman Carica Cemerlang ke Gudang Perisable Produk Lokal PT Indomarco Kawasan Industri Tugu Randugarut - Semarang</figcaption>
+                    <figcaption class="figure-caption text-center">Pengiriman Carica Cemerlang ke Gudang Perisable
+                        Produk Lokal PT Indomarco Kawasan Industri Tugu Randugarut - Semarang</figcaption>
                 </figure>
             </div>
         </div>
         <h5 data-aos="fade-up">Superindo</h5>
         <div class="row mb-4" data-aos="fade-up">
             @for ($i = 1; $i <= 3; $i++)
-            <div class="col-4">
-                    <a href="{{ asset('images/pt/ekspansi/superindo'.$i.'.jpg') }}"
-                        data-lightbox="image-2">
-                        <img src="{{ asset('images/pt/ekspansi/superindo'.$i.'.jpg') }}"
+                <div class="col-4">
+                    <a href="{{ asset('images/pt/ekspansi/superindo' . $i . '.jpg') }}" data-lightbox="image-2">
+                        <img src="{{ asset('images/pt/ekspansi/superindo' . $i . '.jpg') }}"
                             class="figure-img img-fluid rounded"></a>
-            </div>
+                </div>
             @endfor
         </div>
         <h5 data-aos="fade-up">Carrefour</h5>
         <div class="row mb-4" data-aos="fade-up">
             @for ($i = 1; $i <= 2; $i++)
-            <div class="col-6">
-                    <a href="{{ asset('images/pt/ekspansi/carrefour'.$i.'.jpg') }}"
-                        data-lightbox="image-3">
-                        <img src="{{ asset('images/pt/ekspansi/carrefour'.$i.'.jpg') }}"
+                <div class="col-6">
+                    <a href="{{ asset('images/pt/ekspansi/carrefour' . $i . '.jpg') }}" data-lightbox="image-3">
+                        <img src="{{ asset('images/pt/ekspansi/carrefour' . $i . '.jpg') }}"
                             class="figure-img img-fluid rounded"></a>
-            </div>
+                </div>
             @endfor
         </div>
     </div>

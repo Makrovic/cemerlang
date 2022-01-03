@@ -5,11 +5,10 @@
             <div class="col-6 ">
                 <div class="swiper sw-oneslide">
                     <div class="swiper-wrapper">
-                        @for($i = 1; $i <= 2; $i++)
+                        @for ($i = 1; $i <= 2; $i++)
                             <div class="swiper-slide d-flex justify-content-center align-items-center">
-                                <a href="{{ asset('images/pt/event/ovop'.$i.'.jpg') }}"
-                                    data-lightbox="image-1">
-                                    <img src="{{ asset('images/pt/event/ovop'.$i.'.jpg') }}"
+                                <a href="{{ asset('images/pt/event/ovop' . $i . '.jpg') }}" data-lightbox="image-1">
+                                    <img src="{{ asset('images/pt/event/ovop' . $i . '.jpg') }}"
                                         class="figure-img img-fluid rounded" style="max-height: 560px"></a>
 
                             </div>
@@ -21,11 +20,11 @@
             <div class="col-6 ">
                 <div class="swiper sw-oneslide">
                     <div class="swiper-wrapper">
-                        @for($i = 1; $i <= 5; $i++)
+                        @for ($i = 1; $i <= 5; $i++)
                             <div class="swiper-slide d-flex justify-content-center align-items-center">
-                                <a href="{{ asset('images/pt/event/tradeexport'.$i.'.jpg') }}"
+                                <a href="{{ asset('images/pt/event/tradeexport' . $i . '.jpg') }}"
                                     data-lightbox="image-2">
-                                    <img src="{{ asset('images/pt/event/tradeexport'.$i.'.jpg') }}"
+                                    <img src="{{ asset('images/pt/event/tradeexport' . $i . '.jpg') }}"
                                         class="figure-img img-fluid rounded" style="max-height: 560px"></a>
 
                             </div>
@@ -39,11 +38,11 @@
             <div class="col-6">
                 <div class="swiper sw-oneslide">
                     <div class="swiper-wrapper">
-                        @for($i = 1; $i <= 5; $i++)
+                        @for ($i = 1; $i <= 5; $i++)
                             <div class="swiper-slide d-flex justify-content-center align-items-center">
-                                <a href="{{ asset('images/pt/event/jemputrezeki'.$i.'.jpg') }}"
+                                <a href="{{ asset('images/pt/event/jemputrezeki' . $i . '.jpg') }}"
                                     data-lightbox="image-3">
-                                    <img src="{{ asset('images/pt/event/jemputrezeki'.$i.'.jpg') }}"
+                                    <img src="{{ asset('images/pt/event/jemputrezeki' . $i . '.jpg') }}"
                                         class="figure-img img-fluid rounded" style="max-height: 560px"></a>
 
                             </div>
@@ -55,11 +54,10 @@
             <div class="col-6 ">
                 <div class="swiper sw-oneslide">
                     <div class="swiper-wrapper">
-                        @for($i = 1; $i <= 3; $i++)
+                        @for ($i = 1; $i <= 3; $i++)
                             <div class="swiper-slide d-flex justify-content-center align-items-center">
-                                <a href="{{ asset('images/pt/event/fsi'.$i.'.jpg') }}"
-                                    data-lightbox="image-4">
-                                    <img src="{{ asset('images/pt/event/fsi'.$i.'.jpg') }}"
+                                <a href="{{ asset('images/pt/event/fsi' . $i . '.jpg') }}" data-lightbox="image-4">
+                                    <img src="{{ asset('images/pt/event/fsi' . $i . '.jpg') }}"
                                         class="figure-img img-fluid rounded" style="max-height: 560px"></a>
 
                             </div>
@@ -73,11 +71,11 @@
             <div class="col-6">
                 <div class="swiper sw-oneslide">
                     <div class="swiper-wrapper">
-                        @for($i = 1; $i <= 3; $i++)
+                        @for ($i = 1; $i <= 3; $i++)
                             <div class="swiper-slide d-flex justify-content-center align-items-center">
-                                <a href="{{ asset('images/pt/event/kurasiexport'.$i.'.jpg') }}"
+                                <a href="{{ asset('images/pt/event/kurasiexport' . $i . '.jpg') }}"
                                     data-lightbox="image-3">
-                                    <img src="{{ asset('images/pt/event/kurasiexport'.$i.'.jpg') }}"
+                                    <img src="{{ asset('images/pt/event/kurasiexport' . $i . '.jpg') }}"
                                         class="figure-img img-fluid rounded" style="max-height: 560px"></a>
 
                             </div>
@@ -88,8 +86,8 @@
             </div>
             <div class="col-6">
                 <a href="{{ asset('images/pt/event/dubes.jpg') }}" data-lightbox="image-3">
-                    <img src="{{ asset('images/pt/event/dubes.jpg') }}"
-                        class="figure-img img-fluid rounded" style="max-height: 560px"></a>
+                    <img src="{{ asset('images/pt/event/dubes.jpg') }}" class="figure-img img-fluid rounded"
+                        style="max-height: 560px"></a>
                 <p>Dubes</p>
             </div>
         </div>

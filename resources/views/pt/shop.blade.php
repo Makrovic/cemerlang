@@ -1,8 +1,8 @@
 @extends('layout.base')
 @section('customcss')
-<link href="{{ asset('css/content-pt.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/content-pt.css') }}" rel="stylesheet" type="text/css">
 @stop
-    @section('content')
+@section('content')
     {{-- banner --}}
     <div id="banner" class="banner2" style="background-image: url('../images/pt/banner5.jpg')">
         <div class="banner-hero">
@@ -23,22 +23,24 @@
             <h1 class="title text-center" data-aos="fade-up">Belanja Langsung</h1>
             <div class="row g-5" data-aos="fade-up">
                 @foreach ($produks as $produk)
-                <div class="col-4 d-flex justify-content-center">
-                    <div class="card text-center card-product">
-                        <a class="m-2" href="{{ URL::route('bintang.shop.product.desc',$produk->kode_produk) }}">
-                            <div class="img-box-zoom">
-                                <img src="{{ asset('images/pt/carica/carica1.jpg') }}"
-                                    class="img-fluid rounded" alt="...">
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="card text-center card-product">
+                            <a class="m-2"
+                                href="{{ URL::route('bintang.shop.product.desc', $produk->kode_produk) }}">
+                                <div class="img-box-zoom">
+                                    <img src="{{ asset('images/pt/carica/carica1.jpg') }}" class="img-fluid rounded"
+                                        alt="...">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <span class="text-muted">{{ $produk->kategori }}</span>
+                                <p>{{ $produk->nama }}</p>
+                                <h4 class="text-success">Rp.{{ $produk->harga }},-</h4>
+                                <a href="{{ URL::route('bintang.shop.cart.add', $produk->kode_produk) }}"
+                                    class="btn btn-carica mt-4">Tambah ke keranjang</a>
                             </div>
-                        </a>
-                        <div class="card-body">
-                            <span class="text-muted">{{$produk->kategori}}</span>
-                            <p>{{$produk->nama}}</p>
-                            <h4 class="text-success">Rp.{{$produk->harga}},-</h4>
-                            <a href="{{ URL::route('bintang.shop.cart.add',$produk->kode_produk) }}" class="btn btn-carica mt-4">Tambah ke keranjang</a>
                         </div>
                     </div>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -76,32 +78,32 @@
             <div class="row my-4 p-5" data-aos="fade-up">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ asset('images/pt/marketplace/tokopedia.png') }}"
-                            class="img-fluid" alt="marketplace-tokopedia">
+                        <img src="{{ asset('images/pt/marketplace/tokopedia.png') }}" class="img-fluid"
+                            alt="marketplace-tokopedia">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ asset('images/pt/marketplace/shopee.png') }}"
-                            class="img-fluid" alt="marketplace-shopee">
+                        <img src="{{ asset('images/pt/marketplace/shopee.png') }}" class="img-fluid"
+                            alt="marketplace-shopee">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ asset('images/pt/marketplace/blibli.png') }}"
-                            class="img-fluid" alt="marketplace-blibli">
+                        <img src="{{ asset('images/pt/marketplace/blibli.png') }}" class="img-fluid"
+                            alt="marketplace-blibli">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ asset('images/pt/marketplace/tokko.png') }}"
-                            class="img-fluid" alt="marketplace-tokko">
+                        <img src="{{ asset('images/pt/marketplace/tokko.png') }}" class="img-fluid"
+                            alt="marketplace-tokko">
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    @stop
-        @section('customjs')
-        <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
-        @stop
+@stop
+@section('customjs')
+    <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+@stop

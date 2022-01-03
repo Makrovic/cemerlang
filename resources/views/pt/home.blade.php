@@ -1,8 +1,8 @@
 @extends('layout.base')
 @section('customcss')
-<link href="{{ asset('css/home-pt.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/home-pt.css') }}" rel="stylesheet" type="text/css">
 @stop
-    @section('content')
+@section('content')
 
     {{-- banner --}}
     <div class="sw-bannerpt">
@@ -68,8 +68,7 @@
                 <div class="col-12 col-sm-4">
                     <div class="img-box-zoom rounded">
                         <a href="#home-carica">
-                            <img class="img-fluid"
-                                src="{{ asset('images/pt/carica/carica1.jpg') }}">
+                            <img class="img-fluid" src="{{ asset('images/pt/carica/carica1.jpg') }}">
                             <h3 class="h2">Carica Cemerlang</h3>
                         </a>
                     </div>
@@ -77,8 +76,7 @@
                 <div class="col-12 col-sm-4">
                     <div class="img-box-zoom rounded">
                         <a href="#home-snack">
-                            <img class="img-fluid"
-                                src="{{ asset('images/pt/snack/snack.jpg') }}">
+                            <img class="img-fluid" src="{{ asset('images/pt/snack/snack.jpg') }}">
                             <h3 class="h2">Bintang Cemerlang Snack</h3>
                         </a>
                     </div>
@@ -86,8 +84,7 @@
                 <div class="col-12 col-sm-4">
                     <div class="img-box-zoom rounded">
                         <a href="#home-craft">
-                            <img class="img-fluid"
-                                src="{{ asset('images/pt/craft/craft1.jpg') }}">
+                            <img class="img-fluid" src="{{ asset('images/pt/craft/craft1.jpg') }}">
                             <h3 class="h2">Claster Craft Cemerlang</h3>
                         </a>
                     </div>
@@ -100,11 +97,9 @@
         <div class="container">
             <div class="row flex-row justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-left">
-                    <img src="{{ asset('images/pt/carica/carica1.jpg') }}" alt=""
-                        class="img-fluid rounded my-4">
+                    <img src="{{ asset('images/pt/carica/carica1.jpg') }}" alt="" class="img-fluid rounded my-4">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center"
-                    data-aos="fade-up">
+                <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center" data-aos="fade-up">
                     <h1>Carica Cemerlang</h1>
                     <p>Industri Minuman Buah Carica</p>
                 </div>
@@ -115,11 +110,9 @@
         <div class="container">
             <div class="row flex-row-reverse text-end justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-left">
-                    <img src="{{ asset('images/pt/snack/snack.jpg') }}" alt=""
-                        class="img-fluid rounded my-4">
+                    <img src="{{ asset('images/pt/snack/snack.jpg') }}" alt="" class="img-fluid rounded my-4">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center"
-                    data-aos="fade-up">
+                <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center" data-aos="fade-up">
                     <h1>Bintang Cemerlang Snack</h1>
                     <p>Industri Makanan Berbahan Potensi Lokal</p>
                 </div>
@@ -130,11 +123,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-right">
-                    <img src="{{ asset('images/pt/craft/craft1.jpg') }}" alt=""
-                        class="img-fluid rounded my-4">
+                    <img src="{{ asset('images/pt/craft/craft1.jpg') }}" alt="" class="img-fluid rounded my-4">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center"
-                    data-aos="fade-up">
+                <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center" data-aos="fade-up">
                     <h1>Claster Craft Cemerlang</h1>
                     <p>Industri Aneka Kerajinan</p>
                 </div>
@@ -150,12 +141,11 @@
             <div class="row mt-5" data-aos="fade-up">
                 <div class="swiper sw-galeri">
                     <div class="swiper-wrapper">
-                        @for($i = 1; $i <= 6; $i++)
+                        @for ($i = 1; $i <= 6; $i++)
                             <div class="swiper-slide d-flex justify-content-center align-items-center">
-                                <a href="{{ asset('images/pt/galeri/'.$i.'.jpg') }}"
-                                    data-lightbox="image-1">
+                                <a href="{{ asset('images/pt/galeri/' . $i . '.jpg') }}" data-lightbox="image-1">
                                     <img class="flex-auto img-fluid rounded"
-                                        src="{{ asset('images/pt/galeri/'.$i.'.jpg') }}"></a>
+                                        src="{{ asset('images/pt/galeri/' . $i . '.jpg') }}"></a>
                             </div>
                         @endfor
                     </div>
@@ -165,7 +155,7 @@
         </div>
     </section>
     {{-- endsection --}}
-    @stop
-        @section('customjs')
-        <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
-        @stop
+@stop
+@section('customjs')
+    <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+@stop
