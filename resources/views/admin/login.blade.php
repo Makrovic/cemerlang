@@ -2,8 +2,8 @@
 @section('customcss')
 
 @stop
-    @section('content')
-    @if(session('success'))
+@section('content')
+    @if (session('success'))
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             {{ session('success') }}
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -12,8 +12,7 @@
     <main>
         <div class="container">
 
-            <section
-                class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div
@@ -28,8 +27,7 @@
                                     </div>
 
                                     <form accept-charset="UTF-8" role="form"
-                                        action="{{ URL::route('super.authenticate') }}"
-                                        method="POST">
+                                        action="{{ URL::route('super.authenticate') }}" method="POST">
                                         {{ csrf_field() }}
                                         <fieldset>
                                             <div class="col-12">
@@ -37,8 +35,7 @@
                                                 <div class="input-group has-validation">
                                                     <input type="text" name="username"
                                                         class="form-control @error('username') is-invalid @enderror"
-                                                        id="username" required
-                                                        value="{{ old('username') }}">
+                                                        id="username" required value="{{ old('username') }}">
                                                     @error('username')
                                                         <div class="invalid-feedback">{{ $message }}</div>
                                                     @enderror
@@ -79,7 +76,7 @@
 
         </div>
     </main><!-- End #main -->
-    @stop
-        @section('customjs')
+@stop
+@section('customjs')
 
-        @stop
+@stop
