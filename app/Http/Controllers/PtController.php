@@ -7,6 +7,7 @@ use App\Models\Produk;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Session;
+use Kavist\RajaOngkir\Facades\RajaOngkir;
 
 class PtController extends Controller
 {
@@ -39,17 +40,24 @@ class PtController extends Controller
     public function showCart()
     {
         $unit = 'pt';
-        $cart = Session::get('cart')->all();
-        $produks = Produk::get();
-        $carts = collect();
-        $total = 0;
-        foreach ($cart as $kodeproduk => $jumlah) {
-            $produk = $produks->where('kode_produk', $kodeproduk)->first();
-            $subtotal = $produk->harga * $jumlah;
-            $total = $total + $subtotal;
-            $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'harga' => $produk->harga, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
+        // $carts = null;
+        // $total = null;
+        if (Session::has('cart')) {
+            $cart = Session::get('cart')->all();
+            $produks = Produk::get();
+            $carts = collect();
+            $total = 0;
+            foreach ($cart as $kodeproduk => $jumlah) {
+                $produk = $produks->where('kode_produk', $kodeproduk)->first();
+                $subtotal = $produk->harga * $jumlah;
+                $total = $total + $subtotal;
+                $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'harga' => $produk->harga, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
+            }
+            // dd($cart);
+            return \view('pt.shop.cart', \compact('unit', 'carts', 'total'));
+        } else {
+            return \view('pt.shop.cart', \compact('unit', 'carts', 'total'));
         }
-        return \view('pt.shop.cart', \compact('unit', 'carts', 'total'));
     }
 
     public function addToCart($kodeproduk)
@@ -89,6 +97,17 @@ class PtController extends Controller
         // Session::put('cart', $cart);
         // Session::save();
         // dd(Session::get('cart')->all());
+    }
+
+    public function rajaOngkir()
+    {
+        $daftarProvinsi = RajaOngkir::ongkir([
+            'origin'        => 155,     // ID kota/kabupaten asal
+            'destination'   => 80,      // ID kota/kabupaten tujuan
+            'weight'        => 1300,    // berat barang dalam gram
+            'courier'       => 'jne'    // kode kurir pengiriman: ['jne', 'tiki', 'pos'] untuk starter
+        ]);
+        dd($daftarProvinsi);
     }
     /**
      * Display a listing of the resource.
