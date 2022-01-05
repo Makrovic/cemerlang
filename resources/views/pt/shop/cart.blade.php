@@ -23,7 +23,7 @@
         <div class="container">
             @isset($carts)
                 <div class="row">
-                    <div class="col-8 m-2">
+                    <div class="col-8">
                         <div class="bg-white p-2 rounded shadow-sm">
                             <form action="{{ URL::route('bintang.shop.cart.update') }}" method="post">
                                 {{ csrf_field() }}
@@ -72,27 +72,22 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col m-2">
+                    <div class="col">
                         <div class="bg-white p-2 rounded shadow-sm">
                             <h2 class="text-center m-2">Total</h2>
-                            <table class="table align-middle">
-                                <tbody>
-                                    <tr>
-                                        <td>Total Barang</td>
-                                        <td>{{ $totalbrg }}
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Total</td>
-                                        <td>Rp. {{ number_format($total) }},-
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="row border-bottom m-2">
+                                <div class="col">Total Barang</div>
+                                <div class="col">{{ $totalbrg }}</div>
+                            </div>
+                            <div class="row border-bottom m-2">
+                                <div class="col">Total</div>
+                                <div class="col">Rp. {{ number_format($total) }},-</div>
+                            </div>
                             <div class="m-2 d-flex justify-content-between">
                                 <a href="{{ URL::route('bintang.shop') }}" class="btn btn-carica mt-4">
                                     < Kembali Belanja</a>
-                                        <a href="#" class="btn btn-carica mt-4">Checkout ></a>
+                                        <a href="{{ URL::route('bintang.shop.checkout') }}"
+                                            class="btn btn-carica mt-4">Checkout ></a>
                             </div>
                         </div>
                     </div>

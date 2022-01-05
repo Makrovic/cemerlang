@@ -58,6 +58,9 @@ Route::get('/bintang/shop/removefromcart/{produk}',  [PtController::class, 'remo
 Route::post('/bintang/shop/updatecart',  [PtController::class, 'updateCart'])->name('bintang.shop.cart.update');
 Route::get('/bintang/shop/clearcart',  [PtController::class, 'clearCart'])->name('bintang.shop.cart.clear');
 
+Route::get('/bintang/shop/checkout',  [PtController::class, 'checkOut'])->name('bintang.shop.checkout');
+
+
 Route::get('/bintang/ongkir',  [PtController::class, 'rajaOngkir'])->name('bintang.ongkir');
 
 

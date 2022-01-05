@@ -127,6 +127,29 @@ class PtController extends Controller
         return redirect()->back();
     }
 
+    public function checkOut()
+    {
+        $unit = 'pt';
+        if (Session::has('cart')) {
+            $cart = Session::get('cart')->all();
+            $produks = Produk::get();
+            $carts = collect();
+            $total = 0;
+            $totalbrg = 0;
+            foreach ($cart as $kodeproduk => $jumlah) {
+                $produk = $produks->where('kode_produk', $kodeproduk)->first();
+                $subtotal = $produk->harga * $jumlah;
+                $total = $total + $subtotal;
+                $totalbrg = $totalbrg + $jumlah;
+                $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'harga' => $produk->harga, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
+            }
+            // dd($cart);
+            return \view('pt.shop.checkout', \compact('unit', 'carts', 'total', 'totalbrg'));
+        } else {
+            return redirect()->route('bintang.shop.cart');
+        }
+    }
+
     public function rajaOngkir()
     {
         $daftarProvinsi = RajaOngkir::ongkir([
