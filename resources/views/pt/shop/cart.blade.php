@@ -21,101 +21,91 @@
     {{-- @dump($produk) --}}
     <section class="sec back-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-9 bg-white p-2 m-2 rounded shadow-sm">
-                    {{-- <table class="table align-middle">
-                        <thead class="table-light">
-                            <tr>
-                                <td colspan="3" class="text-center p-3">Produk</td>
-                                <td class="p-3">Harga</td>
-                                <td class="p-3">Jumlah</td>
-                                <td class="p-3">Subtotal</td>
-                            </tr>
-                        </thead>
-                        <tbody style="border-top: none">
-                            @foreach ($carts as $cart)
-                                <tr>
-                                    <td class="text-center h5"><a href=""><span
-                                                class="btn btn-outline-danger rounded">X</span></a></td>
-                                    <td><img src="{{ asset('images/pt/carica/carica1.jpg') }}" alt=""
-                                            class="img-fluid rounded-3" style="max-width: 80px"></td>
-                                    <td><b>{{ $cart['nama'] }}</b></td>
-                                    <td>Rp. {{ number_format($cart['harga']) }}</td>
-                                    <td>
-                                        <div class="input-group">
-                                            <button class="btn btn-outline-success" type="button"
-                                                id="button-addon1">-</button>
-                                            <input type="text" class="form-control text-center"
-                                                value="{{ $cart['jumlah'] }}" style="max-width: 60px">
-                                            <button class="btn btn-outline-success" type="button"
-                                                id="button-addon1">+</button>
+            @isset($carts)
+                <div class="row">
+                    <div class="col-8 m-2">
+                        <div class="bg-white p-2 rounded shadow-sm">
+                            <form action="{{ URL::route('bintang.shop.cart.update') }}" method="post">
+                                {{ csrf_field() }}
+                                @foreach ($carts as $cart)
+                                    <div class="row m-2">
+                                        <div class="col-auto d-flex flex-column justify-content-center">
+                                            <a href="{{ URL::route('bintang.shop.cart.remove', $cart['kode_produk']) }}"><span
+                                                    class="btn btn-outline-danger rounded"><i
+                                                        class="fas fa-trash"></i></span></a>
                                         </div>
-                                    </td>
-                                    <td>Rp. {{ number_format($cart['subtotal']) }}</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                        <tfoot style="border-top: none">
-                            <tr>
-                                <td>perbarui tabel</td>
-                                <td colspan="4"></td>
-                                <td>Rp. {{ number_format($total) }},-
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table> --}}
-                    @foreach ($carts as $cart)
-                        <div class="row">
-                            {{-- <div class="col">
-                                <a href=""><span class="btn btn-outline-danger rounded">X</span></a>
-                            </div> --}}
-                            <div class="col-auto">
-                                <img src="{{ asset('images/pt/carica/carica1.jpg') }}" alt="" class="img-fluid rounded-3"
-                                    style="max-width: 80px">
-                            </div>
-                            <div class="col d-flex flex-column justify-content-center">
-                                <span>{{ $cart['nama'] }}<br><b>Rp. {{ number_format($cart['harga']) }}</b></span>
-                            </div>
-                            <div class="col d-flex flex-column justify-content-center">
-                                <div class="input-group">
-                                    <button class="btn btn-outline-success" type="button" id="button-addon1">-</button>
-                                    <input type="text" class="form-control text-center" value="{{ $cart['jumlah'] }}"
-                                        style="max-width: 60px">
-                                    <button class="btn btn-outline-success" type="button" id="button-addon1">+</button>
+                                        <div class=" col-auto">
+                                            <img src="{{ asset('images/pt/carica/carica1.jpg') }}" alt=""
+                                                class="img-fluid rounded-3" style="max-width: 80px">
+                                        </div>
+                                        <div class="col d-flex flex-column justify-content-center">
+                                            <input type="hidden" name="kodeproduk{{ $loop->index }}"
+                                                value="{{ $cart['kode_produk'] }}">
+                                            <span>{{ $cart['nama'] }}<br><b>Rp.
+                                                    {{ number_format($cart['harga']) }}</b></span>
+                                        </div>
+                                        <div class="col d-flex flex-column justify-content-center">
+                                            <input type="number" class="form-control text-center"
+                                                name="jumlah{{ $loop->index }}" value="{{ $cart['jumlah'] }}"
+                                                style="max-width: 60px" required>
+                                        </div>
+                                        <div class="col d-flex flex-column justify-content-center">
+                                            <b>Rp. <span>{{ number_format($cart['subtotal']) }}</span></b>
+                                        </div>
+                                    </div>
+                                @endforeach
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="{{ URL::route('bintang.shop.cart.clear') }}"
+                                            class="badge bg-danger link-light text-decoration-none">
+                                            kosongkan keranjang
+                                        </a>
+                                    </div>
+                                    <div class="col text-end">
+                                        <button type="submit" class="btn badge back-primaryc link-light text-decoration-none">
+                                            perbarui keranjang
+                                            </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col d-flex flex-column justify-content-center">
-                                <b>Rp. {{ number_format($cart['subtotal']) }}</b>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col m-2">
+                        <div class="bg-white p-2 rounded shadow-sm">
+                            <h2 class="text-center m-2">Total</h2>
+                            <table class="table align-middle">
+                                <tbody>
+                                    <tr>
+                                        <td>Total Barang</td>
+                                        <td>{{ $totalbrg }}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>Rp. {{ number_format($total) }},-
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="m-2 d-flex justify-content-between">
+                                <a href="{{ URL::route('bintang.shop') }}" class="btn btn-carica mt-4">
+                                    < Kembali Belanja</a>
+                                        <a href="#" class="btn btn-carica mt-4">Checkout ></a>
                             </div>
                         </div>
-                    @endforeach
+                    </div>
                 </div>
-                <div class="col bg-white p-2 m-2 rounded shadow-sm">
-                    <h2 class="text-center m-2">Total</h2>
-                    <table class="table align-middle">
-                        <tbody>
-                            <tr>
-                                <td>Subtotal</td>
-                                <td>Rp. {{ number_format($total) }},-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Pengiriman</td>
-                                <td>Hitung
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Total</td>
-                                <td>Rp. {{ number_format($total) }},-
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            @endisset
+            @empty($carts)
+                <div class="bg-white p-5 m-2 rounded shadow-sm text-center ">
+                    <h1><i class="fa fa-shopping-cart text-primaryc" aria-hidden="true"></i></h1>
+                    <h3 class="">Keranjang Kosong</h3>
+                    <a href="{{ URL::route('bintang.shop') }}" class="btn btn-carica mt-4">Belanja</a>
                 </div>
-            </div>
+            @endempty
         </div>
     </section>
 @stop
 @section('customjs')
-    <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+
 @stop

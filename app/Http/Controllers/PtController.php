@@ -40,23 +40,23 @@ class PtController extends Controller
     public function showCart()
     {
         $unit = 'pt';
-        // $carts = null;
-        // $total = null;
         if (Session::has('cart')) {
             $cart = Session::get('cart')->all();
             $produks = Produk::get();
             $carts = collect();
             $total = 0;
+            $totalbrg = 0;
             foreach ($cart as $kodeproduk => $jumlah) {
                 $produk = $produks->where('kode_produk', $kodeproduk)->first();
                 $subtotal = $produk->harga * $jumlah;
                 $total = $total + $subtotal;
+                $totalbrg = $totalbrg + $jumlah;
                 $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'harga' => $produk->harga, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
             }
             // dd($cart);
-            return \view('pt.shop.cart', \compact('unit', 'carts', 'total'));
+            return \view('pt.shop.cart', \compact('unit', 'carts', 'total', 'totalbrg'));
         } else {
-            return \view('pt.shop.cart', \compact('unit', 'carts', 'total'));
+            return \view('pt.shop.cart', \compact('unit'));
         }
     }
 
@@ -88,15 +88,39 @@ class PtController extends Controller
         }
     }
 
+    public function removeFromCart($kodeproduk)
+    {
+        $unit = 'pt';
+        $jumlah = 1;
+        $cart = Session::get('cart');
+        $cart->forget($kodeproduk);
+        Session::put('cart', $cart);
+        Session::save();
+        return redirect()->back();
+    }
+
+    public function updateCart(Request $request)
+    {
+        $unit = 'pt';
+        $jml_ttl = Session::get('cart')->count();
+        $cart = collect();
+        for ($i = 0; $i < $jml_ttl; $i++) {
+            $kodeproduk =  $request['kodeproduk' . $i . ''];
+            $jumlah = (int)$request['jumlah' . $i . ''];
+            if ($jumlah < 1) {
+                $jumlah = 1;
+            }
+            $cart->put($kodeproduk, $jumlah);
+        }
+        Session::put('cart', $cart);
+        Session::save();
+        return redirect()->back();
+    }
+
     public function clearCart()
     {
         Session::forget('cart');
-        // $cart = collect([
-        //     'pc001' => 1, 'pc002' => 1
-        // ]);
-        // Session::put('cart', $cart);
-        // Session::save();
-        // dd(Session::get('cart')->all());
+        return redirect()->back();
     }
 
     public function rajaOngkir()

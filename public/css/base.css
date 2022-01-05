@@ -34,6 +34,9 @@ body {
     background-color: #7e7e7e;
     color: #fff;
 }
+.text-primaryc {
+    color: var(--primaryc);
+}
 
 /* navbar */
 #navheader {
