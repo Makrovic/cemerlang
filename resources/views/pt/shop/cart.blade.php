@@ -47,7 +47,7 @@
                                         <div class="col d-flex flex-column justify-content-center">
                                             <input type="number" class="form-control text-center"
                                                 name="jumlah{{ $loop->index }}" value="{{ $cart['jumlah'] }}"
-                                                style="max-width: 60px" required>
+                                                style="max-width: 60px" onchange="inputChange()" required>
                                         </div>
                                         <div class="col d-flex flex-column justify-content-center">
                                             <b>Rp. <span>{{ number_format($cart['subtotal']) }}</span></b>
@@ -62,7 +62,9 @@
                                         </a>
                                     </div>
                                     <div class="col text-end">
-                                        <button type="submit" class="btn badge back-primaryc link-light text-decoration-none">
+                                        <button type="submit" id="btn_refresh_cart"
+                                            class="btn badge back-primaryc link-light text-decoration-none"
+                                            style="visibility: hidden">
                                             perbarui keranjang
                                             </a>
                                     </div>
@@ -107,5 +109,9 @@
     </section>
 @stop
 @section('customjs')
-
+    <script>
+        function inputChange() {
+            document.getElementById("btn_refresh_cart").style.visibility = "visible";
+        }
+    </script>
 @stop
