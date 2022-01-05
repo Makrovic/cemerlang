@@ -82,20 +82,24 @@ class PtController extends Controller
             }
             Session::put('cart', $cart);
             Session::save();
-            return redirect()->route('bintang.shop.cart');
-        } else {
-            return 'oops!';
         }
+        return redirect()->route('bintang.shop.cart');
     }
 
     public function removeFromCart($kodeproduk)
     {
-        $unit = 'pt';
-        $jumlah = 1;
-        $cart = Session::get('cart');
-        $cart->forget($kodeproduk);
-        Session::put('cart', $cart);
-        Session::save();
+        if (Session::has('cart') && Session::get('cart')->has($kodeproduk)) {
+            $unit = 'pt';
+            $jumlah = Session::get('cart')->count();
+            if ($jumlah <= 1) {
+                Session::forget('cart');
+            } else {
+                $cart = Session::get('cart');
+                $cart->forget($kodeproduk);
+                Session::put('cart', $cart);
+                Session::save();
+            }
+        }
         return redirect()->back();
     }
 
