@@ -6,8 +6,9 @@
     <meta name="description" content="">
     <meta name="author" content="Makrovic">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>
-        @if($unit === 'pkbm')
+        @if ($unit === 'pkbm')
             PKBM Cemerlang
         @else
             PT Bintang Cemerlang Jaya Sentosa
@@ -48,7 +49,7 @@
 <body>
     <a href="#" onclick="topFunction()" id="btn-top"
         class="d-flex align-items-center justify-content-center invisible"><i class="fas fa-chevron-up"></i></a>
-    @if($unit === 'pkbm')
+    @if ($unit === 'pkbm')
         {{-- header pkbm --}}
         @include('layout.header-pkbm')
         {{-- endheader pkbm --}}
@@ -62,7 +63,7 @@
     {{-- endcontent --}}
 
     {{-- footer --}}
-    @if($unit === 'pkbm')
+    @if ($unit === 'pkbm')
         {{-- header pkbm --}}
         @include('layout.footer-pkbm')
         {{-- endheader pkbm --}}
@@ -74,8 +75,7 @@
     {{-- endfooter --}}
 
     {{-- script --}}
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/jquery-3.6.0.js') }}"></script>
     {{-- bootstrap --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
