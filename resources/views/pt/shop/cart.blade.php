@@ -62,7 +62,7 @@
                                         </a>
                                     </div>
                                     <div class="col text-end">
-                                        <button type="submit" id="btn_refresh_cart"
+                                        <button type="submit" id="btn-refresh-cart"
                                             class="btn badge back-primaryc link-light text-decoration-none"
                                             style="visibility: hidden">
                                             perbarui keranjang
@@ -106,7 +106,7 @@
 @section('customjs')
     <script>
         function inputChange() {
-            document.getElementById("btn_refresh_cart").style.visibility = "visible";
+            document.getElementById("btn-refresh-cart").style.visibility = "visible";
         }
     </script>
 @stop
