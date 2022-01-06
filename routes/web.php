@@ -60,6 +60,9 @@ Route::get('/bintang/shop/clearcart',  [PtController::class, 'clearCart'])->name
 
 Route::get('/bintang/shop/checkout',  [PtController::class, 'checkOut'])->name('bintang.shop.checkout');
 
+Route::get('/bintang/shop/checkout/getcities/{province_id}',  [PtController::class, 'getCities'])->name('bintang.shop.checkout.getcities');
+Route::post('/bintang/shop/checkout/checkongkir',  [PtController::class, 'checkOngkir'])->name('bintang.shop.checkout.checkongkir');
+
 
 Route::get('/bintang/ongkir',  [PtController::class, 'rajaOngkir'])->name('bintang.ongkir');
 

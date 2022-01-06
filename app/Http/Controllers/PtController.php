@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Legalitas;
 use App\Models\Produk;
+use App\Models\Kota;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Session;
@@ -136,29 +137,43 @@ class PtController extends Controller
             $carts = collect();
             $total = 0;
             $totalbrg = 0;
+            $totalbrt = 0;
             foreach ($cart as $kodeproduk => $jumlah) {
                 $produk = $produks->where('kode_produk', $kodeproduk)->first();
                 $subtotal = $produk->harga * $jumlah;
                 $total = $total + $subtotal;
                 $totalbrg = $totalbrg + $jumlah;
-                $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'harga' => $produk->harga, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
+                $totalbrt =  $totalbrt + $produk->berat;
+                $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
             }
-            // dd($cart);
-            return \view('pt.shop.checkout', \compact('unit', 'carts', 'total', 'totalbrg'));
+            $provinsis = Kota::get()->unique('province_id')->pluck('province_name', 'province_id');
+            return \view('pt.shop.checkout', \compact('unit', 'carts', 'total', 'totalbrg', 'totalbrt', 'provinsis'));
         } else {
             return redirect()->route('bintang.shop.cart');
         }
     }
 
+    public function getCities($id)
+    {
+        $city = Kota::where('province_id', $id)->pluck('city_name', 'city_id');
+        return response()->json($city);
+    }
+
+    public function checkOngkir(Request $request)
+    {
+        $cost = RajaOngkir::ongkosKirim([
+            'origin'        => 498, // ID kota/kabupaten asal
+            'destination'   => $request->city, // ID kota/kabupaten tujuan
+            'weight'        => $request->weight, // berat barang dalam gram
+            'courier'       => $request->courier // kode kurir pengiriman: ['jne', 'tiki', 'pos'] untuk starter
+        ])->get();
+        return response()->json($cost);
+    }
+
     public function rajaOngkir()
     {
-        $daftarProvinsi = RajaOngkir::ongkir([
-            'origin'        => 155,     // ID kota/kabupaten asal
-            'destination'   => 80,      // ID kota/kabupaten tujuan
-            'weight'        => 1300,    // berat barang dalam gram
-            'courier'       => 'jne'    // kode kurir pengiriman: ['jne', 'tiki', 'pos'] untuk starter
-        ]);
-        dd($daftarProvinsi);
+        $city = Kota::where('province_id', 10)->pluck('city_name', 'city_id');
+        dd($city);
     }
     /**
      * Display a listing of the resource.

@@ -66,7 +66,7 @@
                                             class="btn badge back-primaryc link-light text-decoration-none"
                                             style="visibility: hidden">
                                             perbarui keranjang
-                                            </a>
+                                        </button>
                                     </div>
                                 </div>
                             </form>
