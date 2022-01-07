@@ -162,12 +162,17 @@ class PtController extends Controller
     public function checkOngkir(Request $request)
     {
         $cost = RajaOngkir::ongkosKirim([
-            'origin'        => 498, // ID kota/kabupaten asal
-            'destination'   => $request->city, // ID kota/kabupaten tujuan
-            'weight'        => $request->weight, // berat barang dalam gram
-            'courier'       => $request->courier // kode kurir pengiriman: ['jne', 'tiki', 'pos'] untuk starter
+            'origin'        => 498,
+            'destination'   => $request->city,
+            'weight'        => $request->weight,
+            'courier'       => $request->courier
         ])->get();
         return response()->json($cost);
+    }
+
+    public function confirmCheckOut(Request $request)
+    {
+        dd($request->all());
     }
 
     public function rajaOngkir()
