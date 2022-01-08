@@ -21,6 +21,7 @@
     <section class="sec">
         <div class="container">
             <h1 class="title text-center" data-aos="fade-up">Belanja Langsung</h1>
+            @isset($produks)
             <div class="row g-5" data-aos="fade-up">
                 @foreach ($produks as $produk)
                     <div class="col-4 d-flex justify-content-center">
@@ -35,7 +36,7 @@
                             <div class="card-body">
                                 <span class="text-muted">{{ $produk->kategori }}</span>
                                 <p>{{ $produk->nama }}</p>
-                                <h4 class="text-success">Rp.{{ $produk->harga }},-</h4>
+                                <h4 class="text-success">Rp. {{ number_format($produk->harga)}},-</h4>
                                 <a href="{{ URL::route('bintang.shop.cart.add', $produk->kode_produk) }}"
                                     class="btn btn-carica mt-4">Tambah ke keranjang</a>
                             </div>
@@ -43,6 +44,13 @@
                     </div>
                 @endforeach
             </div>
+            @endisset
+            @empty($produks)
+                <div class="p-5 m-2 text-center">
+                    <h1><i class="fa fa-shopping-cart text-primaryc" aria-hidden="true"></i></h1>
+                    <h3 class="">Belum ada barang</h3>
+                </div>
+            @endempty
         </div>
     </section>
     <section class="sec back-gray">

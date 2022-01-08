@@ -54,7 +54,6 @@ class PtController extends Controller
                 $totalbrg = $totalbrg + $jumlah;
                 $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'harga' => $produk->harga, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
             }
-            // dd($cart);
             return \view('pt.shop.cart', \compact('unit', 'carts', 'total', 'totalbrg'));
         } else {
             return \view('pt.shop.cart', \compact('unit'));
@@ -147,7 +146,13 @@ class PtController extends Controller
                 $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
             }
             $provinsis = Kota::get()->unique('province_id')->pluck('province_name', 'province_id');
-            return \view('pt.shop.checkout', \compact('unit', 'carts', 'total', 'totalbrg', 'totalbrt', 'provinsis'));
+            $totalan = collect([
+                'total' => $total,
+                'totalbrt' => $totalbrt
+            ]);
+            Session::put('totalan', $totalan);
+            Session::save();
+            return \view('pt.shop.checkout', \compact('unit', 'carts', 'totalbrg', 'provinsis'));
         } else {
             return redirect()->route('bintang.shop.cart');
         }
@@ -161,10 +166,11 @@ class PtController extends Controller
 
     public function checkOngkir(Request $request)
     {
+        $totalan = Session::get('totalan');
         $cost = RajaOngkir::ongkosKirim([
             'origin'        => 498,
             'destination'   => $request->city,
-            'weight'        => $request->weight,
+            'weight'        => $totalan['totalbrt'],
             'courier'       => $request->courier
         ])->get();
         return response()->json($cost);
@@ -172,7 +178,8 @@ class PtController extends Controller
 
     public function confirmCheckOut(Request $request)
     {
-        dd($request->all());
+        $unit = 'pt';
+        return \view('pt.shop.confirmcheckout', \compact('unit', 'request'));
     }
 
     public function rajaOngkir()

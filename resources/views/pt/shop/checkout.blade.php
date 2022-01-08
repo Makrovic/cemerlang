@@ -104,13 +104,12 @@
                             </div>
                             <div class="row border-bottom m-2">
                                 <div class="col">Total Berat</div>
-                                <div class="col">{{ $totalbrt }} gr</div>
-                                <input type="hidden" name="totalbrt" id="totalbrt" value="{{ $totalbrt }}">
+                                <div class="col">{{ session('totalan')['totalbrt'] }} gr</div>
                             </div>
                             <div class="row border-bottom m-2">
                                 <div class="col">Subtotal</div>
-                                <div class="col">Rp. {{ number_format($total) }},-</div>
-                                <input type="hidden" name="subtotal" id="subtotal" value="{{ $total }}">
+                                <div class="col">Rp. {{ number_format(session('totalan')['total']) }},-</div>
+                                {{-- <input type="hidden" name="subtotal" id="subtotal" value="{{ $total }}"> --}}
                             </div>
                             <div class="row border-bottom m-2">
                                 <div class="col">Ongkos Kirim</div>
@@ -180,13 +179,12 @@
             $('#btn-cek-ongkir').css('visibility', 'visible');
         });
 
-        let subtotal = $('#subtotal').val();
+        let subtotal = {{ session('totalan')['total'] }};
 
         $('#btn-cek-ongkir').click(function() {
             let token = $("meta[name='csrf-token']").attr("content");
             let city = $('#kota').val();
             let courier = $('#kurir').val();
-            let weight = $('#totalbrt').val();
 
             if (courier) {
                 $.ajax({
@@ -196,11 +194,11 @@
                         _token: token,
                         city: city,
                         courier: courier,
-                        weight: weight,
                     },
                     dataType: 'json',
                     success: function(response) {
                         if (response) {
+                            console.log(response);
                             var i = 0;
                             $('#cost').empty();
                             $.each(response[0]['costs'], function(key, value) {
@@ -214,7 +212,8 @@
                                     value.cost[0].value + '<br>' +
                                     response[0].code.toUpperCase() + value
                                     .service + ' (' + value.cost[0].etd +
-                                    ' hari)</label></div>');
+                                    ' hari)</label></div>'
+                                );
                             });
                             let cost = $('#cost #ongkir' + i + '').val();
                             radioChangeValue(cost);
@@ -235,6 +234,8 @@
             $('#form-checkout').empty();
             $('#form-checkout').append(
                 '<button type="submit" class="btn btn-carica m-3">Checkout</button>');
+            $('#form-checkout').append(
+                '<br><span class="text-primary">cek lagi dengan teliti data diri dan alamat anda<br>');
         }
     </script>
 @stop

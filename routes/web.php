@@ -59,12 +59,11 @@ Route::post('/bintang/shop/updatecart',  [PtController::class, 'updateCart'])->n
 Route::get('/bintang/shop/clearcart',  [PtController::class, 'clearCart'])->name('bintang.shop.cart.clear');
 
 Route::get('/bintang/shop/checkout',  [PtController::class, 'checkOut'])->name('bintang.shop.checkout');
-
 Route::get('/bintang/shop/checkout/getcities/{province_id}',  [PtController::class, 'getCities'])->name('bintang.shop.checkout.getcities');
 Route::post('/bintang/shop/checkout/checkongkir',  [PtController::class, 'checkOngkir'])->name('bintang.shop.checkout.checkongkir');
 Route::post('/bintang/shop/checkout',  [PtController::class, 'confirmCheckOut'])->name('bintang.shop.checkout.confirm');
 
-Route::view('/bintang/shop/confirmcheckout', 'pt.shop.confirmcheckout', ['unit' => 'pt'])->name('bintang.shop.confirmcheckout');
+// Route::view('/bintang/shop/confirmcheckout', 'pt.shop.confirmcheckout', ['unit' => 'pt'])->name('bintang.shop.confirmcheckout');
 
 
 // Route::get('/bintang/ongkir',  [PtController::class, 'rajaOngkir'])->name('bintang.ongkir');
