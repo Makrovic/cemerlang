@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Legalitas;
 use App\Models\Produk;
 use App\Models\Kota;
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Session;
@@ -148,11 +149,12 @@ class PtController extends Controller
             $provinsis = Kota::get()->unique('province_id')->pluck('province_name', 'province_id');
             $totalan = collect([
                 'total' => $total,
+                'totalbrg' => $totalbrg,
                 'totalbrt' => $totalbrt
             ]);
             Session::put('totalan', $totalan);
             Session::save();
-            return \view('pt.shop.checkout', \compact('unit', 'carts', 'totalbrg', 'provinsis'));
+            return \view('pt.shop.checkout', \compact('unit', 'carts', 'provinsis'));
         } else {
             return redirect()->route('bintang.shop.cart');
         }
@@ -164,22 +166,30 @@ class PtController extends Controller
         return response()->json($city);
     }
 
-    public function checkOngkir(Request $request)
+    public function courierCheck(Request $request)
     {
         $totalan = Session::get('totalan');
+        $city = $request->city;
+        $courier = $request->courier;
         $cost = RajaOngkir::ongkosKirim([
             'origin'        => 498,
-            'destination'   => $request->city,
+            'destination'   => $city,
             'weight'        => $totalan['totalbrt'],
-            'courier'       => $request->courier
+            'courier'       => $courier
         ])->get();
         return response()->json($cost);
     }
 
-    public function confirmCheckOut(Request $request)
+    public function costCheck($city, $weight, $courier, $service)
     {
-        $unit = 'pt';
-        return \view('pt.shop.confirmcheckout', \compact('unit', 'request'));
+        $cost = RajaOngkir::ongkosKirim([
+            'origin'        => 498,
+            'destination'   => $city,
+            'weight'        => $weight,
+            'courier'       => $courier
+        ])->get();
+        $cost = $cost[0]['costs'][$service];
+        return $cost;
     }
 
     public function rajaOngkir()
@@ -187,79 +197,41 @@ class PtController extends Controller
         $city = Kota::where('province_id', 10)->pluck('city_name', 'city_id');
         dd($city);
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function storeCheckOut(Request $request)
     {
-        //
-    }
+        $count = Order::count();
+        $kotas = RajaOngkir::kota()->dariProvinsi($request->provinsi)->find($request->kota);
+        $cost = explode(':', $request->cost);
+        $totalan = Session::get('totalan');
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        $kodetransaksi = 'tr' . date("ymdH") . $count + 1;
+        $alamat = $request->alamat . ' - ' . $request->kecamatan . ' - ' . $request->zip;
+        $kota = $kotas['type'] . ' ' . $kotas['city_name'] . ', ' . $kotas['province'];
+        $berat = $totalan['totalbrt'];
+        $subtotal = $totalan['total'];
+        $cekongkir = $this->costCheck($cost[0], $berat, $cost[1], $cost[2]);
+        $ongkir = $cekongkir['cost'][0]['value'];
+        $ekspedisi = strtoupper($cost[1]) . ' ' . $cekongkir['service'];
+        $estimasi = $cekongkir['cost'][0]['etd'] . ' hari';
+        $catatan = $request->catatan;
+        $order = Order::create([
+            'kode_transaksi' => $kodetransaksi,
+            'tgl_transaksi' => date("Y-m-d"),
+            'buyer' => $request->nama,
+            'nohp' => $request->nohp,
+            'alamat' => $alamat,
+            'kota' => $kota,
+            'total_produk' => $totalan['totalbrg'],
+            'berat' => $berat,
+            'subtotal' => $subtotal,
+            'ongkir' => $ongkir,
+            'total' => $subtotal + $ongkir,
+            'ekspedisi' => $ekspedisi,
+            'estimasi' => $estimasi,
+            'catatan' => $catatan
+        ]);
+        dump($order);
+        dd($request->all());
     }
 }

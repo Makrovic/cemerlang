@@ -25,6 +25,7 @@ class KotaSeeder extends Seeder
                     'province_id' => $dProvinsi['province_id'],
                     'province_name' => $dProvinsi['province'],
                     'city_id' => $dKota['city_id'],
+                    'city_type' => $dKota['type'],
                     'city_name' => $dKota['city_name']
                 ]);
             }

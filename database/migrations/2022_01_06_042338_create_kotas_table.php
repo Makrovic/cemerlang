@@ -18,6 +18,7 @@ class CreateKotasTable extends Migration
             $table->string('province_id');
             $table->string('province_name');
             $table->string('city_id');
+            $table->string('city_type');
             $table->string('city_name');
             $table->timestamps();
         });

@@ -22,11 +22,12 @@ class CreateOrdersTable extends Migration
             $table->text('alamat');
             $table->string('kota');
             $table->integer('total_produk');
-            $table->integer('total_produk');
             $table->integer('berat');
             $table->integer('subtotal');
             $table->integer('ongkir');
             $table->integer('total');
+            $table->string('ekspedisi');
+            $table->string('estimasi');
             $table->text('catatan')->nullable();
             $table->enum('status', ['0', '1', '2'])->default('0');
             $table->dateTime('tgl_pembayaran')->nullable();
