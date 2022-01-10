@@ -200,12 +200,12 @@ class PtController extends Controller
 
     public function storeCheckOut(Request $request)
     {
+        $unit = 'pt';
         $count = Order::count();
         $kotas = RajaOngkir::kota()->dariProvinsi($request->provinsi)->find($request->kota);
         $cost = explode(':', $request->cost);
         $totalan = Session::get('totalan');
 
-        $kodetransaksi = 'tr' . date("ymdH") . $count + 1;
         $alamat = $request->alamat . ' - ' . $request->kecamatan . ' - ' . $request->zip;
         $kota = $kotas['type'] . ' ' . $kotas['city_name'] . ', ' . $kotas['province'];
         $berat = $totalan['totalbrt'];
@@ -215,8 +215,9 @@ class PtController extends Controller
         $ekspedisi = strtoupper($cost[1]) . ' ' . $cekongkir['service'];
         $estimasi = $cekongkir['cost'][0]['etd'] . ' hari';
         $catatan = $request->catatan;
-        $order = Order::create([
-            'kode_transaksi' => $kodetransaksi,
+
+        $order = [
+            'kode_transaksi' => 'tr' . date("ymdH") . $count + 1,
             'tgl_transaksi' => date("Y-m-d"),
             'buyer' => $request->nama,
             'nohp' => $request->nohp,
@@ -230,8 +231,16 @@ class PtController extends Controller
             'ekspedisi' => $ekspedisi,
             'estimasi' => $estimasi,
             'catatan' => $catatan
-        ]);
-        dump($order);
-        dd($request->all());
+        ];
+        // Order::create($order);
+        $cart = Session::get('cart')->all();
+        $produks = Produk::get();
+        $carts = collect();
+        foreach ($cart as $kodeproduk => $jumlah) {
+            $produk = $produks->where('kode_produk', $kodeproduk)->first();
+            $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
+        }
+
+        return \view('pt.shop.checkoutdone', \compact('unit', 'order', 'carts'));
     }
 }
