@@ -47,6 +47,14 @@
                                 <label for="kota">Kota</label>
                             </div>
                             <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="kecamatan" name="kecamatan" placeholder="kecamatan" required>
+                                <label for="kecamatan">Kecamatan</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="zip" name="zip" placeholder="zip" required>
+                                <label for="zip">Kode Pos</label>
+                            </div>
+                            <div class="form-floating mb-3">
                                 <textarea class="form-control" placeholder="alamat lengkap" id="alamat" name="alamat"
                                     style="min-height: 100px; max-height: 200px" required></textarea>
                                 <label for="alamat">Alamat Lengkap</label>
@@ -100,7 +108,7 @@
                             <h4 class="text-center m-2">Total</h4>
                             <div class="row border-bottom m-2">
                                 <div class="col">Total Barang</div>
-                                <div class="col">{{ $totalbrg }}</div>
+                                <div class="col">{{ session('totalan')['totalbrg'] }}</div>
                             </div>
                             <div class="row border-bottom m-2">
                                 <div class="col">Total Berat</div>
@@ -189,7 +197,7 @@
             if (courier) {
                 $.ajax({
                     type: 'POST',
-                    url: '/bintang/shop/checkout/checkongkir',
+                    url: '/bintang/shop/checkout/couriercheck',
                     data: {
                         _token: token,
                         city: city,
@@ -198,26 +206,25 @@
                     dataType: 'json',
                     success: function(response) {
                         if (response) {
-                            console.log(response);
                             var i = 0;
                             $('#cost').empty();
                             $.each(response[0]['costs'], function(key, value) {
-                                i++;
                                 $('#cost').append(
                                     '<div class="form-check"><input class="form-check-input" type="radio" id="ongkir' +
                                     i + '" name="cost" value="' +
-                                    value.cost[0].value +
+                                    city +':'+ response[0].code +':'+ i +':'+ value.cost[0].value +
                                     '" checked><label class="form-check-label" for="ongkir' +
-                                    i + '">Rp. ' +
-                                    value.cost[0].value + '<br>' +
+                                    i + '">Rp. ' + value.cost[0].value + '<br>' +
                                     response[0].code.toUpperCase() + value
                                     .service + ' (' + value.cost[0].etd +
                                     ' hari)</label></div>'
                                 );
+                                i++;
                             });
-                            let cost = $('#cost #ongkir' + i + '').val();
+                            i--;
+                            let cost = $('#cost #ongkir'+i).val();
                             radioChangeValue(cost);
-                            $("#cost input[type=radio]").change(function() {
+                            $('#cost input[type=radio]').change(function() {
                                 radioChangeValue($(this).val());
                             });
                         }
@@ -227,15 +234,15 @@
         });
 
         function radioChangeValue(value) {
-            let cost = value;
-            let total = parseFloat(cost) + parseFloat(subtotal);
+            var cost = value.split(':');
+            let total = parseFloat(cost[3]) + parseFloat(subtotal);
             $('#total').empty();
             $('#total').append('Rp. ' + total + ',-');
             $('#form-checkout').empty();
             $('#form-checkout').append(
-                '<button type="submit" class="btn btn-carica m-3">Checkout</button>');
+                '<button type="submit" class="btn btn-carica m-3">Buat Pesanan</button>');
             $('#form-checkout').append(
-                '<br><span class="text-primary">cek lagi dengan teliti data diri dan alamat anda<br>');
+                '<br><span class="text-muted">mohon cek kembali dengan teliti data diri dan alamat anda');
         }
     </script>
 @stop
