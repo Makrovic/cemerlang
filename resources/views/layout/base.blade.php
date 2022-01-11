@@ -9,9 +9,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>
         @if ($unit === 'pkbm')
-            PKBM Cemerlang
+        PKBM Cemerlang
         @else
-            PT Bintang Cemerlang Jaya Sentosa
+        PT Bintang Cemerlang Jaya Sentosa
         @endif
     </title>
     {{-- swiper --}}
@@ -42,7 +42,6 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
-
     </style>
 </head>
 
@@ -50,13 +49,13 @@
     <a href="#" onclick="topFunction()" id="btn-top"
         class="d-flex align-items-center justify-content-center invisible"><i class="fas fa-chevron-up"></i></a>
     @if ($unit === 'pkbm')
-        {{-- header pkbm --}}
-        @include('layout.header-pkbm')
-        {{-- endheader pkbm --}}
+    {{-- header pkbm --}}
+    @include('layout.header-pkbm')
+    {{-- endheader pkbm --}}
     @else
-        {{-- header pt --}}
-        @include('layout.header-pt')
-        {{-- endheader pt --}}
+    {{-- header pt --}}
+    @include('layout.header-pt')
+    {{-- endheader pt --}}
     @endif
     {{-- content --}}
     @yield('content')
@@ -64,13 +63,13 @@
 
     {{-- footer --}}
     @if ($unit === 'pkbm')
-        {{-- header pkbm --}}
-        @include('layout.footer-pkbm')
-        {{-- endheader pkbm --}}
+    {{-- header pkbm --}}
+    @include('layout.footer-pkbm')
+    {{-- endheader pkbm --}}
     @else
-        {{-- header pt --}}
-        @include('layout.footer-pt')
-        {{-- endheader pt --}}
+    {{-- header pt --}}
+    @include('layout.footer-pt')
+    {{-- endheader pt --}}
     @endif
     {{-- endfooter --}}
 
@@ -86,6 +85,9 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
     <script src="{{ asset('js/scroll.js') }}"></script>
+    {{-- jspdf --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
     @yield('customjs')
     {{-- endscript --}}
 </body>

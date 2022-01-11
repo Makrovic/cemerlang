@@ -28,7 +28,8 @@
                     <div class="bg-white p-4 rounded shadow-sm">
                         <h2 class="text-center">Detail Pesanan</h2>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="nama" name="nama" placeholder="nama" required>
+                            <input type="text" class="form-control" id="nama" name="nama" placeholder="nama"
+                                value="{{old('nama')}}" required>
                             <label for="nama">Nama</label>
                         </div>
                         <div class="form-floating mb-3">
@@ -48,21 +49,24 @@
                         </div>
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="kecamatan" name="kecamatan"
-                                placeholder="kecamatan" required>
+                                placeholder="kecamatan" value="{{old('kecamatan')}}" required>
                             <label for="kecamatan">Kecamatan</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="zip" name="zip" placeholder="zip" required>
+                            <input type="text" class="form-control" id="zip" name="zip" placeholder="zip"
+                                value="{{old('zip')}}" required>
                             <label for="zip">Kode Pos</label>
                         </div>
                         <div class="form-floating mb-3">
                             <textarea class="form-control" placeholder="alamat lengkap" id="alamat" name="alamat"
-                                style="min-height: 100px; max-height: 200px" required></textarea>
+                                style="min-height: 100px; max-height: 200px" required>{{old('alamat')}}</textarea>
                             <label for="alamat">Alamat Lengkap</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="nohp" name="nohp" placeholder="nohp" required>
-                            <label for="nohp">No Telepon / Whatsapp</label>
+                            <input type="text" class="form-control" id="nohp" name="nohp" placeholder="nohp"
+                                value="{{old('nama')}}" required>
+                            <label for="nohp">No HP / Whatsapp</label>
+                            <div class="form-text">pastikan nomor HP / whatsapp anda aktif</div>
                         </div>
                         <div class="form-floating mb-3">
                             <select class="form-select" id="kurir" name="kurir" required>
@@ -72,8 +76,8 @@
                         </div>
                         <div class="form-floating mb-3">
                             <textarea class="form-control" placeholder="catatan" id="catatan" name="catatan"
-                                style="min-height: 100px; max-height: 200px"></textarea>
-                            <label for="catatan">Catatan untuk kurir</label>
+                                style="min-height: 100px; max-height: 200px">{{old('catatan')}}</textarea>
+                            <label for="catatan">Catatan (opsional)</label>
                         </div>
                         <div class="row">
                             <div class="col">

@@ -233,6 +233,11 @@
     background-color: var(--accent-dark) !important;
 }
 
+.link-carica {
+    text-decoration: none;
+    color: var(--primaryc) !important;
+}
+
 .icon-box {
     width: 56px;
     height: 56px;

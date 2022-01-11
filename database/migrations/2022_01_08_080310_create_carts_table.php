@@ -16,9 +16,8 @@ class CreateCartsTable extends Migration
         Schema::create('carts', function (Blueprint $table) {
             $table->id();
             $table->string('kode_transaksi');
-            $table->string('kode_brg');
+            $table->string('kode_produk');
             $table->integer('jumlah');
-            $table->timestamps();
         });
     }
 

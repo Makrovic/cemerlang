@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cart;
 use App\Models\Legalitas;
 use App\Models\Produk;
 use App\Models\Kota;
 use App\Models\Order;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Session;
@@ -200,47 +202,57 @@ class PtController extends Controller
 
     public function storeCheckOut(Request $request)
     {
-        $unit = 'pt';
-        $count = Order::count();
-        $kotas = RajaOngkir::kota()->dariProvinsi($request->provinsi)->find($request->kota);
-        $cost = explode(':', $request->cost);
-        $totalan = Session::get('totalan');
+        if (Session::has('cart') && Session::has('totalan')) {
+            $unit = 'pt';
+            $count = Order::count();
+            $kotas = RajaOngkir::kota()->dariProvinsi($request->provinsi)->find($request->kota);
+            $cost = explode(':', $request->cost);
+            $totalan = Session::get('totalan');
 
-        $alamat = $request->alamat . ' - ' . $request->kecamatan . ' - ' . $request->zip;
-        $kota = $kotas['type'] . ' ' . $kotas['city_name'] . ', ' . $kotas['province'];
-        $berat = $totalan['totalbrt'];
-        $subtotal = $totalan['total'];
-        $cekongkir = $this->costCheck($cost[0], $berat, $cost[1], $cost[2]);
-        $ongkir = $cekongkir['cost'][0]['value'];
-        $ekspedisi = strtoupper($cost[1]) . ' ' . $cekongkir['service'];
-        $estimasi = $cekongkir['cost'][0]['etd'] . ' hari';
-        $catatan = $request->catatan;
+            $kodetransaksi = 'tr' . Carbon::now()->translatedFormat("ymdH") . $count + 1;
+            $alamat = $request->alamat . ' - ' . $request->kecamatan . ' - ' . $request->zip;
+            $kota = $kotas['type'] . ' ' . $kotas['city_name'] . ', ' . $kotas['province'];
+            $berat = $totalan['totalbrt'];
+            $subtotal = $totalan['total'];
+            $cekongkir = $this->costCheck($cost[0], $berat, $cost[1], $cost[2]);
+            $ongkir = $cekongkir['cost'][0]['value'];
+            $ekspedisi = strtoupper($cost[1]) . ' ' . $cekongkir['service'];
+            $estimasi = $cekongkir['cost'][0]['etd'] . ' hari';
+            $catatan = $request->catatan;
 
-        $order = [
-            'kode_transaksi' => 'tr' . date("ymdH") . $count + 1,
-            'tgl_transaksi' => date("Y-m-d"),
-            'buyer' => $request->nama,
-            'nohp' => $request->nohp,
-            'alamat' => $alamat,
-            'kota' => $kota,
-            'total_produk' => $totalan['totalbrg'],
-            'berat' => $berat,
-            'subtotal' => $subtotal,
-            'ongkir' => $ongkir,
-            'total' => $subtotal + $ongkir,
-            'ekspedisi' => $ekspedisi,
-            'estimasi' => $estimasi,
-            'catatan' => $catatan
-        ];
-        // Order::create($order);
-        $cart = Session::get('cart')->all();
-        $produks = Produk::get();
-        $carts = collect();
-        foreach ($cart as $kodeproduk => $jumlah) {
-            $produk = $produks->where('kode_produk', $kodeproduk)->first();
-            $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
+            $order = [
+                'kode_transaksi' => $kodetransaksi,
+                'tgl_transaksi' => Carbon::now()->translatedFormat('Y-m-d h:i:s'),
+                'buyer' => $request->nama,
+                'nohp' => $request->nohp,
+                'alamat' => $alamat,
+                'kota' => $kota,
+                'total_produk' => $totalan['totalbrg'],
+                'berat' => $berat,
+                'subtotal' => $subtotal,
+                'ongkir' => $ongkir,
+                'total' => $subtotal + $ongkir,
+                'ekspedisi' => $ekspedisi,
+                'estimasi' => $estimasi,
+                'catatan' => $catatan
+            ];
+
+            $cart = Session::get('cart')->all();
+            $produks = Produk::get();
+            $carts = collect();
+            foreach ($cart as $kodeproduk => $jumlah) {
+                $produk = $produks->where('kode_produk', $kodeproduk)->first();
+                $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
+                $keranjang[] = ['kode_transaksi' => $kodetransaksi, 'kode_produk' => $kodeproduk, 'jumlah' => $jumlah];
+            }
+
+            // if (Order::create($order) && Cart::insert($keranjang)) {
+            if (1) {
+                // Session::forget('cart');
+                // Session::forget('totalan');
+                return \view('pt.shop.checkoutdone', \compact('unit', 'order', 'carts'));
+            }
         }
-
-        return \view('pt.shop.checkoutdone', \compact('unit', 'order', 'carts'));
+        return redirect()->back();
     }
 }
