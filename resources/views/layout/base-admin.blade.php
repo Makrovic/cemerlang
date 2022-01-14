@@ -58,7 +58,6 @@
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
     {{-- customjs --}}
     <script src="{{ asset('js/nice-admin.js') }}"></script>
-
     @yield('customjs')
     {{-- endscript --}}
 </body>

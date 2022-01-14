@@ -79,7 +79,7 @@ Route::get('/super', [AdminController::class, 'login'])->name('super.login');
 Route::post('/super', [AdminController::class, 'authenticate'])->name('super.authenticate');
 
 Route::middleware(['admin'])->group(function () {
-    Route::view('/super/dashboard', 'admin.dashboard')->middleware('admin')->name('super.dashboard');
+    Route::get('/super/dashboard', [AdminController::class, 'dashboard'])->name('super.dashboard');
     Route::get('/super/logout',  [AdminController::class, 'logout'])->name('super.logout');
     Route::get('/cekcek',  [AdminController::class, 'checkAuth']);
 });
