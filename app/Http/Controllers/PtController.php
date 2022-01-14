@@ -246,10 +246,9 @@ class PtController extends Controller
                 $keranjang[] = ['kode_transaksi' => $kodetransaksi, 'kode_produk' => $kodeproduk, 'jumlah' => $jumlah];
             }
 
-            // if (Order::create($order) && Cart::insert($keranjang)) {
-            if (1) {
-                // Session::forget('cart');
-                // Session::forget('totalan');
+            if (Order::create($order) && Cart::insert($keranjang)) {
+                Session::forget('cart');
+                Session::forget('totalan');
                 return \view('pt.shop.checkoutdone', \compact('unit', 'order', 'carts'));
             }
         }

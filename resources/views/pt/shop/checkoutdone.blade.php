@@ -1,6 +1,24 @@
 @extends('layout.base')
 @section('customcss')
 <link href="{{ asset('css/content-pt.css') }}" rel="stylesheet" type="text/css">
+<style>
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+
+        #invoice,
+        #invoice * {
+            visibility: visible;
+        }
+
+        #invoice {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+</style>
 @stop
 @section('content')
 {{-- banner --}}
@@ -82,8 +100,8 @@
         </div>
         <div class="m-2 d-flex justify-content-between">
             <a href="#" class="btn btn-carica m-3"><i class="fas fa-shopping-cart"></i> Kembali Belanja</a>
-            <a href="#" id="print" class="btn btn-carica m-3"><i class="fas fa-file-download"></i>
-                Download Invoice</a>
+            <a href="#" id="print" class="btn btn-carica m-3"><i class="fas fa-print"></i>
+                Cetak Invoice</a>
         </div>
     </div>
 </section>
@@ -110,14 +128,9 @@
     
     $("#print").click(function() {
     
-    var pdf = new jsPDF('p', 'pt', 'a4');
-    pdf.addHTML($('#invoice')[0], function () {
-    pdf.save('Invoice-{{ $order['buyer'] }}.pdf');
-    });
+    window.print();
     
     });
-    
-    
     })
 </script>
 @stop
