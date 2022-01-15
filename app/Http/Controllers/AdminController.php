@@ -67,6 +67,36 @@ class AdminController extends Controller
         return \view('admin.dashboard', \compact('newOrders', 'totalProduk', 'totalOrder', 'totalSoldProduk', 'topSellers'));
     }
 
+    public function produk()
+    {
+        $produks = DB::table('produks')
+            ->join('carts', 'carts.kode_produk', '=', 'produks.kode_produk')
+            ->groupBy('produks.kode_produk')
+            ->select('produks.*', DB::raw('SUM(carts.jumlah) as total'))
+            ->get();
+
+        return \view('admin.produk', \compact('produks'));
+    }
+
+    public function addProduk(Request $request)
+    {
+        $produk = $request->validate([
+            'nama' => 'required',
+            'harga' => 'required',
+            'kategori' => 'required',
+            'stok' => 'required',
+            'berat' => 'required',
+            'deskripsi' => 'required',
+            'foto' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+        ]);
+        $total = Produk::count() + 1;
+        $number = sprintf("%03d", $total);
+        $kode = ['kode_produk' => 'p' . $request->kategori[0] . $number];
+        $produk['foto'] = $request->kategori . Produk::count() + 1;
+        dd($kode + $produk);
+        // Produk::create($produk);
+    }
+
     public function checkAuth()
     {
         $admin = Auth::guard('admin')->user()->name;

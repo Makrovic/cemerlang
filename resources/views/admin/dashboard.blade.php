@@ -16,7 +16,7 @@
         <h1>Dashboard</h1>
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item">Admin</li>
                 <li class="breadcrumb-item active">Dashboard</li>
             </ol>
         </nav>
@@ -97,9 +97,9 @@
                                     </td>
                                     <td>{{ $order->buyer }}</td>
                                     <td>{{ $order->total_produk }}</td>
-                                    <td>Rp. {{ number_format($order->subtotal) }},-</td>
-                                    <td>Rp. {{ number_format($order->ongkir) }},-</td>
-                                    <td>Rp. {{ number_format($order->total) }},-</td>
+                                    <td>Rp. {{ number_format($order->subtotal) }}</td>
+                                    <td>Rp. {{ number_format($order->ongkir) }}</td>
+                                    <td>Rp. {{ number_format($order->total) }}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -117,9 +117,9 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Preview</th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Sold</th>
+                                    <th scope="col">Produk</th>
+                                    <th scope="col">Harga</th>
+                                    <th scope="col">Terjual</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -132,7 +132,7 @@
                                                 class="img-fluid rounded" alt="..." style="max-width: 60px">
                                         </a></th>
                                     <td>{{ $topSeller->nama }}</td>
-                                    <td>{{ $topSeller->harga }}</td>
+                                    <td>Rp. {{ number_format($topSeller->harga) }},-</td>
                                     <td class="fw-bold">{{ $topSeller->total }}</td>
                                 </tr>
                                 @endforeach

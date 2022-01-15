@@ -80,6 +80,9 @@ Route::post('/super', [AdminController::class, 'authenticate'])->name('super.aut
 
 Route::middleware(['admin'])->group(function () {
     Route::get('/super/dashboard', [AdminController::class, 'dashboard'])->name('super.dashboard');
+    Route::get('/super/produk', [AdminController::class, 'produk'])->name('super.produk');
+    Route::view('/super/produk/add', 'admin.produk.add')->name('super.produk.add');
+    Route::post('/super/produk/add', [AdminController::class, 'addProduk'])->name('super.produk.store');
     Route::get('/super/logout',  [AdminController::class, 'logout'])->name('super.logout');
     Route::get('/cekcek',  [AdminController::class, 'checkAuth']);
 });
