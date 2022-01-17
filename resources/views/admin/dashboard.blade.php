@@ -4,13 +4,6 @@
 @stop
 @section('content')
 @include('layout.nav-admin')
-@if (session('success'))
-<div class="alert alert-danger alert-dismissible fade show" role="alert">
-    {{ session('success') }}
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-@endif
-{{-- {{auth()->admin()->name}} --}}
 <main id="main" class="main">
     <div class="pagetitle">
         <h1>Dashboard</h1>

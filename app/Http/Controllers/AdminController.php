@@ -71,9 +71,9 @@ class AdminController extends Controller
     public function produk()
     {
         $produks = DB::table('produks')
-            ->join('carts', 'carts.kode_produk', '=', 'produks.kode_produk')
+            ->leftJoin('carts', 'carts.kode_produk', '=', 'produks.kode_produk')
             ->groupBy('produks.kode_produk')
-            ->select('produks.*', DB::raw('SUM(carts.jumlah) as total'))
+            ->select('produks.*', DB::raw('coalesce(SUM(carts.jumlah),0) as total'))
             ->get();
 
         return \view('admin.produk', \compact('produks'));
@@ -97,11 +97,17 @@ class AdminController extends Controller
         $produks = $kode + $produk;
         $file = $request->file('foto');
         $tujuan_upload = 'images/pt/' . $produk['kategori'] . '/';
-        $file->move($tujuan_upload, $produk['foto'] . '.jpg');
-        $jpg = Image::make('images/pt/' . $produk['kategori'] . '/' . $produk['foto'] . '.jpg')->encode('jpg', 60)->fit(600);
-        $jpg->save('images/pt/' . $produk['kategori'] . '/' . $produk['foto'] . '.jpg');
-        Produk::create($produks);
-        dd($produks);
+        if ($file->move($tujuan_upload, $produk['foto'] . '.jpg')) {
+            $jpg = Image::make('images/pt/' . $produk['kategori'] . '/' . $produk['foto'] . '.jpg')->encode('jpg', 60)->fit(600);
+            $jpg->save('images/pt/' . $produk['kategori'] . '/' . $produk['foto'] . '.jpg');
+            if (Produk::create($produks)) {
+                return redirect()->route('super.produk')->with(['success' => 'Produk Berhasil Ditambahkan']);
+            } else {
+                return back()->with(['error' => 'Produk Tidak Berhasil Ditambahkan']);
+            }
+        } else {
+            return back()->with(['error' => 'Foto Tidak Berhasil Diupload']);
+        }
     }
 
     public function checkAuth()
