@@ -11,7 +11,8 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
-
+use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Facades\Image;
 
 class AdminController extends Controller
 {
@@ -93,8 +94,14 @@ class AdminController extends Controller
         $number = sprintf("%03d", $total);
         $kode = ['kode_produk' => 'p' . $request->kategori[0] . $number];
         $produk['foto'] = $request->kategori . Produk::count() + 1;
-        dd($kode + $produk);
-        // Produk::create($produk);
+        $produks = $kode + $produk;
+        $file = $request->file('foto');
+        $tujuan_upload = 'images/pt/' . $produk['kategori'] . '/';
+        $file->move($tujuan_upload, $produk['foto'] . '.jpg');
+        $jpg = Image::make('images/pt/' . $produk['kategori'] . '/' . $produk['foto'] . '.jpg')->encode('jpg', 60)->fit(600);
+        $jpg->save('images/pt/' . $produk['kategori'] . '/' . $produk['foto'] . '.jpg');
+        Produk::create($produks);
+        dd($produks);
     }
 
     public function checkAuth()
