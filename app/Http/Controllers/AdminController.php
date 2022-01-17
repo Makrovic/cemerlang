@@ -96,8 +96,8 @@ class AdminController extends Controller
         $produk['foto'] = $request->kategori . Produk::count() + 1;
         $produks = $kode + $produk;
         $file = $request->file('foto');
-        $tujuan_upload = 'images/pt/' . $produk['kategori'] . '/';
-        if ($file->move($tujuan_upload, $produk['foto'] . '.jpg')) {
+        $dir = 'images/pt/' . $produk['kategori'] . '/';
+        if ($file->move($dir, $produk['foto'] . '.jpg')) {
             $jpg = Image::make('images/pt/' . $produk['kategori'] . '/' . $produk['foto'] . '.jpg')->encode('jpg', 60)->fit(600);
             $jpg->save('images/pt/' . $produk['kategori'] . '/' . $produk['foto'] . '.jpg');
             if (Produk::create($produks)) {
@@ -107,6 +107,41 @@ class AdminController extends Controller
             }
         } else {
             return back()->with(['error' => 'Foto Tidak Berhasil Diupload']);
+        }
+    }
+
+    public function editProduk($kode)
+    {
+        $produk = Produk::where('kode_produk', $kode)->first();
+        return view('admin.produk.edit', compact('produk'));
+    }
+
+    public function updateProduk(Request $request, $kodeproduk)
+    {
+        $produks = Produk::where('kode_produk', $kodeproduk)->first();
+        $produk = $request->validate([
+            'nama' => 'required',
+            'harga' => 'required',
+            'kategori' => 'required',
+            'stok' => 'required',
+            'berat' => 'required',
+            'deskripsi' => 'required'
+        ]);
+        if ($request->hasFile('foto')) {
+            $request->validate([
+                'foto' => 'required|file|image|mimes:jpeg,png,jpg|max:2048'
+            ]);
+            $file = $request->file('foto');
+            $dir = 'images/pt/' . $produk['kategori'] . '/';
+            if ($file->move($dir, $produks->foto . '.jpg')) {
+                $jpg = Image::make('images/pt/' . $produk['kategori'] . '/' . $produks->foto . '.jpg')->encode('jpg', 60)->fit(600);
+                $jpg->save('images/pt/' . $produk['kategori'] . '/' . $produks->foto . '.jpg');
+            } else {
+                return back()->with(['error' => 'Foto Tidak Berhasil Diupload']);
+            }
+        }
+        if ($produks->update($produk)) {
+            return redirect()->route('super.produk')->with(['success' => 'Produk Berhasil Diubah']);
         }
     }
 

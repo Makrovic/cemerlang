@@ -49,13 +49,10 @@
                     </thead>
                     <tbody>
                         @foreach ($produks as $produk)
-                        <tr onclick="window.location='#';">
-                            <th scope="row"><a
-                                    href="{{ asset('images/pt/'.$produk->kategori.'/'.$produk->foto.'.jpg') }}"
-                                    data-lightbox="{{$produk->foto}}"><img
-                                        src="{{ asset('images/pt/'.$produk->kategori.'/'.$produk->foto.'.jpg') }}"
-                                        class="img-fluid rounded" alt="..." style="max-width: 60px">
-                                </a></th>
+                        <tr onclick="window.location='{{route('super.produk.edit', $produk->kode_produk)}}';">
+                            <th scope="row"><img
+                                    src="{{ asset('images/pt/'.$produk->kategori.'/'.$produk->foto.'.jpg') }}"
+                                    class="img-fluid rounded" alt="..." style="max-width: 60px"></th>
                             <td>{{ $produk->kode_produk }}</td>
                             <td>{{ $produk->nama }}</td>
                             <td>{{ $produk->kategori }}</td>

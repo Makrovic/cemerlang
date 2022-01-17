@@ -59,7 +59,6 @@
           <li>
             <hr class="dropdown-divider">
           </li>
-
           <li>
             <a class="dropdown-item d-flex align-items-center" href="{{ URL::route('super.logout') }}">
               <i class="fas fa-sign-out-alt"></i>
@@ -81,7 +80,7 @@
   <ul class="sidebar-nav" id="sidebar-nav">
 
     <li class="nav-item">
-      <a class="nav-link " href="index.html">
+      <a class="nav-link " href="{{route('super.dashboard')}}">
         <i class="fas fa-th-large"></i>
         <span>Dashboard</span>
       </a>
@@ -92,7 +91,14 @@
         <i class="fas fa-boxes"></i>
         <span>Produk</span>
       </a>
-    </li><!-- End Profile Page Nav -->
+    </li><!-- End Produk Page Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="">
+        <i class="fas fa-boxes"></i>
+        <span>Pesanan</span>
+      </a>
+    </li><!-- End Pesanan Page Nav -->
 
     <li class="nav-item">
       <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
