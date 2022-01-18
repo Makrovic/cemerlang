@@ -49,8 +49,7 @@
                     <tbody>
                         @foreach ($produks as $produk)
                         <tr onclick="window.location='{{route('super.produk.edit', $produk->kode_produk)}}';">
-                            <th scope="row"><img
-                                    src="{{ asset('images/pt/'.$produk->kategori.'/'.$produk->foto.'.jpg') }}"
+                            <th scope="row"><img src="{{ asset('images/pt/produk/'.$produk->foto.'.jpg') }}"
                                     class="img-fluid rounded" alt="..." style="max-width: 60px"></th>
                             <td>{{ $produk->kode_produk }}</td>
                             <td>{{ $produk->nama }}</td>

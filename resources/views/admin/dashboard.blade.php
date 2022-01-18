@@ -118,10 +118,9 @@
                             <tbody>
                                 @foreach ($topSellers as $topSeller)
                                 <tr>
-                                    <th scope="row"><a
-                                            href="{{ asset('images/pt/'.$topSeller->kategori.'/'.$topSeller->foto.'.jpg') }}"
+                                    <th scope="row"><a href="{{ asset('images/pt/produk/'.$topSeller->foto.'.jpg') }}"
                                             data-lightbox="{{$topSeller->foto}}"><img
-                                                src="{{ asset('images/pt/'.$topSeller->kategori.'/'.$topSeller->foto.'.jpg') }}"
+                                                src="{{ asset('images/pt/produk/'.$topSeller->foto.'.jpg') }}"
                                                 class="img-fluid rounded" alt="..." style="max-width: 60px">
                                         </a></th>
                                     <td>{{ $topSeller->nama }}</td>

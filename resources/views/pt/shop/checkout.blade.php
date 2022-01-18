@@ -100,7 +100,7 @@
                         @foreach ($carts as $cart)
                         <div class="row m-2">
                             <div class="col-auto">
-                                <img src="{{ asset('images/pt/carica/carica1.jpg') }}" alt=""
+                                <img src="{{ asset('images/pt/produk/'.$cart['kode_produk'].'.jpg') }}" alt=""
                                     class="img-fluid rounded-3" style="max-width: 80px">
                             </div>
                             <div class="col d-flex flex-column justify-content-center">
