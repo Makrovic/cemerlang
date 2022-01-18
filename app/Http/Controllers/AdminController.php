@@ -147,6 +147,8 @@ class AdminController extends Controller
         }
         if ($produks->update($produk)) {
             return redirect()->route('super.produk')->with(['success' => 'Produk Berhasil Diubah']);
+        } else {
+            return back()->with(['error' => 'Produk Tidak Berhasil Diubah']);
         }
     }
 
@@ -177,6 +179,15 @@ class AdminController extends Controller
             return view('admin.order.edit', compact('order', 'carts'));
         } else {
             return redirect()->route('super.order');
+        }
+    }
+
+    public function updateOrder(Request $request, $kodetransaksi)
+    {
+        $orders = Order::where('kode_transaksi', $kodetransaksi)->first();
+        // dd($request->all());
+        if ($orders->update($request->all())) {
+            return redirect()->route('super.order')->with(['success' => 'Pesanan Berhasil Diubah']);
         }
     }
 

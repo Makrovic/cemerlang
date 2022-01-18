@@ -36,10 +36,10 @@
                 <h5 class="card-title">Ubah Produk</h5>
                 <div class="row m-3 d-flex justify-content-center">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <a href="{{ asset('images/pt/'.$produk->kategori.'/'.$produk->foto.'.jpg') }}"
+                        <a href="{{ asset('images/pt/produk/'.$produk->foto.'.jpg') }}"
                             data-lightbox="{{$produk->foto}}"><img
-                                src="{{ asset('images/pt/'.$produk->kategori.'/'.$produk->foto.'.jpg') }}"
-                                class="img-fluid rounded" alt="..."></a>
+                                src="{{ asset('images/pt/produk/'.$produk->foto.'.jpg') }}" class="img-fluid rounded"
+                                alt="..."></a>
                     </div>
                 </div>
                 <form action="{{ route('super.produk.update',$produk->kode_produk)}}" method="POST"

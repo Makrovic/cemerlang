@@ -41,46 +41,54 @@
                     <b>Ekspedisi : </b>{{$order->ekspedisi}}<br>
                     <b>Estimasi Pengiriman : </b>{{$order->estimasi}}<br>
                 </p>
-                <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Alamat</label>
-                    <div class="col-sm-10">
-                        <textarea class="form-control @error('alamat') is-invalid @enderror" placeholder="alamat"
-                            name="alamat" style="min-height: 100px; max-height: 200px"
-                            required>{{$order->alamat}}</textarea>
-                        @error('alamat')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Catatan</label>
-                    <div class="col-sm-10">
-                        <textarea class="form-control @error('catatan') is-invalid @enderror" placeholder="catatan"
-                            name="catatan" style="min-height: 100px; max-height: 200px"
-                            required>{{$order->catatan}}</textarea>
-                        @error('catatan')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Select</label>
-                    <div class="col-sm-10">
-                        <select class="form-select" name="status">
-                            <option value="0" {{$order->status == '0' ? 'selected' : ''}}>Belum Dikonfirmasi
-                            </option>
-                            <option value="1" {{$order->status == '1' ? 'selected' : ''}}>Menunggu Pembayaran</option>
-                            <option value="2" {{$order->status == '2' ? 'selected' : ''}}>Sudah Dibayar</option>
-                            <option value="3" {{$order->status == '3' ? 'selected' : ''}}>Selesai</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <a class="btn btn-danger" href=""><i class="fas fa-trash"></i>
-                        Hapus Pesanan</a>
-                    <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i>
-                        Simpan</button>
-                </div>
+                <form action="{{ route('super.order.update',$order->kode_transaksi)}}" method="POST"
+                    enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    @method('put')
+                    <fieldset>
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label">Alamat</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control @error('alamat') is-invalid @enderror"
+                                    placeholder="alamat" name="alamat" style="min-height: 100px; max-height: 200px"
+                                    required>{{$order->alamat}}</textarea>
+                                @error('alamat')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label">Catatan</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control @error('catatan') is-invalid @enderror"
+                                    placeholder="catatan" name="catatan"
+                                    style="min-height: 100px; max-height: 200px">{{$order->catatan}}</textarea>
+                                @error('catatan')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label">Status</label>
+                            <div class="col-sm-10">
+                                <select class="form-select" name="status">
+                                    <option value="0" {{$order->status == '0' ? 'selected' : ''}}>Belum Dikonfirmasi
+                                    </option>
+                                    <option value="1" {{$order->status == '1' ? 'selected' : ''}}>Menunggu Pembayaran
+                                    </option>
+                                    <option value="2" {{$order->status == '2' ? 'selected' : ''}}>Sudah Dibayar</option>
+                                    <option value="3" {{$order->status == '3' ? 'selected' : ''}}>Selesai</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a class="btn btn-danger" href=""><i class="fas fa-trash"></i>
+                                Hapus Pesanan</a>
+                            <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i>
+                                Simpan</button>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </div>
         <div class="card recent-sales">
