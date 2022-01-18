@@ -205,13 +205,13 @@ class PtController extends Controller
         if (Session::has('cart') && Session::has('totalan')) {
             $unit = 'pt';
             $count = Order::count();
-            $kotas = RajaOngkir::kota()->dariProvinsi($request->provinsi)->find($request->kota);
             $cost = explode(':', $request->cost);
+            $kotas = Kota::where('city_id', $cost[0])->first();
             $totalan = Session::get('totalan');
 
             $kodetransaksi = 'tr' . Carbon::now()->translatedFormat("ymdH") . $count + 1;
             $alamat = $request->alamat . ' - ' . $request->kecamatan . ' - ' . $request->zip;
-            $kota = $kotas['type'] . ' ' . $kotas['city_name'] . ', ' . $kotas['province'];
+            $kota = $kotas->city_type . ' ' . $kotas->city_name . ', ' . $kotas->province_name;
             $berat = $totalan['totalbrt'];
             $subtotal = $totalan['total'];
             $cekongkir = $this->costCheck($cost[0], $berat, $cost[1], $cost[2]);
