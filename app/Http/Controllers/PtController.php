@@ -243,7 +243,7 @@ class PtController extends Controller
             foreach ($cart as $kodeproduk => $jumlah) {
                 $produk = $produks->where('kode_produk', $kodeproduk)->first();
                 $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
-                $keranjang[] = ['kode_transaksi' => $kodetransaksi, 'kode_produk' => $kodeproduk, 'jumlah' => $jumlah];
+                $keranjang[] = ['kode_transaksi' => $kodetransaksi, 'kode_produk' => $kodeproduk, 'nama_produk' => $produk->nama, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah];
             }
 
             if (Order::create($order) && Cart::insert($keranjang)) {

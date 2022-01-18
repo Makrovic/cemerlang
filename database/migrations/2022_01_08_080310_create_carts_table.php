@@ -17,7 +17,9 @@ class CreateCartsTable extends Migration
             $table->id();
             $table->string('kode_transaksi');
             $table->string('kode_produk');
+            $table->string('nama_produk');
             $table->integer('jumlah');
+            $table->integer('subtotal');
         });
     }
 

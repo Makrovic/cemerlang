@@ -80,14 +80,16 @@
   <ul class="sidebar-nav" id="sidebar-nav">
 
     <li class="nav-item">
-      <a class="nav-link " href="{{route('super.dashboard')}}">
+      <a class="nav-link {{ Request::url() == url('super/dashboard') ? '' : 'collapsed' }}"
+        href="{{route('super.dashboard')}}">
         <i class="fas fa-th-large"></i>
         <span>Dashboard</span>
       </a>
     </li><!-- End Dashboard Nav -->
 
     <li class="nav-item">
-      <a class="nav-link collapsed" href="{{route('super.produk')}}">
+      <a class="nav-link {{ Request::url() == url('super/produk') ? '' : 'collapsed' }}"
+        href="{{route('super.produk')}}">
         <i class="fas fa-boxes"></i>
         <span>Produk</span>
       </a>
@@ -95,7 +97,7 @@
 
     <li class="nav-item">
       <a class="nav-link collapsed" href="">
-        <i class="fas fa-boxes"></i>
+        <i class="fas fa-shopping-cart"></i>
         <span>Pesanan</span>
       </a>
     </li><!-- End Pesanan Page Nav -->

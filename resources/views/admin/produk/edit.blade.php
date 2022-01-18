@@ -126,7 +126,9 @@
                             </div>
                         </div>
                     </fieldset>
-                    <div class="d-grid gap-2 mt-3">
+                    <div class="d-flex justify-content-between">
+                        <a class="btn btn-danger" href=""><i class="fas fa-trash"></i>
+                            Hapus Produk</a>
                         <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i>
                             Simpan Produk</button>
                     </div>

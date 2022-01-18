@@ -44,7 +44,6 @@
                             <th scope="col">Harga</th>
                             <th scope="col">Stok</th>
                             <th scope="col">Terjual</th>
-                            <th scope="col" data-sortable="false"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -59,7 +58,6 @@
                             <td>Rp. {{ number_format($produk->harga) }},-</td>
                             <td>{{ $produk->stok }}</td>
                             <td>{{ $produk->total }}</td>
-                            <td><a href="#hapus" class="badge bg-danger link-light">hapus</a></td>
                         </tr>
                         @endforeach
                     </tbody>

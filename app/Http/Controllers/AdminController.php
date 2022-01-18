@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin;
-use App\Models\Cart;
 use App\Models\Order;
 use App\Models\Produk;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -91,8 +91,9 @@ class AdminController extends Controller
             'foto' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
         ]);
         $total = Produk::count() + 1;
-        $number = sprintf("%03d", $total);
-        $kode = ['kode_produk' => 'p' . $request->kategori[0] . $number];
+        $number = sprintf("%02d", $total);
+        $kode = ['kode_produk' => 'p' . $request->kategori[0] . Carbon::now()->translatedFormat("ym") . $number];
+        dd($kode);
         $produk['foto'] = $request->kategori . Produk::count() + 1;
         $produks = $kode + $produk;
         $file = $request->file('foto');
@@ -110,10 +111,14 @@ class AdminController extends Controller
         }
     }
 
-    public function editProduk($kode)
+    public function editProduk($kodeproduk)
     {
-        $produk = Produk::where('kode_produk', $kode)->first();
-        return view('admin.produk.edit', compact('produk'));
+        $produk = Produk::where('kode_produk', $kodeproduk)->first();
+        if ($produk != null) {
+            return view('admin.produk.edit', compact('produk'));
+        } else {
+            return redirect()->route('super.produk');
+        }
     }
 
     public function updateProduk(Request $request, $kodeproduk)
@@ -142,6 +147,18 @@ class AdminController extends Controller
         }
         if ($produks->update($produk)) {
             return redirect()->route('super.produk')->with(['success' => 'Produk Berhasil Diubah']);
+        }
+    }
+
+    public function removeProduk($kodeproduk)
+    {
+        $produk = Produk::where('kode_produk', $kodeproduk)->first();
+        if ($produk != null) {
+            Produk::where('kode_produk', $kodeproduk)->delete();
+            Storage::delete('images/pt/' . $produk->kategori . '/' . $produk->foto . '.jpg');
+            return redirect()->route('super.produk')->with(['success' => 'Produk Berhasil Dihapus']);
+        } else {
+            return redirect()->route('super.produk')->with(['error' => 'Produk Tidak Berhasil Dihapus']);
         }
     }
 

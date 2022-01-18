@@ -9,6 +9,6 @@ class Cart extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'kode_transaksi', 'kode_produk', 'jumlah'
+        'kode_transaksi', 'kode_produk', 'nama_produk', 'jumlah', 'subtotal'
     ];
 }
