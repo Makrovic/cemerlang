@@ -29,7 +29,7 @@ class CreateOrdersTable extends Migration
             $table->string('ekspedisi');
             $table->string('estimasi');
             $table->text('catatan')->nullable();
-            $table->enum('status', ['0', '1', '2'])->default('0');
+            $table->enum('status', ['0', '1', '2', '3'])->default('0');
             $table->dateTime('tgl_pembayaran')->nullable();
             $table->timestamps();
         });

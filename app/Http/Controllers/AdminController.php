@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin;
+use App\Models\Cart;
 use App\Models\Order;
 use App\Models\Produk;
 use Carbon\Carbon;
@@ -11,7 +12,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 use Intervention\Image\Facades\Image;
 
 class AdminController extends Controller
@@ -93,14 +94,13 @@ class AdminController extends Controller
         $total = Produk::count() + 1;
         $number = sprintf("%02d", $total);
         $kode = ['kode_produk' => 'p' . $request->kategori[0] . Carbon::now()->translatedFormat("ym") . $number];
-        dd($kode);
-        $produk['foto'] = $request->kategori . Produk::count() + 1;
+        $produk['foto'] = $kode;
         $produks = $kode + $produk;
         $file = $request->file('foto');
-        $dir = 'images/pt/' . $produk['kategori'] . '/';
+        $dir = 'images/pt/produk/';
         if ($file->move($dir, $produk['foto'] . '.jpg')) {
-            $jpg = Image::make('images/pt/' . $produk['kategori'] . '/' . $produk['foto'] . '.jpg')->encode('jpg', 60)->fit(600);
-            $jpg->save('images/pt/' . $produk['kategori'] . '/' . $produk['foto'] . '.jpg');
+            $jpg = Image::make('images/pt/produk/' . $produk['foto'] . '.jpg')->encode('jpg', 60)->fit(600);
+            $jpg->save('images/pt/produk/' . $produk['foto'] . '.jpg');
             if (Produk::create($produks)) {
                 return redirect()->route('super.produk')->with(['success' => 'Produk Berhasil Ditambahkan']);
             } else {
@@ -137,10 +137,10 @@ class AdminController extends Controller
                 'foto' => 'required|file|image|mimes:jpeg,png,jpg|max:2048'
             ]);
             $file = $request->file('foto');
-            $dir = 'images/pt/' . $produk['kategori'] . '/';
+            $dir = 'images/pt/produk/';
             if ($file->move($dir, $produks->foto . '.jpg')) {
-                $jpg = Image::make('images/pt/' . $produk['kategori'] . '/' . $produks->foto . '.jpg')->encode('jpg', 60)->fit(600);
-                $jpg->save('images/pt/' . $produk['kategori'] . '/' . $produks->foto . '.jpg');
+                $jpg = Image::make('images/pt/produk/' . $produks->foto . '.jpg')->encode('jpg', 60)->fit(600);
+                $jpg->save('images/pt/produk/' . $produks->foto . '.jpg');
             } else {
                 return back()->with(['error' => 'Foto Tidak Berhasil Diupload']);
             }
@@ -155,10 +155,28 @@ class AdminController extends Controller
         $produk = Produk::where('kode_produk', $kodeproduk)->first();
         if ($produk != null) {
             Produk::where('kode_produk', $kodeproduk)->delete();
-            Storage::delete('images/pt/' . $produk->kategori . '/' . $produk->foto . '.jpg');
+            Cart::where('kode_produk', $kodeproduk)->update(['kode_produk' => NULL]);
+            File::delete('images/pt/produk/' . $produk->foto . '.jpg');
             return redirect()->route('super.produk')->with(['success' => 'Produk Berhasil Dihapus']);
         } else {
             return redirect()->route('super.produk')->with(['error' => 'Produk Tidak Berhasil Dihapus']);
+        }
+    }
+
+    public function order()
+    {
+        $orders = Order::get();
+        return view('admin.order', compact('orders'));
+    }
+
+    public function editOrder($kodetransaksi)
+    {
+        $carts = Cart::where('kode_transaksi', $kodetransaksi)->get();
+        $order = Order::where('kode_transaksi', $kodetransaksi)->first();
+        if ($order != null) {
+            return view('admin.order.edit', compact('order', 'carts'));
+        } else {
+            return redirect()->route('super.order');
         }
     }
 

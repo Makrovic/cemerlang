@@ -85,7 +85,9 @@ Route::middleware(['admin'])->group(function () {
     Route::post('/super/produk/add', [AdminController::class, 'addProduk'])->name('super.produk.store');
     Route::get('/super/produk/edit/{produk}', [AdminController::class, 'editProduk'])->name('super.produk.edit');
     Route::put('/super/produk/edit/{produk}', [AdminController::class, 'updateProduk'])->name('super.produk.update');
-    Route::put('/super/produk/remove/{produk}', [AdminController::class, 'removeProduk'])->name('super.produk.remove');
+    Route::get('/super/produk/remove/{produk}', [AdminController::class, 'removeProduk'])->name('super.produk.remove');
+    Route::get('/super/order', [AdminController::class, 'order'])->name('super.order');
+    Route::get('/super/order/edit/{order}', [AdminController::class, 'editOrder'])->name('super.order.edit');
     Route::get('/super/logout',  [AdminController::class, 'logout'])->name('super.logout');
     Route::get('/cekcek',  [AdminController::class, 'checkAuth']);
 });

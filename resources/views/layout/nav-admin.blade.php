@@ -96,11 +96,11 @@
     </li><!-- End Produk Page Nav -->
 
     <li class="nav-item">
-      <a class="nav-link collapsed" href="">
+      <a class="nav-link {{ Request::url() == url('super/order') ? '' : 'collapsed' }}" href="{{route('super.order')}}">
         <i class="fas fa-shopping-cart"></i>
         <span>Pesanan</span>
       </a>
-    </li><!-- End Pesanan Page Nav -->
+    </li><!-- End Produk Page Nav -->
 
     <li class="nav-item">
       <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">

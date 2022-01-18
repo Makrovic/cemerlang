@@ -11,4 +11,5 @@ class Cart extends Model
     protected $fillable = [
         'kode_transaksi', 'kode_produk', 'nama_produk', 'jumlah', 'subtotal'
     ];
+    public $timestamps = false;
 }

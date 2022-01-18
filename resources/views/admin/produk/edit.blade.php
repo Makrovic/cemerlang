@@ -26,7 +26,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">Admin</li>
                 <li class="breadcrumb-item active">Produk</li>
-                <li class="breadcrumb-item active">Edit</li>
+                <li class="breadcrumb-item active">Ubah</li>
             </ol>
         </nav>
     </div>
@@ -127,7 +127,8 @@
                         </div>
                     </fieldset>
                     <div class="d-flex justify-content-between">
-                        <a class="btn btn-danger" href=""><i class="fas fa-trash"></i>
+                        <a class="btn btn-danger" href="{{ route('super.produk.remove',$produk->kode_produk)}}"><i
+                                class="fas fa-trash"></i>
                             Hapus Produk</a>
                         <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i>
                             Simpan Produk</button>
