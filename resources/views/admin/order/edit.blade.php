@@ -82,8 +82,9 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-danger" href=""><i class="fas fa-trash"></i>
-                                Hapus Pesanan</a>
+                            <a class="btn btn-danger" href="{{ route('super.order.remove',$order->kode_transaksi)}}"><i
+                                    class="fas fa-trash"></i>
+                                Hapus</a>
                             <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i>
                                 Simpan</button>
                         </div>

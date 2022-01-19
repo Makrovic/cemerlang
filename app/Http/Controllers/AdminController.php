@@ -202,6 +202,18 @@ class AdminController extends Controller
         }
     }
 
+    public function removeOrder($kodetransaksi)
+    {
+        $order = Order::where('kode_transaksi', $kodetransaksi)->first();
+        if ($order != null) {
+            Order::where('kode_transaksi', $kodetransaksi)->delete();
+            Cart::where('kode_transaksi', $kodetransaksi)->delete();
+            return redirect()->route('super.order')->with(['success' => 'Pesanan Berhasil Dihapus']);
+        } else {
+            return redirect()->route('super.order')->with(['error' => 'Pesanan Tidak Berhasil Dihapus']);
+        }
+    }
+
     public function checkAuth()
     {
         $admin = Auth::guard('admin')->user()->name;

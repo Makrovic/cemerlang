@@ -129,9 +129,9 @@
                     <div class="d-flex justify-content-between">
                         <a class="btn btn-danger" href="{{ route('super.produk.remove',$produk->kode_produk)}}"><i
                                 class="fas fa-trash"></i>
-                            Hapus Produk</a>
+                            Hapus</a>
                         <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i>
-                            Simpan Produk</button>
+                            Simpan</button>
                     </div>
                 </form>
             </div>

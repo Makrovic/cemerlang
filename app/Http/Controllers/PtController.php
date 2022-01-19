@@ -176,7 +176,7 @@ class PtController extends Controller
         $cost = RajaOngkir::ongkosKirim([
             'origin'        => 498,
             'destination'   => $city,
-            'weight'        => $totalan['totalbrt'],
+            'weight'        => $totalan['totalbrt'] * 2,
             'courier'       => $courier
         ])->get();
         return response()->json($cost);
