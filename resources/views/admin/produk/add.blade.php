@@ -21,7 +21,7 @@
     </div>
     @endif
     <div class="pagetitle">
-        <h1>Produk</h1>
+        <h1>Tambah Produk</h1>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">Admin</li>

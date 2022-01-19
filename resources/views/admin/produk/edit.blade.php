@@ -33,7 +33,7 @@
     <section class="section dashboard">
         <div class="card recent-sales">
             <div class="card-body">
-                <h5 class="card-title">Ubah Produk</h5>
+                <h5 class="card-title">{{ $produk->kode_produk }}</h5>
                 <div class="row m-3 d-flex justify-content-center">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <a href="{{ asset('images/pt/produk/'.$produk->foto.'.jpg') }}"

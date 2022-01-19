@@ -10,41 +10,6 @@
 
   <nav class="header-nav ms-auto">
     <ul class="d-flex align-items-center">
-      <li class="nav-item dropdown">
-
-        <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-          <i class="fas fa-bell"></i>
-          <span class="badge bg-primary badge-number">4</span>
-        </a><!-- End Notification Icon -->
-
-        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-          <li class="dropdown-header">
-            You have 4 new notifications
-          </li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-
-          <li class="notification-item">
-            <i class="fas fa-info-circle text-primary"></i>
-            <div>
-              <h4>Dicta reprehenderit</h4>
-              <p>Quae dolorem earum veritatis oditseno</p>
-              <p>4 hrs. ago</p>
-            </div>
-          </li>
-
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li class="dropdown-footer">
-            <a href="#">Show all notifications</a>
-          </li>
-
-        </ul><!-- End Notification Dropdown Items -->
-
-      </li><!-- End Notification Nav -->
-
       <li class="nav-item dropdown pe-3">
 
         <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">

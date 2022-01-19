@@ -93,9 +93,10 @@ class AdminController extends Controller
         ]);
         $total = Produk::count() + 1;
         $number = sprintf("%02d", $total);
-        $kode = ['kode_produk' => 'p' . $request->kategori[0] . Carbon::now()->translatedFormat("ym") . $number];
+        $kode = 'p' . $request->kategori[0] . Carbon::now()->translatedFormat("ym") . $number;
+        $kodeproduk = ['kode_produk' => $kode];
         $produk['foto'] = $kode;
-        $produks = $kode + $produk;
+        $produks = $kodeproduk + $produk;
         $file = $request->file('foto');
         $dir = 'images/pt/produk/';
         if ($file->move($dir, $produk['foto'] . '.jpg')) {
@@ -185,7 +186,6 @@ class AdminController extends Controller
     public function updateOrder(Request $request, $kodetransaksi)
     {
         $orders = Order::where('kode_transaksi', $kodetransaksi)->first();
-        // dd($request->all());
         if ($orders->update($request->all())) {
             return redirect()->route('super.order')->with(['success' => 'Pesanan Berhasil Diubah']);
         }
