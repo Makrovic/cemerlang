@@ -176,8 +176,19 @@ class AdminController extends Controller
     {
         $carts = Cart::where('kode_transaksi', $kodetransaksi)->get();
         $order = Order::where('kode_transaksi', $kodetransaksi)->first();
+        $buyer = urlencode($order->buyer);
+        $alamat = urlencode($order->alamat);
+        $kota = urlencode($order->kota);
+        $nohp = $order->nohp;
+        $linkwa = 'https://api.whatsapp.com/send?phone=' . $nohp . '
+        &text=Halo%20' . $buyer . '.
+        %0APesanan%20akan%20anda%20di%20bintangcemerlangindonesia.com%20akan%20segera%20diproses%2C%20dan%20segera%20dikirim%20ke%20alamat%20%3A%20
+        %0A' . $alamat . '.
+        %0A' . $kota . '.
+        %0AApakah%20alamat%20pesanan%20tersebut%20sudah%20benar%3F
+        %0ASegera%20konfirmasikan%20kepada%20kami%20apabila%20ada%20perubahan.';
         if ($order != null) {
-            return view('admin.order.edit', compact('order', 'carts'));
+            return view('admin.order.edit', compact('order', 'carts', 'linkwa'));
         } else {
             return redirect()->route('super.order');
         }

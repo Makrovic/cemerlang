@@ -145,7 +145,7 @@ class PtController extends Controller
                 $subtotal = $produk->harga * $jumlah;
                 $total = $total + $subtotal;
                 $totalbrg = $totalbrg + $jumlah;
-                $totalbrt =  $totalbrt + $produk->berat;
+                $totalbrt =  $totalbrt + ($produk->berat * $jumlah);
                 $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
             }
             $provinsis = Kota::get()->unique('province_id')->pluck('province_name', 'province_id');
@@ -203,6 +203,15 @@ class PtController extends Controller
     public function storeCheckOut(Request $request)
     {
         if (Session::has('cart') && Session::has('totalan')) {
+            $request->validate([
+                'nama' => 'required',
+                'provinsi' => 'required',
+                'kota' => 'required',
+                'kecamatan' => 'required',
+                'alamat' => 'required',
+                'nohp' => 'required|numeric',
+                'kurir' => 'required',
+            ]);
             $unit = 'pt';
             $count = Order::count();
             $cost = explode(':', $request->cost);
@@ -210,6 +219,7 @@ class PtController extends Controller
             $totalan = Session::get('totalan');
 
             $kodetransaksi = 'tr' . Carbon::now()->translatedFormat("ymdH") . $count + 1;
+            $nohp = '62' . $request->nohp;
             $alamat = $request->alamat . ' - ' . $request->kecamatan . ' - ' . $request->zip;
             $kota = $kotas->city_type . ' ' . $kotas->city_name . ', ' . $kotas->province_name;
             $berat = $totalan['totalbrt'];
@@ -224,7 +234,7 @@ class PtController extends Controller
                 'kode_transaksi' => $kodetransaksi,
                 'tgl_transaksi' => Carbon::now()->translatedFormat('Y-m-d h:i:s'),
                 'buyer' => $request->nama,
-                'nohp' => $request->nohp,
+                'nohp' => $nohp,
                 'alamat' => $alamat,
                 'kota' => $kota,
                 'total_produk' => $totalan['totalbrg'],

@@ -44,7 +44,7 @@
             <p class="h4"><b>Invoice : </b>{{ $order['kode_transaksi'] }}</p>
             <hr>
             <p><b>Nama : </b>{{ $order['buyer'] }}<br>
-                <b>No HP : </b>{{ $order['nohp'] }}<br>
+                <b>No HP : </b>+{{ $order['nohp'] }}<br>
                 <b>Alamat : </b>{{ $order['alamat'] }}<br>
                 <b>Kota : </b>{{ $order['kota'] }}<br>
                 <b>Catatan : </b>"{{ $order['catatan'] }}"

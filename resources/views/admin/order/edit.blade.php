@@ -36,7 +36,7 @@
                 <h5 class="card-title"><b>Invoice : </b>{{ $order->kode_transaksi }}</h5>
                 <p>{{ \Carbon\Carbon::parse($order->tgl_transaksi)->translatedFormat('l d M, Y') }}</p>
                 <p><b>Nama : </b>{{$order->buyer}}<br>
-                    <b>No HP : </b>{{$order->nohp}}<br>
+                    <b>No HP : </b><a href="{{$linkwa}}">{{$order->nohp}}</a><br>
                     <b>Kota : </b>{{$order->kota}}<br>
                     <b>Ekspedisi : </b>{{$order->ekspedisi}}<br>
                     <b>Estimasi Pengiriman : </b>{{$order->estimasi}}<br>

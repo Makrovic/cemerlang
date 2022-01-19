@@ -28,29 +28,44 @@
                     <div class="bg-white p-4 rounded shadow-sm">
                         <h2 class="text-center">Detail Pesanan</h2>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="nama" name="nama" placeholder="nama"
-                                value="{{old('nama')}}" required>
+                            <input type="text" class="form-control @error('nama') is-invalid @enderror" id="nama"
+                                name="nama" placeholder="nama" value="{{old('nama')}}" required>
                             <label for="nama">Nama</label>
+                            @error('nama')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="provinsi" name="provinsi" required>
+                            <select class="form-select @error('provinsi') is-invalid @enderror" id="provinsi"
+                                name="provinsi" required>
                                 <option value="" selected>pilih provinsi</option>
                                 @foreach ($provinsis as $province_id => $province_name)
                                 <option value="{{ $province_id }}">{{ $province_name }}</option>
                                 @endforeach
                             </select>
                             <label for="provinsi">Provinsi</label>
+                            @error('provinsi')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="kota" name="kota" required>
+                            <select class="form-select @error('kota') is-invalid @enderror" id="kota" name="kota"
+                                required>
                                 <option value="">pilih provinsi terlebih dahulu</option>
                             </select>
                             <label for="kota">Kota</label>
+                            @error('kota')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="kecamatan" name="kecamatan"
-                                placeholder="kecamatan" value="{{old('kecamatan')}}" required>
+                            <input type="text" class="form-control @error('kecamatan') is-invalid @enderror"
+                                id="kecamatan" name="kecamatan" placeholder="kecamatan" value="{{old('kecamatan')}}"
+                                required>
                             <label for="kecamatan">Kecamatan</label>
+                            @error('kecamatan')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="zip" name="zip" placeholder="zip"
@@ -58,21 +73,34 @@
                             <label for="zip">Kode Pos</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="alamat lengkap" id="alamat" name="alamat"
+                            <textarea class="form-control @error('alamat') is-invalid @enderror"
+                                placeholder="alamat lengkap" id="alamat" name="alamat"
                                 style="min-height: 100px; max-height: 200px" required>{{old('alamat')}}</textarea>
                             <label for="alamat">Alamat Lengkap</label>
+                            @error('alamat')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="nohp" name="nohp" placeholder="nohp"
-                                value="{{old('nama')}}" required>
-                            <label for="nohp">No HP / Whatsapp</label>
+                            <div class="input-group">
+                                <span class="input-group-text">+62</span>
+                                <input type="tel" class="form-control @error('nohp') is-invalid @enderror" id="nohp"
+                                    name="nohp" placeholder="nomor HP/WA (8xxxxxxx)" value="{{old('nohp')}}" required>
+                            </div>
                             <div class="form-text">pastikan nomor HP / whatsapp anda aktif</div>
+                            @error('nohp')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="kurir" name="kurir" required>
+                            <select class="form-select @error('kurir') is-invalid @enderror" id="kurir" name="kurir"
+                                required>
                                 <option value="">pilih kota terlebih dahulu</option>
                             </select>
                             <label for="kurir">Ekspedisi</label>
+                            @error('kurir')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-floating mb-3">
                             <textarea class="form-control" placeholder="catatan" id="catatan" name="catatan"
