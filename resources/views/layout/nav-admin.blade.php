@@ -67,27 +67,25 @@
       </a>
     </li><!-- End Produk Page Nav -->
 
+    <li class="nav-heading">Rekap</li>
+
     <li class="nav-item">
       <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-        <i class="fas fa-th-list"></i><span>Components</span><i class="fas fa-chevron-down ms-auto"></i>
+        <i class="fas fa-th-list"></i><span>Laporan Pesanan</span><i class="fas fa-chevron-down ms-auto"></i>
       </a>
       <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
         <li>
-          <a href="components-alerts.html">
-            <i class="fas fa-circle"></i><span>Alerts</span>
+          <a href="{{route('super.order.monthlyreport')}}">
+            <i class="fas fa-circle"></i><span>Bulanan</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{route('super.order.annualreport')}}">
+            <i class="fas fa-circle"></i><span>Tahunan</span>
           </a>
         </li>
       </ul>
     </li><!-- End Components Nav -->
-
-    <li class="nav-heading">Pages</li>
-
-    <li class="nav-item">
-      <a class="nav-link collapsed" href="users-profile.html">
-        <i class="fas fa-user"></i>
-        <span>Profile</span>
-      </a>
-    </li><!-- End Profile Page Nav -->
 
   </ul>
 

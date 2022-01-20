@@ -220,6 +220,18 @@ class AdminController extends Controller
         return view('admin.order.print-address', compact('order'));
     }
 
+    public function monthlyReport()
+    {
+        $orders = Order::where('status', '3')->whereMonth('tgl_transaksi', date('m'))->whereYear('tgl_transaksi', date('Y'))->get();
+        return view('admin.order.report.monthly', compact('orders'));
+    }
+
+    public function annualReport()
+    {
+        $orders = Order::where('status', '3')->whereYear('tgl_transaksi', date('Y'))->get();
+        return view('admin.order.report.annual', compact('orders'));
+    }
+
     public function checkAuth()
     {
         $admin = Auth::guard('admin')->user()->name;
