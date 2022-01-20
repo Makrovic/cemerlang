@@ -214,6 +214,12 @@ class AdminController extends Controller
         }
     }
 
+    public function printAddress($kodetransaksi)
+    {
+        $order = Order::where('kode_transaksi', $kodetransaksi)->first();
+        return view('admin.order.print-address', compact('order'));
+    }
+
     public function checkAuth()
     {
         $admin = Auth::guard('admin')->user()->name;

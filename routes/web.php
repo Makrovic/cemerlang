@@ -90,6 +90,7 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/super/order/edit/{order}', [AdminController::class, 'editOrder'])->name('super.order.edit');
     Route::put('/super/order/edit/{produk}', [AdminController::class, 'updateOrder'])->name('super.order.update');
     Route::get('/super/order/remove/{order}', [AdminController::class, 'removeOrder'])->name('super.order.remove');
+    Route::get('/super/order/print/{order}', [AdminController::class, 'printAddress'])->name('super.order.printaddress');
     Route::get('/super/logout',  [AdminController::class, 'logout'])->name('super.logout');
     Route::get('/cekcek',  [AdminController::class, 'checkAuth']);
 });

@@ -225,7 +225,8 @@ class PtController extends Controller
             $nohp = '62' . $request->nohp;
             $alamat = $request->alamat . ' - ' . $request->kecamatan . ' - ' . $request->zip;
             $kota = $kotas->city_type . ' ' . $kotas->city_name . ', ' . $kotas->province_name;
-            $berat = $totalan['totalbrt'];
+            $beratpacking = ceil($totalan['totalbrt'] / 1000) * 250;
+            $berat = $totalan['totalbrt'] + $beratpacking;
             $subtotal = $totalan['total'];
             $cekongkir = $this->costCheck($cost[0], $berat, $cost[1], $cost[2]);
             $ongkir = $cekongkir['cost'][0]['value'];

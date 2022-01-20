@@ -33,7 +33,12 @@
     <section class="section dashboard">
         <div class="card recent-sales">
             <div class="card-body">
-                <h5 class="card-title"><b>Invoice : </b>{{ $order->kode_transaksi }}</h5>
+                <div class="d-flex justify-content-between">
+                    <span class="h5 card-title"><b>Invoice : </b>{{ $order->kode_transaksi }}</span>
+                    <a href="{{route('super.order.printaddress',$order->kode_transaksi)}}" target="_blank"
+                        class="m-3"><i class="fas fa-print"></i>
+                        Cetak Alamat</a>
+                </div>
                 <p>{{ \Carbon\Carbon::parse($order->tgl_transaksi)->translatedFormat('l d M, Y') }}</p>
                 <p><b>Nama : </b>{{$order->buyer}}<br>
                     <b>No HP : </b><a href="{{$linkwa}}">{{$order->nohp}}</a><br>
@@ -139,5 +144,4 @@
 @stop
 @section('customjs')
 <script src="https://unpkg.com/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
-<script></script>
 @stop
