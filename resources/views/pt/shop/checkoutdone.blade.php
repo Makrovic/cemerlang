@@ -114,9 +114,11 @@
                 kami proses</li>
             <li>Tunggu pesanan sampai, cek Whatsapp atau SMS dari kami untuk melihat detail, nomor resi, dan status
                 pesanan.</li>
-            <li>Apabila Barang sudah sampai segera konfirmasikan ke nomor di atas, <span class="text-danger">jika tidak
+            <li>Apabila Barang sudah sampai segera konfirmasikan ke nomor di atas, <span
+                    class="text-danger fw-bold">jika tidak
                     kami tidak akan bertanggung jawab atas kerusakan dan kehilangan barang.</span></li>
-            <li>Apabila terjadi perubahan harga atau ongkos kirim, akan segera kami konfirmasi melalui nomor yang sudah
+            <li class="fw-bold">Apabila terjadi perubahan harga atau ongkos kirim, akan segera kami konfirmasi melalui
+                nomor yang sudah
                 anda inputkan</li>
         </ol>
     </div>

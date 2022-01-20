@@ -190,7 +190,7 @@
             let provinceId = $(this).val();
             if (provinceId) {
                 $.ajax({
-                    type: 'GET', //THIS NEEDS TO BE GET
+                    type: 'GET',
                     url: '/bintang/shop/checkout/getcities/' + provinceId,
                     dataType: 'json',
                     success: function(response) {
@@ -198,7 +198,7 @@
                         $('#kota').append('<option value="">pilih kota</option>');
                         $.each(response, function(key, value) {
                             $('#kota').append('<option value="' + key + '">' +
-                                value + '</option>');
+                                value['city_type'] +' '+ value['city_name'] + '</option>');
                         });
                     },
                 });

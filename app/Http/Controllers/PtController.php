@@ -164,19 +164,22 @@ class PtController extends Controller
 
     public function getCities($id)
     {
-        $city = Kota::where('province_id', $id)->pluck('city_name', 'city_id');
+        $city = Kota::select('city_id', 'city_type', 'city_name')->where('province_id', $id)->get();
+        $city = $city->keyBy('city_id');
         return response()->json($city);
     }
 
     public function courierCheck(Request $request)
     {
         $totalan = Session::get('totalan');
+        $beratpacking = ceil($totalan['totalbrt'] / 1000) * 250;
+        $weight = $totalan['totalbrt'] + $beratpacking;
         $city = $request->city;
         $courier = $request->courier;
         $cost = RajaOngkir::ongkosKirim([
             'origin'        => 498,
             'destination'   => $city,
-            'weight'        => $totalan['totalbrt'] * 2,
+            'weight'        => $weight,
             'courier'       => $courier
         ])->get();
         return response()->json($cost);
