@@ -20,26 +20,26 @@ class PtController extends Controller
         $unit = 'pt';
         $sec = 'visimisi';
         $legalitas = Legalitas::where('unit', $unit)->get();
-        return \view('pt.carica', \compact('legalitas', 'unit', 'sec'));
+        return view('pt.carica', compact('legalitas', 'unit', 'sec'));
     }
     public function legalitas()
     {
         $unit = 'pt';
         $sec = 'legalitas';
         $legalitas = Legalitas::where('unit', $unit)->get();
-        return \view('pt.carica', \compact('legalitas', 'unit', 'sec'));
+        return view('pt.carica', compact('legalitas', 'unit', 'sec'));
     }
     public function shop()
     {
         $unit = 'pt';
         $produks = Produk::all();
-        return \view('pt.shop', \compact('produks', 'unit'));
+        return view('pt.shop', compact('produks', 'unit'));
     }
     public function produkDesc($kodeproduk)
     {
         $unit = 'pt';
         $produk = Produk::get()->where('kode_produk', $kodeproduk)->first();
-        return \view('pt.shop.desc', \compact('produk', 'unit'));
+        return view('pt.shop.desc', compact('produk', 'unit'));
     }
     public function showCart()
     {
@@ -57,9 +57,9 @@ class PtController extends Controller
                 $totalbrg = $totalbrg + $jumlah;
                 $carts->push(['kode_produk' => $kodeproduk, 'nama' => $produk->nama, 'harga' => $produk->harga, 'jumlah' => $jumlah, 'subtotal' => $produk->harga * $jumlah]);
             }
-            return \view('pt.shop.cart', \compact('unit', 'carts', 'total', 'totalbrg'));
+            return view('pt.shop.cart', compact('unit', 'carts', 'total', 'totalbrg'));
         } else {
-            return \view('pt.shop.cart', \compact('unit'));
+            return view('pt.shop.cart', compact('unit'));
         }
     }
 
@@ -156,7 +156,7 @@ class PtController extends Controller
             ]);
             Session::put('totalan', $totalan);
             Session::save();
-            return \view('pt.shop.checkout', \compact('unit', 'carts', 'provinsis'));
+            return view('pt.shop.checkout', compact('unit', 'carts', 'provinsis'));
         } else {
             return redirect()->route('bintang.shop.cart');
         }
@@ -263,7 +263,7 @@ class PtController extends Controller
             if (Order::create($order) && Cart::insert($keranjang)) {
                 Session::forget('cart');
                 Session::forget('totalan');
-                return \view('pt.shop.checkoutdone', \compact('unit', 'order', 'carts'));
+                return view('pt.shop.checkoutdone', compact('unit', 'order', 'carts'));
             }
         }
         return redirect()->back();

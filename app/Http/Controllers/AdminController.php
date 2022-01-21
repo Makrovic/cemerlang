@@ -66,7 +66,7 @@ class AdminController extends Controller
             ->orderByDesc('total')
             ->get();
 
-        return \view('admin.dashboard', \compact('newOrders', 'totalProduk', 'totalOrder', 'totalSoldProduk', 'topSellers'));
+        return view('admin.dashboard', compact('newOrders', 'totalProduk', 'totalOrder', 'totalSoldProduk', 'topSellers'));
     }
 
     public function produk()
@@ -77,7 +77,7 @@ class AdminController extends Controller
             ->select('produks.*', DB::raw('coalesce(SUM(carts.jumlah),0) as total'))
             ->get();
 
-        return \view('admin.produk', \compact('produks'));
+        return view('admin.produk', compact('produks'));
     }
 
     public function addProduk(Request $request)
