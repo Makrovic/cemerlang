@@ -10,7 +10,7 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-5" data-aos="fade-up">
                     <div class="banner-title">
-                        <h1>Carica</h1>
+                        <h1>Detail Produk</h1>
                     </div>
                 </div>
             </div>
@@ -27,15 +27,11 @@
             </div>
             <div class="col-lg-8">
                 <span class="h1">{{ $produk->nama }}</span><br>
-                <span class="text-muted">{{ $produk->deskripsi }}</span>
+                <span class="text-muted">{{ $produk->kategori }}</span>
                 <h4 class="text-success my-4">Rp. {{ number_format($produk->harga) }},-
                 </h4>
                 <p>{!! nl2br(e($produk->deskripsi)) !!}</p>
-                <div class="input-group">
-                    <button class="btn btn-outline-success" type="button" id="button-addon1">-</button>
-                    <input type="text" class="form-control text-center" value="1" style="max-width: 60px">
-                    <button class="btn btn-outline-success" type="button" id="button-addon1">+</button>
-                </div>
+                <input type="number" class="form-control text-center" value="1" style="max-width: 60px">
                 <a href="#" class="btn btn-carica mt-4">Tambah ke keranjang</a>
             </div>
         </div>

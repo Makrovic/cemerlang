@@ -195,5 +195,5 @@
     </div>
 </section>
 <section class="sec parallax d-flex justify-content-center align-items-center" style="min-height: 200px">
-    <a href="" class="btn-belanja">Belanja Sekarang</a>
+    <a href="{{route('bintang.shop')}}" class="btn-belanja">Belanja Sekarang</a>
 </section>
