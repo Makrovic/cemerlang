@@ -23,9 +23,12 @@
                             Bisnis
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{ URL::route('bintang.carica') }}">Carica Cemerlang</a></li>
-                            <li><a class="dropdown-item" href="{{ URL::route('bintang.snack') }}">Bintang Cemerlang Snack</a></li>
-                            <li><a class="dropdown-item" href="{{ URL::route('bintang.craft') }}">Claster Craft Cemerlang</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('bintang.carica') }}">Carica Cemerlang</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ URL::route('bintang.snack') }}">Bintang Cemerlang
+                                    Snack</a></li>
+                            <li><a class="dropdown-item" href="{{ URL::route('bintang.craft') }}">Claster Craft
+                                    Cemerlang</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

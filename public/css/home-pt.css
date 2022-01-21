@@ -146,6 +146,39 @@ canvas {
     opacity: 1;
 }
 
+.icon-box {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #58aa2f23;
+    display: inline-flex;
+    margin-right: 8px;
+}
+
+.icon-box i {
+    font-size: 32px;
+    color: var(--primaryc);
+    margin: auto;
+}
+
+.hover-box {
+    padding: 8px;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.hover-box:hover {
+    background-color: #f7f7f7;
+}
+
+.hover-box:hover .icon-box {
+    background-color: #58aa2f;
+}
+
+.hover-box:hover .icon-box i {
+    color: #fff;
+}
+
 .swiper-slide img {
     display: block;
     width: 100%;
