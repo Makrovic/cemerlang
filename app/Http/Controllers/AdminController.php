@@ -220,6 +220,15 @@ class AdminController extends Controller
         return view('admin.order.print-address', compact('order'));
     }
 
+    public function weeklyReport()
+    {
+        $orders = Order::where('status', '3')->whereBetween('tgl_transaksi', [
+            Carbon::parse('last monday')->startOfDay(),
+            Carbon::parse('next saturday')->endOfDay(),
+        ])->get();
+        return view('admin.order.report.weekly', compact('orders'));
+    }
+
     public function monthlyReport()
     {
         $orders = Order::where('status', '3')->whereMonth('tgl_transaksi', date('m'))->whereYear('tgl_transaksi', date('Y'))->get();

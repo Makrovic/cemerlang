@@ -71,9 +71,14 @@
 
     <li class="nav-item">
       <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-        <i class="fas fa-th-list"></i><span>Laporan Pesanan</span><i class="fas fa-chevron-down ms-auto"></i>
+        <i class="fas fa-th-list"></i><span>Laporan Transaksi</span><i class="fas fa-chevron-down ms-auto"></i>
       </a>
       <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="{{route('super.order.weeklyreport')}}">
+            <i class="fas fa-circle"></i><span>Mingguan</span>
+          </a>
+        </li>
         <li>
           <a href="{{route('super.order.monthlyreport')}}">
             <i class="fas fa-circle"></i><span>Bulanan</span>

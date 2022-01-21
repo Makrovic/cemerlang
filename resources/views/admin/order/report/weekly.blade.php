@@ -53,11 +53,12 @@
     <section class="section dashboard">
         <div class="card recent-sales" id="report">
             <div class="card-body">
-                <h5 class="card-title">Transaksi {{ \Carbon\Carbon::now()->translatedFormat('Y') }}</h5>
+                <h5 class="card-title">Transaksi {{ \Carbon\Carbon::parse('last monday')->translatedFormat('d') }} -
+                    {{ \Carbon\Carbon::parse('next saturday')->translatedFormat('d F Y') }}</h5>
                 <table class="table table-borderless datatable">
                     <thead>
                         <tr>
-                            <th scope="col">Bulan</th>
+                            <th scope="col">Hari</th>
                             <th scope="col">Tanggal</th>
                             <th scope="col">Kode Transaksi</th>
                             <th scope="col">Buyer</th>
@@ -70,7 +71,7 @@
                     <tbody>
                         @foreach ($orders as $order)
                         <tr>
-                            <td>{{ \Carbon\Carbon::parse($order->tgl_transaksi)->translatedFormat('F') }}
+                            <td>{{ \Carbon\Carbon::parse($order->tgl_transaksi)->translatedFormat('l') }}
                             </td>
                             <td>{{ \Carbon\Carbon::parse($order->tgl_transaksi)->translatedFormat('d-m-Y') }}
                             </td>

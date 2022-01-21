@@ -1,5 +1,31 @@
 @extends('layout.base-admin')
 @section('customcss')
+<style>
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+
+        #print,
+        .dataTable-top,
+        .dataTable-bottom {
+            display: none;
+            visibility: hidden;
+        }
+
+        #report,
+        #report * {
+            visibility: visible;
+        }
+
+        #report {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+</style>
 @stop
 @section('content')
 @include('layout.nav-admin')
@@ -25,14 +51,15 @@
         </nav>
     </div>
     <section class="section dashboard">
-        <div class="card recent-sales">
+        <div class="card recent-sales" id="report">
             <div class="card-body">
                 <h5 class="card-title">Transaksi Bulan {{ \Carbon\Carbon::now()->translatedFormat('F Y') }}</h5>
-                <table class="table table-borderless">
+                <table class="table table-borderless datatable">
                     <thead>
                         <tr>
-                            <th scope="col">Kode Transaksi</th>
+                            <th scope="col">Minggu</th>
                             <th scope="col">Tanggal</th>
+                            <th scope="col">Kode Transaksi</th>
                             <th scope="col">Buyer</th>
                             <th scope="col">Jumlah Produk</th>
                             <th scope="col">Subtotal</th>
@@ -43,9 +70,11 @@
                     <tbody>
                         @foreach ($orders as $order)
                         <tr>
-                            <th scope="row">{{ $order->kode_transaksi }}</th>
+                            <td>{{ \Carbon\Carbon::parse($order->tgl_transaksi)->weekNumberInMonth }}
+                            </td>
                             <td>{{ \Carbon\Carbon::parse($order->tgl_transaksi)->translatedFormat('d-m-Y') }}
                             </td>
+                            <th scope="row">{{ $order->kode_transaksi }}</th>
                             <td>{{ $order->buyer }}</td>
                             <td>{{ $order->total_produk }}</td>
                             <td>Rp. {{ number_format($order->subtotal) }}</td>
@@ -55,10 +84,24 @@
                         @endforeach
                     </tbody>
                 </table>
+                <div class="d-flex justify-content-end">
+                    <a href="#" id="print" class="btn btn-success m-3"><i class="fas fa-print"></i>
+                        Cetak Laporan</a>
+                </div>
             </div>
         </div>
     </section>
 </main>
 @stop
 @section('customjs')
+<script type="text/javascript">
+    $(document).ready(function() {
+    
+    $("#print").click(function() {
+    
+    window.print();
+    
+    });
+    })
+</script>
 @stop

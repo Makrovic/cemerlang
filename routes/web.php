@@ -91,7 +91,7 @@ Route::middleware(['admin'])->group(function () {
     Route::put('/super/order/edit/{produk}', [AdminController::class, 'updateOrder'])->name('super.order.update');
     Route::get('/super/order/remove/{order}', [AdminController::class, 'removeOrder'])->name('super.order.remove');
     Route::get('/super/order/print/{order}', [AdminController::class, 'printAddress'])->name('super.order.printaddress');
-    Route::get('/super/order/weekyreport', [AdminController::class, 'weeklyReport'])->name('super.order.weekyreport');
+    Route::get('/super/order/weeklyreport', [AdminController::class, 'weeklyReport'])->name('super.order.weeklyreport');
     Route::get('/super/order/monthlyreport', [AdminController::class, 'monthlyReport'])->name('super.order.monthlyreport');
     Route::get('/super/order/annualreport', [AdminController::class, 'annualReport'])->name('super.order.annualreport');
     Route::get('/super/logout',  [AdminController::class, 'logout'])->name('super.logout');
