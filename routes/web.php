@@ -26,8 +26,9 @@ Route::view('/pkbm/fasilitas', 'pkbm.fasilitas', ['unit' => 'pkbm'])->name('pkbm
 Route::view('/pkbm/tim', 'pkbm.tim', ['unit' => 'pkbm'])->name('pkbm.tim');
 Route::view('/pkbm/achievement', 'pkbm.achievement', ['unit' => 'pkbm'])->name('pkbm.achievement');
 Route::get('/pkbm/testimoni', [PkbmController::class, 'testimoni'])->name('pkbm.testimoni');
+Route::view('/pkbm/liputan', 'pkbm.liputan', ['unit' => 'pkbm'])->name('pkbm.liputan');
 Route::view('/pkbm/infopendaftaran', 'pkbm.infopendaftaran', ['unit' => 'pkbm'])->name('pkbm.infopendaftaran');
-Route::get('/pkbm/studibanding', [PkbmController::class, 'studibanding'])->name('pkbm.studibanding');
+Route::get('/pkbm/studibanding', [PkbmController::class, 'studiBanding'])->name('pkbm.studibanding');
 //program pkbm
 Route::view('/pkbm/program', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 'paketb'])->name('pkbm.program');
 Route::view('/pkbm/program/paketc', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 'paketc']);

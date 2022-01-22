@@ -34,6 +34,9 @@
                                 </li>
                                 <li><a class="dropdown-item" href="{{ URL::route('pkbm.testimoni') }}">Testimoni &
                                         Success Story</a></li>
+                                <li><a class="dropdown-item" href="{{ URL::route('pkbm.liputan') }}">Liputan Media &
+                                        Narasumber</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
