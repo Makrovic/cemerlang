@@ -82,7 +82,7 @@
 <section class="sec">
     <div class="container">
         <h1 class="title text-center" data-aos="fade-up">Belanja di Official Online Store</h1>
-        <div class="row my-4 p-5" data-aos="fade-up">
+        <div class="row my-4 g-4 p-5" data-aos="fade-up">
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                     <img src="{{ asset('images/pt/marketplace/tokopedia.png') }}" class="img-fluid"
@@ -105,6 +105,40 @@
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                     <img src="{{ asset('images/pt/marketplace/tokko.png') }}" class="img-fluid" alt="marketplace-tokko">
                 </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sec back-gray">
+    <div class="container">
+        <div class="row" data-aos="zoom-in">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex flex-row align-items-center">
+                    <img src="{{ asset('images/pt/sertifikasi/bpom.png') }}" class="m-3" alt="sertif-bpom"
+                        style="max-width: 200px">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex flex-row align-items-center">
+                    <img src="{{ asset('images/pt/sertifikasi/mui.png') }}" class="m-3" alt="sertif-mui"
+                        style="max-width: 200px">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex flex-row align-items-center">
+                    <img src="{{ asset('images/pt/sertifikasi/gmp.png') }}" class="m-3" alt="sertif-gmp"
+                        style="max-width: 200px">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex flex-row align-items-center">
+                    <img src="{{ asset('images/pt/sertifikasi/pls.png') }}" class="m-3" alt="sertif-pls"
+                        style="max-width: 200px">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
             </div>
         </div>
     </div>
