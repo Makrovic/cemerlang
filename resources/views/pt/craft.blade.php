@@ -22,7 +22,7 @@
     <div class="container-fluid">
         <h1 class="title text-center">Produk Kami</h1>
         <div class="row" data-masonry='{"percentPosition": true }'>
-            @for ($i = 1; $i <= 5; $i++) <div class="col-sm-6 col-lg-4 mb-4">
+            @for ($i = 1; $i <= 5; $i++) <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <a href="{{ asset('images/pt/craft/craft' . $i . '.jpg') }}" data-lightbox="image-2">
                     <img src="{{ asset('images/pt/craft/craft' . $i . '.jpg') }}" class="figure-img img-fluid rounded"
                         style="max-height: 560px"></a>

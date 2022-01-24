@@ -94,9 +94,11 @@
         @endisset
         @empty($carts)
         <div class="bg-white p-5 m-2 rounded shadow-sm text-center ">
-            <h1><i class="fa fa-shopping-cart text-primaryc" aria-hidden="true"></i></h1>
-            <h3 class="">Keranjang Kosong</h3>
-            <a href="{{ URL::route('bintang.shop') }}" class="btn btn-carica mt-4">Belanja</a>
+            <div data-aos="zoom-in">
+                <h1><i class="fa fa-shopping-cart text-primaryc" aria-hidden="true"></i></h1>
+                <h3 class="">Keranjang Kosong</h3>
+                <a href="{{ URL::route('bintang.shop') }}" class="btn btn-carica mt-4">Belanja</a>
+            </div>
         </div>
         @endempty
     </div>

@@ -20,8 +20,8 @@
 {{-- endbanner --}}
 <section class="sec">
     <div class="container">
-        <h1 class="title text-center">Hubungi Kami</h1>
-        <div class="row mt-4">
+        <h1 class="title text-center" data-aos="fade-up">Hubungi Kami</h1>
+        <div class="row mt-4" data-aos="fade-up">
             <div class="col-4">
                 <h2 class="fw-bolder">PT. BINTANG CEMERLANG JAYA SENTOSA</h2>
                 <p>
@@ -31,11 +31,8 @@
                     56351
                 </p>
             </div>
-            <div class="col-12">
-
-            </div>
         </div>
-        <div class="row flex-row-reverse">
+        <div class="row flex-row-reverse" data-aos="fade-up">
             <div class="col-sm-12 col-lg-5">
                 <a href="{{url('https://wa.me/628122520948')}}" target="_blank" class="text-decoration-none link-dark">
                     <div class="hover-box">
@@ -91,7 +88,7 @@
     </div>
 </section>
 <section class="sec back-gray">
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-up">
         <div class="d-flex justify-content-center">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1663.8136771853085!2d109.91020028825046!3d-7.327129729645857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aa061535d544f%3A0x3e523ccaeb0b701e!2sPKBM%20CEMERLANG!5e0!3m2!1sen!2sid!4v1640147297903!5m2!1sen!2sid"

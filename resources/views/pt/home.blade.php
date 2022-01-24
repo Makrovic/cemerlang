@@ -62,11 +62,11 @@
 {{-- section --}}
 <section class="sec back-primaryc">
     <div class="container">
-        <h1>UNIT BISNIS</h1>
-        <h5>Unit bisnis kami : </h5>
+        <h1 data-aos="fade-up">UNIT BISNIS</h1>
+        <h5 data-aos="fade-up">Unit bisnis kami : </h5>
         <div class="row justify-content-center my-4 text-center">
             <div class="col-12 col-sm-4">
-                <div class="img-box-zoom rounded">
+                <div class="img-box-zoom rounded" data-aos="zoom-in" data-aos-delay="600">
                     <a href="#home-carica">
                         <img class="img-fluid" src="{{ asset('images/pt/carica/carica1.jpg') }}">
                         <h3 class="h2">Carica Cemerlang</h3>
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-4">
-                <div class="img-box-zoom rounded">
+                <div class="img-box-zoom rounded" data-aos="zoom-in" data-aos-delay="400">
                     <a href="#home-snack">
                         <img class="img-fluid" src="{{ asset('images/pt/snack/snack.jpg') }}">
                         <h3 class="h2">Bintang Cemerlang Snack</h3>
@@ -82,7 +82,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-4">
-                <div class="img-box-zoom rounded">
+                <div class="img-box-zoom rounded" data-aos="zoom-in" data-aos-delay="200">
                     <a href="#home-craft">
                         <img class="img-fluid" src="{{ asset('images/pt/craft/craft1.jpg') }}">
                         <h3 class="h2">Claster Craft Cemerlang</h3>

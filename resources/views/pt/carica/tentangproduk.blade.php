@@ -96,7 +96,7 @@
 <section class="sec back-gray">
     <div class="container">
         <h1 class="title text-center" data-aos="fade-up">Varian Produk</h1>
-        <h5>Cup Mini</h5>
+        <h5 data-aos="fade-up">Cup Mini</h5>
         <div class="row mb-5" data-aos="fade-up">
             <div class="col-4">
                 <div class="img-box-zoom">
@@ -117,7 +117,7 @@
                 </div>
             </div>
         </div>
-        <h5>Cup Jumbo</h5>
+        <h5 data-aos="fade-up">Cup Jumbo</h5>
         <div class="row mb-5" data-aos="fade-up">
             <div class="col-6">
                 <div class="img-box-zoom">
@@ -137,8 +137,8 @@
 <section class="sec">
     <div class="container">
         <h1 class="title text-center" data-aos="fade-up">Franchise</h1>
-        <h5 class="text-center">Prosedur</h5>
-        <div class="p-3 w-75 mx-auto" style="background-color: forestgreen">
+        <h5 class="text-center" data-aos="fade-up">Prosedur</h5>
+        <div class="p-3 w-75 mx-auto" data-aos="fade-up" style="background-color: forestgreen">
             <img class="img-fluid" src="{{ asset('images/pt/carica/prosedur_franchise.png') }}">
         </div>
         <div class="row my-5">

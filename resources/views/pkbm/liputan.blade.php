@@ -20,8 +20,8 @@
 {{-- endbanner --}}
 <section class="sec">
     <div class="container">
-        <h1 class="title text-center">Liputan Media</h1>
-        <div class="my-5">
+        <h1 class="title text-center" data-aos="fade-up">Liputan Media</h1>
+        <div class="my-5" data-aos="fade-up">
             <h5>Liputan Media Cetak : </h5>
             <p>Jawa Pos, Suara Merdeka, Wonosobo Express, Majalah Aksara Kemendikbud, Kompas, Buku Pelangi PAUDNI,
                 Buku SoboNdeso, Majalah MISI Kemendikbud dan sebagainya</p>
@@ -36,7 +36,7 @@
             </div>
         </div>
     </div>
-    <div class="my-5">
+    <div class="my-5" data-aos="fade-up">
         <h5>Liputan Media Elektronik : </h5>
         <ol>
             <li>Liputan pada website Direktorat Pembinaan SMP Dirjen Dikdas Kemendikbud</li>
@@ -60,7 +60,7 @@
         </div>
 
     </div>
-    <div class="my-5">
+    <div class="my-5" data-aos="fade-up">
         <h5>Liputan Media Televisi : </h5>
         <ol>
             <li>Dialog Interaktif Wirausaha Muda pada Stasiun TVRI Semarang</li>
@@ -90,8 +90,8 @@
 </section>
 <section class="sec back-gray">
     <div class="container">
-        <h1 class="title text-center">Narasumber Nasional</h1>
-        <div class="my-5">
+        <h1 class="title text-center" data-aos="fade-up">Narasumber Nasional</h1>
+        <div class="my-5" data-aos="fade-up">
             <h5>Liputan Media Cetak : </h5>
             <p>anggilan Narasumber keterampilan / kursus / pelatihan dari berbagai kalangan, kelompok, instansi
                 pemerintah, instansi swasta dan organisasi kepada PKBM CEMERLANG meningkat secara signifikan.</p>
@@ -111,7 +111,7 @@
                 <li>PKBM CEMERLANG selaku Narasumber di Bhayangkari dan Warakawuri</li>
                 <li>dan sebagainya</li>
             </ol>
-            <div class="horizontal-scroll swiper sw-dokumentasi">
+            <div class="horizontal-scroll swiper sw-dokumentasi" data-aos="fade-up">
                 <div class="swiper-wrapper">
                     @for ($i = 1; $i <= 8; $i++) <div class="swiper-slide">
                         <a href="{{ asset('images/pkbm/narasumber/narsum' . $i . '.jpg') }}" data-lightbox="image-4">
