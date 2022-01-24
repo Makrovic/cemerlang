@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Redirect;
 use Intervention\Image\Facades\Image;
 
 class AdminController extends Controller
@@ -239,6 +240,34 @@ class AdminController extends Controller
     {
         $orders = Order::where('status', '3')->whereYear('tgl_transaksi', date('Y'))->get();
         return view('admin.order.report.annual', compact('orders'));
+    }
+
+    public function editImage(Request $request)
+    {
+        $request->validate([
+            'foto' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+        ]);
+
+        $foto = $request->file('foto');
+        $dir = $foto->getRealPath();
+        $ext = $foto->getClientOriginalExtension();
+        $foto->move('images/', 'edited.' . $ext);
+        $info = getimagesize(
+            'images/edited.jpg'
+        );
+        $width = $request->width;
+        $height = $request->height;
+        if (!isset($width) && !isset($height)) {
+            $width = $info[0];
+            $height = $info[1];
+        } elseif (!isset($height)) {
+            $height = $info[1];
+        } elseif (!isset($width)) {
+            $width = $info[0];
+        }
+        $jpg = Image::make('images/edited.' . $ext)->encode('jpg', 75)->fit($width, $height);
+        $jpg->save();
+        return Redirect::to('images/edited.jpg');
     }
 
     public function checkAuth()
