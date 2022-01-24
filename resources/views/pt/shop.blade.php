@@ -36,8 +36,12 @@
                         <span class="text-muted">{{ $produk->kategori }}</span>
                         <p>{{ $produk->nama }}</p>
                         <h4 class="text-success">Rp. {{ number_format($produk->harga)}},-</h4>
-                        <a href="{{ URL::route('bintang.shop.cart.add', $produk->kode_produk) }}"
-                            class="btn btn-carica mt-4">Tambah ke keranjang</a>
+                        <form action="{{route('bintang.shop.cart.add')}}" method="get">
+                            <input type="hidden" name="kodeproduk" value="{{$produk->kode_produk}}">
+                            <input type="hidden" name="jumlah" class="form-control text-center" value="1"
+                                style="max-width: 60px">
+                            <button type="submit" class="btn btn-carica mt-4">Tambah ke keranjang</button>
+                        </form>
                     </div>
                 </div>
             </div>

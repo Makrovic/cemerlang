@@ -63,10 +63,11 @@ class PtController extends Controller
         }
     }
 
-    public function addToCart($kodeproduk)
+    public function addToCart(Request $request)
     {
         $unit = 'pt';
-        $jumlah = 1;
+        $kodeproduk = $request->kodeproduk;
+        $jumlah = $request->jumlah;
         $produks = Produk::where('kode_produk', $kodeproduk)->first();
         if ($produks != null) {
             if (Session::has('cart')) {
@@ -76,11 +77,11 @@ class PtController extends Controller
                     $cart = $cart->replace([$kodeproduk => $total]);
                 } else {
                     $cart = Session::get('cart');
-                    $cart->put($kodeproduk, 1);
+                    $cart->put($kodeproduk, $jumlah);
                 }
             } else {
                 $cart = collect([
-                    $kodeproduk => 1
+                    $kodeproduk => $jumlah
                 ]);
             }
             Session::put('cart', $cart);

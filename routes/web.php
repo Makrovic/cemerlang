@@ -54,7 +54,7 @@ Route::view('/bintang/craft', 'pt.craft', ['unit' => 'pt'])->name('bintang.craft
 Route::get('/bintang/shop',  [PtController::class, 'shop'])->name('bintang.shop');
 Route::get('/bintang/shop/product/{produk}',  [PtController::class, 'produkDesc'])->name('bintang.shop.product.desc');
 Route::get('/bintang/shop/cart',  [PtController::class, 'showCart'])->name('bintang.shop.cart');
-Route::get('/bintang/shop/addtocart/{produk}',  [PtController::class, 'addToCart'])->name('bintang.shop.cart.add');
+Route::get('/bintang/shop/addtocart',  [PtController::class, 'addToCart'])->name('bintang.shop.cart.add');
 Route::get('/bintang/shop/removefromcart/{produk}',  [PtController::class, 'removeFromCart'])->name('bintang.shop.cart.remove');
 Route::post('/bintang/shop/updatecart',  [PtController::class, 'updateCart'])->name('bintang.shop.cart.update');
 Route::get('/bintang/shop/clearcart',  [PtController::class, 'clearCart'])->name('bintang.shop.cart.clear');
