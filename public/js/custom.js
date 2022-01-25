@@ -21,12 +21,24 @@ const sw_testi = new Swiper('.sw-testi', {
 
 const sw_dokumentasi = new Swiper('.sw-dokumentasi', {
     // Optional parameters
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
 
     pagination: {
         el: '.swiper-pagination',
-    }
+    },
+    breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }
 });
 
 const sw_bannerpt = new Swiper('.sw-bannerpt', {
