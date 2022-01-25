@@ -26,14 +26,13 @@
         <h5 data-aos="fade-up">Dokumentasi</h5>
         <div class="horizontal-scroll swiper sw-dokumentasi" data-aos="fade-up">
             <div class="swiper-wrapper">
-                @for ($i = 1; $i <= 5; $i++)
-                    <div class="swiper-slide">
-                        <a href="{{ asset('images/pkbm/pembelajaran/pktb' . $i . '.jpg') }}" data-lightbox="image-1">
-                            <img class="flex-auto img-fluid rounded"
-                                src="{{ asset('images/pkbm/pembelajaran/pktb' . $i . '.jpg') }}"></a>
-                    </div>
-                @endfor
+                @for ($i = 1; $i <= 4; $i++) <div class="swiper-slide">
+                    <a href="{{ asset('images/pkbm/pkk/pkk' . $i . '.jpg') }}" data-lightbox="image-1">
+                        <img class="flex-auto img-fluid rounded"
+                            src="{{ asset('images/pkbm/pkk/pkk' . $i . '.jpg') }}"></a>
             </div>
+            @endfor
         </div>
+    </div>
     </div>
 </section>

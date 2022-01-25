@@ -1,6 +1,6 @@
 <section class="sec">
     <div class="container-fluid">
-        <h1 class="title text-center" data-aos="fade-up">Program Keterampilan/Kursus/Pelatihan</h1>
+        <h1 class="title text-center" data-aos="fade-up">Program Keterampilan / Kursus / Pelatihan</h1>
         <ol data-aos="fade-up">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -33,15 +33,14 @@
         <h5 data-aos="fade-up">Dokumentasi</h5>
         <div class="horizontal-scroll swiper sw-dokumentasi" data-aos="fade-up">
             <div class="swiper-wrapper">
-                @for ($i = 1; $i <= 15; $i++)
-                    <div class="swiper-slide">
-                        <a href="{{ asset('images/pkbm/keterampilan/keterampilan' . $i . '.jpg') }}"
-                            data-lightbox="image-1">
-                            <img class="flex-auto img-fluid rounded"
-                                src="{{ asset('images/pkbm/keterampilan/keterampilan' . $i . '.jpg') }}"></a>
-                    </div>
-                @endfor
+                @for ($i = 1; $i <= 15; $i++) <div class="swiper-slide">
+                    <a href="{{ asset('images/pkbm/keterampilan/keterampilan' . $i . '.jpg') }}"
+                        data-lightbox="image-1">
+                        <img class="flex-auto img-fluid rounded"
+                            src="{{ asset('images/pkbm/keterampilan/keterampilan' . $i . '.jpg') }}"></a>
             </div>
+            @endfor
         </div>
+    </div>
     </div>
 </section>
