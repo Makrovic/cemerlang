@@ -4,7 +4,7 @@
             <div class="row justify-content-between">
                 <div class="col-lg-3 col-md-12 footer-contact my-3" data-aos="fade-up">
                     <img src="{{asset('images/pkbm/logo-nav.png')}}" alt="" class="img-fluid" style="max-width: 240px">
-                    <p>
+                    <p class="text-break">
                         Jl. Dieng km. 4<br>
                         Sibunderan rt.5 rw.4 Krasak Mojotengah<br>
                         Wonosobo<br>
@@ -20,7 +20,8 @@
                         <li><i class="fas fa-chevron-right"></i><a href="#"> Legalitas</a></li>
                         <li><i class="fas fa-chevron-right"></i><a href="#"> Tentang Produk</a></li>
                         <li><i class="fas fa-chevron-right"></i><a href="#"> Fasilitas</a></li>
-                        <li><i class="fas fa-chevron-right"></i><a href="#"> Ekspansi Pemasaran & Jaringan Kemtiraan</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#"> Ekspansi Pemasaran & Jaringan Kemtiraan</a>
+                        </li>
                         <li><i class="fas fa-chevron-right"></i><a href="#"> Pencapaian</a></li>
                         <li><i class="fas fa-chevron-right"></i><a href="#"> Gallery</a></li>
                     </ul>

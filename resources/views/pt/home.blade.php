@@ -54,8 +54,8 @@
             </div>
         </div>
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-button swiper-button-prev"></div>
+    <div class="swiper-button swiper-button-next"></div>
 </div>
 {{-- endbanner --}}
 
@@ -64,7 +64,7 @@
     <div class="container">
         <h1 data-aos="fade-up">UNIT BISNIS</h1>
         <h5 data-aos="fade-up">Unit bisnis kami : </h5>
-        <div class="row justify-content-center my-4 text-center">
+        <div class="row g-3 justify-content-center my-4 text-center">
             <div class="col-12 col-sm-4">
                 <div class="img-box-zoom rounded" data-aos="zoom-in" data-aos-delay="600">
                     <a href="#home-carica">
@@ -123,11 +123,11 @@
 
 <section class="sec" id="home-carica">
     <div class="container">
-        <div class="row flex-row justify-content-center">
-            <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-left">
-                <img src="{{ asset('images/pt/carica/carica1.jpg') }}" alt="" class="img-fluid rounded my-4">
+        <div class="row g-3 flex-row justify-content-center" data-aos="fade-up">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="{{ asset('images/pt/carica/carica1.jpg') }}" alt="" class="img-fluid rounded">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center" data-aos="fade-up">
+            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
                 <h1>Carica Cemerlang</h1>
                 <p>Industri Minuman Buah Carica</p>
             </div>
@@ -136,11 +136,11 @@
 </section>
 <section class="sec back-gray" id="home-snack">
     <div class="container">
-        <div class="row flex-row-reverse text-end justify-content-center">
-            <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-left">
-                <img src="{{ asset('images/pt/snack/snack.jpg') }}" alt="" class="img-fluid rounded my-4">
+        <div class="row g-3 flex-row-reverse text-end justify-content-center" data-aos="fade-up">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="{{ asset('images/pt/snack/snack.jpg') }}" alt="" class="img-fluid rounded">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center" data-aos="fade-up">
+            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
                 <h1>Bintang Cemerlang Snack</h1>
                 <p>Industri Makanan Berbahan Potensi Lokal</p>
             </div>
@@ -149,11 +149,11 @@
 </section>
 <section class="sec" id="home-craft">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-6 col-lg-6 my-4" data-aos="fade-right">
-                <img src="{{ asset('images/pt/craft/craft1.jpg') }}" alt="" class="img-fluid rounded my-4">
+        <div class="row g-3 justify-content-center" data-aos="fade-up">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="{{ asset('images/pt/craft/craft1.jpg') }}" alt="" class="img-fluid rounded">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center" data-aos="fade-up">
+            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
                 <h1>Claster Craft Cemerlang</h1>
                 <p>Industri Aneka Kerajinan</p>
             </div>
@@ -181,6 +181,9 @@
         </div>
     </div>
     </div>
+</section>
+<section class="sec parallax d-flex justify-content-center align-items-center" style="min-height: 200px">
+    <a href="{{route('bintang.shop')}}" class="btn-belanja">Belanja Sekarang</a>
 </section>
 {{-- endsection --}}
 @stop

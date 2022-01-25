@@ -97,3 +97,9 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (max-width: 1024px) {
+    .banner-title h1 {
+        font-size: 44px;
+    }
+}

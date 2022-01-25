@@ -186,13 +186,38 @@ canvas {
     object-fit: cover;
 }
 
+.btn-belanja {
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--accent);
+    border: 2px var(--accent) solid;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 24px;
+}
+
+.btn-belanja:hover {
+    transition: 0.5s ease-in-out;
+    background-color: var(--accent);
+    color: #444;
+}
+
 .parallax {
-    background-image: linear-gradient(to top, #000000ba, #157be0bb),
-        url(../images/pkbm/banner1.jpg);
+    background-image: linear-gradient(to top, #000000ba, #58aa2fbb),
+        url(../images/pt/banner5.jpg);
     height: 100%;
     text-align: center;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (max-width: 1024px) {
+    .swiper-button {
+        visibility: hidden;
+    }
+    .banner-title h1 {
+        font-size: 44px;
+    }
 }

@@ -36,12 +36,17 @@
 
 .jumbotron .display-4 {
     color: #fff;
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 64px;
 }
 
 .jumbotron .h3 {
     color: #fff;
+}
+
+.jumbotron .logo-yayasan {
+    width: 200px;
+    margin: 24px;
 }
 
 .fa-chevron-down {
@@ -146,7 +151,7 @@ section {
 }
 
 .culture li {
-    font-size: 20px;
+    font-size: 18px;
     margin: 12px;
 }
 
@@ -169,10 +174,6 @@ section {
     margin-top: 4px;
     left: calc(50% - 32px);
     background: var(--primary);
-}
-
-.mitra img {
-    width: 90%;
 }
 
 .img-box {
@@ -211,4 +212,28 @@ section {
     background: var(--accent-dark);
     color: #fff;
     text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .jumbotron .display-4 {
+        font-size: 48px;
+    }
+    .jumbotron .logo-yayasan {
+        width: 160px;
+    }
+    .fa-chevron-down {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .jumbotron .display-4 {
+        font-size: 40px;
+    }
+    .yayasan p {
+        font-size: 18px;
+    }
+    .jumbotron .logo-yayasan {
+        width: 100px;
+    }
 }

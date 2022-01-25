@@ -3,7 +3,7 @@
 {{-- jumbotron --}}
 <div class="jumbotron jumbotron-fluid">
     <div class="container d-flex flex-column align-items-center">
-        <img src="{{asset('images/sty.png')}}" alt="" srcset="" width="200px" data-aos="fade-up">
+        <img class="logo-yayasan" src="{{asset('images/sty.png')}}" alt="" srcset="" data-aos="fade-up">
         <h1 class="display-4" data-aos="fade-up">Bintang Cemerlang Indonesia</h1>
         <h3 class="h3" data-aos="fade-up">Yayasan usaha non profit dan usaha profit</h3>
         <a class="mt-5" href="#yayasan"><span class="fas fa-chevron-down light" data-aos="fade-up"></span></a>
@@ -17,7 +17,8 @@
             <p><em>BINTANG CEMERLANG INDONESIA</em> merupakan Yayasan yang bergerak dalam
                 bidang usaha non profit yaitu Pusat Pendidikan, Pemberdaaan dan Pelatihan bagi Masyarakat dengan nama
                 <em>PKBM CEMERLANG</em>.
-                Dan unit usaha profit dengan nama <em>PT BINTANG CEMERLANG JAYA SENTOSA.</em></p>
+                Dan unit usaha profit dengan nama <em>PT BINTANG CEMERLANG JAYA SENTOSA.</em>
+            </p>
             <p> Melalui keduana tercipta keseimbangan memberikan kebermanfaatan bagi banyak umat. Hasil usaha profit
                 dimanfaatkan
                 untuk penyelenggaraan kegiatan non profit.</p>
@@ -29,9 +30,10 @@
     <div class="container">
         <div class="row d-flex flex-row-reverse">
             <div class="col-lg-6" data-aos="fade-up">
-            <img src="{{asset('images/pkbm/pembelajaran/pktb1.jpg')}}" width="700px" height="300px" class="img-fluid" alt="">
+                <img src="{{asset('images/pkbm/pembelajaran/pktb1.jpg')}}" width="700px" height="300px"
+                    class="img-fluid" alt="">
             </div>
-            <div class="col-lg-6" data-aos="fade-up">
+            <div class="col-lg-6 p-2" data-aos="fade-up">
                 <h1>PKBM Cemerlang</h1>
                 <p>Pusat pemberdayaan masyarakat terakreditas A terbaik di Indonesia.</p>
                 <a href="{{url('/pkbm')}}" class="btn btn-welcome ms-auto">lebih lanjut</a>
@@ -44,9 +46,10 @@
     <div class="container">
         <div class="row d-flex flex-row">
             <div class="col-lg-6" data-aos="fade-up">
-                <img src="{{asset('images/pkbm/pembelajaran/pktb1.jpg')}}" width="700px" height="300px" class="img-fluid" alt="">
+                <img src="{{asset('images/pkbm/pembelajaran/pktb1.jpg')}}" width="700px" height="300px"
+                    class="img-fluid" alt="">
             </div>
-            <div class="col-lg-6" data-aos="fade-up">
+            <div class="col-lg-6 p-2" data-aos="fade-up">
                 <h1>PT Bintang Cemerlang Jaya Sentosa</h1>
                 <p>Pusat pemberdayaan masyarakat terakreditas A terbaik di Indonesia.</p>
                 <a href="{{url('/bintang')}}" class="btn btn-welcome ms-auto">lebih lanjut</a>
@@ -85,9 +88,11 @@
         <div class="row justify-content-center" data-aos="fade-up">
             <div class="col-lg-6">
                 <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Berkarakter dan menjunjung tinggi nilai agama</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Berkarakter dan menjunjung tinggi nilai
+                        agama</li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Optimis menata masa depan</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Melakukan yang terbaik dan bermanfaat</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Melakukan yang terbaik dan bermanfaat
+                    </li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Komitmen melaksanakan amanah</li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Berkinerja tinggi</li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Bersyukur</li>
@@ -105,7 +110,7 @@
 </section>
 
 <section class="mitra">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row justify-content-center text-center" data-aos="fade-up">
             <h1>Mitra</h1>
         </div>
