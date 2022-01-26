@@ -24,7 +24,7 @@
         @isset($produks)
         <div class="row g-5" data-aos="fade-up">
             @foreach ($produks as $produk)
-            <div class="col-4 d-flex justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
                 <div class="card text-center card-product">
                     <a class="m-2" href="{{ URL::route('bintang.shop.product.desc', $produk->kode_produk) }}">
                         <div class="img-box-zoom">
@@ -59,21 +59,21 @@
 <section class="sec back-gray">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-md-12 col-lg-4">
                 <div class="hover-box text-center" data-aos="zoom-in">
                     <div class="icon-box align-middle my-3"><i class="fas fa-thumbs-up"></i></div>
                     <h5>Rasa Otentik</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-md-12 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                 <div class="hover-box text-center">
                     <div class="icon-box align-middle my-3"><i class="fas fa-seedling"></i></div>
                     <h5>Tanpa Pengawet</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-md-12 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
                 <div class="hover-box text-center">
                     <div class="icon-box align-middle my-3"><i class="fas fa-headset"></i></div>
                     <h5>Pelayanan Prima</h5>
@@ -115,33 +115,57 @@
 </section>
 <section class="sec back-gray">
     <div class="container">
-        <div class="row" data-aos="zoom-in">
+        <div class="row g-2" data-aos="zoom-in">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="d-flex flex-row align-items-center">
-                    <img src="{{ asset('images/pt/sertifikasi/bpom.png') }}" class="m-3" alt="sertif-bpom"
-                        style="max-width: 200px">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="row flex-row align-items-center">
+                    <div class="col p-3">
+                        <img src="{{ asset('images/pt/sertifikasi/bpom.png') }}" class="img-fluid" alt="sertif-bpom">
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-8">
+                        <p>Produk CARICA CEMERLANG
+                            memenuhi standar
+                            Bpom : BPOM RI MD
+                            217711001553.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="d-flex flex-row align-items-center">
-                    <img src="{{ asset('images/pt/sertifikasi/mui.png') }}" class="m-3" alt="sertif-mui"
-                        style="max-width: 200px">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="row flex-row align-items-center">
+                    <div class="col p-3">
+                        <img src="{{ asset('images/pt/sertifikasi/mui.png') }}" class="img-fluid" alt="sertif-mui">
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-8">
+                        <p>Produk CARICA CEMERLANG
+                            dalam kemasan sudah
+                            memiliki sertifikasi
+                            halal dan aman.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="d-flex flex-row align-items-center">
-                    <img src="{{ asset('images/pt/sertifikasi/gmp.png') }}" class="m-3" alt="sertif-gmp"
-                        style="max-width: 200px">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="row flex-row align-items-center">
+                    <div class="col p-3">
+                        <img src="{{ asset('images/pt/sertifikasi/gmp.png') }}" class="img-fluid" alt="sertif-gmp">
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-8">
+                        <p>Produk CARICA CEMERLANG
+                            memenuhi standar
+                            GMP :
+                            0024/LSIPB/GMP/2018.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="d-flex flex-row align-items-center">
-                    <img src="{{ asset('images/pt/sertifikasi/pls.png') }}" class="m-3" alt="sertif-pls"
-                        style="max-width: 200px">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="row flex-row align-items-center">
+                    <div class="col p-3">
+                        <img src="{{ asset('images/pt/sertifikasi/pls.png') }}" class="img-fluid" alt="sertif-pls">
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-8">
+                        <p>Produk CARICA CEMERLANG
+                            dalam kemasan sudah
+                            tersrtifikasi makanan
+                            pilihan lebih sehat.</p>
+                    </div>
                 </div>
             </div>
         </div>

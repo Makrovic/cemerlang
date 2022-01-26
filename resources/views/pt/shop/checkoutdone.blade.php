@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="m-2 d-flex justify-content-between">
+        <div class="m-2 d-flex flex-column flex-sm-row justify-content-between">
             <a href="#" class="btn btn-carica m-3"><i class="fas fa-shopping-cart"></i> Kembali Belanja</a>
             <a href="#" id="print" class="btn btn-carica m-3"><i class="fas fa-print"></i>
                 Cetak Invoice</a>

@@ -22,7 +22,7 @@
     <div class="container">
         <h1 class="title text-center" data-aos="fade-up">Hubungi Kami</h1>
         <div class="row mt-4" data-aos="fade-up">
-            <div class="col-4">
+            <div class="col-md-12 col-lg-4">
                 <h2 class="fw-bolder">PT. BINTANG CEMERLANG JAYA SENTOSA</h2>
                 <p>
                     Jl. Dieng km. 4
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="row flex-row-reverse" data-aos="fade-up">
-            <div class="col-sm-12 col-lg-5">
+            <div class="col-sm-12 col-lg-5 text-break">
                 <a href="{{url('https://wa.me/628122520948')}}" target="_blank" class="text-decoration-none link-dark">
                     <div class="hover-box">
                         <span class="icon-box align-middle"><i class="fab fa-whatsapp"></i></span>

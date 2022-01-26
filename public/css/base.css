@@ -53,11 +53,6 @@ body {
 .navheader-transparent {
     background: none;
 }
-@media (max-width: 992px) {
-    .navheader-transparent {
-        background-color: #060b11cb;
-    }
-}
 
 .navheader-scrolled {
     background-color: #060b11cb;
@@ -162,4 +157,10 @@ body {
 
 #btn-top:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media (max-width: 1200px) {
+    .navheader-transparent {
+        background-color: #060b11cb;
+    }
 }

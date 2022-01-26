@@ -23,7 +23,7 @@
     <div class="container">
         <form method="post" action="{{ URL::route('bintang.shop.checkout.confirm') }}">
             {{ csrf_field() }}
-            <div class="row flex-row">
+            <div class="row g-3 flex-row">
                 <div class="col">
                     <div class="bg-white p-4 rounded shadow-sm">
                         <h2 class="text-center">Detail Pesanan</h2>
@@ -107,27 +107,23 @@
                                 style="min-height: 100px; max-height: 200px">{{old('catatan')}}</textarea>
                             <label for="catatan">Catatan (opsional)</label>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <a href="{{ URL::route('bintang.shop.cart') }}"
-                                    class="btn badge back-primaryc link-light text-decoration-none">
-                                    kembali ke keranjang
-                                </a>
-                            </div>
-                            <div class="col text-end">
-                                <a id="btn-cek-ongkir" class="btn badge back-primaryc link-light text-decoration-none"
-                                    style="visibility: hidden">
-                                    cek tarif
-                                </a>
-                            </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <a href="{{ URL::route('bintang.shop.cart') }}"
+                                class="btn badge back-primaryc link-light text-decoration-none">
+                                kembali ke keranjang
+                            </a>
+                            <a id="btn-cek-ongkir" class="btn badge back-primaryc link-light text-decoration-none"
+                                style="visibility: hidden">
+                                cek tarif
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="bg-white p-2 rounded shadow-sm">
                         @foreach ($carts as $cart)
                         <div class="row m-2">
-                            <div class="col-auto">
+                            <div class="col-auto img-cart">
                                 <img src="{{ asset('images/pt/produk/'.$cart['kode_produk'].'.jpg') }}" alt=""
                                     class="img-fluid rounded-3" style="max-width: 80px">
                             </div>
@@ -152,8 +148,8 @@
                             <div class="col">Rp. {{ number_format(session('totalan')['total']) }},-</div>
                         </div>
                         <div class="row border-bottom m-2">
-                            <div class="col">Ongkos Kirim</div>
-                            <div class="col">
+                            <div class="col-sm-12 col-md">Ongkos Kirim</div>
+                            <div class="col-sm-12 col-md">
                                 <fieldset id="cost">
                                     -
                                 </fieldset>

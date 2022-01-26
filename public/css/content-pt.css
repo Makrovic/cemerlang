@@ -269,3 +269,19 @@
 .card-product:hover {
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
 }
+
+.cart-text {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .img-cart {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-text {
+        display: inline;
+    }
+}
