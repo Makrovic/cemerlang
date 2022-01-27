@@ -20,7 +20,7 @@ class PkbmController extends Controller
     public function testimoni()
     {
         $testimonis = Testimoni::all();
-        $alumnis = Alumni::all();
+        $alumnis = Alumni::paginate(6);
         $unit = 'pkbm';
         return view('pkbm.testimoni', compact('testimonis', 'alumnis', 'unit'));
     }

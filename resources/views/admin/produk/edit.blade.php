@@ -73,8 +73,12 @@
                         <div class="row mb-3">
                             <label class="col-sm-2 col-form-label">Kategori</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control @error('kategori') is-invalid @enderror"
-                                    name="kategori" value="{{$produk->kategori}}" required>
+                                <select class="form-select @error('kategori') is-invalid @enderror" id="kategori"
+                                    name="kategori" required>
+                                    <option value="minuman">Minuman</option>
+                                    <option value="snack">Makanan Ringan</option>
+                                    <option value="craft">Kerajinan</option>
+                                </select>
                                 @error('kategori')
                                 <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror

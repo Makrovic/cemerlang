@@ -95,8 +95,6 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/super/order/weeklyreport', [AdminController::class, 'weeklyReport'])->name('super.order.weeklyreport');
     Route::get('/super/order/monthlyreport', [AdminController::class, 'monthlyReport'])->name('super.order.monthlyreport');
     Route::get('/super/order/annualreport', [AdminController::class, 'annualReport'])->name('super.order.annualreport');
-    Route::view('/super/editimage', 'admin.edit-image')->name('super.editimage');
-    Route::post('/super/editimage', [AdminController::class, 'editImage'])->name('super.editimage.store');
     Route::get('/super/logout',  [AdminController::class, 'logout'])->name('super.logout');
     Route::get('/cekcek',  [AdminController::class, 'checkAuth']);
 });

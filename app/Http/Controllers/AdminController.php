@@ -94,7 +94,7 @@ class AdminController extends Controller
         ]);
         $total = Produk::count() + 1;
         $number = sprintf("%02d", $total);
-        $kode = 'p' . $request->kategori[0] . Carbon::now()->translatedFormat("ym") . $number;
+        $kode = 'p' . substr($request->kategori, 0, 2) . Carbon::now()->translatedFormat("ym") . $number;
         $kodeproduk = ['kode_produk' => $kode];
         $produk['foto'] = $kode;
         $produks = $kodeproduk + $produk;
@@ -240,34 +240,6 @@ class AdminController extends Controller
     {
         $orders = Order::where('status', '3')->whereYear('tgl_transaksi', date('Y'))->get();
         return view('admin.order.report.annual', compact('orders'));
-    }
-
-    public function editImage(Request $request)
-    {
-        $request->validate([
-            'foto' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
-        ]);
-
-        $foto = $request->file('foto');
-        $dir = $foto->getRealPath();
-        $ext = $foto->getClientOriginalExtension();
-        $foto->move('images/', 'edited.' . $ext);
-        $info = getimagesize(
-            'images/edited.jpg'
-        );
-        $width = $request->width;
-        $height = $request->height;
-        if (!isset($width) && !isset($height)) {
-            $width = $info[0];
-            $height = $info[1];
-        } elseif (!isset($height)) {
-            $height = $info[1];
-        } elseif (!isset($width)) {
-            $width = $info[0];
-        }
-        $jpg = Image::make('images/edited.' . $ext)->encode('jpg', 75)->fit($width, $height);
-        $jpg->save();
-        return Redirect::to('images/edited.jpg');
     }
 
     public function checkAuth()

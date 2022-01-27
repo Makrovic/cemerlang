@@ -92,16 +92,6 @@
       </ul>
     </li><!-- End Laporan Nav -->
 
-    <li class="nav-heading">Alat</li>
-
-    <li class="nav-item">
-      <a class="nav-link {{ Request::url() == url('super/editimage') ? '' : 'collapsed' }}"
-        href="{{route('super.editimage')}}">
-        <i class="fas fa-shopping-cart"></i>
-        <span>Edit Image</span>
-      </a>
-    </li><!-- End Produk Page Nav -->
-
   </ul>
 
 </aside><!-- End Sidebar-->

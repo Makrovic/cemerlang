@@ -55,9 +55,6 @@
 /* endbanner */
 
 /* section */
-.sec li {
-    margin: 8px;
-}
 
 .sec li i {
     color: var(--primary);
