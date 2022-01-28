@@ -8,6 +8,7 @@
 <div class="sw-bannerpt">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
+            {{-- KURANG! : banner utama PT --}}
             <div id="banner" class="banner" style="background-image: url('../images/pkbm/banner1.jpg')">
                 <div class="banner-hero">
                     <div class="container">

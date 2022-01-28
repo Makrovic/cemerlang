@@ -1,5 +1,6 @@
 <section class="sec">
     <div class="container">
+        {{-- KURANG! : visi-misi carica --}}
         <div class="row d-flex justify-content-center mb-3" data-aos="fade-up" data-aos-delay="200">
             <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center text-center"
                 data-aos="fade-up">

@@ -3,6 +3,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-3 col-md-12 footer-contact my-3" data-aos="fade-up">
+                    {{-- KURANG! : logo PT --}}
                     <img src="{{asset('images/pkbm/logo-nav.png')}}" alt="" class="img-fluid" style="max-width: 240px">
                     <p class="text-break">
                         Jl. Dieng km. 4<br>

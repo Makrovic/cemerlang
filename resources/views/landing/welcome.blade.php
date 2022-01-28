@@ -3,6 +3,7 @@
 {{-- jumbotron --}}
 <div class="jumbotron jumbotron-fluid">
     <div class="container d-flex flex-column align-items-center" data-aos="fade-up">
+        {{-- KURANG! : logo yayasan --}}
         <img class="logo-yayasan" src="{{asset('images/sty.png')}}" alt="" srcset="">
         <h1 class="display-4">Bintang Cemerlang Indonesia</h1>
         <div class="row justify-content-center text-center">
@@ -39,6 +40,7 @@
     <div class="container">
         <div class="row d-flex flex-row">
             <div class="col-lg-6" data-aos="fade-up">
+                {{-- KURANG! : foto kegiatan pt --}}
                 <img src="{{asset('images/pkbm/pembelajaran/pktb1.jpg')}}" width="700px" height="300px"
                     class="img-fluid" alt="">
             </div>

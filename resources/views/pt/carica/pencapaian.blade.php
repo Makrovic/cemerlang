@@ -84,6 +84,7 @@
         <a href="{{ asset('images/pt/event/dubes.jpg') }}" data-lightbox="image-3">
             <img src="{{ asset('images/pt/event/dubes.jpg') }}" class="figure-img img-fluid rounded"
                 style="max-height: 560px"></a>
+        {{-- KURANG! : dubes apa --}}
         <p>Dubes</p>
     </div>
     </div>
