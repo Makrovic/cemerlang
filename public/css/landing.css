@@ -2,9 +2,8 @@
 .jumbotron {
     background-image: url(../images/banner-yayasan.jpg);
     background-size: cover;
-    height: 108vh;
-    min-height: 500px;
-    margin-top: -75px;
+    height: 100vh;
+    min-height: 600px;
     text-align: center;
     position: relative;
     background-attachment: fixed;
@@ -14,10 +13,9 @@
 }
 
 .jumbotron .container {
+    height: 100%;
     position: relative;
     z-index: 1;
-    padding-top: 200px;
-    height: 100%;
 }
 
 .jumbotron::after {
@@ -46,7 +44,7 @@
 
 .jumbotron .logo-yayasan {
     width: 200px;
-    margin: 24px;
+    margin: 12px;
 }
 
 .fa-chevron-down {
@@ -62,14 +60,9 @@ section {
     padding: 10%;
 }
 
-.yayasan {
+.jumbotron p {
+    font-size: 18px;
     color: #fff;
-    padding: 10%;
-    background-color: var(--primary);
-}
-
-.yayasan p {
-    font-size: 24px;
 }
 
 .pkbm {
@@ -214,7 +207,31 @@ section {
     text-decoration: none;
 }
 
+.btn-banner {
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: 2px solid var(--accent);
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: var(--accent);
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    background: none;
+}
+
+.btn-banner:hover {
+    background: var(--accent);
+    color: #444;
+    text-decoration: none;
+}
+
 @media (max-width: 1024px) {
+    .jumbotron {
+        height: auto;
+    }
     .jumbotron .display-4 {
         font-size: 48px;
     }
@@ -227,11 +244,8 @@ section {
 }
 
 @media (max-width: 768px) {
-    .jumbotron .display-4 {
-        font-size: 40px;
-    }
-    .yayasan p {
-        font-size: 18px;
+    .jumbotron .mobile {
+        display: none;
     }
     .jumbotron .logo-yayasan {
         width: 100px;

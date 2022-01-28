@@ -63,21 +63,24 @@
                 <div class="hover-box text-center" data-aos="zoom-in">
                     <div class="icon-box align-middle my-3"><i class="fas fa-thumbs-up"></i></div>
                     <h5>Rasa Otentik</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Bahan baku utama Produk Cemerlang disuplai langsung oleh petani terbaik di Kabupaten Wonosobo
+                        melalui proses sortir.</p>
                 </div>
             </div>
             <div class="col-md-12 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                 <div class="hover-box text-center">
                     <div class="icon-box align-middle my-3"><i class="fas fa-seedling"></i></div>
                     <h5>Tanpa Pengawet</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Produk Cemerlang menggunakan 0% pengawet maupun bahan tambahan pangan lainnya untuk menjaga
+                        kualitas rasa dan produk.</p>
                 </div>
             </div>
             <div class="col-md-12 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
                 <div class="hover-box text-center">
                     <div class="icon-box align-middle my-3"><i class="fas fa-headset"></i></div>
                     <h5>Pelayanan Prima</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Produk Cemerlang yang dipesan selalu dicek kelayakannya untuk mengedepankan kepuasan pelanggan.
+                    </p>
                 </div>
             </div>
         </div>

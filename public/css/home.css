@@ -34,6 +34,7 @@
 
 .banner {
     position: relative;
+    min-height: 600px;
     height: 100vh;
 }
 
@@ -101,5 +102,8 @@ canvas {
 @media (max-width: 1024px) {
     .banner-title h1 {
         font-size: 44px;
+    }
+    .banner {
+        height: auto;
     }
 }

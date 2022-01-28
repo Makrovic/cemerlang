@@ -2,31 +2,24 @@
 @section('content')
 {{-- jumbotron --}}
 <div class="jumbotron jumbotron-fluid">
-    <div class="container d-flex flex-column align-items-center">
-        <img class="logo-yayasan" src="{{asset('images/sty.png')}}" alt="" srcset="" data-aos="fade-up">
-        <h1 class="display-4" data-aos="fade-up">Bintang Cemerlang Indonesia</h1>
-        <h3 class="h3" data-aos="fade-up">Yayasan usaha non profit dan usaha profit</h3>
-        <a class="mt-5" href="#yayasan"><span class="fas fa-chevron-down light" data-aos="fade-up"></span></a>
+    <div class="container d-flex flex-column align-items-center" data-aos="fade-up">
+        <img class="logo-yayasan" src="{{asset('images/sty.png')}}" alt="" srcset="">
+        <h1 class="display-4">Bintang Cemerlang Indonesia</h1>
+        <div class="row justify-content-center text-center">
+            <p>Merupakan Yayasan yang bergerak dalam bidang usaha non profit yaitu Pusat Pendidikan, Pemberdaaan dan
+                Pelatihan bagi Masyarakat dengan nama <em>PKBM CEMERLANG</em>. Dan unit usaha profit dengan nama <em>PT
+                    BINTANG CEMERLANG JAYA SENTOSA.</em><br>
+                <span class="mobile">Melalui keduanya tercipta keseimbangan memberikan kebermanfaatan bagi banyak umat.
+                    Hasil usaha profit
+                    dimanfaatkan untuk penyelenggaraan kegiatan non profit.
+            </p>
+        </div>
+        <a href="#pkbm"><span class="fas fa-chevron-down light"></span></a>
     </div>
 </div>
 {{-- endjumbotron --}}
 {{-- section --}}
-<section class="yayasan" id="yayasan">
-    <div class="container">
-        <div class="row justify-content-center text-center" data-aos="fade-up">
-            <p><em>BINTANG CEMERLANG INDONESIA</em> merupakan Yayasan yang bergerak dalam
-                bidang usaha non profit yaitu Pusat Pendidikan, Pemberdaaan dan Pelatihan bagi Masyarakat dengan nama
-                <em>PKBM CEMERLANG</em>.
-                Dan unit usaha profit dengan nama <em>PT BINTANG CEMERLANG JAYA SENTOSA.</em>
-            </p>
-            <p> Melalui keduana tercipta keseimbangan memberikan kebermanfaatan bagi banyak umat. Hasil usaha profit
-                dimanfaatkan
-                untuk penyelenggaraan kegiatan non profit.</p>
-        </div>
-    </div>
-</section>
-
-<section class="pkbm">
+<section class="pkbm" id="pkbm">
     <div class="container">
         <div class="row d-flex flex-row-reverse">
             <div class="col-lg-6" data-aos="fade-up">

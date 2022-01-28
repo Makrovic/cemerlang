@@ -33,6 +33,7 @@
 
 .banner {
     position: relative;
+    min-height: 600px;
     height: 100vh;
 }
 
@@ -219,5 +220,8 @@ canvas {
     }
     .banner-title h1 {
         font-size: 44px;
+    }
+    .banner {
+        height: auto;
     }
 }

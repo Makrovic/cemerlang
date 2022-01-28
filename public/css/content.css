@@ -18,11 +18,13 @@
 
 .banner {
     background-image: url("../images/pkbm/banner2.jpg");
+    min-height: 300px;
     height: 32vh;
 }
 
 .banner2 {
     background-image: url("../images/pkbm/banner3.jpg");
+    min-height: 400px;
     height: 56vh;
 }
 
@@ -184,4 +186,13 @@ table.jadwal {
     background: linear-gradient(to right, #dfab0e, #ffd556);
     color: #fff;
     padding: 16px;
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        height: auto;
+    }
+    .banner2 {
+        height: auto;
+    }
 }

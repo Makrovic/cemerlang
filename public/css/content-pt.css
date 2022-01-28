@@ -18,11 +18,13 @@
 
 .banner {
     background-image: url("../images/pkbm/banner2.jpg");
+    min-height: 300px;
     height: 32vh;
 }
 
 .banner2 {
     background-image: url("../images/pt/banner4.jpg");
+    min-height: 400px;
     height: 56vh;
 }
 
@@ -277,6 +279,12 @@
 @media (max-width: 1024px) {
     .img-cart {
         display: none;
+    }
+    .banner {
+        height: auto;
+    }
+    .banner2 {
+        height: auto;
     }
 }
 
