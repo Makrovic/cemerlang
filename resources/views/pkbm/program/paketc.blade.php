@@ -35,7 +35,7 @@
                     Dero
                     Ngisor,
                     dan Desa Sukorejo</h6>
-                <div class="overflow-auto">
+                <div class="table-responsive">
                     <table class="table jadwal table-bordered table-sm border-dark">
                         <thead style="background-color: #99ffff">
                             <tr>
@@ -74,7 +74,7 @@
             </div>
             <div class="my-3">
                 <h6><b class="text-danger">Paket C</b> Khusus Kelas Tahfidz Al-Quran</h6>
-                <div class="overflow-auto">
+                <div class="table-responsive">
                     <table class="table jadwal table-bordered table-sm border-dark">
                         <thead style="background-color: #fffd99">
                             <tr>
@@ -106,7 +106,7 @@
             </div>
             <div class="my-3">
                 <h6><b class="text-danger">Paket C</b> Khusus Kelas Tahfidz Al-Quran</h6>
-                <div class="overflow-auto">
+                <div class="table-responsive">
                     <table class="table jadwal table-bordered table-sm border-dark">
                         <thead style="background-color: #ffb199">
                             <tr>
