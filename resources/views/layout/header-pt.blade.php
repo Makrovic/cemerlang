@@ -15,10 +15,6 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="{{ url('bintang') }}">Home</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ url('pkbm') }}">Unit Pendidikan<span
-                                    class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">

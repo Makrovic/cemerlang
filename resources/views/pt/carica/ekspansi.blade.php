@@ -8,9 +8,7 @@
                     <a href="{{ asset('images/pt/ekspansi/indomarco1.jpg') }}" data-lightbox="image-1">
                         <img src="{{ asset('images/pt/ekspansi/indomarco1.jpg') }}"
                             class="figure-img img-fluid rounded"></a>
-                    <figcaption class="figure-caption text-center">Penandatanganan MoU PKBM Cemerlang dengan PT
-                        Indomarco
-                    </figcaption>
+                    <figcaption class="figure-caption text-center"></figcaption>
                 </figure>
             </div>
             <div class="col-md-12 col-lg-4">

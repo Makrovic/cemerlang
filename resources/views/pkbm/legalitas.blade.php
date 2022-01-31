@@ -52,19 +52,13 @@
 </section>
 <section class="sec back-gray">
     <div class="container-fluid" data-aos="fade-up">
-        <div class="swiper sw-oneslide w-50" data-aos="fade-up">
-            <div class="swiper-wrapper">
-                @foreach ($legalitas as $legal)
-                <div class="swiper-slide d-flex justify-content-center align-items-center">
-                    <figure class="figure">
-                        <a href="{{ asset('images/pkbm/legalitas/' . $legal->foto . '.jpg') }}" data-lightbox="image-1">
-                            <img src="{{ asset('images/pkbm/legalitas/' . $legal->foto . '.jpg') }}"
-                                class="figure-img img-fluid rounded" style="max-height: 560px"></a>
-                        <figcaption class="figure-caption text-center">{{ $legal->keterangan }}.</figcaption>
-                    </figure>
-                </div>
-                @endforeach
-            </div>
+        <div class="d-flex flex-md-row flex-column justify-content-center align-items-center">
+            <a href="{{ asset('images/pkbm/legalitas/akreditasi.jpg') }}" class="m-2" data-lightbox="image-1">
+                <img src="{{ asset('images/pkbm/legalitas/akreditasi.jpg') }}" class="figure-img img-fluid rounded"
+                    style="max-height: 560px"></a>
+            <a href="{{ asset('images/pkbm/legalitas/nilaiakreditasi.jpg') }}" class="m-2" data-lightbox="image-1">
+                <img src="{{ asset('images/pkbm/legalitas/nilaiakreditasi.jpg') }}" class="figure-img img-fluid rounded"
+                    style="max-height: 560px"></a>
         </div>
     </div>
 </section>

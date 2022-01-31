@@ -38,7 +38,7 @@ leader_kewirausahaan = {
     parent: ceo,
     stackChildren: true,
     text:{
-        name: "Marfungatun",
+        name: "Siti Marhamah",
         title: "Leader Tim Kewirausahaan",
     },
     image: "../images/pkbm/tim/marfungatun.jpg"
@@ -70,18 +70,18 @@ tim_it = {
 wali_kelas1 = {
     parent: leader_kependidikan,
     text:{
-        name: "Firman Mohamad Rizky",
+        name: "Maulida Annisa Gani Rasyid",
         title: "Wali Kelas"
     },
-    image: "../images/pkbm/tim/firman.jpg"
+    image: "../images/pkbm/tim/maulida.jpg"
 },
 wali_kelas2 = {
     parent: leader_kependidikan,
     text:{
-        name: "Wahyuning Tiyas",
+        name: "Sardjono",
         title: "Wali Kelas"
     },
-    image: "../images/pkbm/tim/tiyas.jpg"
+    image: "../images/pkbm/tim/firman.jpg"
 },
 tim_produksi = {
     parent: leader_kewirausahaan,

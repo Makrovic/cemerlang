@@ -50,14 +50,14 @@
                             <tr>
                                 <td>Rabu</td>
                                 <td>13.00 - 16.00 WIB</td>
-                                <td>PKBM Cemerlang</td>
+                                <td>PKBM CEMERLANG</td>
                                 <td>Akademik</td>
                                 <td>Offline (tatap muka)</td>
                             </tr>
                             <tr>
                                 <td>Kamis</td>
                                 <td>13.00 - 16.00 WIB</td>
-                                <td>PKBM Cemerlang</td>
+                                <td>PKBM CEMERLANG</td>
                                 <td>SWBB, Penjasorkes, Keterampilan</td>
                                 <td>Offline (tatap muka)</td>
                             </tr>

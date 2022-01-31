@@ -111,9 +111,9 @@
                 <li>PKBM CEMERLANG selaku Narasumber di Bhayangkari dan Warakawuri</li>
                 <li>dan sebagainya</li>
             </ol>
-            <div class="horizontal-scroll swiper sw-dokumentasi" data-aos="fade-up">
+            <div class="swiper sw-dokumentasi" data-aos="fade-up">
                 <div class="swiper-wrapper">
-                    @for ($i = 1; $i <= 8; $i++) <div class="swiper-slide">
+                    @for ($i = 1; $i <= 6; $i++) <div class="swiper-slide">
                         <a href="{{ asset('images/pkbm/narasumber/narsum' . $i . '.jpg') }}" data-lightbox="image-4">
                             <img class="flex-auto img-fluid rounded"
                                 src="{{ asset('images/pkbm/narasumber/narsum' . $i . '.jpg') }}"></a></div>

@@ -11,8 +11,10 @@
             <div class="row">
                 <div class="col-md-5" data-aos="fade-up">
                     <div class="banner-title">
-                        <h1>PKBM Cemerlang</h1>
-                        <p>Pusat Pemberdayaan Masyarakat terakreditasi A terbaik di Indonesia.</p>
+                        <h1>PKBM CEMERLANG</h1>
+                        <p>Pusat pendidikan, pelatihan, pemberdayaan, dan kewirausahaan masyarakat terbaik di Indonesia.
+                        </p>
+                        <p>TERAKREDITASI A</p>
                     </div>
                 </div>
             </div>
@@ -31,15 +33,15 @@
             <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center">
                 <h1>Program PKBM : </h1>
                 <ul class="fa-ul list-unstyled my-2">
-                    <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Pendidikan kesetaraan
-                        paket b
+                    <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Pendidikan Kesetaraan
+                        Paket B
                     </li>
-                    <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Pendidikan kesetaraan
-                        paket c
+                    <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Pendidikan Kesetaraan
+                        Paket C
                     </li>
-                    <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program kuliah kerja</li>
+                    <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program Kuliah Kerja</li>
                     <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program
-                        Keterampilan / kursus / pelatihan
+                        Keterampilan / Kursus / Pelatihan
                     </li>
                     <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program Pemberdayaan
                         Perempuan
@@ -58,36 +60,9 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center">
                 <h1>Proses Pembelajaran : </h1>
-                <p>PKMB Cermerlang memberikan pendidikan kesetaraan paket b dan c,
+                <p>PKBM CEMERLANG memberikan pendidikan kesetaraan paket b dan c,
                     juga program keterampilan dan kursus yang mampu mengasah
                     skill, mental, karakter, dan attitude sehingga membentuk lulusan siap kerja.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="sec back-gray">
-    <div class="container">
-        <div class="row text-center" data-aos="fade-up">
-            <h1>Testimoni</h1>
-        </div>
-        <div class="row mt-5">
-            <div class="swiper sw-testi" data-aos="fade-up">
-                <div class="swiper-wrapper">
-                    @foreach ($testimonis as $testi)
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="{{ asset('images/pkbm/testimoni/' . $testi->foto . '.jpg') }}"
-                                class="d-block w-100" alt="...">
-                        </div>
-                        <div class="text-center">
-                            <p class="fst-italic">{{ $testi->testimoni }}</p>
-                            <p class="fw-bold">{{ $testi->nama }} - {{ $testi->keterangan }}</p>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>

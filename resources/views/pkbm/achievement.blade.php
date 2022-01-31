@@ -20,7 +20,6 @@
 {{-- endbanner --}}
 <section class="sec">
     <div class="container-fluid" data-aos="fade-up">
-        <h4>Sampai saat ini PKBM Cemerlang sudah mendapatkan berbagai penghargaan tingkat daerah maupun nasional :</h4>
         <ol>
             <li>Pengelola Terbaik dalam rangka Pengelolaan Pendidikan Kesetaraan Paket B Tingkat Nasional, tahun
                 2012</li>
@@ -72,6 +71,7 @@
             <li>Juara 2 Kreativitas & Inovasi Produk Tingkat Nasional, tahun 2021</li>
             <li>Pemenang Pegiat Perempuan dalam Festival Setara Kemendikbudristekdikti, tahun 2021</li>
         </ol>
+        <p>Dan masih 24 penghargaan / kejuaraan tingkat Kabupaten, Provinsi, dan Nasional lainnya (Total 57)</p>
     </div>
 </section>
 <section class="sec back-gray">

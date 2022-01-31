@@ -3,8 +3,7 @@
 {{-- jumbotron --}}
 <div class="jumbotron jumbotron-fluid">
     <div class="container d-flex flex-column align-items-center" data-aos="fade-up">
-        {{-- KURANG! : logo yayasan --}}
-        <img class="logo-yayasan" src="{{asset('images/sty.png')}}" alt="" srcset="">
+        <img class="logo-yayasan" src="{{asset('images/pkbm/logo.png')}}" alt="" srcset="">
         <h1 class="display-4">Bintang Cemerlang Indonesia</h1>
         <div class="row justify-content-center text-center">
             <p>Merupakan Yayasan yang bergerak dalam bidang usaha non profit yaitu Pusat Pendidikan, Pemberdaaan dan
@@ -28,7 +27,7 @@
                     class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 p-2" data-aos="fade-up">
-                <h1>PKBM Cemerlang</h1>
+                <h1>PKBM CEMERLANG</h1>
                 <p>Pusat pemberdayaan masyarakat terakreditas A terbaik di Indonesia.</p>
                 <a href="{{url('/pkbm')}}" class="btn btn-welcome ms-auto">lebih lanjut</a>
             </div>

@@ -29,9 +29,14 @@
 </section>
 <section class="sec back-gray" data-aos="fade-up">
     <div class="container-fluid">
-        <h1 class="title text-center">Foto Tim</h1>
+        <h1 class="title text-center">Tim Cemerlang</h1>
         <a href="{{ asset('images/pkbm/tim/tim.jpg') }}" data-lightbox="image-1">
-            <img src="{{ asset('images/pkbm/tim/tim.jpg') }}" class="img-fluid rounded mx-auto d-block w-75" alt="...">
+            <img src="{{ asset('images/pkbm/tim/tim.jpg') }}" class="img-fluid rounded mx-auto d-block w-75 my-3"
+                alt="...">
+        </a>
+        <a href="{{ asset('images/pkbm/tim/tim.jpg') }}" data-lightbox="image-1">
+            <img src="{{ asset('images/pkbm/tim/tim2.jpg') }}" class="img-fluid rounded mx-auto d-block w-75 my-3"
+                alt="...">
         </a>
     </div>
 </section>

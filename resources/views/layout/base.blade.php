@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>
         @if ($unit === 'pkbm')
-        PKBM Cemerlang
+        PKBM CEMERLANG
         @else
         PT Bintang Cemerlang Jaya Sentosa
         @endif
