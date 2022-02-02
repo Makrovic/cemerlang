@@ -51,17 +51,14 @@
         </div>
     </div>
 </section>
-<section class="sec back-gray">
-    <div class="container-fluid" data-aos="fade-up">
-        <div class="horizontal-scroll swiper sw-dokumentasi">
-            <div class="swiper-wrapper">
-                @for ($i = 1; $i <= 6; $i++) <div class="swiper-slide">
-                    <a href="{{ asset('images/pkbm/fasilitas/fasilitas' . $i . '.jpg') }}" data-lightbox="image-1">
-                        <img class="flex-auto img-fluid rounded"
-                            src="{{ asset('images/pkbm/fasilitas/fasilitas' . $i . '.jpg') }}"></a>
-            </div>
-            @endfor
-        </div>
+<section class="sec">
+    <div class="row g-2" data-aos="fade-up">
+        @for ($i = 1; $i <= 4; $i++) <div class="col-sm-12 col-lg-6">
+            <a href="{{ asset('images/pkbm/fasilitas/fasilitas' . $i . '.jpg') }}" data-lightbox="image-1">
+                <img class="flex-auto img-fluid rounded"
+                    src="{{ asset('images/pkbm/fasilitas/fasilitas' . $i . '.jpg') }}"></a>
+    </div>
+    @endfor
     </div>
     </div>
 </section>

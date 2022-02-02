@@ -31,10 +31,7 @@
         <div class="justify-content-center align-items-center" data-aos="fade-up">
             <h5>Jadwal Kegiatan Pembelajaran Pendiikan Kesetaraan Paket C</h5>
             <div class="my-3">
-                <h6><b class="text-danger">Paket C</b> Kelas Reguler / Mandiri, Kelas Kolektif Desa Keseneng, Desa
-                    Dero
-                    Ngisor,
-                    dan Desa Sukorejo</h6>
+                <h6><b class="text-danger">Paket C</b> Kelas Reguler / Mandiri</h6>
                 <div class="table-responsive">
                     <table class="table jadwal table-bordered table-sm border-dark">
                         <thead style="background-color: #99ffff">
@@ -64,7 +61,7 @@
                             <tr>
                                 <td>Jumat</td>
                                 <td>13.00 - 15.00 WIB</td>
-                                <td>Kediaman/Lokasi/Rumah masing-masing</td>
+                                <td>Kediaman / Lokasi / Rumah masing-masing</td>
                                 <td>Akademik</td>
                                 <td>Online (setara daring)</td>
                             </tr>
@@ -89,7 +86,7 @@
                             <tr>
                                 <td>Jumat</td>
                                 <td>13.00 - 16.00 WIB</td>
-                                <td>Kediaman/Lokasi/Rumah masing-masing</td>
+                                <td>Kediaman / Lokasi / Rumah masing-masing</td>
                                 <td>Akademik</td>
                                 <td>Online (setara daring)</td>
                             </tr>
@@ -105,7 +102,7 @@
                 </div>
             </div>
             <div class="my-3">
-                <h6><b class="text-danger">Paket C</b> Khusus Kelas Tahfidz Al-Quran</h6>
+                <h6><b class="text-danger">Paket C</b> Khusus Kelas Kolektif Desa / Organisasi</h6>
                 <div class="table-responsive">
                     <table class="table jadwal table-bordered table-sm border-dark">
                         <thead style="background-color: #ffb199">
@@ -121,14 +118,14 @@
                             <tr>
                                 <td>Jumat</td>
                                 <td>13.00 - 16.00 WIB</td>
-                                <td>Kediaman/Lokasi/Rumah masing-masing</td>
+                                <td>Kediaman / Lokasi / Rumah masing-masing</td>
                                 <td>Akademik</td>
                                 <td>Online (setara daring)</td>
                             </tr>
                             <tr>
                                 <td>Sabtu</td>
                                 <td>13.00 - 16.00 WIB</td>
-                                <td>Aula Desa Krasak Kec. Selomerto</td>
+                                <td>Aula Desa</td>
                                 <td>Akademik</td>
                                 <td>Offline (tatap muka)</td>
                             </tr>

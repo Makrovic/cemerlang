@@ -441,4 +441,26 @@
         </div>
     </div>
 </section>
+<section class="sec back-gray">
+    <div class="container-fluid">
+        <h1 class="title text-center" data-aos="fade-up">Cara mendaftar Program Kursus / Pelatihan / Keterampilan</h1>
+        <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 ">
+                <h5>Cara mendaftar Program Kursus / Pelatihan / Keterampilan : </h5>
+                <ol>
+                    <li>Calon peserta kursus / pelatihan / keterampilan mengisi formulir yang sudah disediakan
+                    </li>
+                    <li>Calon peserta kursus / pelatihan / keterampilan menyerahkan dokumen persyaratan
+                        pendaftaran sebagai berikut :
+                        <ul>
+                            <li>Pas foto resmi berbaju rapi. 3x4 (5 lembar)</li>
+                            <li>FC kartu keluarga (3 lembar)</li>
+                            <li>FC KTP/NIK khusus yang berusia di atas 17 tahun (3 lembar)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
 @stop
