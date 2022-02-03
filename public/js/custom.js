@@ -49,18 +49,6 @@ const sw_bannerpt = new Swiper('.sw-bannerpt', {
     },
 });
 
-const sw_galeri = new Swiper('.sw-galeri', {
-    autoplay: {
-        delay: 3000,
-    },
-    direction: 'horizontal',
-
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-});
-
 const sw_oneslide = new Swiper('.sw-oneslide', {
     // Optional parameters
     slidesPerView: 1,

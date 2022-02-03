@@ -42,8 +42,8 @@
                                 Pendaftaran</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ URL::route('pkbm.studibanding') }}">Observasi &
-                                Studi Banding</a>
+                            <a class="nav-link" href="{{ URL::route('pkbm.studibanding') }}">Pusat Magang, Observasi,
+                                dan Studi Banding</a>
                         </li>
                     </ul>
                 </div>

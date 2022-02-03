@@ -37,9 +37,8 @@
                         Kependidikan sesuai Kompetensi</li>
                     <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Peseta Didik
                         mendapatkan pendampingan Usaha</li>
-                    <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>atau penempatan
-                        Kerja
-                        pada DU/DI (Dunia Usaha / Dunia Industri)</li>
+                    <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Peserta didik ditempatkan
+                        Kerja pada DU/DI (Dunia Usaha / Dunia Industri)</li>
                     <li><span class="fa-li"><i class="bullet fas fa-check-circle"></i></span>Ijazah Nasional
                         yang
                         diterbitkan oleh Pemerintah atau Negara</li>
@@ -52,13 +51,14 @@
     </div>
 </section>
 <section class="sec">
-    <div class="row g-2" data-aos="fade-up">
-        @for ($i = 1; $i <= 4; $i++) <div class="col-sm-12 col-lg-6">
-            <a href="{{ asset('images/pkbm/fasilitas/fasilitas' . $i . '.jpg') }}" data-lightbox="image-1">
-                <img class="flex-auto img-fluid rounded"
-                    src="{{ asset('images/pkbm/fasilitas/fasilitas' . $i . '.jpg') }}"></a>
-    </div>
-    @endfor
+    <div class="container-fluid">
+        <div class="row g-2" data-aos="fade-up">
+            @for ($i = 1; $i <= 4; $i++) <div class="col-sm-12 col-lg-6">
+                <a href="{{ asset('images/pkbm/fasilitas/fasilitas' . $i . '.jpg') }}" data-lightbox="image-1">
+                    <img class="flex-auto img-fluid rounded"
+                        src="{{ asset('images/pkbm/fasilitas/fasilitas' . $i . '.jpg') }}"></a>
+        </div>
+        @endfor
     </div>
     </div>
 </section>

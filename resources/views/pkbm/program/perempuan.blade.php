@@ -13,7 +13,7 @@
         <h5 data-aos="fade-up">Dokumentasi</h5>
         <div class="horizontal-scroll swiper sw-dokumentasi" data-aos="fade-up">
             <div class="swiper-wrapper">
-                @for ($i = 1; $i <= 5; $i++) <div class="swiper-slide">
+                @for ($i = 1; $i <= 9; $i++) <div class="swiper-slide">
                     <a href="{{ asset('images/pkbm/pemberdayaan/pemberdayaan' . $i . '.jpg') }}"
                         data-lightbox="image-1">
                         <img class="flex-auto img-fluid rounded"

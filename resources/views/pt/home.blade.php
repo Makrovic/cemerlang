@@ -100,17 +100,16 @@
             <div class="col-md-12 col-lg-4">
                 <div class="hover-box text-center" data-aos="zoom-in">
                     <div class="icon-box align-middle my-3"><i class="fas fa-thumbs-up"></i></div>
-                    <h5>Rasa Otentik</h5>
-                    <p>Bahan baku utama Produk Cemerlang disuplai langsung oleh petani terbaik di Kabupaten Wonosobo
-                        melalui proses sortir.</p>
+                    <h5>Kualitas Premium</h5>
+                    <p>Produk Cemerlang menggunakan bahan baku utama pilihan dan proses pengolahan terbaik. Sehingga
+                        menghasilkan produk premium di setiap jenisnya</p>
                 </div>
             </div>
             <div class="col-md-12 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                 <div class="hover-box text-center">
                     <div class="icon-box align-middle my-3"><i class="fas fa-seedling"></i></div>
-                    <h5>Tanpa Pengawet</h5>
-                    <p>Produk Cemerlang menggunakan 0% pengawet maupun bahan tambahan pangan lainnya untuk menjaga
-                        kualitas rasa dan produk.</p>
+                    <h5>Ramah Lingkungan</h5>
+                    <p>Produk Cemerlang mengoptimalkan potensi lokal daerah dan ramah lingkungan.</p>
                 </div>
             </div>
             <div class="col-md-12 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
@@ -118,6 +117,7 @@
                     <div class="icon-box align-middle my-3"><i class="fas fa-headset"></i></div>
                     <h5>Pelayanan Prima</h5>
                     <p>Produk Cemerlang yang dipesan selalu dicek kelayakannya untuk mengedepankan kepuasan pelanggan.
+                        Belanja mudah dapat dibeli secara langsung maupun melalui toko online.
                     </p>
                 </div>
             </div>
@@ -146,7 +146,7 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
                 <h1>Bintang Cemerlang Snack</h1>
-                <p>Industri Makanan Berbahan Potensi Lokal</p>
+                <p>Industri Camilan Berbahan Potensi Lokal</p>
             </div>
         </div>
     </div>
@@ -162,28 +162,6 @@
                 <p>Industri Aneka Kerajinan</p>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="sec back-gray">
-    <div class="container">
-        <div class="row text-center" data-aos="fade-up">
-            <h1>Galeri</h1>
-        </div>
-        <div class="row mt-5" data-aos="fade-up">
-            <div class="swiper sw-galeri">
-                <div class="swiper-wrapper">
-                    @for ($i = 1; $i <= 6; $i++) <div
-                        class="swiper-slide d-flex justify-content-center align-items-center">
-                        <a href="{{ asset('images/pt/galeri/' . $i . '.jpg') }}" data-lightbox="image-1">
-                            <img class="flex-auto img-fluid rounded"
-                                src="{{ asset('images/pt/galeri/' . $i . '.jpg') }}"></a>
-                </div>
-                @endfor
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
     </div>
 </section>
 <section class="sec parallax d-flex justify-content-center align-items-center" style="min-height: 200px">

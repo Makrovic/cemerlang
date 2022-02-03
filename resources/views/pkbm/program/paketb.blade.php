@@ -133,17 +133,41 @@
                     </table>
                 </div>
             </div>
-
-            <h5 data-aos="fade-up">Dokumentasi</h5>
-            <div class="horizontal-scroll swiper sw-dokumentasi" data-aos="fade-up">
-                <div class="swiper-wrapper">
-                    @for ($i = 1; $i <= 5; $i++) <div class="swiper-slide">
-                        <a href="{{ asset('images/pkbm/pembelajaran/pktb' . $i . '.jpg') }}" data-lightbox="image-1">
-                            <img class="flex-auto img-fluid rounded"
-                                src="{{ asset('images/pkbm/pembelajaran/pktb' . $i . '.jpg') }}"></a>
-                </div>
-                @endfor
-            </div>
+        </div>
+    </div>
+</section>
+<section class="sec">
+    <div class="container-fluid">
+        <h5 data-aos="fade-up">Pembelajaran Teori Praktik</h5>
+        <div class="horizontal-scroll swiper sw-dokumentasi" data-aos="fade-up">
+            <div class="swiper-wrapper">
+                @for ($i = 1; $i <= 8; $i++) <div class="swiper-slide">
+                    <a href="{{ asset('images/pkbm/kesetaraan/pktb' . $i . '.jpg') }}" data-lightbox="image-1">
+                        <img class="flex-auto img-fluid rounded"
+                            src="{{ asset('images/pkbm/kesetaraan/pktb' . $i . '.jpg') }}"></a></div>
+            @endfor
+        </div>
+    </div>
+    <h5 class="mt-2" data-aos="fade-up">Religi - Sosial</h5>
+    <div class="row g-3" data-aos="fade-up">
+        <div class="col-md-6">
+            <a href="{{ asset('images/pkbm/kesetaraan/srpktb1.jpg') }}" data-lightbox="image-1">
+                <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/kesetaraan/srpktb1.jpg') }}"></a>
+        </div>
+        <div class="col-md-6">
+            <a href="{{ asset('images/pkbm/kesetaraan/srpktb2.jpg') }}" data-lightbox="image-1">
+                <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/kesetaraan/srpktb2.jpg') }}"></a>
+        </div>
+    </div>
+    <h5 class="mt-2" data-aos="fade-up">Champion Camp</h5>
+    <div class="row g-3" data-aos="fade-up">
+        <div class="col-md-6">
+            <a href="{{ asset('images/pkbm/kesetaraan/ccpktb1.jpg') }}" data-lightbox="image-1">
+                <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/kesetaraan/ccpktb1.jpg') }}"></a>
+        </div>
+        <div class="col-md-6">
+            <a href="{{ asset('images/pkbm/kesetaraan/ccpktb2.jpg') }}" data-lightbox="image-1">
+                <img class="flex-auto img-fluid rounded" src="{{ asset('images/pkbm/kesetaraan/ccpktb2.jpg') }}"></a>
         </div>
     </div>
     </div>
