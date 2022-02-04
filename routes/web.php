@@ -35,6 +35,7 @@ Route::view('/pkbm/program/paketc', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 
 Route::view('/pkbm/program/kuliahkerja', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 'kuliahkerja']);
 Route::view('/pkbm/program/kursus', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 'kursus']);
 Route::view('/pkbm/program/pemberdayaanperempuan', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 'perempuan']);
+Route::view('/pkbm/program/keaksaraan', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 'keaksaraan']);
 
 //bintang cemerlang
 Route::view('/bintang', 'pt.home', ['unit' => 'pt']);

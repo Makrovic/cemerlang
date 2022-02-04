@@ -81,7 +81,7 @@ wali_kelas2 = {
         name: "Sardjono",
         title: "Wali Kelas"
     },
-    image: "../images/pkbm/tim/firman.jpg"
+    image: "../images/pkbm/tim/sardjono.jpg"
 },
 tim_produksi = {
     parent: leader_kewirausahaan,
