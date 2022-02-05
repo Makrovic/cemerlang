@@ -13,7 +13,7 @@
                     yaitu Amerika Latin, Rusia, dan di Pegunungan Dieng Wonosobo - Indonesia.
                 </p><br>
                 <h2>CARICA CEMERLANG </h2>
-                <p>Diproduksi dari Buah Carica Premium dengan kandungan & manfaat
+                <p>Diproduksi dari Buah Carica Premium organik dengan kandungan & manfaat
                     tinggi Vitamin A dan C yang baik untuk pencernaan,
                     mengandung Enzim Papain sebagai Antibiotik yang mencegah perkembangbiakkan
                     bakteri yang merugikan usus dan mengandung arginin yang dapat mencegah kanker.
@@ -110,41 +110,9 @@
 <section class="sec back-gray">
     <div class="container">
         <h1 class="title text-center" data-aos="fade-up">Varian Produk</h1>
-        <h5 data-aos="fade-up">Cup Mini</h5>
-        <div class="row g-3 mb-5" data-aos="fade-up">
-            <div class="col-md-12 col-lg-4">
-                <div class="img-box-zoom">
-                    <img class="img-fluid rounded" src="{{ asset('images/pt/carica/carica3.jpg') }}">
-                    <h3 class="h2">Cup Mini 125gr Isi 3 Cup</h3>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <div class="img-box-zoom">
-                    <img class="img-fluid rounded" src="{{ asset('images/pt/carica/carica3.jpg') }}">
-                    <h3 class="h2">Cup Mini 125gr Isi 6 Cup</h3>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <div class="img-box-zoom">
-                    <img class="img-fluid rounded" src="{{ asset('images/pt/carica/carica3.jpg') }}">
-                    <h3 class="h2">Cup Mini 125gr Isi 12 Cup</h3>
-                </div>
-            </div>
-        </div>
-        <h5 data-aos="fade-up">Cup Jumbo</h5>
-        <div class="row g-3 mb-5" data-aos="fade-up">
-            <div class="col-md-12 col-lg-6">
-                <div class="img-box-zoom rounded">
-                    <img class="img-fluid" src="{{ asset('images/pt/carica/carica3.jpg') }}">
-                    <h3 class="h2">Cup Jumbo 250gr Isi 6 Cup</h3>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-6">
-                <div class="img-box-zoom rounded">
-                    <img class="img-fluid" src="{{ asset('images/pt/carica/carica3.jpg') }}">
-                    <h3 class="h2">Cup Jumbo 250gr Isi 12 Cup</h3>
-                </div>
-            </div>
+        <div class="p-3 rounded mx-auto d-flex justify-content-center" data-aos="fade-up"
+            style="background-color: #58aa2f">
+            <img class="img-fluid" src="{{ asset('images/pt/carica/varian.png') }}">
         </div>
     </div>
 </section>
@@ -152,13 +120,14 @@
     <div class="container">
         <h1 class="title text-center" data-aos="fade-up">Franchise</h1>
         <h5 class="text-center" data-aos="fade-up">Prosedur</h5>
-        <div class="p-3 rounded mx-auto" data-aos="fade-up" style="background-color: forestgreen">
+        <div class="p-3 rounded mx-auto d-flex justify-content-center" data-aos="fade-up"
+            style="background-color: forestgreen">
             <img class="img-fluid" src="{{ asset('images/pt/carica/prosedur_franchise.png') }}">
         </div>
         <div class="row my-5">
             <div class="col d-flex flex-column align-items-center" data-aos="fade-up">
                 <div class="card mb-3">
-                    <div class="card-header py-3 text-center h5">Paket Silver</div>
+                    <div class="card-header py-3 text-center h4">Paket Silver</div>
                     <div class="card-body">
                         <img src="{{ asset('images/pt/carica/silver.jpg') }}" class="img-fluid rounded">
                         <ul class="list-unstyled card-text mt-3 mb-4">
@@ -173,7 +142,8 @@
             </div>
             <div class="col d-flex flex-column align-items-center" data-aos="fade-up">
                 <div class="card mb-3">
-                    <div class="card-header py-3 text-center h5">Paket Gold</div>
+                    <div class="card-header py-3 text-center h4 text-light" style="background-color: #c7b91e">Paket Gold
+                    </div>
                     <div class="card-body">
                         <img src="{{ asset('images/pt/carica/platinum.jpg') }}" class="img-fluid rounded">
                         <ul class="list-unstyled card-text mt-3 mb-4">
@@ -190,7 +160,8 @@
             </div>
             <div class="col d-flex flex-column align-items-center" data-aos="fade-up">
                 <div class="card mb-3">
-                    <div class="card-header py-3 text-center h5">Paket Platinum</div>
+                    <div class="card-header py-3 text-center h4 text-light" style="background-color: #787f74">Paket
+                        Platinum</div>
                     <div class="card-body">
                         <img src="{{ asset('images/pt/carica/platinum.jpg') }}" class="img-fluid rounded">
                         <ul class="list-unstyled card-text mt-3 mb-4">
@@ -209,5 +180,5 @@
     </div>
 </section>
 <section class="sec parallax d-flex justify-content-center align-items-center" style="min-height: 200px">
-    <a href="{{route('bintang.shop')}}" class="btn-belanja">Belanja Sekarang</a>
+    <a href="{{ route('bintang.shop') }}" class="btn-belanja">Belanja Sekarang</a>
 </section>

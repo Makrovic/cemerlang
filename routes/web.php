@@ -40,12 +40,11 @@ Route::view('/pkbm/program/keaksaraan', 'pkbm.program', ['unit' => 'pkbm', 'sec'
 //bintang cemerlang
 Route::view('/bintang', 'pt.home', ['unit' => 'pt']);
 // carica
-Route::get('/bintang/carica', [PtController::class, 'carica'])->name('bintang.carica');
-Route::get('/bintang/carica/legalitas', [PtController::class, 'legalitas'])->name('bintang.carica.legalitas');
+Route::get('/bintang/carica', [PtController::class, 'legalitas'])->name('bintang.carica');
 Route::view('/bintang/carica/fasilitas', 'pt.carica', ['unit' => 'pt', 'sec' => 'fasilitas']);
 Route::view('/bintang/carica/tentangproduk', 'pt.carica', ['unit' => 'pt', 'sec' => 'tentangproduk']);
 Route::view('/bintang/carica/ekspansi', 'pt.carica', ['unit' => 'pt', 'sec' => 'ekspansi']);
-Route::view('/bintang/carica/pencapaian', 'pt.carica', ['unit' => 'pt', 'sec' => 'pencapaian']);
+Route::view('/bintang/carica/achievement', 'pt.carica', ['unit' => 'pt', 'sec' => 'achievement']);
 Route::view('/bintang/carica/galeri', 'pt.carica', ['unit' => 'pt', 'sec' => 'galeri']);
 // snack
 Route::view('/bintang/snack', 'pt.snack', ['unit' => 'pt'])->name('bintang.snack');

@@ -15,13 +15,6 @@ use Kavist\RajaOngkir\Facades\RajaOngkir;
 
 class PtController extends Controller
 {
-    public function carica()
-    {
-        $unit = 'pt';
-        $sec = 'visimisi';
-        $legalitas = Legalitas::where('unit', $unit)->get();
-        return view('pt.carica', compact('legalitas', 'unit', 'sec'));
-    }
     public function legalitas()
     {
         $unit = 'pt';
