@@ -29,9 +29,23 @@
                         class="figure-img img-fluid rounded"></a>
                 <h5 class="text-center mt-4">Dokumentasi Peserta Magang Prakerin, PSG dan PKL di PKBM
                     CEMERLANG</h5>
-                <a href="{{ asset('images/pkbm/studibanding/magang_1.jpg') }}" data-lightbox="image">
-                    <img src="{{ asset('images/pkbm/studibanding/magang_1.jpg') }}"
-                        class="figure-img img-fluid rounded"></a>
+                <div class="row g-2">
+                    <div class="col-sm-12 col-md-4">
+                        <a href="{{ asset('images/pkbm/studibanding/magang_1.jpg') }}" data-lightbox="image">
+                            <img src="{{ asset('images/pkbm/studibanding/magang_1.jpg') }}"
+                                class="figure-img img-fluid rounded"></a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a href="{{ asset('images/pkbm/studibanding/magang_2.jpg') }}" data-lightbox="image">
+                            <img src="{{ asset('images/pkbm/studibanding/magang_2.jpg') }}"
+                                class="figure-img img-fluid rounded"></a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a href="{{ asset('images/pkbm/studibanding/magang_3.jpg') }}" data-lightbox="image">
+                            <img src="{{ asset('images/pkbm/studibanding/magang_3.jpg') }}"
+                                class="figure-img img-fluid rounded"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -104,6 +118,95 @@
                     @endfor
                 </div>
             @endforeach
+        </div>
+    </section>
+    <section class="sec back-gray">
+        <div class="container">
+            <h1 class="title text-center my-3" data-aos="fade-up">Paket Studi Banding</h1>
+            <div class="row g-3 my-3" data-aos="fade-up">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card mb-3" style="height: 100%">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title text-danger">Paket IDR 50k</h5>
+                            <p class="card-text">Snack<br>
+                                Minum<br>
+                                Konsumsi</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card mb-3" style="height: 100%">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="{{ asset('images/pkbm/studibanding/paket-75k.jpg') }}"
+                                    class="figure-img img-fluid rounded">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Paket IDR 75k</h5>
+                                    <p class="card-text">Snack Box<br>
+                                        Minum<br>
+                                        Nasi Box<br>
+                                        Oleh-oleh Produk PKBM CEMERLANG :
+                                        <li>1 pack Produk CARICA CEMERLANG (6 cup)</li>
+                                        Goody Bag Kain / Kertas (menyesuaikan persediaan)
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card mb-3" style="height: 100%">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="{{ asset('images/pkbm/studibanding/paket-100k.jpg') }}"
+                                    class="figure-img img-fluid rounded">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Paket IDR 100k</h5>
+                                    <p class="card-text">Snack Box<br>
+                                        Minum<br>
+                                        Nasi Box<br>
+                                        Oleh-oleh Produk PKBM CEMERLANG :
+                                        <li>1 pack Produk CARICA CEMERLANG (6 cup)</li>
+                                        <li>2 pack Produk BINTANG CEMERLANG SNACK</li>
+                                        Goody Bag Kain / Kertas (menyesuaikan persediaan)
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card mb-3" style="height: 100%">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="{{ asset('images/pkbm/studibanding/paket-150k.jpg') }}"
+                                    class="figure-img img-fluid rounded">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Paket IDR 150k</h5>
+                                    <p class="card-text">Snack Box<br>
+                                        Minum<br>
+                                        Nasi Box<br>
+                                        Oleh-oleh Produk PKBM CEMERLANG :
+                                        <li>1 pack Produk CARICA CEMERLANG (6 cup)</li>
+                                        <li>2 pack Produk BINTANG CEMERLANG SNACK</li>
+                                        Tas Pandan Etnik (Produk Handycraft PKBM CEMERLANG)
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 @stop
