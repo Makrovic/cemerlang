@@ -21,14 +21,17 @@
                                 Tentang Kami
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="{{ URL::route('pkbm.visimisi') }}">Visi Misi</a></li>
+                                <li><a class="dropdown-item" href="{{ URL::route('pkbm.visimisi') }}">Visi Misi</a>
+                                </li>
                                 <li><a class="dropdown-item" href="{{ URL::route('pkbm.program') }}">Program</a></li>
                                 <li><a class="dropdown-item" href="{{ URL::route('pkbm.legalitas') }}">Legalitas</a>
                                 </li>
                                 <li><a class="dropdown-item" href="{{ URL::route('pkbm.fasilitas') }}">Fasilitas</a>
                                 </li>
-                                <li><a class="dropdown-item" href="{{ URL::route('pkbm.tim') }}">Struktur Tim</a></li>
-                                <li><a class="dropdown-item" href="{{ URL::route('pkbm.achievement') }}">Achievement</a>
+                                <li><a class="dropdown-item" href="{{ URL::route('pkbm.tim') }}">Struktur Tim</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="{{ URL::route('pkbm.achievement') }}">Achievement</a>
                                 </li>
                                 <li><a class="dropdown-item" href="{{ URL::route('pkbm.testimoni') }}">Testimoni &
                                         Success Story</a></li>
@@ -42,8 +45,11 @@
                                 Pendaftaran</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ URL::route('pkbm.studibanding') }}">Pusat Magang, Observasi,
-                                dan Studi Banding</a>
+                            <a class="nav-link" href="{{ URL::route('pkbm.studibanding') }}">Pusat Magang,
+                                Observasi, dan Studi Banding</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ URL::route('pkbm.karyatulis') }}">Karya Tulis</a>
                         </li>
                     </ul>
                 </div>
