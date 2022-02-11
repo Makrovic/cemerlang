@@ -106,7 +106,16 @@
             </div>
         </div>
     </section>
-
+    <section class="mitra">
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center" data-aos="fade-up">
+                <h1>Mitra Organisasi</h1>
+            </div>
+            <div class="row justify-content-center mt-3" data-aos="fade-up">
+                <img src="{{ asset('images/mitra.png') }}">
+            </div>
+        </div>
+    </section>
     <section class="mitra">
         <div class="container-fluid">
             <div class="row justify-content-center text-center" data-aos="fade-up">
