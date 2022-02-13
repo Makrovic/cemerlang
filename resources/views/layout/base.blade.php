@@ -9,9 +9,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>
         @if ($unit === 'pkbm')
-        PKBM CEMERLANG
+            PKBM CEMERLANG
         @else
-        PT Bintang Cemerlang Jaya Sentosa
+            PT Bintang Cemerlang Jaya Sentosa
         @endif
     </title>
     {{-- swiper --}}
@@ -26,8 +26,6 @@
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    {{-- swiper --}}
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     {{-- ChartJs --}}
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
@@ -42,6 +40,7 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+
     </style>
 </head>
 
@@ -49,13 +48,13 @@
     <a href="#" onclick="topFunction()" id="btn-top"
         class="d-flex align-items-center justify-content-center invisible"><i class="fas fa-chevron-up"></i></a>
     @if ($unit === 'pkbm')
-    {{-- header pkbm --}}
-    @include('layout.header-pkbm')
-    {{-- endheader pkbm --}}
+        {{-- header pkbm --}}
+        @include('layout.header-pkbm')
+        {{-- endheader pkbm --}}
     @else
-    {{-- header pt --}}
-    @include('layout.header-pt')
-    {{-- endheader pt --}}
+        {{-- header pt --}}
+        @include('layout.header-pt')
+        {{-- endheader pt --}}
     @endif
     {{-- content --}}
     @yield('content')
@@ -63,13 +62,13 @@
 
     {{-- footer --}}
     @if ($unit === 'pkbm')
-    {{-- header pkbm --}}
-    @include('layout.footer-pkbm')
-    {{-- endheader pkbm --}}
+        {{-- header pkbm --}}
+        @include('layout.footer-pkbm')
+        {{-- endheader pkbm --}}
     @else
-    {{-- header pt --}}
-    @include('layout.footer-pt')
-    {{-- endheader pt --}}
+        {{-- header pt --}}
+        @include('layout.footer-pt')
+        {{-- endheader pt --}}
     @endif
     {{-- endfooter --}}
 

@@ -108,21 +108,18 @@
     </section>
     <section class="mitra">
         <div class="container-fluid">
-            <div class="row justify-content-center text-center" data-aos="fade-up">
-                <h1>Mitra Organisasi</h1>
+            <div class="d-flex flex-column align-items-center my-5" data-aos="fade-up">
+                <h1 class="text-center my-2">Mitra Organisasi</h1>
+                <div class="row justify-content-center mt-3">
+                    <img src="{{ asset('images/organisasi-mitra.png') }}">
+                </div>
+                <a href="{{ url('/organisasimitra') }}" class="btn btn-welcome">lebih lanjut</a>
             </div>
-            <div class="row justify-content-center mt-3" data-aos="fade-up">
-                <img src="{{ asset('images/mitra.png') }}">
-            </div>
-        </div>
-    </section>
-    <section class="mitra">
-        <div class="container-fluid">
-            <div class="row justify-content-center text-center" data-aos="fade-up">
-                <h1>Mitra</h1>
-            </div>
-            <div class="row justify-content-center mt-3" data-aos="fade-up">
-                <img src="{{ asset('images/mitra.png') }}">
+            <div class="my-5" data-aos="fade-up">
+                <h1 class="text-center my-2">Mitra</h1>
+                <div class="row justify-content-center mt-3">
+                    <img src="{{ asset('images/mitra.png') }}">
+                </div>
             </div>
         </div>
     </section>

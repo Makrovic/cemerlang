@@ -18,7 +18,10 @@ use App\Http\Controllers\AdminController;
 // landing page
 Route::view('/', 'landing.welcome')->name('landing');
 
-//pkbm
+// organisasi mitra
+Route::view('/organisasimitra', 'landing.organisasimitra')->name('organisasimitra');
+
+// pkbm
 Route::get('/pkbm', [PkbmController::class, 'home'])->name('pkbm.home');
 Route::view('/pkbm/visimisi', 'pkbm.visimisi', ['unit' => 'pkbm'])->name('pkbm.visimisi');
 Route::get('/pkbm/legalitas', [PkbmController::class, 'legalitas'])->name('pkbm.legalitas');
@@ -31,7 +34,7 @@ Route::view('/pkbm/infopendaftaran', 'pkbm.infopendaftaran', ['unit' => 'pkbm'])
 Route::get('/pkbm/studibanding', [PkbmController::class, 'studiBanding'])->name('pkbm.studibanding');
 Route::view('/pkbm/karyatulis', 'pkbm.karyatulis', ['unit' => 'pkbm'])->name('pkbm.karyatulis');
 
-//program pkbm
+// program pkbm
 Route::view('/pkbm/program', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 'paketb'])->name('pkbm.program');
 Route::view('/pkbm/program/paketc', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 'paketc']);
 Route::view('/pkbm/program/kuliahkerja', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 'kuliahkerja']);
@@ -39,7 +42,7 @@ Route::view('/pkbm/program/kursus', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 
 Route::view('/pkbm/program/pemberdayaanperempuan', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 'perempuan']);
 Route::view('/pkbm/program/keaksaraan', 'pkbm.program', ['unit' => 'pkbm', 'sec' => 'keaksaraan']);
 
-//bintang cemerlang
+// bintang cemerlang
 Route::view('/bintang', 'pt.home', ['unit' => 'pt']);
 // carica
 Route::get('/bintang/carica', [PtController::class, 'legalitas'])->name('bintang.carica');
@@ -65,9 +68,6 @@ Route::get('/bintang/shop/checkout',  [PtController::class, 'checkOut'])->name('
 Route::get('/bintang/shop/checkout/getcities/{province_id}',  [PtController::class, 'getCities'])->name('bintang.shop.checkout.getcities');
 Route::post('/bintang/shop/checkout/couriercheck',  [PtController::class, 'courierCheck'])->name('bintang.shop.checkout.couriercheck');
 Route::post('/bintang/shop/checkout',  [PtController::class, 'storeCheckOut'])->name('bintang.shop.checkout.confirm');
-
-// Route::view('/bintang/shop/confirmcheckout', 'pt.shop.confirmcheckout', ['unit' => 'pt'])->name('bintang.shop.confirmcheckout');
-
 
 Route::get('/bintang/ongkir',  [PtController::class, 'costCheck'])->name('bintang.ongkir');
 
