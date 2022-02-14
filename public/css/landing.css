@@ -47,6 +47,11 @@
     margin: 12px;
 }
 
+.jumbotron p {
+    font-size: 18px;
+    color: #fff;
+}
+
 .fa-chevron-down {
     font-size: 50px;
     color: rgb(255, 255, 255);
@@ -56,117 +61,72 @@
 
 /* endbanner */
 
-section {
+.sec {
     padding: 10%;
-}
-
-.jumbotron p {
-    font-size: 18px;
-    color: #fff;
-}
-
-.pkbm {
     background-color: #fff;
     color: #444;
 }
 
-.pkbm h1::after {
+.title::after {
     content: "";
     position: absolute;
     display: block;
-    width: 64px;
+    width: 108px;
     height: 3px;
     margin-top: 4px;
     background: var(--primary);
 }
 
-.pkbm p {
-    font-size: 20px;
-}
-
-.pt {
-    background-color: var(--bg-gray);
-    color: #444;
-}
-
-.pt h1::after {
+.title2::after {
     content: "";
     position: absolute;
     display: block;
-    width: 64px;
+    width: 108px;
     height: 3px;
     margin-top: 4px;
+    left: calc(50% - 54px);
     background: var(--primary);
 }
 
-.pt p {
-    font-size: 20px;
-}
-
-.sambutan {
-    background-color: #fff;
-}
-
-.sambutan h1::after {
+.title3::after {
     content: "";
     position: absolute;
     display: block;
-    width: 64px;
+    width: 108px;
     height: 3px;
     margin-top: 4px;
-    left: calc(50% - 32px);
-    background: var(--primary);
-}
-
-.sambutan .blockquote-footer {
-    color: #444;
-}
-
-.culture {
-    background-color: var(--primary);
-    color: #fff;
-}
-
-.culture h1::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 64px;
-    height: 3px;
-    margin-top: 4px;
-    left: calc(50% - 32px);
+    left: calc(50% - 54px);
     background: var(--accent);
 }
 
-.culture ul {
+.title4::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 3px;
+    margin-top: 4px;
+    left: calc(50% - 150px);
+    background: var(--primary);
+}
+
+p {
+    font-size: 20px;
+}
+
+.sec ul {
     margin: 16px;
     list-style: none;
 }
 
-.culture li {
+.sec li {
     font-size: 18px;
     margin: 12px;
 }
 
-.culture i {
+.sec i {
     color: var(--accent);
     font-size: 16px;
-}
-
-.mitra {
-    background-color: #fff;
-    color: #444;
-}
-
-.mitra h1::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 64px;
-    height: 3px;
-    margin-top: 4px;
-    left: calc(50% - 32px);
-    background: var(--primary);
 }
 
 .img-box {
@@ -204,27 +164,6 @@ section {
 .btn-welcome:hover {
     background: var(--accent-dark);
     color: #fff;
-    text-decoration: none;
-}
-
-.btn-banner {
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 12px 32px;
-    border-radius: 8px;
-    border: 2px solid var(--accent);
-    transition: 0.5s;
-    line-height: 1;
-    margin: 10px;
-    color: var(--accent);
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-    background: none;
-}
-
-.btn-banner:hover {
-    background: var(--accent);
-    color: #444;
     text-decoration: none;
 }
 

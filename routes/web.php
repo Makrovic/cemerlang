@@ -46,11 +46,11 @@ Route::view('/pkbm/program/keaksaraan', 'pkbm.program', ['unit' => 'pkbm', 'sec'
 Route::view('/bintang', 'pt.home', ['unit' => 'pt']);
 // carica
 Route::get('/bintang/carica', [PtController::class, 'legalitas'])->name('bintang.carica');
-Route::view('/bintang/carica/fasilitas', 'pt.carica', ['unit' => 'pt', 'sec' => 'fasilitas']);
-Route::view('/bintang/carica/tentangproduk', 'pt.carica', ['unit' => 'pt', 'sec' => 'tentangproduk']);
-Route::view('/bintang/carica/ekspansi', 'pt.carica', ['unit' => 'pt', 'sec' => 'ekspansi']);
-Route::view('/bintang/carica/achievement', 'pt.carica', ['unit' => 'pt', 'sec' => 'achievement']);
-Route::view('/bintang/carica/galeri', 'pt.carica', ['unit' => 'pt', 'sec' => 'galeri']);
+Route::view('/bintang/carica/fasilitas', 'pt.carica', ['unit' => 'pt', 'sec' => 'fasilitas'])->name('bintang.carica.fasilitas');
+Route::view('/bintang/carica/tentangproduk', 'pt.carica', ['unit' => 'pt', 'sec' => 'tentangproduk'])->name('bintang.carica.tentangproduk');
+Route::view('/bintang/carica/ekspansi', 'pt.carica', ['unit' => 'pt', 'sec' => 'ekspansi'])->name('bintang.carica.ekspansi');
+Route::view('/bintang/carica/achievement', 'pt.carica', ['unit' => 'pt', 'sec' => 'achievement'])->name('bintang.carica.achievement');
+Route::view('/bintang/carica/expo', 'pt.carica', ['unit' => 'pt', 'sec' => 'expo'])->name('bintang.carica.expo');
 // snack
 Route::view('/bintang/snack', 'pt.snack', ['unit' => 'pt'])->name('bintang.snack');
 // craft

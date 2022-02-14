@@ -9,7 +9,7 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 {{-- KURANG! : banner utama PT --}}
-                <div id="banner" class="banner" style="background-image: url('../images/pkbm/banner1.jpg')">
+                <div id="banner" class="banner" style="background-image: url('../images/pt/banner1.jpg')">
                     <div class="banner-hero">
                         <div class="container">
                             <div class="row">
@@ -84,7 +84,7 @@
                 <div class="col-12 col-sm-4">
                     <div class="img-box-zoom rounded" data-aos="zoom-in" data-aos-delay="200">
                         <a href="#home-craft">
-                            <img class="img-fluid" src="{{ asset('images/pt/craft/craft1.jpg') }}">
+                            <img class="img-fluid" src="{{ asset('images/pt/craft/handycrafts.jpg') }}">
                             <h3 class="h2">Claster Craft Cemerlang</h3>
                         </a>
                     </div>
@@ -154,7 +154,7 @@
         <div class="container">
             <div class="row g-3 justify-content-center" data-aos="fade-up">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="{{ asset('images/pt/craft/craft1.jpg') }}" alt="" class="img-fluid rounded">
+                    <img src="{{ asset('images/pt/craft/handycrafts.jpg') }}" alt="" class="img-fluid rounded">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
                     <h1>Claster Craft Cemerlang</h1>

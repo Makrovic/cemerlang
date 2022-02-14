@@ -44,9 +44,12 @@
             <div>&copy;Copyright <strong>Cemerlang</strong>. All rights reserved</div>
         </div>
         <div class="socialmedia">
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
+            <a target="_blank" href="{{ url('https://www.facebook.com/pkbmcemerlangwonosobo') }}"><i
+                    class="fab fa-facebook"></i></a>
+            <a target="_blank" href="{{ url('https://www.instagram.com/caricacemerlang') }}"><i
+                    class="fab fa-instagram"></i></a>
+            <a target="_blank" href="{{ url('https://www.youtube.com/channel/UCIONNHJ0VkFIMiIMwu0E4lQ') }}"><i
+                    class="fab fa-youtube"></i></a>
         </div>
     </div>
 </footer>

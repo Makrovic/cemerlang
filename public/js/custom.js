@@ -17,6 +17,9 @@ const sw_dokumentasi = new Swiper('.sw-dokumentasi', {
     pagination: {
         el: '.swiper-pagination',
     },
+    autoplay: {
+        delay: 3000,
+    },
     breakpoints: {
     // when window width is >= 320px
     768: {

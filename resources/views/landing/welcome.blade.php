@@ -20,7 +20,7 @@
     </div>
     {{-- endjumbotron --}}
     {{-- section --}}
-    <section class="pkbm" id="pkbm">
+    <section class="sec" id="pkbm">
         <div class="container">
             <div class="row d-flex flex-row-reverse">
                 <div class="col-lg-6" data-aos="fade-up">
@@ -28,7 +28,7 @@
                         class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 p-2" data-aos="fade-up">
-                    <h1>PKBM CEMERLANG</h1>
+                    <h1 class="title mb-5">PKBM CEMERLANG</h1>
                     <p>Pusat pemberdayaan masyarakat terakreditas A terbaik di Indonesia.</p>
                     <a href="{{ url('/pkbm') }}" class="btn btn-welcome ms-auto">lebih lanjut</a>
                 </div>
@@ -36,7 +36,7 @@
         </div>
     </section>
 
-    <section class="pt">
+    <section class="sec" style="background-color: var(--bg-gray);">
         <div class="container">
             <div class="row d-flex flex-row">
                 <div class="col-lg-6" data-aos="fade-up">
@@ -45,7 +45,7 @@
                         alt="">
                 </div>
                 <div class="col-lg-6 p-2" data-aos="fade-up">
-                    <h1>PT Bintang Cemerlang Jaya Sentosa</h1>
+                    <h1 class="title mb-5">PT Bintang Cemerlang Jaya Sentosa</h1>
                     <p>Pusat pemberdayaan masyarakat terakreditas A terbaik di Indonesia.</p>
                     <a href="{{ url('/bintang') }}" class="btn btn-welcome ms-auto">lebih lanjut</a>
                 </div>
@@ -54,11 +54,9 @@
         </div>
     </section>
 
-    <section class="sambutan">
+    <section class="sec">
         <div class="container">
-            <div class="row justify-content-center text-center" data-aos="fade-up">
-                <h1>Sambutan</h1>
-            </div>
+            <h1 class="title2 text-center mb-5">Sambutan</h1>
             <div class="img-box" data-aos="fade-up">
                 <img src="{{ asset('images/pkbm/tim/bu_anna.jpg') }}" class="d-block w-200" alt="...">
             </div>
@@ -75,11 +73,9 @@
         </div>
     </section>
 
-    <section class="culture">
+    <section class="sec" style="background-color: var(--primary); color: #fff;">
         <div class="container">
-            <div class="row justify-content-center text-center" data-aos="fade-up">
-                <h1>Culture</h1>
-            </div>
+            <h1 class="title3 text-center mb-5">Culture</h1>
             <div class="row justify-content-center" data-aos="fade-up">
                 <div class="col-lg-6">
                     <ul class="fa-ul">
@@ -106,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="mitra">
+    <section class="sec">
         <div class="container-fluid">
             <div class="d-flex flex-column align-items-center my-5" data-aos="fade-up">
                 <h1 class="text-center my-2">Mitra Organisasi</h1>

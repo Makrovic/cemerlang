@@ -38,7 +38,7 @@
                 <a class="nav-link" href="{{ url('bintang/carica/achievement') }}">Achievement</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('bintang/carica/galeri') }}">Gallery</a>
+                <a class="nav-link" href="{{ url('bintang/carica/expo') }}">Expo</a>
             </li>
         </ul>
     </div>
@@ -55,8 +55,8 @@
         @case('achievement')
             @include('pt.carica.achievement')
         @break
-        @case('galeri')
-            @include('pt.carica.galeri')
+        @case('expo')
+            @include('pt.carica.expo')
         @break
         @default
             @include('pt.carica.legalitas')
