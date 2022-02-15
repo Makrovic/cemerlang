@@ -4,15 +4,20 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container d-flex flex-column align-items-center" data-aos="fade-up">
             <img class="logo-yayasan" src="{{ asset('images/pkbm/logo.png') }}" alt="" srcset="">
-            <h1 class="display-4">Bintang Cemerlang Indonesia</h1>
+            <h1 class="display-4">PKBM CEMERLANG WONOSOBO</h1>
             <div class="row justify-content-center text-center">
-                <p>Merupakan Yayasan yang bergerak dalam bidang usaha non profit yaitu Pusat Pendidikan, Pemberdaaan dan
-                    Pelatihan bagi Masyarakat dengan nama <em>PKBM CEMERLANG</em>. Dan unit usaha profit dengan nama <em>PT
-                        BINTANG CEMERLANG JAYA SENTOSA.</em><br>
-                    <span class="mobile">Melalui keduanya tercipta keseimbangan memberikan kebermanfaatan bagi banyak
-                        umat.
-                        Hasil usaha profit
-                        dimanfaatkan untuk penyelenggaraan kegiatan non profit.
+                <p>PKBM CEMERLANG WONOSOBO merupakan Pusat Pendidikan, Pelatihan Keterampilan, Pemberdayaan, dan
+                    Kewirausahaan Masyarakat terbaik di Indonesia.
+                    Terbukti dengan prestasinya sebagai JUARA 1 PKBM Tingkat Nasional, meraih 57 penghargaan lainnya, serta
+                    TERKREDITASI A.
+                    <br>12 Tahun Berdiri (berdiri pada 1 Januari 2010), PKBM CEMERLANG WONOSOBO
+                    berhasil mencetak 13 ribu binaan.<br>
+                    PKBM CEMERLANG WONOSOBO juga mendirikan unit usaha berbasis kearifan dan
+                    potensi lokal yaitu PT BINTANG CEMERLANG INDONESIA.<br><br>
+                    PKBM CEMERLANG WONOSOBO beralamat di Jl. Dieng KM. 04 (Jl. Pramuka) Sibunderan RT 005 RW 004, Krasak,
+                    Kecamatan Mojotengah Kabupaten Wonosobo, Provinsi Jawa Tengah, Kode Pos 56351.
+                    <br>
+                <h5 style="color: var(--accent)">TIDAK MEMBUKA CABANG DI MANAPUN SELURUH INDONESIA.</h5><br>
                 </p>
             </div>
             <a href="#pkbm"><span class="fas fa-chevron-down light"></span></a>
@@ -29,7 +34,8 @@
                 </div>
                 <div class="col-lg-6 p-2" data-aos="fade-up">
                     <h1 class="title mb-5">PKBM CEMERLANG</h1>
-                    <p>Pusat pemberdayaan masyarakat terakreditas A terbaik di Indonesia.</p>
+                    <p>Pusat Pendidikan, Pelatihan Keterampilan, Pemberdayaan, dan Kewirausahaan Masyarakat
+                        TERAKREDITASI A terbaik di Indonesia.</p>
                     <a href="{{ url('/pkbm') }}" class="btn btn-welcome ms-auto">lebih lanjut</a>
                 </div>
             </div>
@@ -45,8 +51,9 @@
                         alt="">
                 </div>
                 <div class="col-lg-6 p-2" data-aos="fade-up">
-                    <h1 class="title mb-5">PT Bintang Cemerlang Jaya Sentosa</h1>
-                    <p>Pusat pemberdayaan masyarakat terakreditas A terbaik di Indonesia.</p>
+                    <h1 class="title mb-5">PT BINTANG CEMERLANG INDONESIA</h1>
+                    <p>PT BINTANG CEMERLANG INDONESIA bergerak di bidang Industri Minuman Buah merek "CARICA CEMERLANG",
+                        Industri Makanan Ringan merek "BINTANG CEMRELANG SNACK", dan CLUSTER CRAFT CEMERLANG.</p>
                     <a href="{{ url('/bintang') }}" class="btn btn-welcome ms-auto">lebih lanjut</a>
                 </div>
 
@@ -112,7 +119,7 @@
                 <a href="{{ url('/organisasimitra') }}" class="btn btn-welcome">lebih lanjut</a>
             </div>
             <div class="my-5" data-aos="fade-up">
-                <h1 class="text-center my-2">Mitra</h1>
+                <h1 class="text-center my-2">Mitra Kerjasama</h1>
                 <div class="row justify-content-center mt-3">
                     <img src="{{ asset('images/mitra.png') }}">
                 </div>

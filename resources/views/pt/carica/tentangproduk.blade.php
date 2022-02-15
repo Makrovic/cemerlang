@@ -51,7 +51,8 @@
                         Dianggap sebagai pengganggu komoditas
                         tanaman gunung yang sudah ada yaitu:
                         Sayur mayur, kentang dan tembakau. Pohon Carica saat itu sering dimusnahkan
-                        dan buahnya dibuang.</p>
+                        dan buahnya dibuang.<br>
+                    </p>
                 </div>
             </div>
             <div class="col-md-12 col-lg-4">
@@ -71,14 +72,13 @@
             </div>
         </div>
         <p class="fst-italic" data-aos="fade-up">PKBM CEMERLANG tertantang untuk membawa carica
-            menjadi lebih bernilai jual
-            dan bermanfaat bagi pemberdayaan masyarakat Wonosobo dan sekitarnya yaitu dengan mengolah menjadi minuman
-            segar, berkualitas, dan lezat.</p>
+            menjadi lebih, bernilai jual dan bermanfaat bagi pemberdayaan masyarakat Wonosobo dan sekitarnya yaitu
+            dengan mengolah menjadi minuman premium yang segar, berkualitas, lezat, dan kaya manfaat.</p>
     </div>
 </section>
 <section class="sec">
     <div class="container">
-        <h1 class="title text-center" data-aos="fade-up">Kapasistas Produksi</h1>
+        <h1 class="title text-center" data-aos="fade-up">Kapasitas Produksi</h1>
         <div class="row my-5 g-3" data-aos="fade-up">
             <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="kapasitas-card rounded">

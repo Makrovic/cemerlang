@@ -15,7 +15,7 @@
                             <div class="row">
                                 <div class="col-md-5" data-aos="fade-right">
                                     <div class="banner-title">
-                                        <h1>PT Bintang Cemerlang Jaya Sentosa</h1>
+                                        <h1>PT Bintang Cemerlang Indonesia</h1>
                                     </div>
                                 </div>
                             </div>

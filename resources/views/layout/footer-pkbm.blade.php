@@ -6,9 +6,11 @@
                     <img src="{{ asset('images/pkbm/logo-nav.png') }}" alt="" class="img-fluid"
                         style="max-width: 240px">
                     <p>
-                        Jl. Dieng km. 4<br>
-                        Sibunderan rt.5 rw.4 Krasak Mojotengah<br>
-                        Wonosobo<br>
+                        Jl. Dieng KM. 04 (Jl. Pramuka)<br>
+                        Sibunderan RT 005 RW 004, Krasak<br>
+                        Kecamatan Mojotengah<br>
+                        Kabupaten Wonosobo<br>
+                        Provinsi Jawa Tengah<br>
                         56351<br><br>
                         <strong>Telp : </strong>(0286) 322634 | 081225220948<br>
                         <strong>Email : </strong>pkbmcemerlang@gmail.com<br>

@@ -4,7 +4,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{-- KURANG! : logo yayasan --}}
-                    <img src="{{ asset('images/pkbm/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
+                    <img src="{{ asset('images/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,8 @@
                                 <li><a class="dropdown-item" href="{{ URL::route('bintang.carica') }}">Carica
                                         Cemerlang</a>
                                 </li>
-                                <li><a class="dropdown-item" href="{{ URL::route('bintang.snack') }}">Bintang Cemerlang
+                                <li><a class="dropdown-item" href="{{ URL::route('bintang.snack') }}">Bintang
+                                        Cemerlang
                                         Snack</a></li>
                                 <li><a class="dropdown-item" href="{{ URL::route('bintang.craft') }}">Claster Craft
                                         Cemerlang</a></li>

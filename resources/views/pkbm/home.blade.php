@@ -12,7 +12,8 @@
                     <div class="col-md-5" data-aos="fade-up">
                         <div class="banner-title">
                             <h1>PKBM CEMERLANG</h1>
-                            <p>Pusat pendidikan, pelatihan, pemberdayaan, dan kewirausahaan masyarakat terbaik di Indonesia.
+                            <p>Pusat Pendidikan, Pelatihan Keterampilan, Pemberdayaan, dan Kewirausahaan Masyarakat terbaik
+                                di Indonesia.
                             </p>
                             <p>TERAKREDITASI A</p>
                         </div>
@@ -43,6 +44,9 @@
                         <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program
                             Keterampilan / Kursus / Pelatihan
                         </li>
+                        <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program
+                            Kewirausahaan Masyarakat
+                        </li>
                         <li><span class="fa-li"><i class="bullet fas fa-check"></i></span>Program Pemberdayaan
                             Perempuan
                         </li>
@@ -60,9 +64,9 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 my-4 d-flex flex-column justify-content-center">
                     <h1>Proses Pembelajaran : </h1>
-                    <p>PKBM CEMERLANG memberikan pendidikan kesetaraan paket b dan c,
-                        juga program keterampilan dan kursus yang mampu mengasah
-                        skill, mental, karakter, dan attitude sehingga membentuk lulusan siap kerja.</p>
+                    <p>PKBM CEMERLANG menyelenggarakan Pendidikan Kesetaraan Paket B dan C
+                        yang terintegrasi dengan Keterampilan dan Kecakapan Hidup untuk mencetak lulusan yang siap kerja
+                        atau siap berwirausaha dengan iman, skill, mental, karakter, dan attitude yang unggul.</p>
                 </div>
             </div>
         </div>

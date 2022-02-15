@@ -25,7 +25,7 @@ class PtController extends Controller
     public function shop()
     {
         $unit = 'pt';
-        $produks = Produk::all();
+        $produks = Produk::paginate(6);
         return view('pt.shop', compact('produks', 'unit'));
     }
     public function produkDesc($kodeproduk)
@@ -189,12 +189,6 @@ class PtController extends Controller
         ])->get();
         $cost = $cost[0]['costs'][$service];
         return $cost;
-    }
-
-    public function rajaOngkir()
-    {
-        $city = Kota::where('province_id', 10)->pluck('city_name', 'city_id');
-        dd($city);
     }
 
     public function storeCheckOut(Request $request)

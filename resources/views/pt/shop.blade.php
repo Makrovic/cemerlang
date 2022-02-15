@@ -48,6 +48,9 @@
                         </div>
                     @endforeach
                 </div>
+                <div class="d-flex justify-content-center py-4" data-aos="fade-up">
+                    {{ $produks->links() }}
+                </div>
             @endisset
             @empty($produks)
                 <div class="p-5 m-2 text-center">
