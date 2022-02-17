@@ -14,10 +14,10 @@
                     berhasil mencetak 13 ribu binaan.<br>
                     PKBM CEMERLANG WONOSOBO juga mendirikan unit usaha berbasis kearifan dan
                     potensi lokal yaitu PT BINTANG CEMERLANG INDONESIA.<br><br>
-                    PKBM CEMERLANG WONOSOBO beralamat di Jl. Dieng KM. 04 (Jl. Pramuka) Sibunderan RT 005 RW 004, Krasak,
-                    Kecamatan Mojotengah Kabupaten Wonosobo, Provinsi Jawa Tengah, Kode Pos 56351.
-                    <br>
-                <h5 style="color: var(--accent)">TIDAK MEMBUKA CABANG DI MANAPUN SELURUH INDONESIA.</h5><br>
+                    <span class="mobile">PKBM CEMERLANG WONOSOBO beralamat di Jl. Dieng KM. 04 (Jl. Pramuka)
+                        Sibunderan RT 005 RW 004, Krasak, Kecamatan Mojotengah Kabupaten Wonosobo, Provinsi Jawa Tengah,
+                        Kode Pos 56351.<br></span>
+                <h5 style="color: var(--accent)">TIDAK MEMBUKA CABANG DI MANAPUN SELURUH INDONESIA.</h5>
                 </p>
             </div>
             <a href="#pkbm"><span class="fas fa-chevron-down light"></span></a>
@@ -47,8 +47,8 @@
             <div class="row d-flex flex-row">
                 <div class="col-lg-6" data-aos="fade-up">
                     {{-- KURANG! : foto kegiatan pt --}}
-                    <img src="{{ asset('images/pt/outlet.jpg') }}" width="700px" height="300px" class="img-fluid"
-                        alt="">
+                    <img src="{{ asset('images/pkbm/ruangtamu.jpg') }}" width="700px" height="300px"
+                        class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 p-2" data-aos="fade-up">
                     <h1 class="title mb-5">PT BINTANG CEMERLANG INDONESIA</h1>

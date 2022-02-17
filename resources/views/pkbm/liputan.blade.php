@@ -171,7 +171,7 @@
                 <h5 class="my-2">Dokumentasi.</h5>
                 <div class="swiper sw-dokumentasi">
                     <div class="swiper-wrapper">
-                        @for ($i = 1; $i <= 6; $i++)
+                        @for ($i = 1; $i <= 9; $i++)
                             <div class="swiper-slide">
                                 <a href="{{ asset('images/pkbm/narasumber/narsum' . $i . '.jpg') }}"
                                     data-lightbox="image-4">

@@ -11,7 +11,7 @@ var config = {
 ceo = {
     text: {
         name: "Anna Wardiyati",
-        title: "Founder - ceo",
+        title: "Founder - CEO",
     },
     image: "../images/pkbm/tim/bu_anna.jpg"
 },
@@ -41,7 +41,7 @@ leader_kewirausahaan = {
         name: "Siti Marhamah",
         title: "Leader Tim Kewirausahaan",
     },
-    image: "../images/pkbm/tim/marfungatun.jpg"
+    image: "../images/pkbm/tim/marhamah.jpg"
 },
 admin_akademik = {
     parent: leader_kelembagaan,

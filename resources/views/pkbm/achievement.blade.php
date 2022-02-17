@@ -78,7 +78,7 @@
         <div class="container-fluid" data-aos="fade-up">
             <div class="horizontal-scroll swiper sw-dokumentasi">
                 <div class="swiper-wrapper">
-                    @for ($i = 1; $i <= 5; $i++)
+                    @for ($i = 1; $i <= 22; $i++)
                         <div class="swiper-slide">
                             <a href="{{ asset('images/pkbm/achievement/ach' . $i . '.jpg') }}" data-lightbox="image-1">
                                 <img class="flex-auto img-fluid rounded"

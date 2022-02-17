@@ -126,12 +126,20 @@
             <div class="row g-3 my-3" data-aos="fade-up">
                 <div class="col-sm-12 col-md-6">
                     <div class="card mb-3" style="height: 100%">
-                        <div class="card-body d-flex flex-column justify-content-center">
-                            <h5 class="card-title text-danger">Paket IDR 50k</h5>
-                            <p class="card-text">Snack<br>
-                                Minum<br>
-                                Konsumsi</p>
-                            </p>
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="{{ asset('images/pkbm/studibanding/paket-50k.jpg') }}"
+                                    class="figure-img img-fluid rounded">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Paket IDR 50k</h5>
+                                    <p class="card-text">Snack<br>
+                                        Minum<br>
+                                        Konsumsi</p>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -151,7 +159,6 @@
                                         Oleh-oleh Produk PKBM CEMERLANG :
                                         <li>1 pack Produk CARICA CEMERLANG (6 cup)</li>
                                         Goody Bag Kain / Kertas (menyesuaikan persediaan)
-                                    </p>
                                     </p>
                                 </div>
                             </div>
@@ -176,7 +183,6 @@
                                         <li>2 pack Produk BINTANG CEMERLANG SNACK</li>
                                         Goody Bag Kain / Kertas (menyesuaikan persediaan)
                                     </p>
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -199,7 +205,6 @@
                                         <li>1 pack Produk CARICA CEMERLANG (6 cup)</li>
                                         <li>2 pack Produk BINTANG CEMERLANG SNACK</li>
                                         Tas Pandan Etnik (Produk Handycraft PKBM CEMERLANG)
-                                    </p>
                                     </p>
                                 </div>
                             </div>
