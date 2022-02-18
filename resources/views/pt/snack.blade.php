@@ -1,4 +1,6 @@
 @extends('layout.base')
+@section('meta_keywords', 'carica,snack,carica cemerlang,bintang cemerlang snack,bintang cemerlang indonesia')
+@section('meta_description', 'Bintang Cemerlang Snack - BINTANG CEMERLANG INDONESIA')
 @section('customcss')
     <link href="{{ asset('css/content-pt.css') }}" rel="stylesheet" type="text/css">
 @stop

@@ -1,4 +1,6 @@
 @extends('layout.base')
+@section('meta_keywords', 'karya tulis,pkbm,pkbm cemerlang,karya tulis pkbm cemerlang wonosobo', 'anna wardiyati')
+@section('meta_description', 'karya tulis PKBM CEMERLANG WONOSOBO')
 @section('customcss')
     <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
 @stop

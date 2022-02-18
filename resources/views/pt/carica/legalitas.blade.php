@@ -20,6 +20,7 @@
                     <li>Good Manufacturing Practice (GMP) No. 0024/LSIPB/GMP/2018</li>
                     <li>One Village One Product (OVOP) No. 780 Th 2016-2018</li>
                     <li>Sertifikat Merek No. IDM000589550</li>
+                    <li>Sertifikat Halal No. ID33410000109720621</li>
                 </div>
             </div>
         </ol>

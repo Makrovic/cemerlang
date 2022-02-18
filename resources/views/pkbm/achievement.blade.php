@@ -1,4 +1,6 @@
 @extends('layout.base')
+@section('meta_keywords', 'achievement,penghargaan,pkbm,pkbm cemerlang,achievement pkbm cemerlang wonosobo')
+@section('meta_description', 'achievement PKBM CEMERLANG WONOSOBO')
 @section('customcss')
     <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
 @stop

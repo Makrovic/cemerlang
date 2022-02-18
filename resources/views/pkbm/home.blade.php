@@ -1,4 +1,7 @@
 @extends('layout.base')
+@section('meta_keywords', 'pkbm,kejar paket,paket b,paket c,keterampilan,wonosobo,anna wardiyati')
+@section('meta_description', 'PKBM CEMERLANG WONOSOBO merupakan Pusat Pendidikan, Pelatihan Keterampilan, Pemberdayaan,
+    dan Kewirausahaan Masyarakat terbaik di Indonesia.')
 @section('customcss')
     <link href="{{ asset('css/home.css') }}" rel="stylesheet" type="text/css">
 @stop

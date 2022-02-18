@@ -1,4 +1,8 @@
 @extends('layout.base')
+@section('meta_keywords', 'carica,snack,carica cemerlang,bintang cemerlang snack,bintang cemerlang indonesia')
+@section('meta_description',
+    'PKBM CEMERLANG WONOSOBO mendirikan unit usaha berbasis kearifan dan potensi lokal yaitu PT
+    BINTANG CEMERLANG INDONESIA.',)
 @section('customcss')
     <link href="{{ asset('css/home-pt.css') }}" rel="stylesheet" type="text/css">
 @stop
@@ -66,26 +70,23 @@
             <h5 data-aos="fade-up">Unit bisnis kami : </h5>
             <div class="row g-3 justify-content-center my-4 text-center">
                 <div class="col-12 col-sm-4">
-                    <div class="img-box-zoom rounded" data-aos="zoom-in" data-aos-delay="600">
+                    <div data-aos="zoom-in" data-aos-delay="600">
                         <a href="#home-carica">
-                            <img class="img-fluid" src="{{ asset('images/pt/carica/carica1.jpg') }}">
-                            <h3 class="h2">Carica Cemerlang</h3>
+                            <img class="img-fluid" src="{{ asset('images/pt/carica/logo-carica.png') }}">
                         </a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-4">
-                    <div class="img-box-zoom rounded" data-aos="zoom-in" data-aos-delay="400">
+                    <div data-aos="zoom-in" data-aos-delay="400">
                         <a href="#home-snack">
-                            <img class="img-fluid" src="{{ asset('images/pt/snack/snack.jpg') }}">
-                            <h3 class="h2">Bintang Cemerlang Snack</h3>
+                            <img class="img-fluid" src="{{ asset('images/pt/snack/logo-snack.png') }}">
                         </a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-4">
-                    <div class="img-box-zoom rounded" data-aos="zoom-in" data-aos-delay="200">
+                    <div data-aos="zoom-in" data-aos-delay="200">
                         <a href="#home-craft">
-                            <img class="img-fluid" src="{{ asset('images/pt/craft/handycrafts.jpg') }}">
-                            <h3 class="h2">Claster Craft Cemerlang</h3>
+                            <img class="img-fluid" src="{{ asset('images/pt/craft/logo-craft.png') }}">
                         </a>
                     </div>
                 </div>

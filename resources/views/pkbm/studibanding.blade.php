@@ -1,4 +1,8 @@
 @extends('layout.base')
+@section('meta_keywords',
+    'pusat magang dan studi banding,pkbm,pkbm cemerlang,pusat magang dan studi banding pkbm
+    cemerlang wonosobo',)
+@section('meta_description', 'pusat magang dan studi banding PKBM CEMERLANG WONOSOBO')
 @section('customcss')
     <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
 @stop

@@ -1,4 +1,7 @@
 @extends('layout.base')
+@section('meta_keywords', 'program,pkbm,pkbm cemerlang,program pkbm cemerlang wonosobo,paket b, paket c, kursus,
+    keterampilan, pemberdayaan wanita, wonosobo')
+@section('meta_description', 'program PKBM CEMERLANG WONOSOBO')
 @section('customcss')
     <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
 @stop

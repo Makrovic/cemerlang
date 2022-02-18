@@ -1,4 +1,6 @@
 @extends('layout.base')
+@section('meta_keywords', 'liputan,pkbm,pkbm cemerlang,liputan pkbm cemerlang wonosobo')
+@section('meta_description', 'liputan PKBM CEMERLANG WONOSOBO')
 @section('customcss')
     <link href="{{ asset('css/content.css') }}" rel="stylesheet" type="text/css">
 @stop

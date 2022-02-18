@@ -1,4 +1,7 @@
 @extends('layout.base')
+@section('meta_keywords', 'carica,snack,carica cemerlang,bintang cemerlang snack,bintang cemerlang indonesia,online
+    store,shop,belanja')
+@section('meta_description', 'Online Shop - BINTANG CEMERLANG INDONESIA')
 @section('customcss')
     <link href="{{ asset('css/content-pt.css') }}" rel="stylesheet" type="text/css">
 @stop

@@ -1,4 +1,6 @@
 @extends('layout.base')
+@section('meta_keywords', 'carica,snack,carica cemerlang,bintang cemerlang snack,bintang cemerlang indonesia,contact')
+@section('meta_description', 'Contact BINTANG CEMERLANG INDONESIA')
 @section('customcss')
     <link href="{{ asset('css/content-pt.css') }}" rel="stylesheet" type="text/css">
 @stop
@@ -58,33 +60,31 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-lg-7">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="col-sm-12 col-lg-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="nama">
-                                    <label for="name">Nama</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-6">
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="email">
-                                    <label for="email">Email</label>
-                                </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="nama">
+                                <label for="name">Nama</label>
                             </div>
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="judul">
-                            <label for="subject">Judul</label>
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="email">
+                                <label for="email">Email</label>
+                            </div>
                         </div>
-                        <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" id="pesan" rows="5" placeholder="Pesan"
-                                required></textarea>
-                        </div>
-                        <div class="mt-3">
-                            <button class="btn btn-carica" type="submit">Kirim</button>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="judul">
+                        <label for="subject">Judul</label>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" id="pesan" rows="5" placeholder="Pesan"
+                            required></textarea>
+                    </div>
+                    <div class="mt-3">
+                        <a class="btn btn-carica" href="mailto:pkbmcemerlang@gmail.com">Kirim</a>
+                    </div>
                 </div>
             </div>
         </div>

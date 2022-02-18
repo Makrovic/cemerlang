@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="keywords"
+        content="pkbm,kejar paket,paket b,paket c,keterampilan,carica,carica cemerlang,camilan,umkm,wonosobo">
+    <meta name="description"
+        content="PKBM CEMERLANG WONOSOBO merupakan Pusat Pendidikan, Pelatihan Keterampilan, Pemberdayaan, dan Kewirausahaan Masyarakat terbaik di Indonesia.">
     <meta name="description" content="">
     <meta name="author" content="Makrovic">
     <meta name="viewport" content="width=device-width, initial-scale=1">
