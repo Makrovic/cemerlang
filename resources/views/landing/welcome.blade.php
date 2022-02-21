@@ -46,7 +46,6 @@
         <div class="container">
             <div class="row d-flex flex-row">
                 <div class="col-lg-6" data-aos="fade-up">
-                    {{-- KURANG! : foto kegiatan pt --}}
                     <img src="{{ asset('images/pkbm/ruangtamu.jpg') }}" width="700px" height="300px"
                         class="img-fluid" alt="">
                 </div>

@@ -3,7 +3,6 @@
         <nav class="navbar navbar-dark navbar-expand-xl">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{-- KURANG! : logo yayasan --}}
                     <img src="{{ asset('images/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
