@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-xl navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('images/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
+                    <img src="{{ asset('images/pt/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

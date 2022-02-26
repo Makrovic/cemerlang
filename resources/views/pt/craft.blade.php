@@ -32,6 +32,8 @@
                     </div>
                 @endfor
             </div>
+            <h5 class="text-center">dan masih banyak lagi.</h5>
+            <h6 class="text-center">menerima pesanan sesuai permintaan.</h6>
         </div>
     </section>
     <section class="sec parallax d-flex justify-content-center align-items-center" style="min-height: 200px">

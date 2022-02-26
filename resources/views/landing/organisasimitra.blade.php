@@ -7,7 +7,8 @@
             <div class="my-5" data-aos="fade-up">
                 <h3><img src="{{ asset('images/organisasimitra/logo-fkpkbm.png') }}" class="img-fluid"
                         style="max-height: 100px"> DPP FK PKBM Indonesia </h3>
-                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati) merupakan Dewan Pengurus Pusat FK PKBM Indonesia</h5>
+                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati / Anna Cemerlang) merupakan Dewan Pengurus Pusat FK PKBM
+                    Indonesia</h5>
                 <div class="swiper sw-dokumentasi">
                     <div class="swiper-wrapper">
                         @for ($i = 1; $i <= 6; $i++)
@@ -28,7 +29,8 @@
             <div class="my-5" data-aos="fade-up">
                 <h3><img src="{{ asset('images/organisasimitra/logo-iwapiwsb.png') }}" class="img-fluid"
                         style="max-height: 100px"> DPC IWAPI Kabupaten Wonosobo </h3>
-                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati) merupakan Wakil Ketua Umum (WKU) 1 DPC IWAPI Kabupaten Wonosobo
+                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati / Anna Cemerlang) merupakan Wakil Ketua Umum (WKU) 1 DPC IWAPI
+                    Kabupaten Wonosobo
                 </h5>
                 <div class="swiper sw-dokumentasi">
                     <div class="swiper-wrapper">
@@ -50,7 +52,8 @@
             <div class="my-5" data-aos="fade-up">
                 <h3><img src="{{ asset('images/organisasimitra/logo-iwapijateng.png') }}" class="img-fluid"
                         style="max-height: 100px"> DPD IWAPI Provinsi Jawa Tengah</h3>
-                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati) merupakan Wakil Komite Tetap Bidang Perindustrian DPD IWAPI
+                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati / Anna Cemerlang) merupakan Wakil Komite Tetap Bidang
+                    Perindustrian DPD IWAPI
                     Provinsi Jawa Tengah</h5>
                 <div class="swiper sw-dokumentasi">
                     <div class="swiper-wrapper">
@@ -72,7 +75,8 @@
             <div class="my-5" data-aos="fade-up">
                 <h3><img src="{{ asset('images/organisasimitra/logo-fkumkmwsb.png') }}" class="img-fluid"
                         style="max-height: 100px"> DPD FK UMKM RI Kabupaten Wonosobo</h3>
-                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati) merupakan Ketua Umum FK UMKM RI Kabupaten Wonosobo</h5>
+                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati / Anna Cemerlang) merupakan Ketua Umum FK UMKM RI Kabupaten
+                    Wonosobo</h5>
                 <div class="swiper sw-dokumentasi">
                     <div class="swiper-wrapper">
                         @for ($i = 1; $i <= 5; $i++)
@@ -93,7 +97,8 @@
             <div class="my-5" data-aos="fade-up">
                 <h3><img src="{{ asset('images/organisasimitra/logo-permadani.png') }}" class="img-fluid"
                         style="max-height: 100px"> DPD PERMADANI Kabupaten Wonosobo</h3>
-                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati) merupakan Bendahara DPD PERMADANI Kabupaten Wonosobo</h5>
+                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati / Anna Cemerlang) merupakan Bendahara DPD PERMADANI Kabupaten
+                    Wonosobo</h5>
                 <div class="swiper sw-dokumentasi">
                     <div class="swiper-wrapper">
                         @for ($i = 1; $i <= 5; $i++)
@@ -114,7 +119,7 @@
             <div class="my-5" data-aos="fade-up">
                 <h3><img src="{{ asset('images/organisasimitra/logo-aphw.png') }}" class="img-fluid"
                         style="max-height: 100px"> APHW (Asosiasi Pengusaha Halal Wonosobo)</h3>
-                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati) merupakan Sekretaris APHW</h5>
+                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati / Anna Cemerlang) merupakan Sekretaris APHW</h5>
                 <div class="swiper sw-dokumentasi">
                     <div class="swiper-wrapper">
                         @for ($i = 1; $i <= 5; $i++)
@@ -135,7 +140,7 @@
             <div class="my-5" data-aos="fade-up">
                 <h3><img src="{{ asset('images/organisasimitra/logo-kadinwsb.png') }}" class="img-fluid"
                         style="max-height: 100px"> DPD KADIN Kabupaten Wonosobo </h3>
-                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati) merupakan Pengurus KADIN</h5>
+                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati / Anna Cemerlang) merupakan Pengurus KADIN</h5>
                 <div class="swiper sw-dokumentasi">
                     <div class="swiper-wrapper">
                         @for ($i = 1; $i <= 5; $i++)
@@ -156,7 +161,8 @@
             <div class="my-5" data-aos="fade-up">
                 <h3><img src="{{ asset('images/organisasimitra/logo-bhayangkari.png') }}" class="img-fluid"
                         style="max-height: 100px"> BHAYANGKARI</h3>
-                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati) merupakan Anggota Bhayangkari Cabang Wonosobo Daerah Jawa
+                <h5>Pimpinan PKBM CEMERLANG (Anna Wardiyati / Anna Cemerlang) merupakan Anggota Bhayangkari Cabang Wonosobo
+                    Daerah Jawa
                     Tengah</h5>
                 <div class="swiper sw-dokumentasi">
                     <div class="swiper-wrapper">

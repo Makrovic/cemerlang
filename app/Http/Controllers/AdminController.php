@@ -93,7 +93,7 @@ class AdminController extends Controller
         ]);
         $total = Produk::count() + 1;
         $number = sprintf("%02d", $total);
-        $kode = 'p' . substr($request->kategori, 0, 2) . Carbon::now()->translatedFormat("ym") . $number;
+        $kode = 'p' . substr($request->kategori, 0, 3) . Carbon::now()->translatedFormat("ym") . $number;
         $kodeproduk = ['kode_produk' => $kode];
         $produk['foto'] = $kode;
         $produks = $kodeproduk + $produk;

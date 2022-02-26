@@ -3,7 +3,7 @@
         <nav class="navbar navbar-dark navbar-expand-xl">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('images/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
+                    <img src="{{ asset('images/pkbm/logo-nav.png') }}" width="220px" alt="PKBM CEMERLANG">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,8 @@
                                 Observasi, dan Studi Banding</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ URL::route('pkbm.karyatulis') }}">Karya Tulis</a>
+                            <a class="nav-link" href="{{ URL::route('pkbm.karyatulis') }}">Karya Nyata &
+                                Tulis</a>
                         </li>
                     </ul>
                 </div>

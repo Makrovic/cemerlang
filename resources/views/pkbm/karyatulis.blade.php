@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row g-3 my-2 flex-row justify-content-center" data-aos="fade-up">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="{{ asset('images/pkbm/buku.jpg') }}" alt="" class="img-fluid rounded">
+                    <img src="{{ asset('images/pkbm/karya/buku.jpg') }}" alt="" class="img-fluid rounded">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
                     <h5>Siapa yang wajb memiliki buku ini?</h5>
@@ -46,6 +46,18 @@
                         <b class="text-danger">jangan sampai kehabisan, hanya sisa 100 eksemplar</b>
                     </p>
                     <p class="text-danger fw-bolder">GARANSI UANG KEMBALI JIKA TARGET KEMENANGAN ANDA TIDAK TERCAPAI</p>
+                </div>
+            </div>
+            <div class="my-5">
+                <h4 class="text-center">Inovasi Media Pembelajaran menerbitkan berbagai ragam Video Pembelajaran Akademik
+                    dan Keterampilan.</h4>
+            </div>
+            <div class="row g-3 my-2 flex-row justify-content-center" data-aos="fade-up">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img src="{{ asset('images/pkbm/karya/dvd1.jpg') }}" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img src="{{ asset('images/pkbm/karya/dvd2.jpg') }}" alt="" class="img-fluid rounded">
                 </div>
             </div>
         </div>

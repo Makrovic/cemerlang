@@ -141,16 +141,36 @@
                 </div>
             </div>
             <div class="my-5" data-aos="fade-up">
+                <h5>Narasumber Nasional Daring : </h5>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="{{ asset('images/pkbm/narasumber/narsumonline1.jpg') }}" data-lightbox="image-5">
+                            <img class="flex-auto img-fluid rounded"
+                                src="{{ asset('images/pkbm/narasumber/narsumonline1.jpg') }}"></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="{{ asset('images/pkbm/narasumber/narsumonline2.jpg') }}" data-lightbox="image-5">
+                            <img class="flex-auto img-fluid rounded"
+                                src="{{ asset('images/pkbm/narasumber/narsumonline2.jpg') }}"></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="{{ asset('images/pkbm/narasumber/narsumonline3.jpg') }}" data-lightbox="image-5">
+                            <img class="flex-auto img-fluid rounded"
+                                src="{{ asset('images/pkbm/narasumber/narsumonline3.jpg') }}"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5" data-aos="fade-up">
                 <h5 class="my-2">Undangan Sebagai Narasumber di Berbagai Kegiatan yang Diselenggarakan oleh
                     Instansi Pemerintah, Instansi Swasta dan Berbagai Organisasi.</h5>
                 <div class="row my-2 g-2 justify-content-center">
                     <div class="col-sm-12 col-lg-6">
-                        <a href="{{ asset('images/pkbm/narasumber/undangannarsum1.jpg') }}" data-lightbox="image-4">
+                        <a href="{{ asset('images/pkbm/narasumber/undangannarsum1.jpg') }}" data-lightbox="image-6">
                             <img class="flex-auto img-fluid rounded"
                                 src="{{ asset('images/pkbm/narasumber/undangannarsum1.jpg') }}"></a>
                     </div>
                     <div class="col-sm-12 col-lg-6">
-                        <a href="{{ asset('images/pkbm/narasumber/undangannarsum2.jpg') }}" data-lightbox="image-4">
+                        <a href="{{ asset('images/pkbm/narasumber/undangannarsum2.jpg') }}" data-lightbox="image-6">
                             <img class="flex-auto img-fluid rounded"
                                 src="{{ asset('images/pkbm/narasumber/undangannarsum2.jpg') }}"></a>
                     </div>
@@ -162,7 +182,7 @@
                     @for ($i = 1; $i <= 9; $i++)
                         <div class="col-sm-6 col-lg-4">
                             <a href="{{ asset('images/pkbm/narasumber/sertifnarsum' . $i . '.jpg') }}"
-                                data-lightbox="image-4">
+                                data-lightbox="image-7">
                                 <img class="flex-auto img-fluid rounded"
                                     src="{{ asset('images/pkbm/narasumber/sertifnarsum' . $i . '.jpg') }}"></a>
                         </div>
@@ -176,7 +196,7 @@
                         @for ($i = 1; $i <= 9; $i++)
                             <div class="swiper-slide">
                                 <a href="{{ asset('images/pkbm/narasumber/narsum' . $i . '.jpg') }}"
-                                    data-lightbox="image-4">
+                                    data-lightbox="image-8">
                                     <img class="flex-auto img-fluid rounded"
                                         src="{{ asset('images/pkbm/narasumber/narsum' . $i . '.jpg') }}"></a>
                             </div>
